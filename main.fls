@@ -29,6 +29,8 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\sectsty\sectsty.sty
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\sectsty\sectsty.sty
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty
@@ -180,6 +182,12 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty
 INPUT c:\Users\Mirza\Desktop\thesis\main.aux
 INPUT c:\Users\Mirza\Desktop\thesis\main.aux
 OUTPUT c:\Users\Mirza\Desktop\thesis\main.aux
@@ -220,12 +228,6 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
 OUTPUT c:\Users\Mirza\Desktop\thesis\main.toc
-INPUT c:\Users\Mirza\Desktop\thesis\main.lof
-INPUT c:\Users\Mirza\Desktop\thesis\main.lof
-OUTPUT c:\Users\Mirza\Desktop\thesis\main.lof
-INPUT c:\Users\Mirza\Desktop\thesis\main.lot
-INPUT c:\Users\Mirza\Desktop\thesis\main.lot
-OUTPUT c:\Users\Mirza\Desktop\thesis\main.lot
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\introduction.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\introduction.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex

@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[croatian]{babel}
 \usepackage{graphicx}
+\usepackage{sectsty}
 \graphicspath{ {Images/} }
 \usepackage{lipsum}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
@@ -34,7 +35,13 @@
 %\onehalfspacing
 %\doublespacing
 %\setstretch{1.1}
+\hbadness=99999
 
+\usepackage{titlesec,blindtext,color}
+
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{}{0pt}{\Huge\bfseries}
 \begin{document}
 
 \input{title}
@@ -50,17 +57,20 @@
 
 \tableofcontents
 
-\listoffigures
+%\listoffigures
 
-\listoftables
+%\listoftables
 
 %\input{abstract}
 
-\chapter{Uvod}
+\chapter[]{Uvod}
 \input{Chapters/introduction}
 
 \chapter{Uvod u proporcionalnu navigaciju}
 \input{Chapters/chapter02.tex}
-%\printbibliography
+
+
+\nocite{*}
+\printbibliography
 
 \end{document}

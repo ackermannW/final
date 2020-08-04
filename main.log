@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  2 AUG 2020 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  4 AUG 2020 04:49
 entering extended mode
 **c:/Users/Mirza/Desktop/thesis/main.tex
 (c:/Users/Mirza/Desktop/thesis/main.tex
@@ -61,6 +61,17 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
+) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/sectsty\sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
 ) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.sty ("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
 Package: expl3 2020-06-03 L3 programming layer (loader) 
  ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
@@ -543,43 +554,77 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 File: biblatex.cfg 
 )) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
+) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box61
+\beforetitleunit=\skip80
+\aftertitleunit=\skip81
+\ttl@plus=\dimen192
+\ttl@minus=\dimen193
+\ttl@toksa=\toks32
+\titlewidth=\dimen194
+\titlewidthlast=\dimen195
+\titlewidthfirst=\dimen196
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/blindtext\blindtext.sty"
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count396
+\c@Blindtext=\count397
+\c@blind@countparstart=\count398
+\blind@countxx=\count399
+\blindtext@numBlindtext=\count400
+\blind@countyy=\count401
+\c@blindlist=\count402
+\c@blindlistlevel=\count403
+\c@blindlist@level=\count404
+\blind@listitem=\count405
+\c@blind@listcount=\count406
+\c@blind@levelcount=\count407
+\blind@mathformula=\count408
+\blind@Mathformula=\count409
+\c@blind@randomcount=\count410
+\c@blind@randommax=\count411
+\c@blind@pangramcount=\count412
+\c@blind@pangrammax=\count413
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count396
-\@quotereset=\count397
+\@quotelevel=\count414
+\@quotereset=\count415
 (c:/Users\Mirza\Desktop\thesis\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
  ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count398
-\scratchdimen=\dimen192
-\scratchbox=\box61
-\nofMPsegments=\count399
-\nofMParguments=\count400
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count401
-\MPscratchDim=\dimen193
-\MPnumerator=\count402
-\makeMPintoPDFobject=\count403
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count416
+\scratchdimen=\dimen197
+\scratchbox=\box62
+\nofMPsegments=\count417
+\nofMParguments=\count418
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count419
+\MPscratchDim=\dimen198
+\MPnumerator=\count420
+\makeMPintoPDFobject=\count421
+\everyMPtoPDFconversion=\toks34
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -635,8 +680,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (c:/Users\Mirza\Desktop\thesis\main.bbl)
-Package biblatex Info: Reference section=0 on input line 38.
-Package biblatex Info: Reference segment=0 on input line 38.
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
  (c:/Users\Mirza\Desktop\thesis\title.tex
 <Images/preuzmi.png, id=4, 225.84375pt x 225.84375pt>
 File: Images/preuzmi.png Graphic file (type png)
@@ -663,87 +708,63 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2
 
-] (c:/Users\Mirza\Desktop\thesis\main.lof)
-\tf@lof=\write8
-\openout8 = `main.lof'.
-
- [3
-
-] (c:/Users\Mirza\Desktop\thesis\main.lot)
-\tf@lot=\write9
-\openout9 = `main.lot'.
-
- [4
-
 ]
 Poglavlje 1.
-(c:/Users\Mirza\Desktop\thesis\Chapters/introduction.tex) [5
+(c:/Users\Mirza\Desktop\thesis\Chapters/introduction.tex) [3
 
 ]
 Poglavlje 2.
 (c:/Users\Mirza\Desktop\thesis\Chapters/chapter02.tex
-<Images/PNfigure.JPG, id=26, 318.43968pt x 185.19188pt>
+<Images/PNfigure.JPG, id=20, 318.43968pt x 185.19188pt>
 File: Images/PNfigure.JPG Graphic file (type jpg)
 <use Images/PNfigure.JPG>
 Package pdftex.def Info: Images/PNfigure.JPG  used on input line 6.
 (pdftex.def)             Requested size: 318.4389pt x 185.1914pt.
- [6
+ [4
 
- <c:/Users/Mirza/Desktop/thesis/Images/PNfigure.JPG>] [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ <c:/Users/Mirza/Desktop/thesis/Images/PNfigure.JPG>] [5]
+Underfull \vbox (badness 3668) has occurred while \output is active []
 
- [8]
-Overfull \hbox (3.31633pt too wide) in paragraph at lines 165--165
-[]\OT1/cmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije 
+ [6]
+Overfull \hbox (3.31633pt too wide) in paragraph at lines 164--164
+|[]\OT1/cmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije| 
  []
 
-[9]
-<Images/linearPN.JPG, id=48, 297.36093pt x 177.66376pt>
+[7]
+<Images/linearPN.JPG, id=42, 297.36093pt x 177.66376pt>
 File: Images/linearPN.JPG Graphic file (type jpg)
 <use Images/linearPN.JPG>
-Package pdftex.def Info: Images/linearPN.JPG  used on input line 204.
+Package pdftex.def Info: Images/linearPN.JPG  used on input line 203.
 (pdftex.def)             Requested size: 297.3602pt x 177.66331pt.
-
-
-Package caption Warning: \label without proper reference on input line 205.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:linear' on page 10 undefined on input line 208.
-
-
-Underfull \vbox (badness 6141) has occurred while \output is active []
-
- [10 <c:/Users/Mirza/Desktop/thesis/Images/linearPN.JPG>]
-<Images/homingLoop.JPG, id=52, 395.22656pt x 216.05719pt>
+ [8 <c:/Users/Mirza/Desktop/thesis/Images/linearPN.JPG>]
+<Images/homingLoop.JPG, id=46, 395.22656pt x 216.05719pt>
 File: Images/homingLoop.JPG Graphic file (type jpg)
 <use Images/homingLoop.JPG>
 Package pdftex.def Info: Images/homingLoop.JPG  used on input line 274.
 (pdftex.def)             Requested size: 395.22559pt x 216.05664pt.
-) [11] [12 <c:/Users/Mirza/Desktop/thesis/Images/homingLoop.JPG>] (c:/Users\Mirza\Desktop\thesis\main.aux)
+) [9] [10 <c:/Users/Mirza/Desktop/thesis/Images/homingLoop.JPG>] [11
+
+] (c:/Users\Mirza\Desktop\thesis\main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 124.49696pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21229 strings out of 480797
- 422284 string characters out of 2905362
- 1136021 words of memory out of 3000000
- 36898 multiletter control sequences out of 15000+200000
+ 21984 strings out of 480797
+ 434366 string characters out of 2905362
+ 1156973 words of memory out of 3000000
+ 37644 multiletter control sequences out of 15000+200000
  537540 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,12n,75p,864b,1704s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (12 pages, 230609 bytes).
+Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (11 pages, 234046 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

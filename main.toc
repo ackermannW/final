@@ -1,18 +1,18 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {croatian}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Uvod}{5}%
+\contentsline {chapter}{\numberline {1}}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Uvod u proporcionalnu navigaciju}{6}%
+\contentsline {chapter}{\numberline {2}Uvod u proporcionalnu navigaciju}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Osnovne jednačine}{6}%
+\contentsline {section}{\numberline {2.1}Opis planarnog susreta}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Izvođenje upravljačkog zakona}{7}%
+\contentsline {section}{\numberline {2.2}Izvođenje upravljačkog zakona}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Izmjenjena proporcionalna navigacija}{9}%
+\contentsline {section}{\numberline {2.3}Izmjenjena proporcionalna navigacija}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Optimalnost zakona proporcionalne navigacije}{9}%
+\contentsline {section}{\numberline {2.4}Optimalnost zakona proporcionalne navigacije}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Linearizacija}{10}%
+\contentsline {section}{\numberline {2.5}Linearizacija}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Zero effort miss}{11}%
+\contentsline {section}{\numberline {2.6}Zero effort miss}{9}%

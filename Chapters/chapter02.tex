@@ -1,5 +1,5 @@
 
-\section{Osnovne jednačine}
+\section{Opis planarnog susreta}
 
 \begin{figure}[h!]
     \centering
@@ -12,7 +12,7 @@ Udaljenost između mete i projektila u svakom trenutku je data sa:
 \end{equation}
 Brzina približavanja projektila meti je data sa: 
 \begin{equation}
-    v_c=-\dot{r(t)}
+    v_c=-\dot{r}(t)
 \end{equation}
 
 Ugaono ubrzanje mete je dato sa:
@@ -110,7 +110,6 @@ Neka je $x_1(t)=\lambda$ i $x_2(t)=\dot{\lambda}$. Tada je susret projektila i m
     \dot{x}_2=-a_1(t)x_1-a_2(t)x_2-b(t)u+b(t)f
     \label{eq:2}
 \end{equation}
-
 ,gdje je uzeto $u=a_M(t)$ i vanjska smetnja $f=a_T(t)$.
 Prvo posmatrajmo slučaj kada meta ne ubrzava, tj. kada je $f=0$. Sada se problem proporcionalne navigacije može predstaviti kao:
 %\subsection{SubSection Title}
@@ -181,11 +180,11 @@ Prvi član predstavlja promašaj(miss distance), a drugi predstavlja energiju en
 $a_M$ koje minimizira kriterij performanse $J$. Koriteći Bellman-Lyapunov pristup dobija se da je 
 optimalno upravljanje dato sa:
 \begin{equation}
-    a_M(t)=\frac{3\tau}{3/C+\tau ^3}(y(t)+\dot(y)(t)\tau)
+    a_M(t)=\frac{3\tau}{3/C+\tau ^3}(y(t)+\dot{y}(t)\tau)
 \end{equation}
 Nulti promašaj se dobija za $C\rightarrow \infty$, pa je optimalno upravljanje dato sa:
 \begin{equation}
-    a_M(t)=\frac{3}{\tau ^2}(y(t)+\dot(y)(t)\tau)
+    a_M(t)=\frac{3}{\tau ^2}(y(t)+\dot{y}(t)\tau)
 \end{equation}
 Uzimajući u obzir da je:
 \begin{equation}
@@ -199,13 +198,14 @@ Ovo znači da pod uvedenim pretpostavkama, proporcionalna navigacija minimizira 
 $J$ i izbor efektivnog navigacijskog odnosa $N=3$ garantuje da nulti promašaj. 
 %-----------------------
 \section{Linearizacija}
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics{linearPN.JPG}
+    \caption{Linearizacija jednačina proporcionalne navigacije}
     \label{fig:linear}
 \end{figure}
 
-Linearizacija se može lahko izvršiti ako se definišu nove veličine koje su prikazane na slci \ref{fig:linear}.
+Linearizacija se može lahko izvršiti ako se definišu nove veličine koje su prikazane na slici \ref{fig:linear}.
 Relativno ubrzanje se može odrediti sa slike i iznosi:
 \begin{equation}
     \ddot{y}=n_T\cos\beta-n_c\cos\lambda
@@ -269,7 +269,7 @@ budučeg kretanja mete, PN vođenje se smatra prediktivnim. $ZEM$ je koristan je
 mnoštvom metoda uključujući i on-line numeričku integraciju nelinearnih diferencijalnih jednačina projektila 
 i mete. 
 
-\begin{figure}
+\begin{figure}[htp]
     \centering
     \includegraphics{homingLoop.JPG}
     \label{fig:homing}
