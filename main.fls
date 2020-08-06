@@ -230,6 +230,19 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
 OUTPUT c:\Users\Mirza\Desktop\thesis\main.toc
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\introduction.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\introduction.tex
+INPUT c:\Users\Mirza\Desktop\thesis\Chapters\KS.tex
+INPUT c:\Users\Mirza\Desktop\thesis\Chapters\KS.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT c:\Users\Mirza\Desktop\thesis\Images\body.png
+INPUT c:\Users\Mirza\Desktop\thesis\Images\body.png
+INPUT c:\Users\Mirza\Desktop\thesis\Images\body.png
+INPUT c:\Users\Mirza\Desktop\thesis\Images\body.png
+INPUT c:\Users\Mirza\Desktop\thesis\Images\body.png
+INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
@@ -251,6 +264,8 @@ INPUT c:\Users\Mirza\Desktop\thesis\Images\homingLoop.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\main.aux
 INPUT c:\Users\Mirza\Desktop\thesis\main.run.xml
 OUTPUT c:\Users\Mirza\Desktop\thesis\main.run.xml
+INPUT C:\Users\Mirza\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\Mirza\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
