@@ -135,6 +135,35 @@
       \field{year}{2007}
       \true{nocite}
     \endentry
+    \entry{drela2014flight}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=40950303395aa667be92987698c68b9a}{%
+           family={Drela},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{40950303395aa667be92987698c68b9a}
+      \strng{fullhash}{40950303395aa667be92987698c68b9a}
+      \strng{bibnamehash}{40950303395aa667be92987698c68b9a}
+      \strng{authorbibnamehash}{40950303395aa667be92987698c68b9a}
+      \strng{authornamehash}{40950303395aa667be92987698c68b9a}
+      \strng{authorfullhash}{40950303395aa667be92987698c68b9a}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{FLIGHT VEHICLE AERODYNAMICS}
+      \field{title}{Flight Vehicle Aerodynamics}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  7 AUG 2020 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  8 AUG 2020 11:21
 entering extended mode
 **c:/Users/Mirza/Desktop/thesis/main.tex
 (c:/Users/Mirza/Desktop/thesis/main.tex
@@ -788,41 +788,44 @@ File: Images/6dof.JPG Graphic file (type jpg)
 <use Images/6dof.JPG>
 Package pdftex.def Info: Images/6dof.JPG  used on input line 79.
 (pdftex.def)             Requested size: 321.15228pt x 285.017pt.
-) [5 <c:/Users/Mirza/Desktop/thesis/Images/earth-body.JPG>] [6 <c:/Users/Mirza/Desktop/thesis/Images/6dof.JPG>]
+ [5 <c:/Users/Mirza/Desktop/thesis/Images/earth-body.JPG>]
+Underfull \vbox (badness 6032) has occurred while \output is active []
+
+ [6 <c:/Users/Mirza/Desktop/thesis/Images/6dof.JPG>]) [7]
 Poglavlje 3.
-[7
+[8
 
 ]
 Poglavlje 4.
 (c:/Users\Mirza\Desktop\thesis\Chapters/chapter02.tex
-<Images/PNfigure.JPG, id=42, 318.43968pt x 185.19188pt>
+<Images/PNfigure.JPG, id=45, 318.43968pt x 185.19188pt>
 File: Images/PNfigure.JPG Graphic file (type jpg)
 <use Images/PNfigure.JPG>
 Package pdftex.def Info: Images/PNfigure.JPG  used on input line 4.
 (pdftex.def)             Requested size: 318.4389pt x 185.1914pt.
- [8
+ [9
 
- <c:/Users/Mirza/Desktop/thesis/Images/PNfigure.JPG>] [9]
+ <c:/Users/Mirza/Desktop/thesis/Images/PNfigure.JPG>] [10]
 Underfull \vbox (badness 1107) has occurred while \output is active []
 
- [10]
+ [11]
 Overfull \hbox (3.31633pt too wide) in paragraph at lines 158--158
 |[]\OT1/cmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije| 
  []
 
-[11]
-<Images/linearPN.JPG, id=58, 297.36093pt x 177.66376pt>
+[12]
+<Images/linearPN.JPG, id=61, 297.36093pt x 177.66376pt>
 File: Images/linearPN.JPG Graphic file (type jpg)
 <use Images/linearPN.JPG>
 Package pdftex.def Info: Images/linearPN.JPG  used on input line 197.
 (pdftex.def)             Requested size: 297.3602pt x 177.66331pt.
- [12 <c:/Users/Mirza/Desktop/thesis/Images/linearPN.JPG>]
-<Images/homingLoop.JPG, id=62, 395.22656pt x 216.05719pt>
+ [13 <c:/Users/Mirza/Desktop/thesis/Images/linearPN.JPG>]
+<Images/homingLoop.JPG, id=66, 395.22656pt x 216.05719pt>
 File: Images/homingLoop.JPG Graphic file (type jpg)
 <use Images/homingLoop.JPG>
 Package pdftex.def Info: Images/homingLoop.JPG  used on input line 265.
 (pdftex.def)             Requested size: 395.22559pt x 216.05664pt.
-) [13] [14 <c:/Users/Mirza/Desktop/thesis/Images/homingLoop.JPG>] [15
+) [14] [15 <c:/Users/Mirza/Desktop/thesis/Images/homingLoop.JPG>] [16
 
 ] (c:/Users\Mirza\Desktop\thesis\main.aux)
 
@@ -834,17 +837,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22719 strings out of 480797
- 442894 string characters out of 2905362
- 1171716 words of memory out of 3000000
- 38350 multiletter control sequences out of 15000+200000
+ 22725 strings out of 480797
+ 443019 string characters out of 2905362
+ 1172778 words of memory out of 3000000
+ 38356 multiletter control sequences out of 15000+200000
  538551 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,12n,75p,864b,1702s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Mirza\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (15 pages, 328989 bytes).
+Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (16 pages, 337337 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

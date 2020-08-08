@@ -80,3 +80,51 @@ na slici \ref{fig:dof}
     \caption{Predstava šest stepeni slobode}
     \label{fig:dof}
 \end{figure}
+Kao što je ranije rečeno dinamički model projektila se dobija Newtonovim zakonom dinamike,
+koji kaže da je suma svih vanjskih sila jednaka brzini promjene impulsa tijela i da je 
+suma svih vanjskih momenata jednaka brzini promjene moomenta impulsa. Prema tome vrijede relacije:
+\begin{equation}
+    \sum F=\frac{d(mv_m)}{dt}
+    \label{eq:f}
+\end{equation}
+\begin{equation}
+    \sum M=\frac{dH}{dt}
+\end{equation}
+gdje je $H$ ugaoni momentum a $\sum M$ je suma svih vanjskih momenata koji djeluju na tijelo. Naravno, prethodne 
+relacije predstavljaju promjene vektora u odnosu na inertcijalni prostor. Rezultantna vanjska sila koja 
+djeluje na tijelo se može razložiti na sile koje djeluju po osama koordinatnog sistema 
+vezanog za tijelo projektila, pa se može napisati:
+\begin{equation}
+    \sum F=F_x+F_y+F_z
+\end{equation}
+Poredeći prethodnu jednačinu sa \ref{eq:f} dobija se:
+\begin{equation}
+    F_x=\frac{d(mu)}{dt}, F_y=\frac{d(mv)}{dt}, F_z=\frac{d(mw)}{dt}
+    \label{eq:31}
+\end{equation}
+Analogno, dobija se da vrijedi:
+\begin{equation}
+    L=\frac{dH_x}{dt},M=\frac{dH_y}{dt},N=\frac{dH_z}{dt}
+    \label{eq:32}
+\end{equation}
+Gdje su $L,M$ i $N$ moment valjanja, moment propinjanja i moment zakretanja respektivno i 
+$H_x, H_y$ i $H_z$ su komponente momenta impulsa duž osa tijela. 
+Sada želimo proširiti jednačine \ref{eq:31} i \ref{eq:32} kako bi smo dobili 
+jednačine kretanja za svaki stepen slobode. U svrhu toga koristi se formula za 
+brzinu promjenu brzine projektila u inercijalnom sistemu, tj. u koordinatnom sistemu 
+vezanom za zemlju i ona je data relacijom:
+\begin{equation}
+    \left( \frac{dv_m}{dt}\right)_{Zemlja}=\left(\frac{dv_m}{dt}\right)_{tijelo}+\omega \times v_m
+\end{equation}
+Prema tome vrijedi da je ukupna vanjska sila koja djeluje na tijelo data sa:
+\begin{equation}
+    F=m\left(\frac{dv_m}{dt}\right)_{tijelo}+m(\omega \times v_m)
+\end{equation}
+gdje je vektorrski proizvod linearne brzine i ugaone brzine dat sa:
+\begin{equation}
+    \omega \times v_m=\begin{bmatrix}
+        i&j&k\\
+        P&Q&R\\
+        u&v&w\\
+    \end{bmatrix}=(wQ-vR)i+(uR-wP)j+(vP-uQ)k
+\end{equation}
