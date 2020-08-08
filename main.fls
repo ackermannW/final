@@ -146,6 +146,18 @@ INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\generic\kvsetkeys\kvsetkeys.sty
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\everypage\everypage.sty
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\everypage\everypage.sty
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\ncctools\nccmath.sty
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\ncctools\nccmath.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
@@ -227,6 +239,9 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 OUTPUT c:\Users\Mirza\Desktop\thesis\main.toc
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\introduction.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\introduction.tex
@@ -243,14 +258,19 @@ INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\earth-body.JPG
-INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex
-INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex
-INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
-INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
-INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
-INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
-INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
+INPUT c:\Users\Mirza\Desktop\thesis\Images\6dof.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\6dof.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\6dof.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\6dof.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\6dof.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex
+INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex
+INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\PNfigure.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\linearPN.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\linearPN.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\linearPN.JPG

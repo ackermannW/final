@@ -3,20 +3,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}}{3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Koordinatni sistemi}{4}%
+\contentsline {chapter}{\numberline {2}Jednačine kretanja tijela}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Dinamički model}{6}%
+\contentsline {section}{\numberline {2.1}Koordinatni sistemi}{4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Uvod u proporcionalnu navigaciju}{7}%
+\contentsline {section}{\numberline {2.2}Jednačine kretanja čvrstog tijela}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Opis planarnog susreta}{7}%
+\contentsline {chapter}{\numberline {3}Dinamički model}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Izvođenje upravljačkog zakona}{8}%
+\contentsline {chapter}{\numberline {4}Uvod u proporcionalnu navigaciju}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Izmjenjena proporcionalna navigacija}{10}%
+\contentsline {section}{\numberline {4.1}Opis planarnog susreta}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Optimalnost zakona proporcionalne navigacije}{10}%
+\contentsline {section}{\numberline {4.2}Izvođenje upravljačkog zakona}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Linearizacija}{11}%
+\contentsline {section}{\numberline {4.3}Izmjenjena proporcionalna navigacija}{11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Zero effort miss}{12}%
+\contentsline {section}{\numberline {4.4}Optimalnost zakona proporcionalne navigacije}{11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Linearizacija}{12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Zero effort miss}{13}%

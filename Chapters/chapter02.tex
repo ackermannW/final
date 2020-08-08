@@ -1,20 +1,16 @@
-
 \section{Opis planarnog susreta}
-
 \begin{figure}[h!]
     \centering
     \includegraphics{PNfigure.JPG}
 \end{figure}
-
-Udaljenost između mete i projektila u svakom trenutku je data sa:
+\noindent Udaljenost između mete i projektila u svakom trenutku je data sa:
 \begin{equation}
     r(t)=r_T(t)-r_M(t)
 \end{equation}
 Brzina približavanja projektila meti je data sa: 
 \begin{equation}
-    v_c=-\dot{r}(t)
+    v_{cl}=-\dot{r}(t)
 \end{equation}
-
 Ugaono ubrzanje mete je dato sa:
 \begin{equation}
     \dot{\beta}=\frac{n_T}{v_T}
@@ -116,7 +112,6 @@ Prvo posmatrajmo slučaj kada meta ne ubrzava, tj. kada je $f=0$. Sada se proble
 \begin{tcolorbox}
     Pronaći upravljački signal $u$ tako da je sistem opisan jednačinama \ref{eq:1} i \ref{eq:2} asimptotski stabilan u odnosu na $x_2$
 \end{tcolorbox}
-
 Shodno tome, uzmimo Lyapunovu funkciju $Q$:
 \begin{equation}
     Q=\frac{1}{2}cx_2^2
@@ -150,7 +145,6 @@ Za trodimenzionalni slučaj se bira kandidat funkcija:
 \begin{equation}
     u_s=Nv_{cl}\dot{\lambda}_s \quad ,N>2\ (s=1,2,3)
 \end{equation}
-
 \section{Izmjenjena proporcionalna navigacija}
 Za mete koje manevrišu i imaju neko normalno ubrzanje, za planarni sustre, izvod Lyapunove kandidat 
 funkcije je:
@@ -204,8 +198,7 @@ $J$ i izbor efektivnog navigacijskog odnosa $N=3$ garantuje da nulti promašaj.
     \caption{Linearizacija jednačina proporcionalne navigacije}
     \label{fig:linear}
 \end{figure}
-
-Linearizacija se može lahko izvršiti ako se definišu nove veličine koje su prikazane na slici \ref{fig:linear}.
+\noindent Linearizacija se može lahko izvršiti ako se definišu nove veličine koje su prikazane na slici \ref{fig:linear}.
 Relativno ubrzanje se može odrediti sa slike i iznosi:
 \begin{equation}
     \ddot{y}=n_T\cos\beta-n_c\cos\lambda
@@ -239,7 +232,6 @@ Linearizirani promašaj se definisše kao udaljenost mete i projektila na kraju 
 \begin{equation}
     Miss=y(t_f)
 \end{equation}
-
 \section{Zero effort miss}
 Ranije je pokazano da vrijedi:
 \begin{equation}
@@ -268,9 +260,9 @@ Pošto se $ZEM$ posmatra kao buduća tačka susreta, koja se računa na osnovu z
 budučeg kretanja mete, PN vođenje se smatra prediktivnim. $ZEM$ je koristan jer se može izračunati 
 mnoštvom metoda uključujući i on-line numeričku integraciju nelinearnih diferencijalnih jednačina projektila 
 i mete. 
-
 \begin{figure}[htp]
     \centering
     \includegraphics{homingLoop.JPG}
     \label{fig:homing}
 \end{figure}
+

@@ -43,6 +43,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{number}{1}
       \field{title}{Missile Guidance and Pursuit: Kinematics, Dynamics and Control}
       \field{year}{1998}
       \true{nocite}
