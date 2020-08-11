@@ -27,7 +27,7 @@ Da se definiše položaj letjelice u odnosu na koordinatni sistem koriste se Eul
     \includegraphics[scale=0.7]{earth-body.JPG}
     \caption{Eulerovi uglovi}
 \end{figure}
-Ovo znači da se bilo koja rotacija može postići sa tri rotacije oko osi i to prva 
+Ovo znači da se bilo koja rotacija, odnosno transformacija iz sistema tijela u sistem Zemlje može postići sa tri rotacije oko osi i to prva 
 rotacija za ugao $\phi$ oko longitudinalne, za ugao $\theta$ oko lateralne i za ugao 
 $\psi$ oko normalne ose. Transformacija $C_e^b$ koja ostvaruje transformaciju iz 
 koordinatnog sistema vezanog za zemlju u koordinatni sistem vezan za tijelo je data sa:
@@ -84,18 +84,20 @@ Kao što je ranije rečeno dinamički model projektila se dobija Newtonovim zako
 koji kaže da je suma svih vanjskih sila jednaka brzini promjene impulsa tijela i da je 
 suma svih vanjskih momenata jednaka brzini promjene moomenta impulsa. Prema tome vrijede relacije:
 \begin{equation}
-    \sum F=\frac{d(mv_m)}{dt}
+    \sum F=\frac{d(mv_m)}{dt}{\Huge|}_{Zemlja}
     \label{eq:f}
 \end{equation}
 \begin{equation}
-    \sum M=\frac{dH}{dt}
+    \sum M=\frac{dH}{dt}{\Huge|}_{Zemlja}
+    \label{eq:m}
 \end{equation}
 gdje je $H$ ugaoni momentum a $\sum M$ je suma svih vanjskih momenata koji djeluju na tijelo. Naravno, prethodne 
 relacije predstavljaju promjene vektora u odnosu na inertcijalni prostor. Rezultantna vanjska sila koja 
 djeluje na tijelo se može razložiti na sile koje djeluju po osama koordinatnog sistema 
 vezanog za tijelo projektila, pa se može napisati:
 \begin{equation}
-    \sum F=F_x+F_y+F_z
+    \sum \Delta F=\sum \Delta  F_xi+\sum \Delta  F_yj+\sum \Delta  F_zk
+    \label{eq:sum}
 \end{equation}
 Poredeći prethodnu jednačinu sa \ref{eq:f} dobija se:
 \begin{equation}
@@ -119,6 +121,7 @@ vezanom za zemlju i ona je data relacijom:
 Prema tome vrijedi da je ukupna vanjska sila koja djeluje na tijelo data sa:
 \begin{equation}
     F=m\left(\frac{dv_m}{dt}\right)_{tijelo}+m(\omega \times v_m)
+    \label{eq:force}
 \end{equation}
 gdje je vektorrski proizvod linearne brzine i ugaone brzine dat sa:
 \begin{equation}
@@ -128,3 +131,146 @@ gdje je vektorrski proizvod linearne brzine i ugaone brzine dat sa:
         u&v&w\\
     \end{bmatrix}=(wQ-vR)i+(uR-wP)j+(vP-uQ)k
 \end{equation}
+Koristeći se činjenicom da je $v_m=ui+vj+wk$ i uvrštavanjem prethodne jednačine u \ref{eq:force} dobija se:
+\begin{equation}
+    \sum \Delta F=m(\dot{u}i+\dot{v}j+\dot{w}k)+(wQ-vR)i+(uR-wP)j+(vP-uQ)k
+\end{equation}
+Sada, poredeći sa \ref{eq:sum} dobijaju se jednačine:
+\begin{equation}
+    \sum \Delta F_x=m(\dot{u}+wQ-vR)
+    \label{eq:r1}
+\end{equation}
+\begin{equation}
+    \sum \Delta F_y=m(\dot{v}+uR-wP)
+    \label{eq:r2}
+\end{equation}
+\begin{equation}
+    \sum \Delta F_z=m(\dot{w}+vP-uQ)
+    \label{eq:r3}
+\end{equation}
+Prethodno dobivene tri jednačine predstavljaju \textit{linearne jednačine kretanja}. Sada treba odrediti 
+ove tri jednačine za rotaciono kretanje. Da bi se to postiglo potrebno je imati izraz za 
+moment impulsa $H$ kao što imamo izraz za impuls kod translatornog kretanja. Moment impulsa oko 
+proizvoljne tačke $O$ materijalne tačke je dat sa:
+\begin{equation}
+    H=r\times mV=mr\times (\omega \times r)
+\end{equation}
+Vektor momenta impulsa $H$ je normalan $r$ i na $v$ i $H$ je usmjeren isto kao i moment impulsa $M$.
+Moment impulsa cijelog tijela oko tačke $O$ je dat sa:
+\begin{equation}
+    H=\sum r\times mv_m=\sum mr\times (\omega \times r)=\sum m\left[\omega(r\cdot r )-r(r\cdot \omega) \right]
+\end{equation}
+ili u formi integrala:
+\begin{equation}
+    H=\int r\times (\omega \times r)dm
+\end{equation}
+Sada slijedi:
+\begin{equation}
+    \omega \times r=\begin{bmatrix}
+        i&j&k\\
+        P&Q&R\\
+        x&y&z\\
+    \end{bmatrix}=(zQ-yR)i+(xR-zP)j+(yP-xQ)k
+\end{equation}
+ i konačno:
+ \begin{equation}
+    r\times (\omega \times r)=\begin{bmatrix}
+        i&j&k\\
+        x&y&z\\
+        zQ-yR&xR-zP&yP-xQ\\
+    \end{bmatrix}
+ \end{equation}
+ Sada se konačno dobija izraz za moment impulsa:
+ \begin{equation}
+    \begin{split}      
+     H&=i\int \left[ (y^2+z^2)P -xyQ -xzR \right]dm+j\int\left[ (z^2+x^2)Q-yzR-xyP \right]dm\\ 
+     &+k\int \left[ (x^2+y^2)R-xzP-yzQ \right]dm    
+    \end{split}
+    \end{equation}
+
+    Kada se uvedu oznake:
+    \begin{equation}
+        \begin{split}           
+        I_x&=\int (y^2+z^2)dm, I_z=\int (y^2+x^2)dm,I_z=\int (x^2+z^2)dm\\
+        &I_{xy}=\int xydm, I_{yz}=\int yzdm,I_{xz}=\int xzdm 
+    \end{split}
+    \end{equation}
+Tada se dobija:
+\begin{equation}
+    H=(PI_x-RI_{xz})i+QI_yj+(RI_z-PI_{xz})k
+\end{equation}
+Sada se vektor momenta impulsa može zapisati preko svojih komponenti:
+\begin{equation}
+    H_x=PI_x-RI_{xz}
+\end{equation}
+\begin{equation}
+    H_y=QI_y
+\end{equation}
+\begin{equation}
+    H_z=RI_z-PI_{xz}
+\end{equation}
+Sada su potrebni izvodi momenta impulsa kako bi smo dobili izraz za rezultantni moment.
+Pošto je izvod vektora u inercijalnom prostoru jednak zbiru izvoda pojedinačnih komponenti vektora. Prema tome 
+vrijedi:
+\begin{equation}
+    \frac{dH_x}{dt}=I_x\frac{dP}{dt}-I{xz}\frac{dR}{dt}
+\end{equation}
+\begin{equation}
+    \frac{dH_y}{dt}=I_y\frac{dQ}{dt}
+\end{equation}
+\begin{equation}
+    \frac{dH_z}{dt}=I_z\frac{dR}{dt}-I_{xz}\frac{dP}{dt}
+\end{equation}
+Relacija \ref{eq:m} se može napisati kao:
+\begin{equation}
+    \sum \Delta M=\frac{dH}{dt}+\omega \times H
+\end{equation}
+Ako se uvaži da je $\sum \Delta M=\sum \Delta Li + \sum \Delta Mj+\sum \Delta Nk$, korištenjem prethodno dobivenih 
+izraza za izvod momenta impulsa dobija se:
+\begin{equation}
+    \sum \Delta L=\dot{P}I_x+QR(I_z-I_y)-(\dot{R}+PQ)I_{xz}
+\end{equation}
+\begin{equation}
+    \sum \Delta M=\dot{Q}I_y+PR(I_x-I_z)+(P^2-R^2)I_{xz}
+\end{equation}
+\begin{equation}
+    \sum \Delta N=\dot{R}I_y+PQ(I_y-I_x)-(\dot{P}-QR)I_{xz}
+\end{equation}
+Prethodne tri jednačine zajedno sa jednačinama \ref{eq:r1},\ref{eq:r2} i \ref{eq:r3} predstavljaju
+jednačine projektila sa šest stepeni slobode. Ove jednačine su simultane linearne jednačine 
+kretanja sa šest promjenjivih $u,v,w,P,Q$ i $R$ koje potpuno opsiuju kretanje 
+čvrstog tijela. Rješenja ovih jednačina se mogu dobiti numeričkim metodama na digitalnom 
+računaru. Analitička rješenja dovoljne tačnosti se mogu dobiti linearizacijom. $I_x,I_y$ i $I_{xz}$ su konstantne 
+i za projektile sa krstastom konfiguracijom vrijedi $I_y=I_z$ i $I_{xz}$. Prema tome, vrijedi:
+\begin{equation}
+    \sum \Delta L=\dot{P}I_x+QR(I_z-I_y)
+\end{equation}
+\begin{equation}
+    \sum \Delta M=\dot{Q}I_y+PR(I_x-I_z)
+\end{equation}
+\begin{equation}
+    \sum \Delta N=\dot{R}I_z+PQ(I_y-I_x)
+\end{equation}
+Transformacijom prethodnih jednačina dobija se:
+\begin{equation}
+    \frac{dP}{dt}=QR\frac{I_y-I_z}{I_x}+\frac{L}{I_x}
+\end{equation}
+\begin{equation}
+    \frac{dQ}{dt}=PR\frac{I_z-I_x}{I_y}+\frac{M}{I_y}
+\end{equation}
+\begin{equation}
+    \frac{dR}{dt}=PQ\frac{I_x-I_y}{I_z}+\frac{N}{I_z}
+\end{equation}
+Sada je još potrebno odrediti ugaone brzine u zavisnosti od Eulerovih uglova. Izvođenje ovih jednačina zahtjeva 
+pronalaženje izvoda matrice transformacije, što je poprilično zahtjevno, pa će ovdje biit samo navedene 
+diferencijalne jednačine koje daju brzinu prmjene Eulerovih uglova:
+\begin{equation}
+    \frac{d\psi}{dt}=(Q\sin\phi +R\cos\phi)/\cos\theta
+\end{equation}
+\begin{equation}
+    \frac{d\theta}{dt}=Q\cos\phi-R\sin\phi
+\end{equation}
+\begin{equation}
+    \frac{d\phi}{dt}=P+\left( \frac{d\psi}{dt} \right)\sin\theta
+\end{equation}
+Sada koristeći matricu transformacije $C_e^b$ se mogu dobiti komponente
