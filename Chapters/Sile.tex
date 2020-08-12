@@ -1,0 +1,55 @@
+
+Sile koje djeluju na projektil su u letu su aerodinamičke, pogonske sile i 
+gravitaciona sila. Ove sile se mogu razložiti po osama kooridnatnog sistema vezanog 
+za tijelo. 
+\section{Aerodinamičke sile}
+Aerodinamička sila je posljedica djelovanja pritiska okolnog fluida na tijelo u pokretu. 
+Aerodinamička sila se može razložiti na tri komponente koje su definisane u nastavku:
+\begin{itemize}
+    \item \textbf{Uzgon}- Uzgon je komponenta rezultantne aerodinamičke sile 
+    koja je normalna na relativno kretanje vjetra.
+    \item \textbf{Otpor}- Otpor je komponenta rezultantne aerodinamičke sile 
+    koja je paralelna relativnom kretanju vjetra.
+    \item \textbf{Bočna sila}- Bočna sila je komponenta rezultantne aerodinamičke sile 
+    koja je normalna na uzogn i otpor. 
+\end{itemize}
+Ovdje se posmatraju projektili koji se zakreću da bi skrenuli(skid to turn) i 
+kod takvih projektila aerodinamičke sile su date sa:
+\begin{equation}
+   \text{Uzgon} \quad R_x=C_xqS
+\end{equation}
+\begin{equation}
+    \text{Otpor} \quad R_z=C_zqS
+\end{equation}
+\begin{equation}
+    \text{Bočna sila} \quad R_y=C_yqS
+\end{equation}
+,gdje su $C_x,C_y$ i $C_z$ aerodinamički koeficijenti, $q$ dinamički pritisak slobodnog strujanaja
+u tački daleko od objekta i iznosi $q=\frac{1}{2}\rho v^2$, $S$ je referentna površina i 
+$v$ je brzina vazduha, $\rho$ predstavlja atmosferski pritisak.
+\\
+U opštem slučaju koeficijenti aerodinamičkih sila su funkcije varijabli stanja pa se može
+napisati:
+\begin{equation}
+    C_x=C_x(\alpha ,\beta M,q,\delta_v,\delta_P,\delta_e)
+\end{equation}
+,gdje je $M$ Mahov broj- odnos tekuće brzine i brzine zvuka, $\alpha$ napadni ugao i 
+$\beta$ ugao klizanja. Slično tako vrijedi:
+\begin{equation}
+    C_z=C_z(\alpha ,\beta M,q,\delta_v,\delta_P,\delta_e)
+\end{equation}
+Razvojem u Taylorov red i odbacivanjem viših članova dobija se aproksimacija 
+aerodinamičkih koeficijenata:
+\begin{equation}
+    C_x=C_{x_0} + C_{x_1}\alpha
+\end{equation}
+\begin{equation}
+    C_z=C_{z_0} + C_{z_1}
+\end{equation}
+,gdje je: 
+\begin{align*}
+   & C_{x_0}=\frac{\partial c_x}{\partial \alpha}|_{\alpha=0}\\ 
+   & C_{x_1}=\frac{\partial c_x}{\partial \alpha}   
+\end{align*}
+
+\section{Aerodinamički momenti}

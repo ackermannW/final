@@ -48,6 +48,14 @@ koordinatnog sistema vezanog za zemlju u koordinatni sistem vezan za tijelo je d
         0&0&1\\
     \end{bmatrix}
 \end{equation}
+,odnosno:
+\begin{equation}
+    C_e^b=\begin{bmatrix}
+        cos\theta cos\psi && cos\theta sin\psi && -sin\theta\\
+        sin\phi sin\theta cos\psi-cos\phi sin\psi && sin\phi sin\theta sin\psi +cos\phi cos\psi&& sin\phi cos\theta\\
+        c\phi s\theta c\psi+sin\phi sin\psi && cos\phi sin\theta sin\psi -sin\phi cos\psi&& cos\phi cos\theta\\
+    \end{bmatrix}
+\end{equation}
 Treba primjetiti da rezultantna matrica $C_e^b$ može imati singularitete, pa se domen
 Euloerovih uglova ograničava na sljedeći način:
 \begin{align*}
@@ -125,11 +133,11 @@ Prema tome vrijedi da je ukupna vanjska sila koja djeluje na tijelo data sa:
 \end{equation}
 gdje je vektorrski proizvod linearne brzine i ugaone brzine dat sa:
 \begin{equation}
-    \omega \times v_m=\begin{bmatrix}
+    \omega \times v_m=\begin{vmatrix}
         i&j&k\\
         P&Q&R\\
         u&v&w\\
-    \end{bmatrix}=(wQ-vR)i+(uR-wP)j+(vP-uQ)k
+    \end{vmatrix}=(wQ-vR)i+(uR-wP)j+(vP-uQ)k
 \end{equation}
 Koristeći se činjenicom da je $v_m=ui+vj+wk$ i uvrštavanjem prethodne jednačine u \ref{eq:force} dobija se:
 \begin{equation}
@@ -166,19 +174,19 @@ ili u formi integrala:
 \end{equation}
 Sada slijedi:
 \begin{equation}
-    \omega \times r=\begin{bmatrix}
+    \omega \times r=\begin{vmatrix}
         i&j&k\\
         P&Q&R\\
         x&y&z\\
-    \end{bmatrix}=(zQ-yR)i+(xR-zP)j+(yP-xQ)k
+    \end{vmatrix}=(zQ-yR)i+(xR-zP)j+(yP-xQ)k
 \end{equation}
  i konačno:
  \begin{equation}
-    r\times (\omega \times r)=\begin{bmatrix}
+    r\times (\omega \times r)=\begin{vmatrix}
         i&j&k\\
         x&y&z\\
         zQ-yR&xR-zP&yP-xQ\\
-    \end{bmatrix}
+    \end{vmatrix}
  \end{equation}
  Sada se konačno dobija izraz za moment impulsa:
  \begin{equation}
@@ -254,23 +262,71 @@ i za projektile sa krstastom konfiguracijom vrijedi $I_y=I_z$ i $I_{xz}$. Prema 
 Transformacijom prethodnih jednačina dobija se:
 \begin{equation}
     \frac{dP}{dt}=QR\frac{I_y-I_z}{I_x}+\frac{L}{I_x}
+    \label{eq:q1}
 \end{equation}
 \begin{equation}
     \frac{dQ}{dt}=PR\frac{I_z-I_x}{I_y}+\frac{M}{I_y}
+    \label{eq:q2}
 \end{equation}
 \begin{equation}
     \frac{dR}{dt}=PQ\frac{I_x-I_y}{I_z}+\frac{N}{I_z}
+    \label{eq:q3}
 \end{equation}
 Sada je još potrebno odrediti ugaone brzine u zavisnosti od Eulerovih uglova. Izvođenje ovih jednačina zahtjeva 
 pronalaženje izvoda matrice transformacije, što je poprilično zahtjevno, pa će ovdje biit samo navedene 
 diferencijalne jednačine koje daju brzinu prmjene Eulerovih uglova:
 \begin{equation}
     \frac{d\psi}{dt}=(Q\sin\phi +R\cos\phi)/\cos\theta
+    \label{eq:w1}
 \end{equation}
 \begin{equation}
     \frac{d\theta}{dt}=Q\cos\phi-R\sin\phi
+    \label{eq:w2}
 \end{equation}
 \begin{equation}
     \frac{d\phi}{dt}=P+\left( \frac{d\psi}{dt} \right)\sin\theta
+    \label{eq:w3}
 \end{equation}
 Sada koristeći matricu transformacije $C_e^b$ se mogu dobiti komponente
+brzine u koordinatnom sistemu Zemlje:
+\begin{equation}
+    \begin{bmatrix}
+        \dot{X_z}\\
+        \dot{Y_z}\\   
+        \dot{Z_z}\\
+    \end{bmatrix}=C_e^b\begin{bmatrix}
+        u\\
+        v\\   
+        w\\
+    \end{bmatrix}
+    \label{eq:q}
+\end{equation}
+Sada je jasno da se integracijom jednačina \ref{eq:q1},\ref{eq:q2} i \ref{eq:q3} dobijaju 
+ugaone brzine u sistemu tijela, a integracijom jednačina \ref{eq:w1},\ref{eq:w2} i \ref{eq:w3}  se dobija 
+orijentacija u odnosu na zemlju. Da bi se dobila pozicija tijela u odnosu na sistem Zemlje
+treba riješiti matričnu jednačinu \ref{eq:q}. Da bi se ona mogla numerički riješiti treba 
+naći izraze za izvode brzinu u sistemu tijela. Oni se mogu dobiti iz jednačina 
+\ref{eq:r1}, \ref{eq:r2} i \ref{eq:r3}. Nakon transformacije ovih jednačina ima se:
+\begin{equation}
+    \frac{du}{dt}=vR-wQ+F_x/m
+\end{equation}
+\begin{equation}
+    \frac{dv}{dt}=wP-uR+F_y/m
+\end{equation}
+\begin{equation}
+    \frac{dw}{dt}=uQ-vR+F_z/m
+\end{equation}
+Sada se nakon rješavanja prethodne tri jendačine mogu dobiti vrijednosti brzina u sistemu tijela 
+te nakon toga može se riješiti jednačina \ref{eq:q} i tako dobiti poziciju u odnosu na sistem Zemlje.
+Prethodnih 12 jednačina se može predstaviti u prostoru stanja ako se uzme vekor varijabli stanja:
+\[\vec{X}=\left[ u \quad v\quad w\quad P\quad Q\quad R\quad \phi \quad \theta \quad
+ \psi \quad x_z\quad y_z\quad z_z\quad \right]^T\] i vektor upralvjačkih 
+promjenljivih:
+\[\vec{u}=\left[\delta_v \quad \delta_P\quad \delta_e\quad \right]^T\] 
+,gdje je $\delta_v$ ugao otklona krmila visine, $\delta_P$, ugao otklona krmila 
+ i $\delta_e$, ugao toklona elerona. Ovime se dobija nelinearna vekotrska jednačina:
+\begin{equation}
+    \vec{X}=f(\vec{X},\vec{u})
+\end{equation}
+
+
