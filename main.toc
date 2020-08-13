@@ -15,16 +15,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Aerodinamički momenti}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Uvod u proporcionalnu navigaciju}{14}%
+\contentsline {chapter}{\numberline {4}Uvod u proporcionalnu navigaciju}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Opis planarnog susreta}{14}%
+\contentsline {section}{\numberline {4.1}Opis planarnog susreta}{15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Izvođenje upravljačkog zakona}{15}%
+\contentsline {section}{\numberline {4.2}Izvođenje upravljačkog zakona}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Izmjenjena proporcionalna navigacija}{17}%
+\contentsline {section}{\numberline {4.3}Izmjenjena proporcionalna navigacija}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Optimalnost zakona proporcionalne navigacije}{17}%
+\contentsline {section}{\numberline {4.4}Optimalnost zakona proporcionalne navigacije}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Linearizacija}{18}%
+\contentsline {section}{\numberline {4.5}Linearizacija}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Zero effort miss}{19}%
+\contentsline {section}{\numberline {4.6}Zero effort miss}{20}%
