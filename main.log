@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  13 AUG 2020 00:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  17 AUG 2020 07:12
 entering extended mode
 **c:/Users/Mirza/Desktop/thesis/main.tex
 (c:/Users/Mirza/Desktop/thesis/main.tex
@@ -834,31 +834,31 @@ Package pdftex.def Info: Images/earth-body.JPG  used on input line 27.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [5
 
- <c:/Users/Mirza/Desktop/thesis/Images/body.png>]
-<Images/6dof.JPG, id=31, 535.2497pt x 475.02469pt>
+] [6 <c:/Users/Mirza/Desktop/thesis/Images/body.png> <c:/Users/Mirza/Desktop/thesis/Images/earth-body.JPG>]
+<Images/6dof.JPG, id=36, 535.2497pt x 475.02469pt>
 File: Images/6dof.JPG Graphic file (type jpg)
 <use Images/6dof.JPG>
 Package pdftex.def Info: Images/6dof.JPG  used on input line 87.
 (pdftex.def)             Requested size: 321.15228pt x 285.017pt.
- [6 <c:/Users/Mirza/Desktop/thesis/Images/earth-body.JPG>]
+
 
 LaTeX Font Warning: Command \huge invalid in math mode on input line 95.
 
 
 LaTeX Font Warning: Command \huge invalid in math mode on input line 99.
 
-
-Underfull \vbox (badness 7397) has occurred while \output is active []
-
- [7 <c:/Users/Mirza/Desktop/thesis/Images/6dof.JPG>]
+[7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [8 <c:/Users/Mirza/Desktop/thesis/Images/6dof.JPG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
+ [9] [10]
 Overfull \hbox (11.83606pt too wide) in paragraph at lines 246--253
 \OT1/cmr/m/n/12 Prethodne tri jednacine za-jedno sa jednacinama 2.12[],2.13[] i 2.14[] pred-stav-ljaju jednacine
  []
@@ -871,47 +871,78 @@ Overfull \hbox (10.15645pt too wide) in paragraph at lines 274--278
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]) [11]
+ [11]) [12]
 Poglavlje 3.
-(c:/Users\Mirza\Desktop\thesis\Chapters/Sile.tex [12
+(c:/Users\Mirza\Desktop\thesis\Chapters/Sile.tex [13
 
 ]
-<Images/angles.JPG, id=58, 432.11438pt x 292.84406pt>
+<Images/angles.JPG, id=62, 432.11438pt x 292.84406pt>
 File: Images/angles.JPG Graphic file (type jpg)
 <use Images/angles.JPG>
-Package pdftex.def Info: Images/angles.JPG  used on input line 53.
+Package pdftex.def Info: Images/angles.JPG  used on input line 58.
 (pdftex.def)             Requested size: 302.478pt x 204.98944pt.
- [13 <c:/Users/Mirza/Desktop/thesis/Images/angles.JPG>]) [14]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <c:/Users/Mirza/Desktop/thesis/Images/angles.JPG>]
+<Images/wind.JPG, id=68, 603.75563pt x 261.97874pt>
+File: Images/wind.JPG Graphic file (type jpg)
+<use Images/wind.JPG>
+Package pdftex.def Info: Images/wind.JPG  used on input line 84.
+(pdftex.def)             Requested size: 301.87708pt x 130.98904pt.
+ [15 <c:/Users/Mirza/Desktop/thesis/Images/wind.JPG>]) [16]
 Poglavlje 4.
 (c:/Users\Mirza\Desktop\thesis\Chapters/chapter02.tex
-<Images/PNfigure.JPG, id=68, 318.43968pt x 185.19188pt>
+<Images/PNfigure.JPG, id=75, 318.43968pt x 185.19188pt>
 File: Images/PNfigure.JPG Graphic file (type jpg)
 <use Images/PNfigure.JPG>
 Package pdftex.def Info: Images/PNfigure.JPG  used on input line 4.
 (pdftex.def)             Requested size: 318.4389pt x 185.1914pt.
- [15
 
- <c:/Users/Mirza/Desktop/thesis/Images/PNfigure.JPG>] [16]
-Underfull \vbox (badness 1107) has occurred while \output is active []
+Underfull \vbox (badness 1715) has occurred while \output is active []
 
- [17]
+ [17
+
+ <c:/Users/Mirza/Desktop/thesis/Images/PNfigure.JPG>] [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
 Overfull \hbox (3.31633pt too wide) in paragraph at lines 158--158
 |[]\OT1/cmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije| 
  []
 
-[18]
-<Images/linearPN.JPG, id=82, 297.36093pt x 177.66376pt>
+[20]
+<Images/linearPN.JPG, id=90, 297.36093pt x 177.66376pt>
 File: Images/linearPN.JPG Graphic file (type jpg)
 <use Images/linearPN.JPG>
 Package pdftex.def Info: Images/linearPN.JPG  used on input line 197.
 (pdftex.def)             Requested size: 297.3602pt x 177.66331pt.
- [19 <c:/Users/Mirza/Desktop/thesis/Images/linearPN.JPG>]
-<Images/homingLoop.JPG, id=87, 395.22656pt x 216.05719pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <c:/Users/Mirza/Desktop/thesis/Images/linearPN.JPG>]
+<Images/homingLoop.JPG, id=97, 395.22656pt x 216.05719pt>
 File: Images/homingLoop.JPG Graphic file (type jpg)
 <use Images/homingLoop.JPG>
-Package pdftex.def Info: Images/homingLoop.JPG  used on input line 265.
+Package pdftex.def Info: Images/homingLoop.JPG  used on input line 266.
 (pdftex.def)             Requested size: 395.22559pt x 216.05664pt.
-) [20] [21 <c:/Users/Mirza/Desktop/thesis/Images/homingLoop.JPG>] [22
+<Images/homingSimulink.JPG, id=98, 627.09282pt x 353.82187pt>
+File: Images/homingSimulink.JPG Graphic file (type jpg)
+<use Images/homingSimulink.JPG>
+Package pdftex.def Info: Images/homingSimulink.JPG  used on input line 280.
+(pdftex.def)             Requested size: 376.25859pt x 212.29475pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [23] [24 <c:/Users/Mirza/Desktop/thesis/Images/homingLoop.JPG> <c:/Users/Mirza/Desktop/thesis/Images/homingSimulink.JPG>] [25
 
 ] (c:/Users\Mirza\Desktop\thesis\main.aux)
 
@@ -926,17 +957,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23173 strings out of 480797
- 450120 string characters out of 2905362
- 1183066 words of memory out of 3000000
- 38783 multiletter control sequences out of 15000+200000
+ 23186 strings out of 480797
+ 450380 string characters out of 2905362
+ 1181064 words of memory out of 3000000
+ 38794 multiletter control sequences out of 15000+200000
  538551 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,15n,75p,864b,1704s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Mirza\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (22 pages, 397054 bytes).
+Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (25 pages, 478254 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
+ 154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

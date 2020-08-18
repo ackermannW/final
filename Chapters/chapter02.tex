@@ -259,10 +259,25 @@ kvadratu preostalom vremenu leta, što znači da se generiše veće ubrzanje št
 Pošto se $ZEM$ posmatra kao buduća tačka susreta, koja se računa na osnovu znanja ili pretpostavki 
 budučeg kretanja mete, PN vođenje se smatra prediktivnim. $ZEM$ je koristan jer se može izračunati 
 mnoštvom metoda uključujući i on-line numeričku integraciju nelinearnih diferencijalnih jednačina projektila 
-i mete. 
+i mete. Pretohdno izvedene linaerizovane jednačine proporcionalne navigacije se mogu 
+prikazati blok dijagramom kao na slici \ref{fig:homing}.
 \begin{figure}[htp]
     \centering
     \includegraphics{homingLoop.JPG}
+    \caption{Petlja navođenja}
     \label{fig:homing}
 \end{figure}
+Ulaz sistema je ubrzanje mete, a u 
+povratnoj sprezi se nalazi upralvjački zakon. Pretpostavlja se da je model trekera idealni diferencijator i sistem 
+za navođenje ne uvodi nikakvo kašnjenje. U stvarnosti, sistem za navođenje se modelira prenosnom 
+funkcijom prvog reda, tj:
+\begin{equation}
+    \frac{n_L}{n_c}=\frac{1}{1+sT}
+\end{equation}
+,gdje je $n_L$ ostvareno ubrzanje projektila, a $n_c$ zahtjevano ubrzanje projektila.
 
+\begin{figure}[h!]
+    \includegraphics[scale = 0.6]{homingSimulink.JPG}
+    \caption{Proporcionalana navigacija u Simulinku}
+\end{figure}
+    

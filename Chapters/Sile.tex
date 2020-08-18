@@ -16,11 +16,11 @@ Aerodinamička sila se može razložiti na tri komponente koje su definisane u n
 Ovdje se posmatraju projektili koji se zakreću da bi skrenuli(skid to turn) i 
 kod takvih projektila aerodinamičke sile su date sa:
 \begin{equation}
-   \text{Uzgon} \quad R_x=C_xqS
+   \text{Otpor} \quad R_x=C_xqS
    \label{eq:a1}
 \end{equation}
 \begin{equation}
-    \text{Otpor} \quad R_z=C_zqS
+    \text{Uzgon} \quad R_z=C_zqS
     \label{eq:a2}
 \end{equation}
 \begin{equation}
@@ -31,6 +31,11 @@ kod takvih projektila aerodinamičke sile su date sa:
 u tački daleko od objekta i iznosi $q=\frac{1}{2}\rho v^2$, $S$ je referentna površina i 
 $v$ je brzina vazduha, $\rho$ predstavlja atmosferski pritisak.
 \\
+Treba napomenuti da se aerodinamičke sile i momenti izražavaju bezdimenzionalnim veličinama. 
+To se postiže tako što se dogovorom utvrdi da se sila(ili moment) predstavlja svojim odgovarajućim 
+aerodinamičkim koeficijentom. Prema tome, $C_x$ potpuno određuje silu otpora i slično vrijedi i 
+za ostale koeficijente. \\
+
 U opštem slučaju koeficijenti aerodinamičkih sila su funkcije varijabli stanja pa se može
 napisati:
 \begin{equation}
@@ -61,22 +66,42 @@ aerodinamičkih koeficijenata:
     C_{x_\beta^2}\beta^2+C_{x_\alpha \beta}|\alpha||\beta|
 \end{equation}
 \begin{equation}
-    C_z=C_{z_0}+C_{z_\alpha}|\alpha|+C_{z_\alpha^2}\alpha^2+C_{z_\beta}|\beta|+
-    C_{z_\beta^2}\beta^2+C_{z_\alpha \beta}|\alpha||\beta|
+   C_z=C_{z_0}+C_z^{\alpha}{\alpha} + C_z^{\dot{\alpha}} \dot{\alpha}+C_z^q q+C_z^{\delta _v}{\delta _v}
 \end{equation}
 \begin{equation}
-    C_y=C_{y_0}+C_{y_\alpha}|\alpha|+C_{y_\alpha^2}\alpha^2+C_{y_\beta}|\beta|+
-    C_{y_\beta^2}\beta^2+C_{y_\alpha \beta}|\alpha||\beta|
+    C_y=C_{y_0}+C_y^{\alpha}{\alpha} + C_y^{\dot{\alpha}} \dot{\alpha}+C_y^q q+C_y^{\delta _v}{\delta _v}
 \end{equation}
-U datom slučaju aerodinamički koeficijenti imaju jednostavnijij oblik
+U datom slučaju aerodinamički koeficijent otpora imaju jednostavniji oblik
 \begin{equation}
     C_x=C_{x_0} + C_{x_1}\alpha
 \end{equation}
-\begin{equation}
-    C_z=C_{z_0} + C_{z_1}\alpha
-\end{equation}
 ,gdje je $C_{x_0}=\frac{\partial c_x}{\partial \alpha}|_{\alpha=0}$, $C_{x_1}=\frac{\partial c_x}{\partial \alpha}$ 
-i slično tako za ostale izvode. Sada se vraćanjem u \ref{eq:a1},\ref{eq:a2} i \ref{eq:a3} mogu odrediti 
+i slično tako za ostale izvode.\\
+Također je važno istaći da su ovi koeficijenti(tj. sile) izražene u \textit{kooridnatnom sistemu vjetra} 
+relativnom toku vazduha. Koordinatni sistem vazduha je prikazan na slici \ref{fig:wind}. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{wind.JPG}
+    \caption{Veza između sistema tijela i sistema vjetra}
+    \label{fig:wind}
+\end{figure}
+Pošto su jednačinama kretanja tijela sile izražene sistemu tijela, potrebno
+je imati transformaciju koja transformiše aerodinamičke sile u sistem tijela i njihova veza je data sa:
+\begin{equation}
+    \begin{bmatrix}
+        C_{x_b}\\
+        C_{y_b}\\
+        C_{z_b}\\
+    \end{bmatrix}=\begin{bmatrix}
+        \cos\alpha && -\cos\alpha && \sin\alpha\\
+        \sin\beta &&\cos\beta && 0\\
+        \sin\alpha\cos\beta && -\sin\alpha\sin\beta && \cos\alpha\\
+    \end{bmatrix}\begin{bmatrix}
+        -C_x\\
+        C_y\\
+        -C_z\\
+    \end{bmatrix}
+\end{equation} Sada se vraćanjem u \ref{eq:a1},\ref{eq:a2} i \ref{eq:a3} mogu odrediti 
 aerodinamičke sile koje djeluju na projektil. 
 \section{Aerodinamički momenti}
 Momenti se mogu podjeliti na momente koji su posljedica aerodinamičkog tereta i 
@@ -110,3 +135,14 @@ Kvantitativno, momenti su dati sa:
  \end{equation}
  ,gdje je $b$ raspon krila, $c$ je razmak između početne i krajnje ivice krila mjerene 
  u smjeru paralelnom toku vazduha, $S$ je površina platforme krila. 
+ Isto kao i kod slučaja sa silama, koeficijenti momenata također zavise od više promjenjivljih 
+ i potrebno ih je linearizirati. \\
+ Linearizirani koeficijenti momenta su:
+ \begin{equation}
+     C_m=C_m^{\alpha}\alpha +C_m^{\dot{\alpha}}\dot{\alpha } + C_m^q q+C_m^{\delta _v}\delta _v
+ \end{equation} 
+ ,i koeficijent momenta valjanja:
+ \begin{equation}
+     C_L = C_l^PP+C_l^QQ+C_l^RR +C_l^\alpha \alpha +C_l^\beta \beta + C_l^{\delta _e} \delta _e +C_l^{\delta _v} \delta _v
+     +C_l^{\delta _P} \delta _P
+ \end{equation}
