@@ -232,7 +232,7 @@ Linearizirani promašaj se definisše kao udaljenost mete i projektila na kraju 
 \begin{equation}
     Miss=y(t_f)
 \end{equation}
-\section{Zero effort miss}
+\section{Petlja navođenja i zero effort miss}
 Ranije je pokazano da vrijedi:
 \begin{equation}
     \dot{\lambda}(t)=\frac{\dot{y}(t)r(t)+y(t)v_{cl}}{r^2}
@@ -261,12 +261,12 @@ budučeg kretanja mete, PN vođenje se smatra prediktivnim. $ZEM$ je koristan je
 mnoštvom metoda uključujući i on-line numeričku integraciju nelinearnih diferencijalnih jednačina projektila 
 i mete. Pretohdno izvedene linaerizovane jednačine proporcionalne navigacije se mogu 
 prikazati blok dijagramom kao na slici \ref{fig:homing}.
-\begin{figure}[htp]
-    \centering
-    \includegraphics{homingLoop.JPG}
-    \caption{Petlja navođenja}
-    \label{fig:homing}
-\end{figure}
+%\begin{figure}[htp]
+ %   \centering
+ %   \includegraphics{homingLoop.JPG}
+ %   \caption{Petlja navođenja}
+ %   \label{fig:homing}
+%\end{figure}
 Ulaz sistema je ubrzanje mete, a u 
 povratnoj sprezi se nalazi upralvjački zakon. Pretpostavlja se da je model trekera idealni diferencijator i sistem 
 za navođenje ne uvodi nikakvo kašnjenje. U stvarnosti, sistem za navođenje se modelira prenosnom 
@@ -275,9 +275,29 @@ funkcijom prvog reda, tj:
     \frac{n_L}{n_c}=\frac{1}{1+sT}
 \end{equation}
 ,gdje je $n_L$ ostvareno ubrzanje projektila, a $n_c$ zahtjevano ubrzanje projektila.
-
 \begin{figure}[h!]
     \includegraphics[scale = 0.6]{homingSimulink.JPG}
     \caption{Proporcionalana navigacija u Simulinku}
+    \label{fig:simProp}
 \end{figure}
-    
+Koristeći Simulink dijagram sa slike \ref{fig:simProp} izvršene su simulacije za $N=4$ i $N=5$
+pri ubrzanju mete od $3g$. Ubrzanja projektila su prikazana na grafu \ref{fig:propAcc}.
+\begin{figure}[htp!]
+    \centering
+    \includegraphics[scale = 0.5]{propAccPlot.eps}
+    \includegraphics[scale = 0.5]{missProp.eps}
+    \caption{Ubrzanja projektila i promašaj za $N=4$ i $N=5$}
+    \label{fig:propAcc}
+\end{figure}
+Vidi se da veći efektivni navigacijski odnos zahtjeva manje ubrzanje projektila pa su time 
+smanjeni i zahtjevi za performanasam projektila, međutim veći efektivni navigacijski odnos 
+daje manji promašaj što se vidi na grafiku za promašaj na slici \ref{fig:propAcc}. 
+U oba slučaja ostvaren je sudar unutar deset sekundi. 
+\section{Adjungovani sistem i petlja navođenja}
+Direktna simulacija lineariziranih jednačina proporcionalne navigacije se uvijek može
+koristiti za generisanje upravljačkog signala(tj. normalnog ubrzanja) projektila
+ali je tehnika nazvana \textit{adjungovana tehnika} historijski bila glavni računarski 
+alat za dizajn i analizu vođenih projektila. Adjungovana tehnika je zasnovana 
+na impulsnom odzivu sistema i koristi se  za analizu LTI sistema kao što je 
+petlja navođenja projektila. Koristeći ovu tehniku mogu se dobiti tačne vrijednosti 
+bilo koje veličine u datom trenutku  
