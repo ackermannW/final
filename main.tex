@@ -11,6 +11,11 @@
 \usepackage{tcolorbox}
 \usepackage{draftwatermark}
 \usepackage{amsmath,tabstackengine}
+\usepackage[section]{placeins}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usetikzlibrary{shapes,arrows,positioning,calc}
+
 
 \pagestyle{fancy}
 \fancyhead{}
@@ -44,7 +49,15 @@
 \newcommand{\hsp}{\hspace{20pt}}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{}{0pt}{\Huge\bfseries}
 \begin{document}
-
+\tikzset{
+block/.style = {draw, fill=white, rectangle, minimum height=3em, minimum width=3em},
+tmp/.style  = {coordinate}, 
+sum/.style= {draw, fill=white, circle, node distance=1cm},
+input/.style = {coordinate},
+output/.style= {coordinate},
+pinstyle/.style = {pin edge={to-,thin,black}
+}
+}
 \input{title}
 
 %\chapter*{Dedication}
@@ -73,8 +86,6 @@
 
 \chapter{Uvod u proporcionalnu navigaciju}
 \input{Chapters/chapter02.tex}
-
-
 
 \nocite{*}
 \printbibliography

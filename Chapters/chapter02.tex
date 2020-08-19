@@ -261,12 +261,39 @@ budučeg kretanja mete, PN vođenje se smatra prediktivnim. $ZEM$ je koristan je
 mnoštvom metoda uključujući i on-line numeričku integraciju nelinearnih diferencijalnih jednačina projektila 
 i mete. Pretohdno izvedene linaerizovane jednačine proporcionalne navigacije se mogu 
 prikazati blok dijagramom kao na slici \ref{fig:homing}.
-%\begin{figure}[htp]
- %   \centering
- %   \includegraphics{homingLoop.JPG}
- %   \caption{Petlja navođenja}
- %   \label{fig:homing}
-%\end{figure}
+\begin{figure}[htp]
+    \centering
+    \begin{tikzpicture}[auto, node distance=2cm]
+        \node[input, name = nt] (nt){$n_T$};
+        \node[sum, right of = nt, node distance=1cm](sum){};
+        \node[block, right of = sum] (int2){$\frac{1}{s^2}$};
+        \node[block, right of = int2] (div) {$\frac{1}{v_{cl}(t_f-t)}$};
+        \node[block, right of=div](seeker){$s$};
+        \node[block, below of = div](law){$Nv_{cl}$};
+        \node[block, left of = law](dyn){$\frac{1}{1+T_ms}$};
+        \node [output, right of=seeker, node distance=1cm] (output) {};
+        \node (a) at ($(int2)!0.5!(div)$){};
+        \node (miss) at ($(a) -(0, 0.145cm) $){};
+        \node[above of = miss, node distance=1.5cm] (missArr){Promašaj};
+        \draw[->] (miss)--(missArr);
+        \node at (nt) [anchor = south ](){$n_T$};
+        \node[left of = dyn, node distance = 1cm, anchor = south] () {$n_L$};
+        \node[anchor = south] () at ($(dyn)!0.5!(law)$) {$n_C$};
+        \node[right of = seeker,anchor = south, node distance = 1 cm] () {$\dot{\lambda}$}; 
+        \draw[->](nt)--node[pos=0.95] {$+$}(sum);
+        \draw[->](sum)--(int2);
+        \draw[->](int2)--(div);
+        \draw[->](div)--(seeker);
+        \draw[->](output)|-(law);
+        \draw[->](law)--(dyn);
+        \draw [-] (seeker) -- node [name=y] {}(output);
+        
+        \draw[->](dyn)-|node[pos=0.99] {$-$}(sum);
+        
+        \end{tikzpicture}
+    \caption{Petlja navođenja}
+    \label{fig:homing}
+\end{figure}
 Ulaz sistema je ubrzanje mete, a u 
 povratnoj sprezi se nalazi upralvjački zakon. Pretpostavlja se da je model trekera idealni diferencijator i sistem 
 za navođenje ne uvodi nikakvo kašnjenje. U stvarnosti, sistem za navođenje se modelira prenosnom 
@@ -300,4 +327,44 @@ ali je tehnika nazvana \textit{adjungovana tehnika} historijski bila glavni rač
 alat za dizajn i analizu vođenih projektila. Adjungovana tehnika je zasnovana 
 na impulsnom odzivu sistema i koristi se  za analizu LTI sistema kao što je 
 petlja navođenja projektila. Koristeći ovu tehniku mogu se dobiti tačne vrijednosti 
-bilo koje veličine u datom trenutku  
+bilo koje veličine u datom trenutku.\\
+Konstrukcija adjungovanog modela se vrši prema naredna tri koraka:
+\begin{enumerate}
+    \item Pretvoriti sve ulaze sistema u impulse
+    \item Zamjeniti $t$ sa $t_f-t$ i obratno na mjestima gdje se vrijeme pojavljuje kao argument
+    \item Promjeniti smjer toka svih signala, mjenjajući sume sa čvorovima i obratno
+\end{enumerate}
+Koristeći navedena pravila dobija se adjungovana petlja navođenja prikazana na slici \ref{fig:adjHoming}.
+\begin{figure}[h!]
+    \centering
+    \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+        \node[block] (nt) {$n_T$};
+        \node[block, right of = nt](int1){$\frac{1}{s}$};
+        
+        \node[right of = int1] (center){};
+        \node[block, right of = center](int2){$\frac{1}{s^2}$};
+        \node[sum, right of = int2, node distance = 2cm](sum){+};
+        \node[block, right of = sum](div){$\frac{1}{v_{cl}t}$};
+        \node[block, below of = int2](law){$-\frac{N'v_{cl}s}{1+sT_m}$};
+        \node[name = delta, above of = sum, node distance = 1.5cm](delta){$\delta(t)$};
+        \node[left of = nt](out){Promašaj};
+        \node[below of = out, node distance=0.3cm](out2){usljed};
+        \node[below of = out2, node distance=0.3cm](){manevra mete};
+        
+        \node[right of = div](a){};
+        
+        \draw[->](delta)--(sum);
+        \draw[->](sum)--(int2);
+        \draw[->](int1)--(nt);
+        \draw[->](div)--(sum);
+        \draw[->](int2)--(int1);
+        \draw[->](center.south)-- ++(0,0.13)|-(law);
+        \draw[-](law)-|(a.east) -- ++(0,0.0215);
+        \draw[->](a.east)-- ++(0.0215,0)--(div);
+        \draw[->](nt)--(out);
+        \end{tikzpicture}
+    \caption{Adjungovana petlja navođenja}
+    \label{fig:adjHoming}
+\end{figure}
+
+
