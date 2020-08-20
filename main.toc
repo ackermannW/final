@@ -30,3 +30,5 @@
 \contentsline {section}{\numberline {4.6}Petlja navođenja i zero effort miss}{23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.7}Adjungovani sistem i petlja navođenja}{25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.8}Adjungovani stohastički sistemi}{27}%

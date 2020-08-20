@@ -338,7 +338,7 @@ se primjeni na sistem u trenutku $\tau$. Prema tome određivanje odziva sistema 
 formu impulsnog odziva. Svaki linearni sistem ima i svoj adjungovani sistem i veza između impulsnog 
 odziva linearnog sistema i njegovog adjungovanog sistema je data sa:
 \begin{equation}
-    h*(t_f-\tau,t_f-t)=h(t,\tau)
+    h^*(t_f-\tau,t_f-t)=h(t,\tau)
 \end{equation}
 Ako se uzme da je ulaz sistema Heavysideov impuls, tada je odziv sistema dat sa:
 \begin{equation}
@@ -361,7 +361,10 @@ Konstrukcija adjungovanog modela se vrši prema naredna tri koraka:
     \item Zamjeniti $t$ sa $t_f-t$ i obratno na mjestima gdje se vrijeme pojavljuje kao argument
     \item Promjeniti smjer toka svih signala, mjenjajući sume sa čvorovima i obratno
 \end{enumerate}
-Koristeći navedena pravila dobija se adjungovana petlja navođenja prikazana na slici \ref{fig:adjHoming}.
+Koristeći navedena pravila dobija se adjungovana petlja navođenja prikazana na slici \ref{fig:adjHoming}, s tim 
+da je kao smetnja u sistem dodata još i početna greška nišanjenja data sa $v_Me_q$ ,za $v_M=610\frac{m}{s}$ i $e_q=20\deg$.
+Sada je moguće dobiti promašaj usljed manevra mete i promašaj usljed početne greške nišanjenja sve u jednoj 
+simulaciji!
 \begin{figure}[h!]
     \centering
     \begin{tikzpicture}[auto, node distance=2cm,>=latex']
@@ -378,7 +381,15 @@ Koristeći navedena pravila dobija se adjungovana petlja navođenja prikazana na
         \node[below of = out, node distance=0.3cm](out2){usljed};
         \node[below of = out2, node distance=0.3cm](){manevra mete};
         \node[right of = div](a){};
-        
+        \node at (center) [anchor = south west]{$\dot{x}_1$};
+        \node[block, above of = center,node distance = 1.5cm](head){$-v_Me_q$};
+        \node[above of = head, node distance = 1.5cm](m){};
+        \node[right of = m, node distance =1cm](q){Promašaj};
+        \node[below of = q, node distance = 0.3cm](w){usljed};
+        \node[below of = w, node distance = 0.3cm](e){greške};
+        \node[right of =e , node distance = 1.5cm](){nišanjenja};
+        \draw[->](head)--(m);
+        \draw[->](center.south)-- ++(0,0.1)--(head);
         \draw[->](delta)--(sum);
         \draw[->](sum)--(int2);
         \draw[->](int1)--(nt);
@@ -392,5 +403,151 @@ Koristeći navedena pravila dobija se adjungovana petlja navođenja prikazana na
     \caption{Adjungovana petlja navođenja}
     \label{fig:adjHoming}
 \end{figure}
+Jedinični impuls se može predstaviti kao početni uslov kod prvog integratora. Na slici \ref{fig:simAdj} 
+je predstavljen Simulink dijagram adjungovanog sistema.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale= 0.7]{simAdj.JPG}
+    \caption{Simulink dijagram adjungovanog sistema}
+    \label{fig:simAdj}
+\end{figure}
+Simulacija za date vrijednosti daje promašaj usljed početne greške nišanjenja i 
+promašaj usljed konstantnog manevra mete i oni su prikazani na slici \ref{fig:adjDet}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{missAdjDet.eps}
+    \includegraphics[scale=0.5]{missHead.eps}
+    \caption{Odzivi adjungovanog sistema}
+    \label{fig:adjDet}
+\end{figure}
+\section{Adjungovani stohastički sistemi}
+Pored mnoštva informacija koje adjungovani sistem daje pri analizi determinističkih 
+sistema, adjugnovana tehnika je dosta korisna pri analizi stohastičkih sistema što je 
+naročito korisno pri analizi petlje navođenja jer su manevri mete u stvarnosti stohastički. 
+Prije nego se prikaže upotreba adjungovane tehnike na petlji navođenja sa stohastičkim 
+ulazima, potrebno je se prisjetiti nekoliko važnih definicija.\\
+Očekivana vrijednost slučajne promjenljive $x$ čija funkcija gustoće vjerovatnoće $p(x)$ je definisana sa:
+\begin{equation}
+    E(x)=\int_{-\infty}^{\infty}xp(x)dx
+\end{equation}
+Standardna devijacija je data sa:
+\begin{equation}
+    \sigma = \sqrt{E(x^2)-E^2(x)}
+\end{equation}
+Autokorelaciona funkcija je data sa>
+\begin{equation}
+    \phi_{xx}(t_1,t_2)=E[x(t_1)x(t_2)]
+\end{equation}
+Autokorelaciona funkcija predstavlja sličnost dvaju identičnih funkcija 
+pri čemu su one smaknute za neki vremenski interval.
+Fourieova transformacija autokorelacione funkcije se zove \textit{spektralna 
+gustoća snage} i data je sa:
+\begin{equation}
+    \Phi_{xx}=\int_{-\infty}^{\infty}\phi_{xx}(\tau)e^{-j\omega\tau}d\tau
+\end{equation}
+Kod bijelog šuma spektralna gustoća snage je konstanta tj.
+\begin{equation}
+    \Phi_{xx}=\phi_{0}
+\end{equation}
+Autokorelaciona funkcija bijelog šuma je delta impuls tj. 
+\begin{equation}
+    \phi_{xx}=\Phi_{0}\delta(t)
+\end{equation}
+Ovo znači da je bijeli šum samo u jednoj tački identičan samom sebi. 
+Kod stohastičkih sistema, izlaz je opisan očekivanom vrijednosšću kvadrata izlaza. 
+Prema tome, ako su ulazi tipa bijelog šuma tada vrijedi:
+\begin{equation}
+    y^2(t)=\int_{-\infty}^tx(\tau_1)h(t,\tau_1)d\tau_1\int_{-\infty}^tx(\tau_2)h(t,\tau_2)d\tau_2
+\end{equation}
+Ako je $x(t)$ slučajna promjenljiva, može se naći i očekvana vrijednost kvadrata izlaza:
+\begin{equation}
+    E[y^2(t)]=\int_{-\infty}^t\int_{-\infty}^th(t,\tau_1)h(t,\tau_2)E[x(\tau_1)x(\tau_2)]d\tau_1d\tau_2
+\end{equation}
+Ako je ulaz $x(t)$ tipa bijelog šuma spektralne gustoće snage $\Phi$, tada se prethodni 
+dovjni integral može pojednostaviti zbog impuslne prirode autokorelacione funkcije 
+bijelog šuma, pa vrijedi:
+\begin{equation}
+    E[y^2(t)]=\Phi \int_{-\infty}^t h^2(t,\tau)d\tau
+\end{equation}
+Sada se prisjetimo da je impulsni odziv adjungovanog sistema $h^*(t_f-\tau,t_f-t)=h(t,\tau)$
+ i nakon uvođenja smjene $x=t_f-\tau$, dobija se:
+\begin{equation}
+    E[y^2(t)]=\Phi\int_{t_f-t}^{t_f}[h^*(x,t_f-t)]^2dx
+\end{equation}
+Pošto je u interesu promašaj na kraju leta, to je:
+\begin{equation}
+    E[y^2(t_f)]=\Phi\int_{0}^{t_f}[h^*(x,0)]^2dx
+\end{equation}
+Sada se vidi da se očekivana vrijednost kvadrata izlaza može dobiti tako što se 
+kvadrira i integrira izlaz stohstičkog sistema i to sve u toku samo jedne simulacije. 
+Prednost adjungovane metode postaje veća kada se uzme u obzir da na stohastički sistem 
+može djelovati više slučajnih ulaza. Kod adjungovane metode, ulazi postaju izlazi pa se 
+superpozicijom pri samo jednoj simulaciji može dobiti tačna statisička analiza stohastičkog sistema i 
+analiza utjecaja svakog ulaza(tipa bijelog šuma) na performanse sistema. \\
+Sada pretpostavimo da meta izvodi manevar konstantnog normalnog ubrazanja i da ga 
+počinje izvoditi u trenutku $T$ koji je dat uniformnom raspodjelom i to tako da vrijedi:
+\begin{equation}
+    p(t)=
+    \begin{cases}
+        \frac{1}{t_f}, \quad za 0\leq t\leq t_f\\
+        0 \qquad za t\geq T\\
+    \end{cases}
+\end{equation}
+Prema tome ulaz u petlju vođenja je dat sa:
+\begin{equation}
+    x(t)=n_Tu(t-T)
+\end{equation}
+Ovo znači da je vjerovatnoća pojave manevra jednako vjerovatno u toku cijelog leta. 
+Prema tome, autokorelaciona funkcija ulaza u petlju vođenja je:
+\begin{equation}
+    \phi_{xx}(t_1,t_2)=\int_{-\infty}^{\infty}x(t_1)x(t_1)p(T)dT
+\end{equation}
+pa se dobija:
+\begin{equation}
+    \phi_{xx}(t_1,t_2)=\int_{0}^{t_f}n_T(t_1-T)n_T(t_2-T)\frac{dT}{t_f}
+\end{equation}
+Ako se pretpostavi da je $0<t_1<t_2<t_f$, dobija se autokorelacione funkcija ulaza:
+\begin{equation}
+    \phi_{xx}(t_1,t_2)=\frac{n_T^2}{t_f}\int_{0}{t_1}dT
+    \label{eq:autoCorrxx}
+\end{equation}
+Autokorelaciona funkcija sistema sa impulsnim odzivom $h(t)$ koji je vođen bijelim 
+šumom se može izraziti kao:
+\begin{equation}
+    \phi_yy(t_1,t_2)=\int_{-\infty}^{t_1}h(t_1-\tau)\int_{-\infty}^{t_2}h(t_2-\tau)\phi_{uu}(\tau_1,\tau_2)d\tau_1d\tau_2
+\end{equation}
+Gdje je $\phi_{uu}(t_1,t_2)= \Phi_u\delta(\tau_1-\tau_2)$, autokorealciona funkcija bijelog šuma
+i $\Phi_u$ je spektralna gustoće snage i pretpostavlja se da je ona konstantna za cijelo vrijeme leta tj. da vrijedi:
+\begin{equation}
+    \Phi_u(t) = \begin{cases}
+        \Phi_u, \quad 0 \leq t \leq t_f \\
+        0, \quad \text{inače} 
+    \end{cases}
+\end{equation}
+Pa se dobija:
+\begin{equation}
+    \phi_yy(t_1,t_2) = \Phi_u\int_0^{t_1}h(t_1-\tau)h(t_2-\tau)d\tau1
+\end{equation}
+Sada poredeći prethodnu jednačinu sa \ref{eq:autoCorrxx} zaključuje se da 
+su dvije autokorelacione funkcije iste ako je: 
+\begin{eqnarray}
+    \Phi_u =\frac{n_T^2}{t_f} \\
+    h(t)=1
+\end{eqnarray}
+Sada se vidi da je manevar konstante amplitude $n_T$, kod koga je vrijeme 
+početka djelovanja uniformno raspoređeno u toku vremena leta $t_f$ ima istu 
+autokorelacionu funkciju kao i linearni sistem sa prenosnom funkcijom $H(s)=\frac{1}{s}$ 
+na koji djeluje bijeli šum spektralne gustoće snage dat sa: 
+\begin{equation*}
+    \Phi_u(t) = \begin{cases}
+        \Phi_u, \quad 0 \leq t \leq t_f \\
+        0, \quad \text{inače}
+    \end{cases}
+\end{equation*}
+Sada će se prikazati primjena adjungovane tehnike na sthastički sistem. Važe ista pravila 
+za kreiranje adjungovanog sitema kao i ranije sa jednim dodatnim pravilom da se 
+svi stohastički ulazi se moraju modelirati kao bijeli šum koji na kraju postaju 
+izlazi adjungovanog sistema. 
+
 
 
