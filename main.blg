@@ -1,0 +1,16 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[74] biber-MSWIN64:322> INFO - === 
+[93] Biber.pm:415> INFO - Reading 'main.bcf'
+[201] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[218] Biber.pm:4256> INFO - Processing section 0
+[219] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[244] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[260] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[269] bibtex.pm:1653> INFO - LaTeX decoding ...
+[281] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[333] UCollate.pm:68> INFO - Overriding locale 'hr-HR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[333] UCollate.pm:68> INFO - Overriding locale 'hr-HR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[333] Biber.pm:4084> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'hr-HR'
+[339] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[341] bbl.pm:755> INFO - Output to main.bbl
