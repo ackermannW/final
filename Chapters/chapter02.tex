@@ -328,6 +328,33 @@ alat za dizajn i analizu vođenih projektila. Adjungovana tehnika je zasnovana
 na impulsnom odzivu sistema i koristi se  za analizu LTI sistema kao što je 
 petlja navođenja projektila. Koristeći ovu tehniku mogu se dobiti tačne vrijednosti 
 bilo koje veličine u datom trenutku.\\
+Poznato je da je odziv sistema na prooizvoljni ulaz potpuno određen impulsnim odzivom sistema, pa 
+tj. vrijedi da je odziv linearnog sistema dat sa:
+\begin{equation}
+    y(t)=\int_o^tu(\tau)h(t,\tau)d\tau
+\end{equation}
+Fizikalno, impuslni odziv $h(t-\tau)$ predstavlja odziv sistema na impulsnu pobudu koja 
+se primjeni na sistem u trenutku $\tau$. Prema tome određivanje odziva sistema zahtjeva analitičku 
+formu impulsnog odziva. Svaki linearni sistem ima i svoj adjungovani sistem i veza između impulsnog 
+odziva linearnog sistema i njegovog adjungovanog sistema je data sa:
+\begin{equation}
+    h*(t_f-\tau,t_f-t)=h(t,\tau)
+\end{equation}
+Ako se uzme da je ulaz sistema Heavysideov impuls, tada je odziv sistema dat sa:
+\begin{equation}
+    y(t)=a\int_0^t h*(t_f-\tau,t_f-t)d\tau
+\end{equation}
+,nakon uvođenja smjene $x=t_f-\tau$, dobija se:
+\begin{equation}
+    y(t)=a\int_{t_f-t}^{t_f}h*(x,t_f-t)dx
+\end{equation}
+Pošto je veličina od interesa promašaj na kraju leta uzima se $t_f=t$, pa prethodna relacija
+postaje:
+\begin{equation}
+    y(t_f)=a\int_{0}^{t_f}h*(x,0)dx
+\end{equation}
+Vidi se da se integracija vrši po posmatranom vremenu i da ne zavisi od trenutka primjene impulsa na adjunogvani sistem. 
+Ovo znači da se izlaz u trenutku $t_f$ može dobiti primjenjujući impuls u početnom trenutku, te zatim integrišući ulaz. 
 Konstrukcija adjungovanog modela se vrši prema naredna tri koraka:
 \begin{enumerate}
     \item Pretvoriti sve ulaze sistema u impulse
@@ -350,7 +377,6 @@ Koristeći navedena pravila dobija se adjungovana petlja navođenja prikazana na
         \node[left of = nt](out){Promašaj};
         \node[below of = out, node distance=0.3cm](out2){usljed};
         \node[below of = out2, node distance=0.3cm](){manevra mete};
-        
         \node[right of = div](a){};
         
         \draw[->](delta)--(sum);
