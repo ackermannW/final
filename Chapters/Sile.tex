@@ -17,15 +17,15 @@ Ovdje se posmatraju projektili koji se zakreću da bi skrenuli(skid to turn) i
 kod takvih projektila aerodinamičke sile su date sa:
 \begin{equation}
    \text{Otpor} \quad R_x=C_xqS
-   \label{eq:a1}
+   \label{eq:aa1}
 \end{equation}
 \begin{equation}
     \text{Uzgon} \quad R_z=C_zqS
-    \label{eq:a2}
+    \label{eq:aa2}
 \end{equation}
 \begin{equation}
     \text{Bočna sila} \quad R_y=C_yqS
-    \label{eq:a3}
+    \label{eq:aa3}
 \end{equation}
 ,gdje su $C_x,C_y$ i $C_z$ aerodinamički koeficijenti, $q$ dinamički pritisak slobodnog strujanaja
 u tački daleko od objekta i iznosi $q=\frac{1}{2}\rho v^2$, $S$ je referentna površina i 
@@ -53,7 +53,7 @@ Uglovi $\alpha, \beta$ i $\gamma$ su prikazani na slici \ref{fig:angles} i defin
 \begin{equation}
     \beta=\arcsin(v/v_m)
 \end{equation}
-\begin{figure}[h!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.7]{angles.JPG}
     \caption{Ugaone veze}
@@ -79,7 +79,7 @@ U datom slučaju aerodinamički koeficijent otpora imaju jednostavniji oblik
 i slično tako za ostale izvode.\\
 Također je važno istaći da su ovi koeficijenti(tj. sile) izražene u \textit{kooridnatnom sistemu vjetra} 
 relativnom toku vazduha. Koordinatni sistem vazduha je prikazan na slici \ref{fig:wind}. 
-\begin{figure}[h!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[scale=0.5]{wind.JPG}
     \caption{Veza između sistema tijela i sistema vjetra}
@@ -101,7 +101,7 @@ je imati transformaciju koja transformiše aerodinamičke sile u sistem tijela i
         C_y\\
         -C_z\\
     \end{bmatrix}
-\end{equation} Sada se vraćanjem u \ref{eq:a1},\ref{eq:a2} i \ref{eq:a3} mogu odrediti 
+\end{equation} Sada se vraćanjem u \ref{eq:aa1},\ref{eq:aa2} i \ref{eq:aa3} mogu odrediti 
 aerodinamičke sile koje djeluju na projektil. 
 \section{Aerodinamički momenti}
 Momenti se mogu podjeliti na momente koji su posljedica aerodinamičkog tereta i 

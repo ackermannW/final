@@ -1,5 +1,5 @@
 \section{Opis planarnog susreta}
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics{PNfigure.JPG}
 \end{figure}
@@ -108,7 +108,6 @@ Neka je $x_1(t)=\lambda$ i $x_2(t)=\dot{\lambda}$. Tada je susret projektila i m
 \end{equation}
 ,gdje je uzeto $u=a_M(t)$ i vanjska smetnja $f=a_T(t)$.
 Prvo posmatrajmo slučaj kada meta ne ubrzava, tj. kada je $f=0$. Sada se problem proporcionalne navigacije može predstaviti kao:
-%\subsection{SubSection Title}
 \begin{tcolorbox}
     Pronaći upravljački signal $u$ tako da je sistem opisan jednačinama \ref{eq:1} i \ref{eq:2} asimptotski stabilan u odnosu na $x_2$
 \end{tcolorbox}
@@ -192,9 +191,34 @@ Ovo znači da pod uvedenim pretpostavkama, proporcionalna navigacija minimizira 
 $J$ i izbor efektivnog navigacijskog odnosa $N=3$ garantuje da nulti promašaj. 
 %-----------------------
 \section{Linearizacija}
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
-    \includegraphics{linearPN.JPG}
+    \begin{tikzpicture}
+        \draw [->](0,0)--(0,5.5) node[right]{$2$};
+        \draw [->](0,0)--(6,0) node[right]{$1$};
+        \node[] at (2,1) (m){Projektil};
+        \node[] at (5,4) (t){};
+        \node[right of = t, node distance =0.5cm] (){Meta};
+        \draw[->] (m.north) -- (t.south);
+        \node[]at(3,3)(vm){$v_m$};
+        \draw[->](m.north)--(vm);
+        \node[] at (1,2.3) (nl){$n_l$};
+        \draw[->] (m.north)--(nl);
+        \draw[dashed] (m.north) -- (5,1.35);
+        \node[anchor = west] at (2.5, 1.5) () {$\lambda$};
+        \draw[->] (3,1.3) arc (0:41:1);
+       \draw[->](3.2,1.3) arc (0:39:2);
+       \node[] at (2.8, 2.2) () {$\gamma$};
+       \draw[dashed] (t.south) -- (1,3.88);
+       \node[] at (3.5,4.5)(vt){$v_T$};
+       \draw[->] (t.south) -- (vt);
+       \node[] at (5.2, 4.7) (nt){$n_T$};
+       \draw[->](t.south) -- (nt);
+       \draw[->] (5,1.35)--(5,3.7);
+       \node[anchor = west] at (5, 2.5) (){$y$};
+       \draw[->] (4, 3.88) arc (180:158:1);
+       \node[] at (4.2,4) (){$\beta$};
+\end{tikzpicture}   
     \caption{Linearizacija jednačina proporcionalne navigacije}
     \label{fig:linear}
 \end{figure}
@@ -302,7 +326,7 @@ funkcijom prvog reda, tj:
     \frac{n_L}{n_c}=\frac{1}{1+sT}
 \end{equation}
 ,gdje je $n_L$ ostvareno ubrzanje projektila, a $n_c$ zahtjevano ubrzanje projektila.
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \includegraphics[scale = 0.6]{homingSimulink.JPG}
     \caption{Proporcionalana navigacija u Simulinku}
     \label{fig:simProp}
@@ -321,14 +345,14 @@ smanjeni i zahtjevi za performanasam projektila, međutim veći efektivni naviga
 daje manji promašaj što se vidi na grafiku za promašaj na slici \ref{fig:propAcc}. 
 U oba slučaja ostvaren je sudar unutar deset sekundi. U nastavku je na slici \ref{fig:simAugProp} prikazan 
 simulink model izmjenjene proporcionalne navigacije.
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale = 0.6]{augPropSim.JPG}
     \caption{Simulink model izmjenjene proporcionalne navigacije}
     \label{fig:simAugProp}
 \end{figure}
 Ubrzanje projektila i promašaj su prikazana na graficima na slici \ref{fig:augPropGraf}.
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale = 0.5]{augPropAcc.eps}
     \includegraphics[scale = 0.5]{augPropMiss.eps}
@@ -385,7 +409,7 @@ Koristeći navedena pravila dobija se adjungovana petlja navođenja prikazana na
 da je kao smetnja u sistem dodata još i početna greška nišanjenja data sa $v_Me_q$ ,za $v_M=610\frac{m}{s}$ i $e_q=20\deg$.
 Sada je moguće dobiti promašaj usljed manevra mete i promašaj usljed početne greške nišanjenja sve u jednoj 
 simulaciji!
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \begin{tikzpicture}[auto, node distance=2cm,>=latex']
         \node[block] (nt) {$n_T$};
@@ -424,7 +448,7 @@ simulaciji!
 \end{figure}
 Jedinični impuls se može predstaviti kao početni uslov kod prvog integratora. Na slici \ref{fig:simAdj} 
 je predstavljen Simulink dijagram adjungovanog sistema.
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale= 0.7]{simAdj.JPG}
     \caption{Simulink dijagram adjungovanog sistema}
@@ -432,7 +456,7 @@ je predstavljen Simulink dijagram adjungovanog sistema.
 \end{figure}
 Simulacija za date vrijednosti daje promašaj usljed početne greške nišanjenja i 
 promašaj usljed konstantnog manevra mete i oni su prikazani na slici \ref{fig:adjDet}.
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.5]{missAdjDet.eps}
     \includegraphics[scale=0.5]{missHead.eps}
@@ -569,7 +593,7 @@ svi stohastički ulazi se moraju modelirati kao bijeli šum koji na kraju postaj
 izlazi adjungovanog sistema. Pošto se ulaz originalnog sistema modelira kao bjeli šum 
 kroz integrato, adjungovani model će promjeniti tok signala i kvadrirati i integrisati izlaz.
 Dobijeni adjungovani model je prikazan na slici \ref{fig:adjStohastic}.
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
 
     \begin{tikzpicture}[auto, node distance=2cm,>=latex']
@@ -604,16 +628,16 @@ Dobijeni adjungovani model je prikazan na slici \ref{fig:adjStohastic}.
     \caption{Adjungovani stohastički model}
     \label{fig:adjStohastic}
 \end{figure}
-Na slici \ref{fig:adjStohastic} je prikazan Simulink model ajdungovanog stohastičkog sistema. 
+Na slici \ref{fig:adjStohasticSimm} je prikazan Simulink model ajdungovanog stohastičkog sistema. 
 Impulsni signal je u Simulink modelu unešen kao početni uslov na odgovarajućem integratoru. 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.5]{adjStohastic.JPG}
     \caption{Simulink model ajdungovanog stohastičkog sistema}
-    \label{fig:adjStohastic}
+    \label{fig:adjStohasticSimm}
 \end{figure}
 Dobija se očekivana vrijednost kvadrata promašaja kao što je prikazano na grafiku \ref{fig:stohGraf}
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.5]{adjStohasticSim.eps}
     \caption{Očekivana vrijednost kvadrata promašaja}

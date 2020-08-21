@@ -1,67 +1,26 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  20 AUG 2020 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.20)  21 AUG 2020 20:38
 entering extended mode
-**c:/Users/Mirza/Desktop/thesis/main.tex
-(c:/Users/Mirza/Desktop/thesis/main.tex
+**"c:/Users/mirza/OneDrive/Radna površina/thesis/final/main.tex"
+("c:/Users/mirza/OneDrive/Radna površina/thesis/final/main.tex"
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-03> ("C:\Program Files\MiKTeX 2.9\tex/latex/base\report.cls"
+L3 programming layer <2020-08-07> (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+(C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@chapter=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count168
+\c@chapter=\count169
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\c@figure=\count175
+\c@table=\count176
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2020/05/13 3.44 The Babel package
- ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2020/05/13 3.44 Babel common definitions
-\babel@savecnt=\count176
-\U@D=\dimen135
-\l@babelnohyphens=\language79
- ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@readstream=\read2
-)
-\bbl@dirlevel=\count177
-
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/babel-croatian\croatian.ldf
-Language: croatian 2014/03/31 v1.3m Croatian support from the babel system
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen136
-\Gin@req@width=\dimen137
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/sectsty\sectsty.sty
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
 
@@ -72,33 +31,57 @@ LaTeX Warning: Command \underbar  has changed.
 LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.sty ("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
-Package: expl3 2020-06-03 L3 programming layer (loader) 
- ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
-File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count178
-\l__pdf_internal_box=\box45
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
-Package: xparse 2020-05-15 L3 Experimental document command parser
- ("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse-generic.tex"
-\l__xparse_current_arg_int=\count179
-\g__xparse_grabber_int=\count180
-\l__xparse_m_args_int=\count181
-\l__xparse_v_nesting_int=\count182
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2020/07/13 3.47 The Babel package
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2020/07/13 3.47 Babel common definitions
+\babel@savecnt=\count177
+\U@D=\dimen135
+\l@babelnohyphens=\language79
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count178
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/babel-croatian\croatian.ldf
+Language: croatian 2014/03/31 v1.3m Croatian support from the babel system
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/lipsum\lipsum.ltd.tex
-File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/geometry\geometry.sty
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count183
-\Gm@cntv=\count184
-\c@Gm@tempcnt=\count185
+\Gm@cnth=\count179
+\Gm@cntv=\count180
+\c@Gm@tempcnt=\count181
 \Gm@bindingoffset=\dimen138
 \Gm@wd@mp=\dimen139
 \Gm@odd@mp=\dimen140
@@ -108,7 +91,7 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layouthoffset=\dimen144
 \Gm@layoutvoffset=\dimen145
 \Gm@dimlist=\toks18
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/geometry\geometry.cfg)) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@headwidth=\skip49
 \f@nch@O@elh=\skip50
@@ -119,9 +102,9 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@O@erf=\skip55
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -134,26 +117,26 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/tcolorbox\tcolorbox.sty"
-Package: tcolorbox 2020/04/28 version 4.30 text color boxes
- ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.sty" ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs.sty" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2020/07/31 version 4.31 text color boxes
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
 \pgfutil@everybye=\toks19
 \pgfutil@tempdima=\dimen146
 \pgfutil@tempdimb=\dimen147
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common-lists.tex")) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-latex.def"
-\pgfutil@abb=\box46
- ("C:\Program Files\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box45
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfrcs.code.tex" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf\pgf.revision.tex")
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
 ))
 Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgfcore.sty" ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/systemlayer\pgfsys.sty" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks20
 \pgfkeys@temptoks=\toks21
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks22
 ))
 \pgf@x=\dimen148
@@ -168,40 +151,40 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@yd=\dimen157
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count186
-\c@pgf@countb=\count187
-\c@pgf@countc=\count188
-\c@pgf@countd=\count189
+\c@pgf@counta=\count182
+\c@pgf@countb=\count183
+\c@pgf@countc=\count184
+\c@pgf@countd=\count185
 \t@pgf@toka=\toks23
 \t@pgf@tokb=\toks24
 \t@pgf@tokc=\toks25
-\pgf@sys@id@count=\count190
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf.cfg"
+\pgf@sys@id@count=\count186
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
 Driver file for pgf: pgfsys-pdftex.def
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-pdftex.def"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
-))) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex"
+))) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count191
-\pgfsyssoftpath@bigbuffer@items=\count192
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex"
+\pgfsyssoftpath@smallbuffer@items=\count187
+\pgfsyssoftpath@bigbuffer@items=\count188
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcore.code.tex"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathcalc.code.tex" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathutil.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathparser.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen158
-\pgfmath@count=\count193
-\pgfmath@box=\box47
+\pgfmath@count=\count189
+\pgfmath@box=\box46
 \pgfmath@toks=\toks26
 \pgfmath@stack@operand=\toks27
 \pgfmath@stack@operation=\toks28
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.code.tex" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.random.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.base.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.round.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex"))) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count194
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfint.code.tex") ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex))) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count190
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen159
 \pgf@picmaxx=\dimen160
@@ -217,145 +200,145 @@ File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@yy=\dimen170
 \pgf@zx=\dimen171
 \pgf@zy=\dimen172
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@path@lastx=\dimen173
 \pgf@path@lasty=\dimen174
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@shorten@end@additional=\dimen175
 \pgf@shorten@start@additional=\dimen176
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box48
-\pgf@hbox=\box49
-\pgf@layerbox@main=\box50
-\pgf@picture@serial@count=\count195
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex"
+\pgfpic=\box47
+\pgf@hbox=\box48
+\pgf@layerbox@main=\box49
+\pgf@picture@serial@count=\count191
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgflinewidth=\dimen177
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@pt@x=\dimen178
 \pgf@pt@y=\dimen179
 \pgf@pt@temp=\dimen180
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowsep=\dimen181
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen182
-\pgf@sys@shading@range@num=\count196
-\pgf@shadingcount=\count197
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
+\pgf@sys@shading@range@num=\count192
+\pgf@shadingcount=\count193
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box51
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex"
+\pgfexternal@startupbox=\box50
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-))) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleshapes.code.tex"
+))) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box52
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
+\pgfnodeparttextbox=\box51
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@nodesepstart=\dimen183
 \pgf@nodesepend=\dimen184
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks29
 \verbatim@line=\toks30
 \verbatim@in@stream=\read4
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/environ\environ.sty"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- ("C:\Program Files\MiKTeX 2.9\tex/latex/trimspaces\trimspaces.sty"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks31
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count198
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count194
 )
-\tcb@titlebox=\box53
-\tcb@upperbox=\box54
-\tcb@lowerbox=\box55
-\tcb@phantombox=\box56
-\c@tcbbreakpart=\count199
-\c@tcblayer=\count266
-\c@tcolorbox@number=\count267
+\tcb@titlebox=\box52
+\tcb@upperbox=\box53
+\tcb@lowerbox=\box54
+\tcb@phantombox=\box55
+\c@tcbbreakpart=\count195
+\c@tcblayer=\count196
+\c@tcolorbox@number=\count197
+\tcb@temp=\box56
 \tcb@temp=\box57
 \tcb@temp=\box58
 \tcb@temp=\box59
-\tcb@temp=\box60
 \tcb@out=\write4
 \tcb@record@out=\write5
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/draftwatermark\draftwatermark.sty
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/draftwatermark\draftwatermark.sty
 Package: draftwatermark 2020/06/29 2.2 Put a gray textual watermark on document pages
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/kvoptions\kvoptions.sty
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/generic/ltxcmds\ltxcmds.sty
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/generic/kvsetkeys\kvsetkeys.sty
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/everypage\everypage.sty
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/everypage\everypage.sty
 Package: everypage 2007/06/20 1.1 Hooks to run on every page
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+(C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks32
 \ex@=\dimen185
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen186
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count268
+\inf@bad=\count198
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count269
-\leftroot@=\count270
+\uproot@=\count199
+\leftroot@=\count266
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count271
-\DOTSCASE@=\count272
+\classnum@=\count267
+\DOTSCASE@=\count268
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box61
-\strutbox@=\box62
+\Mathstrutbox@=\box60
+\strutbox@=\box61
 \big@size=\dimen187
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count273
-\c@MaxMatrixCols=\count274
+\macc@depth=\count269
+\c@MaxMatrixCols=\count270
 \dotsspace@=\muskip16
-\c@parentequation=\count275
-\dspbrk@lvl=\count276
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
 \tag@help=\toks33
-\row@=\count277
-\column@=\count278
-\maxfields@=\count279
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
 \andhelp@=\toks34
 \eqnshift@=\dimen188
 \alignsep@=\dimen189
@@ -369,62 +352,62 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks36
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/tabstackengine\tabstackengine.sty
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/tabstackengine\tabstackengine.sty
 Package: tabstackengine 2018/03/05 (V2.10) tabbed stacking
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/stackengine\stackengine.sty
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/stackengine\stackengine.sty
 Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient ways
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/listofitems\listofitems.sty (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/generic/listofitems\listofitems.tex
-\loi_cnt_foreach_nest=\count280
-\loi_nestcnt=\count281
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/listofitems\listofitems.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/listofitems\listofitems.tex
+\loi_cnt_foreach_nest=\count276
+\loi_nestcnt=\count277
 )
 Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified sep char (CT)
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count282
-\calc@Bcount=\count283
+\calc@Acount=\count278
+\calc@Bcount=\count279
 \calc@Adimen=\dimen194
 \calc@Bdimen=\dimen195
 \calc@Askip=\skip61
 \calc@Bskip=\skip62
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count284
+\calc@Ccount=\count280
 \calc@Cskip=\skip63
 )
-\c@@stackindex=\count285
+\c@@stackindex=\count281
 \@boxshift=\skip64
 \stack@tmplength=\skip65
 \temp@stkl=\skip66
 \@stackedboxwidth=\skip67
-\@addedbox=\box63
-\@anchorbox=\box64
-\stackedbox=\box65
-\@centerbox=\box66
-\c@ROWcellindex@=\count286
+\@addedbox=\box62
+\@anchorbox=\box63
+\stackedbox=\box64
+\@centerbox=\box65
+\c@ROWcellindex@=\count282
 )
-\c@TABrowindex@=\count287
-\c@TABcolindex@=\count288
-\c@TABalignmentindex@=\count289
+\c@TABrowindex@=\count283
+\c@TABcolindex@=\count284
+\c@TABalignmentindex@=\count285
 \TABcelltoks=\toks37
 \TABcoltoks=\toks38
 \LstrutTABtoks=\toks39
 \RstrutTABtoks=\toks40
 \TAB@toks=\toks41
 \TABruleshift=\skip68
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/placeins\placeins.sty
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/frontendlayer\tikz.sty" ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgffor.sty" ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgfkeys.sty" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex")) ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.sty" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgffor.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
 \pgffor@iter=\dimen196
 \pgffor@skip=\dimen197
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count290
+\pgf@plot@mark@count=\count286
 \pgfplotmarksize=\dimen198
 )
 \tikz@lastx=\dimen199
@@ -435,79 +418,131 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@lastmovetoy=\dimen260
 \tikzleveldistance=\dimen261
 \tikzsiblingdistance=\dimen262
-\tikz@figbox=\box67
-\tikz@figbox@bg=\box68
-\tikz@tempbox=\box69
-\tikz@tempbox@bg=\box70
-\tikztreelevel=\count291
-\tikznumberofchildren=\count292
-\tikznumberofcurrentchild=\count293
-\tikz@fig@count=\count294
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
+\tikz@figbox=\box66
+\tikz@figbox@bg=\box67
+\tikz@tempbox=\box68
+\tikz@tempbox@bg=\box69
+\tikztreelevel=\count287
+\tikznumberofchildren=\count288
+\tikznumberofcurrentchild=\count289
+\tikz@fig@count=\count290
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count295
-\pgfmatrixcurrentcolumn=\count296
-\pgf@matrix@numberofcolumns=\count297
+\pgfmatrixcurrentrow=\count291
+\pgfmatrixcurrentcolumn=\count292
+\pgf@matrix@numberofcolumns=\count293
 )
-\tikz@expandcount=\count298
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex"
+\tikz@expandcount=\count294
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-))) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\textcomp.sty"
+))) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+\csq@reset=\count295
+\csq@gtype=\count296
+\csq@glevel=\count297
+\csq@qlevel=\count298
+\csq@maxlvl=\count299
+\csq@tshold=\count300
+\csq@ltx@everypar=\toks44
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
+File: csquotes.cfg 
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
 File: tikzlibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
 File: tikzlibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex" ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex")) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodepartlowerbox=\box71
-\pgfnodeparttwobox=\box72
-\pgfnodepartthreebox=\box73
-\pgfnodepartfourbox=\box74
-\pgfnodeparttwentybox=\box75
-\pgfnodepartnineteenbox=\box76
-\pgfnodeparteighteenbox=\box77
-\pgfnodepartseventeenbox=\box78
-\pgfnodepartsixteenbox=\box79
-\pgfnodepartfifteenbox=\box80
-\pgfnodepartfourteenbox=\box81
-\pgfnodepartthirteenbox=\box82
-\pgfnodeparttwelvebox=\box83
-\pgfnodepartelevenbox=\box84
-\pgfnodeparttenbox=\box85
-\pgfnodepartninebox=\box86
-\pgfnodeparteightbox=\box87
-\pgfnodepartsevenbox=\box88
-\pgfnodepartsixbox=\box89
-\pgfnodepartfivebox=\box90
-))) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex"
+\pgfnodepartlowerbox=\box70
+\pgfnodeparttwobox=\box71
+\pgfnodepartthreebox=\box72
+\pgfnodepartfourbox=\box73
+\pgfnodeparttwentybox=\box74
+\pgfnodepartnineteenbox=\box75
+\pgfnodeparteighteenbox=\box76
+\pgfnodepartseventeenbox=\box77
+\pgfnodepartsixteenbox=\box78
+\pgfnodepartfifteenbox=\box79
+\pgfnodepartfourteenbox=\box80
+\pgfnodepartthirteenbox=\box81
+\pgfnodeparttwelvebox=\box82
+\pgfnodepartelevenbox=\box83
+\pgfnodeparttenbox=\box84
+\pgfnodepartninebox=\box85
+\pgfnodeparteightbox=\box86
+\pgfnodepartsevenbox=\box87
+\pgfnodepartsixbox=\box88
+\pgfnodepartfivebox=\box89
+))) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.code.tex"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \arrowsize=\dimen263
-)) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption.sty
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2020/05/30 v3.4k Customizing captions (AR)
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.sty
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen264
@@ -519,74 +554,74 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen270
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count299
-\c@continuedfloat=\count300
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\subcaption.sty
+\c@caption@flags=\count301
+\c@continuedfloat=\count302
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count301
-\c@subtable=\count302
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
+\c@subfigure=\count303
+\c@subtable=\count304
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/generic/infwarerr\infwarerr.sty
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.sty
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count303
- (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.def
+\lrq@indent=\count305
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count304
-\c@listtotal=\count305
-\c@listcount=\count306
-\c@liststart=\count307
-\c@liststop=\count308
-\c@citecount=\count309
-\c@citetotal=\count310
-\c@multicitecount=\count311
-\c@multicitetotal=\count312
-\c@instcount=\count313
-\c@maxnames=\count314
-\c@minnames=\count315
-\c@maxitems=\count316
-\c@minitems=\count317
-\c@citecounter=\count318
-\c@maxcitecounter=\count319
-\c@savedcitecounter=\count320
-\c@uniquelist=\count321
-\c@uniquename=\count322
-\c@refsection=\count323
-\c@refsegment=\count324
-\c@maxextratitle=\count325
-\c@maxextratitleyear=\count326
-\c@maxextraname=\count327
-\c@maxextradate=\count328
-\c@maxextraalpha=\count329
-\c@abbrvpenalty=\count330
-\c@highnamepenalty=\count331
-\c@lownamepenalty=\count332
-\c@maxparens=\count333
-\c@parenlevel=\count334
-\blx@tempcnta=\count335
-\blx@tempcntb=\count336
-\blx@tempcntc=\count337
-\blx@maxsection=\count338
-\blx@maxsegment@0=\count339
-\blx@notetype=\count340
-\blx@parenlevel@text=\count341
-\blx@parenlevel@foot=\count342
-\blx@sectionciteorder@0=\count343
-\blx@entrysetcounter=\count344
+\c@tabx@nest=\count306
+\c@listtotal=\count307
+\c@listcount=\count308
+\c@liststart=\count309
+\c@liststop=\count310
+\c@citecount=\count311
+\c@citetotal=\count312
+\c@multicitecount=\count313
+\c@multicitetotal=\count314
+\c@instcount=\count315
+\c@maxnames=\count316
+\c@minnames=\count317
+\c@maxitems=\count318
+\c@minitems=\count319
+\c@citecounter=\count320
+\c@maxcitecounter=\count321
+\c@savedcitecounter=\count322
+\c@uniquelist=\count323
+\c@uniquename=\count324
+\c@refsection=\count325
+\c@refsegment=\count326
+\c@maxextratitle=\count327
+\c@maxextratitleyear=\count328
+\c@maxextraname=\count329
+\c@maxextradate=\count330
+\c@maxextraalpha=\count331
+\c@abbrvpenalty=\count332
+\c@highnamepenalty=\count333
+\c@lownamepenalty=\count334
+\c@maxparens=\count335
+\c@parenlevel=\count336
+\blx@tempcnta=\count337
+\blx@tempcntb=\count338
+\blx@tempcntc=\count339
+\blx@maxsection=\count340
+\blx@maxsegment@0=\count341
+\blx@notetype=\count342
+\blx@parenlevel@text=\count343
+\blx@parenlevel@foot=\count344
+\blx@sectionciteorder@0=\count345
+\blx@entrysetcounter=\count346
 \labelnumberwidth=\skip69
 \labelalphawidth=\skip70
 \biblabelsep=\skip71
@@ -598,86 +633,86 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read5
 \blx@bcfout=\write6
 \blx@langwohyphens=\language80
-\c@mincomprange=\count345
-\c@maxcomprange=\count346
-\c@mincompwidth=\count347
+\c@mincomprange=\count347
+\c@maxcomprange=\count348
+\c@mincompwidth=\count349
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count348
-\c@savedafterword=\count349
-\c@annotator=\count350
-\c@savedannotator=\count351
-\c@author=\count352
-\c@savedauthor=\count353
-\c@bookauthor=\count354
-\c@savedbookauthor=\count355
-\c@commentator=\count356
-\c@savedcommentator=\count357
-\c@editor=\count358
-\c@savededitor=\count359
-\c@editora=\count360
-\c@savededitora=\count361
-\c@editorb=\count362
-\c@savededitorb=\count363
-\c@editorc=\count364
-\c@savededitorc=\count365
-\c@foreword=\count366
-\c@savedforeword=\count367
-\c@holder=\count368
-\c@savedholder=\count369
-\c@introduction=\count370
-\c@savedintroduction=\count371
-\c@namea=\count372
-\c@savednamea=\count373
-\c@nameb=\count374
-\c@savednameb=\count375
-\c@namec=\count376
-\c@savednamec=\count377
-\c@translator=\count378
-\c@savedtranslator=\count379
-\c@shortauthor=\count380
-\c@savedshortauthor=\count381
-\c@shorteditor=\count382
-\c@savedshorteditor=\count383
-\c@labelname=\count384
-\c@savedlabelname=\count385
-\c@institution=\count386
-\c@savedinstitution=\count387
-\c@lista=\count388
-\c@savedlista=\count389
-\c@listb=\count390
-\c@savedlistb=\count391
-\c@listc=\count392
-\c@savedlistc=\count393
-\c@listd=\count394
-\c@savedlistd=\count395
-\c@liste=\count396
-\c@savedliste=\count397
-\c@listf=\count398
-\c@savedlistf=\count399
-\c@location=\count400
-\c@savedlocation=\count401
-\c@organization=\count402
-\c@savedorganization=\count403
-\c@origlocation=\count404
-\c@savedoriglocation=\count405
-\c@origpublisher=\count406
-\c@savedorigpublisher=\count407
-\c@publisher=\count408
-\c@savedpublisher=\count409
-\c@language=\count410
-\c@savedlanguage=\count411
-\c@origlanguage=\count412
-\c@savedoriglanguage=\count413
-\c@pageref=\count414
-\c@savedpageref=\count415
+\c@afterword=\count350
+\c@savedafterword=\count351
+\c@annotator=\count352
+\c@savedannotator=\count353
+\c@author=\count354
+\c@savedauthor=\count355
+\c@bookauthor=\count356
+\c@savedbookauthor=\count357
+\c@commentator=\count358
+\c@savedcommentator=\count359
+\c@editor=\count360
+\c@savededitor=\count361
+\c@editora=\count362
+\c@savededitora=\count363
+\c@editorb=\count364
+\c@savededitorb=\count365
+\c@editorc=\count366
+\c@savededitorc=\count367
+\c@foreword=\count368
+\c@savedforeword=\count369
+\c@holder=\count370
+\c@savedholder=\count371
+\c@introduction=\count372
+\c@savedintroduction=\count373
+\c@namea=\count374
+\c@savednamea=\count375
+\c@nameb=\count376
+\c@savednameb=\count377
+\c@namec=\count378
+\c@savednamec=\count379
+\c@translator=\count380
+\c@savedtranslator=\count381
+\c@shortauthor=\count382
+\c@savedshortauthor=\count383
+\c@shorteditor=\count384
+\c@savedshorteditor=\count385
+\c@labelname=\count386
+\c@savedlabelname=\count387
+\c@institution=\count388
+\c@savedinstitution=\count389
+\c@lista=\count390
+\c@savedlista=\count391
+\c@listb=\count392
+\c@savedlistb=\count393
+\c@listc=\count394
+\c@savedlistc=\count395
+\c@listd=\count396
+\c@savedlistd=\count397
+\c@liste=\count398
+\c@savedliste=\count399
+\c@listf=\count400
+\c@savedlistf=\count401
+\c@location=\count402
+\c@savedlocation=\count403
+\c@organization=\count404
+\c@savedorganization=\count405
+\c@origlocation=\count406
+\c@savedoriglocation=\count407
+\c@origpublisher=\count408
+\c@savedorigpublisher=\count409
+\c@publisher=\count410
+\c@savedpublisher=\count411
+\c@language=\count412
+\c@savedlanguage=\count413
+\c@origlanguage=\count414
+\c@savedoriglanguage=\count415
+\c@pageref=\count416
+\c@savedpageref=\count417
 \shorthandwidth=\skip77
 \shortjournalwidth=\skip78
 \shortserieswidth=\skip79
@@ -694,41 +729,41 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip90
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-compat.def"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
 File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count416
-\c@textcitetotal=\count417
-\c@textcitemaxnames=\count418
-\c@biburlbigbreakpenalty=\count419
-\c@biburlbreakpenalty=\count420
-\c@biburlnumpenalty=\count421
-\c@biburlucpenalty=\count422
-\c@biburllcpenalty=\count423
+\c@textcitecount=\count418
+\c@textcitetotal=\count419
+\c@textcitemaxnames=\count420
+\c@biburlbigbreakpenalty=\count421
+\c@biburlbreakpenalty=\count422
+\c@biburlnumpenalty=\count423
+\c@biburlucpenalty=\count424
+\c@biburllcpenalty=\count425
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count424
+\c@smartand=\count426
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\authoryear.bbx"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\authoryear.bbx
 File: authoryear.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count425
-\c@bbx:relatedtotal=\count426
+\c@bbx:relatedcount=\count427
+\c@bbx:relatedtotal=\count428
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/cbx\authoryear.cbx"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\authoryear.cbx
 File: authoryear.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -740,95 +775,87 @@ Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
-)) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/setspace\setspace.sty
+)) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box91
+\ttl@box=\box90
 \beforetitleunit=\skip91
 \aftertitleunit=\skip92
 \ttl@plus=\dimen271
 \ttl@minus=\dimen272
-\ttl@toksa=\toks44
+\ttl@toksa=\toks45
 \titlewidth=\dimen273
 \titlewidthlast=\dimen274
 \titlewidthfirst=\dimen275
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/blindtext\blindtext.sty"
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
- ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count427
-\c@Blindtext=\count428
-\c@blind@countparstart=\count429
-\blind@countxx=\count430
-\blindtext@numBlindtext=\count431
-\blind@countyy=\count432
-\c@blindlist=\count433
-\c@blindlistlevel=\count434
-\c@blindlist@level=\count435
-\blind@listitem=\count436
-\c@blind@listcount=\count437
-\c@blind@levelcount=\count438
-\blind@mathformula=\count439
-\blind@Mathformula=\count440
-\c@blind@randomcount=\count441
-\c@blind@randommax=\count442
-\c@blind@pangramcount=\count443
-\c@blind@pangrammax=\count444
+\c@blindtext=\count429
+\c@Blindtext=\count430
+\c@blind@countparstart=\count431
+\blind@countxx=\count432
+\blindtext@numBlindtext=\count433
+\blind@countyy=\count434
+\c@blindlist=\count435
+\c@blindlistlevel=\count436
+\c@blindlist@level=\count437
+\blind@listitem=\count438
+\c@blind@listcount=\count439
+\c@blind@levelcount=\count440
+\blind@mathformula=\count441
+\blind@Mathformula=\count442
+\c@blind@randomcount=\count443
+\c@blind@randommax=\count444
+\c@blind@pangramcount=\count445
+\c@blind@pangrammax=\count446
 )
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count445
-\@quotereset=\count446
-(c:/Users\Mirza\Desktop\thesis\main.aux
-
-LaTeX Warning: Label `eq:a1' multiply defined.
-
-
-LaTeX Warning: Label `eq:a2' multiply defined.
-
-
-LaTeX Warning: Label `eq:a3' multiply defined.
-
-
-LaTeX Warning: Label `fig:adjStohastic' multiply defined.
-
-)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'croatian'.
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-08-07 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count447
+\l__pdf_internal_box=\box91
+) ("c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.aux")
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
- ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 56.
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count447
+\scratchcounter=\count448
 \scratchdimen=\dimen276
 \scratchbox=\box92
-\nofMPsegments=\count448
-\nofMParguments=\count449
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count450
+\nofMPsegments=\count449
+\nofMParguments=\count450
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count451
 \MPscratchDim=\dimen277
-\MPnumerator=\count451
-\makeMPintoPDFobject=\count452
-\everyMPtoPDFconversion=\toks46
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
+\MPnumerator=\count452
+\makeMPintoPDFobject=\count453
+\everyMPtoPDFconversion=\toks47
+) (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
 )
@@ -872,7 +899,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'croatian'...
 Package biblatex Info: ... file 'croatian.lbx' found.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\croatian.lbx"
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\croatian.lbx
 File: croatian.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
@@ -882,29 +909,43 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (c:/Users\Mirza\Desktop\thesis\main.bbl)
-Package biblatex Info: Reference section=0 on input line 51.
-Package biblatex Info: Reference segment=0 on input line 51.
- (c:/Users\Mirza\Desktop\thesis\title.tex
+ ("c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.bbl")
+Package biblatex Info: Reference section=0 on input line 56.
+Package biblatex Info: Reference segment=0 on input line 56.
+ ("c:/Users\mirza\OneDrive\Radna površina\thesis\final\title.tex"
 <Images/preuzmi.png, id=4, 225.84375pt x 225.84375pt>
 File: Images/preuzmi.png Graphic file (type png)
 <use Images/preuzmi.png>
 Package pdftex.def Info: Images/preuzmi.png  used on input line 24.
 (pdftex.def)             Requested size: 213.39566pt x 213.40967pt.
+ [1{C:/Users/mirza/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <149.37697> not available
-(Font)              size <24.88> substituted on input line 45.
-
-[1{C:/Users/Mirza/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
- <c:/Users/Mirza/Desktop/thesis/Images/preuzmi.png>]) (c:/Users\Mirza\Desktop\thesis\main.toc)
+ <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/preuzmi.png>]) ("c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.toc"
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8.
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 8.
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 8.
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 8.
+)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
  [2
 
-] (c:/Users\Mirza\Desktop\thesis\main.lof)
+] ("c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.lof")
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
@@ -912,11 +953,15 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <149.37697> not available
 
 ]
 Poglavlje 1.
-(c:/Users\Mirza\Desktop\thesis\Chapters/introduction.tex) [4
+("c:/Users\mirza\OneDrive\Radna površina\thesis\final\Chapters/introduction.tex") [4
 
 ]
 Poglavlje 2.
-(c:/Users\Mirza\Desktop\thesis\Chapters/KS.tex
+("c:/Users\mirza\OneDrive\Radna površina\thesis\final\Chapters/KS.tex"
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 8.
+ (C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 <Images/body.png, id=24, 505.89pt x 252.19218pt>
 File: Images/body.png Graphic file (type png)
 <use Images/body.png>
@@ -927,42 +972,31 @@ File: Images/earth-body.JPG Graphic file (type jpg)
 <use Images/earth-body.JPG>
 Package pdftex.def Info: Images/earth-body.JPG  used on input line 27.
 (pdftex.def)             Requested size: 240.2961pt x 223.43321pt.
+ [5
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5
-
-] [6 <c:/Users/Mirza/Desktop/thesis/Images/body.png> <c:/Users/Mirza/Desktop/thesis/Images/earth-body.JPG>]
+] [6 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/body.png> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/earth-body.JPG>]
 <Images/6dof.JPG, id=36, 535.2497pt x 475.02469pt>
 File: Images/6dof.JPG Graphic file (type jpg)
 <use Images/6dof.JPG>
 Package pdftex.def Info: Images/6dof.JPG  used on input line 87.
 (pdftex.def)             Requested size: 321.15228pt x 285.017pt.
-
-
-LaTeX Font Warning: Command \huge invalid in math mode on input line 95.
-
-
-LaTeX Font Warning: Command \huge invalid in math mode on input line 99.
-
-[7]
+ [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <c:/Users/Mirza/Desktop/thesis/Images/6dof.JPG>]
+ [8 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/6dof.JPG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9] [10]
-Overfull \hbox (11.83606pt too wide) in paragraph at lines 246--253
-\OT1/cmr/m/n/12 Prethodne tri jednacine za-jedno sa jednacinama 2.12[],2.13[] i 2.14[] pred-stav-ljaju jednacine
+ [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Overfull \hbox (11.1881pt too wide) in paragraph at lines 246--253
+\OT1/lmr/m/n/12 Prethodne tri jednacine za-jedno sa jednacinama 2.12[],2.13[] i 2.14[] pred-stav-ljaju jednacine
  []
 
 
-Overfull \hbox (10.15645pt too wide) in paragraph at lines 274--278
-\OT1/cmr/m/n/12 Sada je jos po-trebno odre-diti uga-one br-zine u za-vis-nosti od Eule-ro-vih uglova. Izvo[]denje
+Overfull \hbox (10.16196pt too wide) in paragraph at lines 274--278
+\OT1/lmr/m/n/12 Sada je jos po-trebno odre-diti uga-one br-zine u za-vis-nosti od Eule-ro-vih uglova. Izvo[]denje
  []
 
 
@@ -970,7 +1004,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]) [12]
 Poglavlje 3.
-(c:/Users\Mirza\Desktop\thesis\Chapters/Sile.tex [13
+("c:/Users\mirza\OneDrive\Radna površina\thesis\final\Chapters/Sile.tex" [13
 
 ]
 <Images/angles.JPG, id=62, 432.11438pt x 292.84406pt>
@@ -981,248 +1015,218 @@ Package pdftex.def Info: Images/angles.JPG  used on input line 58.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <c:/Users/Mirza/Desktop/thesis/Images/angles.JPG>]
+ [14 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/angles.JPG>]
 <Images/wind.JPG, id=68, 603.75563pt x 261.97874pt>
 File: Images/wind.JPG Graphic file (type jpg)
 <use Images/wind.JPG>
 Package pdftex.def Info: Images/wind.JPG  used on input line 84.
 (pdftex.def)             Requested size: 301.87708pt x 130.98904pt.
- [15 <c:/Users/Mirza/Desktop/thesis/Images/wind.JPG>]) [16]
+ [15 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/wind.JPG>]) [16]
 Poglavlje 4.
-(c:/Users\Mirza\Desktop\thesis\Chapters/chapter02.tex
+("c:/Users\mirza\OneDrive\Radna površina\thesis\final\Chapters/chapter02.tex"
 <Images/PNfigure.JPG, id=75, 318.43968pt x 185.19188pt>
 File: Images/PNfigure.JPG Graphic file (type jpg)
 <use Images/PNfigure.JPG>
 Package pdftex.def Info: Images/PNfigure.JPG  used on input line 4.
 (pdftex.def)             Requested size: 318.4389pt x 185.1914pt.
 
-Underfull \vbox (badness 1715) has occurred while \output is active []
+Underfull \vbox (badness 1701) has occurred while \output is active []
 
  [17
 
- <c:/Users/Mirza/Desktop/thesis/Images/PNfigure.JPG>] [18]
+ <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/PNfigure.JPG>] [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-Overfull \hbox (3.31633pt too wide) in paragraph at lines 158--158
-|[]\OT1/cmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije| 
+Overfull \hbox (3.31758pt too wide) in paragraph at lines 157--157
+|[]\OT1/lmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije| 
  []
 
 [20]
-<Images/linearPN.JPG, id=90, 297.36093pt x 177.66376pt>
-File: Images/linearPN.JPG Graphic file (type jpg)
-<use Images/linearPN.JPG>
-Package pdftex.def Info: Images/linearPN.JPG  used on input line 197.
-(pdftex.def)             Requested size: 297.3602pt x 177.66331pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 1314) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <c:/Users/Mirza/Desktop/thesis/Images/linearPN.JPG>] [23]
-<Images/homingSimulink.JPG, id=100, 650.43pt x 353.06906pt>
+ [22] [23]
+<Images/homingSimulink.JPG, id=99, 650.43pt x 353.06906pt>
 File: Images/homingSimulink.JPG Graphic file (type jpg)
 <use Images/homingSimulink.JPG>
-Package pdftex.def Info: Images/homingSimulink.JPG  used on input line 306.
+Package pdftex.def Info: Images/homingSimulink.JPG  used on input line 330.
 (pdftex.def)             Requested size: 390.261pt x 211.84306pt.
 Package epstopdf Info: Source file: <Images/propAccPlot.eps>
-(epstopdf)                    date: 2020-08-18 00:19:00
-(epstopdf)                    size: 22032 bytes
+(epstopdf)                    date: 2020-08-20 11:06:57
+(epstopdf)                    size: 22288 bytes
 (epstopdf)             Output file: <Images/propAccPlot-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-08-18 01:19:11
+(epstopdf)                    date: 2020-08-20 11:06:57
 (epstopdf)                    size: 7414 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/propAccPlot-eps-converted-to.pdf Images/propAccPlot.eps>
-(epstopdf)             \includegraphics on input line 314.
+(epstopdf)             \includegraphics on input line 338.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/propAccPlot-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/propAccPlot-eps-converted-to.pdf, id=101, 421.575pt x 316.18124pt>
+pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/propAccPlot-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/propAccPlot-eps-converted-to.pdf, id=100, 421.575pt x 316.18124pt>
 File: Images/propAccPlot-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/propAccPlot-eps-converted-to.pdf>
-Package pdftex.def Info: Images/propAccPlot-eps-converted-to.pdf  used on input line 314.
+Package pdftex.def Info: Images/propAccPlot-eps-converted-to.pdf  used on input line 338.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/missProp.eps>
-(epstopdf)                    date: 2020-08-18 00:21:31
-(epstopdf)                    size: 21264 bytes
+(epstopdf)                    date: 2020-08-20 11:06:57
+(epstopdf)                    size: 21514 bytes
 (epstopdf)             Output file: <Images/missProp-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-08-18 01:19:13
+(epstopdf)                    date: 2020-08-20 11:06:57
 (epstopdf)                    size: 7253 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/missProp-eps-converted-to.pdf Images/missProp.eps>
-(epstopdf)             \includegraphics on input line 315.
+(epstopdf)             \includegraphics on input line 339.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missProp-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missProp-eps-converted-to.pdf, id=102, 421.575pt x 316.18124pt>
+pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missProp-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/missProp-eps-converted-to.pdf, id=101, 421.575pt x 316.18124pt>
 File: Images/missProp-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missProp-eps-converted-to.pdf>
-Package pdftex.def Info: Images/missProp-eps-converted-to.pdf  used on input line 315.
+Package pdftex.def Info: Images/missProp-eps-converted-to.pdf  used on input line 339.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-<Images/augPropSim.JPG, id=103, 768.62157pt x 328.97906pt>
+<Images/augPropSim.JPG, id=102, 768.62157pt x 328.97906pt>
 File: Images/augPropSim.JPG Graphic file (type jpg)
 <use Images/augPropSim.JPG>
-Package pdftex.def Info: Images/augPropSim.JPG  used on input line 326.
+Package pdftex.def Info: Images/augPropSim.JPG  used on input line 350.
 (pdftex.def)             Requested size: 461.1765pt x 197.38895pt.
 
-Overfull \hbox (34.38516pt too wide) in paragraph at lines 326--327
+Overfull \hbox (34.38516pt too wide) in paragraph at lines 350--351
  [][] 
  []
 
 Package epstopdf Info: Source file: <Images/augPropAcc.eps>
-(epstopdf)                    date: 2020-08-20 16:30:59
-(epstopdf)                    size: 21599 bytes
+(epstopdf)                    date: 2020-08-21 08:09:06
+(epstopdf)                    size: 21781 bytes
 (epstopdf)             Output file: <Images/augPropAcc-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-08-20 16:32:07
+(epstopdf)                    date: 2020-08-21 08:09:06
 (epstopdf)                    size: 9562 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/augPropAcc-eps-converted-to.pdf Images/augPropAcc.eps>
-(epstopdf)             \includegraphics on input line 333.
+(epstopdf)             \includegraphics on input line 357.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/augPropAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/augPropAcc-eps-converted-to.pdf, id=104, 421.575pt x 316.18124pt>
+pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/augPropAcc-eps-converted-to.pdf, id=103, 421.575pt x 316.18124pt>
 File: Images/augPropAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/augPropAcc-eps-converted-to.pdf>
-Package pdftex.def Info: Images/augPropAcc-eps-converted-to.pdf  used on input line 333.
+Package pdftex.def Info: Images/augPropAcc-eps-converted-to.pdf  used on input line 357.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/augPropMiss.eps>
-(epstopdf)                    date: 2020-08-20 16:31:11
-(epstopdf)                    size: 21600 bytes
+(epstopdf)                    date: 2020-08-21 08:09:06
+(epstopdf)                    size: 21782 bytes
 (epstopdf)             Output file: <Images/augPropMiss-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-08-20 16:33:51
+(epstopdf)                    date: 2020-08-21 08:09:06
 (epstopdf)                    size: 9401 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/augPropMiss-eps-converted-to.pdf Images/augPropMiss.eps>
-(epstopdf)             \includegraphics on input line 334.
+(epstopdf)             \includegraphics on input line 358.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/augPropMiss-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/augPropMiss-eps-converted-to.pdf, id=105, 421.575pt x 316.18124pt>
+pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropMiss-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/augPropMiss-eps-converted-to.pdf, id=104, 421.575pt x 316.18124pt>
 File: Images/augPropMiss-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/augPropMiss-eps-converted-to.pdf>
-Package pdftex.def Info: Images/augPropMiss-eps-converted-to.pdf  used on input line 334.
+Package pdftex.def Info: Images/augPropMiss-eps-converted-to.pdf  used on input line 358.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[24 <c:/Users/Mirza/Desktop/thesis/Images/homingSimulink.JPG> <c:/Users/Mirza/Desktop/thesis/Images/propAccPlot-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missProp-eps-converted-to.pdf>] [25 <c:/Users/Mirza/Desktop/thesis/Images/augPropSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/augPropAcc-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/augPropMiss-eps-converted-to.pdf>]
-Overfull \hbox (16.78326pt too wide) in paragraph at lines 421--422
+[24 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/homingSimulink.JPG> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/propAccPlot-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missProp-eps-converted-to.pdf>] [25 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropSim.JPG> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropAcc-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropMiss-eps-converted-to.pdf>]
+Overfull \hbox (16.7836pt too wide) in paragraph at lines 445--446
  [][] 
  []
 
-<Images/simAdj.JPG, id=139, 444.15938pt x 336.50719pt>
+<Images/simAdj.JPG, id=138, 444.15938pt x 336.50719pt>
 File: Images/simAdj.JPG Graphic file (type jpg)
 <use Images/simAdj.JPG>
-Package pdftex.def Info: Images/simAdj.JPG  used on input line 429.
+Package pdftex.def Info: Images/simAdj.JPG  used on input line 453.
 (pdftex.def)             Requested size: 310.90944pt x 235.5534pt.
 Package epstopdf Info: Source file: <Images/missAdjDet.eps>
-(epstopdf)                    date: 2020-08-20 07:16:10
-(epstopdf)                    size: 20321 bytes
+(epstopdf)                    date: 2020-08-21 08:09:06
+(epstopdf)                    size: 20497 bytes
 (epstopdf)             Output file: <Images/missAdjDet-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-08-20 09:06:00
+(epstopdf)                    date: 2020-08-21 08:09:06
 (epstopdf)                    size: 9196 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/missAdjDet-eps-converted-to.pdf Images/missAdjDet.eps>
-(epstopdf)             \includegraphics on input line 437.
+(epstopdf)             \includegraphics on input line 461.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missAdjDet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missAdjDet-eps-converted-to.pdf, id=140, 421.575pt x 316.18124pt>
+pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missAdjDet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/missAdjDet-eps-converted-to.pdf, id=139, 421.575pt x 316.18124pt>
 File: Images/missAdjDet-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missAdjDet-eps-converted-to.pdf>
-Package pdftex.def Info: Images/missAdjDet-eps-converted-to.pdf  used on input line 437.
+Package pdftex.def Info: Images/missAdjDet-eps-converted-to.pdf  used on input line 461.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/missHead.eps>
-(epstopdf)                    date: 2020-08-20 07:18:07
-(epstopdf)                    size: 21678 bytes
+(epstopdf)                    date: 2020-08-21 08:09:06
+(epstopdf)                    size: 21863 bytes
 (epstopdf)             Output file: <Images/missHead-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-08-20 09:06:01
+(epstopdf)                    date: 2020-08-21 08:09:06
 (epstopdf)                    size: 9031 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/missHead-eps-converted-to.pdf Images/missHead.eps>
-(epstopdf)             \includegraphics on input line 438.
+(epstopdf)             \includegraphics on input line 462.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missHead-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missHead-eps-converted-to.pdf, id=141, 421.575pt x 316.18124pt>
+pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missHead-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/missHead-eps-converted-to.pdf, id=140, 421.575pt x 316.18124pt>
 File: Images/missHead-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missHead-eps-converted-to.pdf>
-Package pdftex.def Info: Images/missHead-eps-converted-to.pdf  used on input line 438.
+Package pdftex.def Info: Images/missHead-eps-converted-to.pdf  used on input line 462.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[26]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[27 <c:/Users/Mirza/Desktop/thesis/Images/simAdj.JPG>]
+[26] [27 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/simAdj.JPG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <c:/Users/Mirza/Desktop/thesis/Images/missAdjDet-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missHead-eps-converted-to.pdf>]
+ [28 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missAdjDet-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missHead-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
-<Images/adjStohastic.JPG, id=174, 580.41844pt x 295.85532pt>
+<Images/adjStohastic.JPG, id=173, 580.41844pt x 295.85532pt>
 File: Images/adjStohastic.JPG Graphic file (type jpg)
 <use Images/adjStohastic.JPG>
-Package pdftex.def Info: Images/adjStohastic.JPG  used on input line 611.
+Package pdftex.def Info: Images/adjStohastic.JPG  used on input line 635.
 (pdftex.def)             Requested size: 290.20851pt x 147.92729pt.
 Package epstopdf Info: Source file: <Images/adjStohasticSim.eps>
-(epstopdf)                    date: 2020-08-20 15:45:19
-(epstopdf)                    size: 20197 bytes
+(epstopdf)                    date: 2020-08-21 08:09:06
+(epstopdf)                    size: 20369 bytes
 (epstopdf)             Output file: <Images/adjStohasticSim-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-08-20 16:00:45
+(epstopdf)                    date: 2020-08-21 08:09:06
 (epstopdf)                    size: 9087 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/adjStohasticSim-eps-converted-to.pdf Images/adjStohasticSim.eps>
-(epstopdf)             \includegraphics on input line 618.
+(epstopdf)             \includegraphics on input line 642.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/adjStohasticSim-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/adjStohasticSim-eps-converted-to.pdf, id=175, 421.575pt x 316.18124pt>
+pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/adjStohasticSim-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/adjStohasticSim-eps-converted-to.pdf, id=174, 421.575pt x 316.18124pt>
 File: Images/adjStohasticSim-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/adjStohasticSim-eps-converted-to.pdf>
-Package pdftex.def Info: Images/adjStohasticSim-eps-converted-to.pdf  used on input line 618.
+Package pdftex.def Info: Images/adjStohasticSim-eps-converted-to.pdf  used on input line 642.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+[31 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/adjStohastic.JPG>]) [32 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/adjStohasticSim-eps-converted-to.pdf>] [33
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[31 <c:/Users/Mirza/Desktop/thesis/Images/adjStohastic.JPG>]) [32 <c:/Users/Mirza/Desktop/thesis/Images/adjStohasticSim-eps-converted-to.pdf>] [33
-
-] (c:/Users\Mirza\Desktop\thesis\main.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 124.49696pt have occurred.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+] ("c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.aux")
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28446 strings out of 480797
- 585741 string characters out of 2905362
- 1331518 words of memory out of 3000000
- 43948 multiletter control sequences out of 15000+200000
- 538551 words of font info for 45 fonts, out of 3000000 for 9000
+ 28828 strings out of 481212
+ 590572 string characters out of 2905973
+ 1245611 words of memory out of 3000000
+ 43902 multiletter control sequences out of 15000+200000
+ 574442 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,15n,75p,864b,1704s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Mirza\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (33 pages, 639864 bytes).
+ 59i,15n,75p,889b,1720s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}<C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
+Output written on "c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.pdf" (33 pages, 669665 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
+ 244 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

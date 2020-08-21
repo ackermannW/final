@@ -1,10 +1,11 @@
 \documentclass[12pt, twoside]{report}
+\usepackage{sectsty}
 \usepackage[utf8]{inputenc}
 \usepackage[croatian]{babel}
 \usepackage{graphicx}
-\usepackage{sectsty}
+
 \graphicspath{ {Images/} }
-\usepackage{lipsum}
+%\usepackage{lipsum}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
@@ -14,6 +15,10 @@
 \usepackage[section]{placeins}
 \usepackage{tikz}
 \usepackage{textcomp}
+\usepackage[OT1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{csquotes}
 \usetikzlibrary{shapes,arrows,positioning,calc}
 
 
@@ -27,7 +32,7 @@
 \renewcommand{\footrulewidth}{0.4pt}
 
 \SetWatermarkText{Nedovršeno}
-\SetWatermarkScale{5}
+\SetWatermarkScale{1}
 % https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
 \usepackage{caption}
 \usepackage{subcaption}
