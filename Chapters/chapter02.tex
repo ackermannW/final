@@ -153,7 +153,7 @@ funkcije je:
 \end{equation}
 Odakle se zaključuje da je upravljaki signal koji stabilizuje sistem:
 \begin{equation}
-    u=Nv_{cl}\dot{\lambda}(t)+a_T(t) \quad ,N>2
+    u=Nv_{cl}\dot{\lambda}(t)+\frac{N}{2}a_T(t) \quad ,N>2
 \end{equation}
 \section{Optimalnost zakona proporcionalne navigacije}
 Ako je promjena LOS ugla različita od nule, tada se primjenjuje normalno ubrzanje kako bi 
@@ -319,7 +319,27 @@ pri ubrzanju mete od $3g$. Ubrzanja projektila su prikazana na grafu \ref{fig:pr
 Vidi se da veći efektivni navigacijski odnos zahtjeva manje ubrzanje projektila pa su time 
 smanjeni i zahtjevi za performanasam projektila, međutim veći efektivni navigacijski odnos 
 daje manji promašaj što se vidi na grafiku za promašaj na slici \ref{fig:propAcc}. 
-U oba slučaja ostvaren je sudar unutar deset sekundi. 
+U oba slučaja ostvaren je sudar unutar deset sekundi. U nastavku je na slici \ref{fig:simAugProp} prikazan 
+simulink model izmjenjene proporcionalne navigacije.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale = 0.6]{augPropSim.JPG}
+    \caption{Simulink model izmjenjene proporcionalne navigacije}
+    \label{fig:simAugProp}
+\end{figure}
+Ubrzanje projektila i promašaj su prikazana na graficima na slici \ref{fig:augPropGraf}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale = 0.5]{augPropAcc.eps}
+    \includegraphics[scale = 0.5]{augPropMiss.eps}
+    \caption{Ubrzanje projektila i promašaj vođen promjenjenom proporcionalnom naivgacijom, $N=3$}
+    \label{fig:augPropGraf}
+\end{figure}
+Sada se konačno vidi da i kod proporcionalne navigacije i kod promjenjene proporcionalne navigacije 
+se grantuje sudar unutar vrmena leta ako se izabere $N=3$. Dalje se vidi da 
+ubrzanje projektila kod promjenjene proporcionalne navigacije počinje od nula za razliku od čiste proporcionalne 
+navigacije. Kod promjenjene proporcionalne navigacije promašaj može postati negativan što iziskuje 
+promjenu smjera normalnog ubrzanja projektila. 
 \section{Adjungovani sistem i petlja navođenja}
 Direktna simulacija lineariziranih jednačina proporcionalne navigacije se uvijek može
 koristiti za generisanje upravljačkog signala(tj. normalnog ubrzanja) projektila
@@ -370,13 +390,12 @@ simulaciji!
     \begin{tikzpicture}[auto, node distance=2cm,>=latex']
         \node[block] (nt) {$n_T$};
         \node[block, right of = nt](int1){$\frac{1}{s}$};
-        
         \node[right of = int1] (center){};
         \node[block, right of = center](int2){$\frac{1}{s^2}$};
         \node[sum, right of = int2, node distance = 2cm](sum){+};
         \node[block, right of = sum](div){$\frac{1}{v_{cl}t}$};
         \node[block, below of = int2](law){$-\frac{N'v_{cl}s}{1+sT_m}$};
-        \node[name = delta, above of = sum, node distance = 1.5cm](delta){$\delta(t)$};
+        \node[name = delta, above of = sum, node distance = 1.5cm](delta){$\delta(0)$};
         \node[left of = nt](out){Promašaj};
         \node[below of = out, node distance=0.3cm](out2){usljed};
         \node[below of = out2, node distance=0.3cm](){manevra mete};
@@ -547,7 +566,61 @@ na koji djeluje bijeli šum spektralne gustoće snage dat sa:
 Sada će se prikazati primjena adjungovane tehnike na sthastički sistem. Važe ista pravila 
 za kreiranje adjungovanog sitema kao i ranije sa jednim dodatnim pravilom da se 
 svi stohastički ulazi se moraju modelirati kao bijeli šum koji na kraju postaju 
-izlazi adjungovanog sistema. 
+izlazi adjungovanog sistema. Pošto se ulaz originalnog sistema modelira kao bjeli šum 
+kroz integrato, adjungovani model će promjeniti tok signala i kvadrirati i integrisati izlaz.
+Dobijeni adjungovani model je prikazan na slici \ref{fig:adjStohastic}.
+\begin{figure}[h!]
+    \centering
+
+    \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+        \node[block] (nt) {$\frac{1}{s}$};
+        \node[block, right of = nt](int1){$\frac{1}{s}$};
+        \node[right of = int1] (center){};
+        \node[block, right of = center](int2){$\frac{1}{s^2}$};
+        \node[sum, right of = int2, node distance = 2cm](sum){+};
+        \node[block, right of = sum](div){$\frac{1}{v_{cl}t}$};
+        \node[block, below of = int2](law){$-\frac{N'v_{cl}s}{1+sT_m}$};
+        \node[name = delta, above of = sum, node distance = 1.5cm](delta){$\delta(0)$};
+        \node[left of = nt](out){};
+        \node[right of = div](a){};
+        \node[left of = nt, node distance = 1.5cm](b){};
+       \node[block, below of = b, node distance = 1cm](sq){$()^2$};
+       \node[block,below of = sq, node distance = 1.5cm](ro){$\frac{1}{s}$};
+       \node[block,right of = ro](gain){$\frac{n_T^2}{t}$};
+       \node[right of = gain](out1){$E\left[y^2(t_f)\right]$};
+       \draw[->](gain)--(out1);
+       \draw[->](ro)--(gain);
+       \draw[->](sq)--(ro);
+       \draw[->](nt)-|(sq);
+        \draw[->](delta)--(sum);
+        \draw[->](sum)--(int2);
+        \draw[->](int1)--(nt);
+        \draw[->](div)--(sum);
+        \draw[->](int2)--(int1);
+        \draw[->](center.south)-- ++(0,0.13)|-(law);
+        \draw[-](law)-|(a.east) -- ++(0,0.0215);
+        \draw[->](a.east)-- ++(0.0215,0)--(div);
+        \end{tikzpicture}
+    \caption{Adjungovani stohastički model}
+    \label{fig:adjStohastic}
+\end{figure}
+Na slici \ref{fig:adjStohastic} je prikazan Simulink model ajdungovanog stohastičkog sistema. 
+Impulsni signal je u Simulink modelu unešen kao početni uslov na odgovarajućem integratoru. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{adjStohastic.JPG}
+    \caption{Simulink model ajdungovanog stohastičkog sistema}
+    \label{fig:adjStohastic}
+\end{figure}
+Dobija se očekivana vrijednost kvadrata promašaja kao što je prikazano na grafiku \ref{fig:stohGraf}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{adjStohasticSim.eps}
+    \caption{Očekivana vrijednost kvadrata promašaja}
+    \label{fig:stohGraf}
+\end{figure}
+Vidi se da je očekivana vrijednost kvadrata promašaja naglo porasla u prve tri sekunde leta. 
+Ovo je zbog toga što je upravo u tom intervalu promašaj najveći, nakon toga promašaj počinje opadati.
 
 
 
