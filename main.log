@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.20)  22 AUG 2020 10:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.8.20)  22 AUG 2020 12:10
 entering extended mode
 **"c:/Users/mirza/OneDrive/Radna površina/thesis/final/main.tex"
 ("c:/Users/mirza/OneDrive/Radna površina/thesis/final/main.tex"
@@ -1006,33 +1006,37 @@ Poglavlje 3.
 <Images/angles.JPG, id=65, 432.11438pt x 292.84406pt>
 File: Images/angles.JPG Graphic file (type jpg)
 <use Images/angles.JPG>
-Package pdftex.def Info: Images/angles.JPG  used on input line 81.
+Package pdftex.def Info: Images/angles.JPG  used on input line 80.
 (pdftex.def)             Requested size: 302.478pt x 204.98944pt.
 <Images/wind.JPG, id=66, 603.75563pt x 261.97874pt>
 File: Images/wind.JPG Graphic file (type jpg)
 <use Images/wind.JPG>
-Package pdftex.def Info: Images/wind.JPG  used on input line 107.
+Package pdftex.def Info: Images/wind.JPG  used on input line 111.
 (pdftex.def)             Requested size: 301.87708pt x 130.98904pt.
  [15 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/angles.JPG>] [16 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/wind.JPG>]) [17]
 Poglavlje 4.
-("c:/Users\mirza\OneDrive\Radna površina\thesis\final\Chapters/chapter02.tex" [18
+("c:/Users\mirza\OneDrive\Radna površina\thesis\final\Chapters/model.tex") [18
 
-] [19]
+]
+Poglavlje 5.
+("c:/Users\mirza\OneDrive\Radna površina\thesis\final\Chapters/chapter02.tex" [19
+
+] [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+ [21]
 Overfull \hbox (3.31758pt too wide) in paragraph at lines 181--181
 |[]\OT1/lmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije| 
  []
 
-[21]
+[22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23] [24]
-<Images/homingSimulink.JPG, id=101, 650.43pt x 353.06906pt>
+ [24] [25]
+<Images/homingSimulink.JPG, id=105, 650.43pt x 353.06906pt>
 File: Images/homingSimulink.JPG Graphic file (type jpg)
 <use Images/homingSimulink.JPG>
 Package pdftex.def Info: Images/homingSimulink.JPG  used on input line 352.
@@ -1049,7 +1053,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/propAccPlot-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/propAccPlot-eps-converted-to.pdf, id=102, 421.575pt x 316.18124pt>
+<Images/propAccPlot-eps-converted-to.pdf, id=106, 421.575pt x 316.18124pt>
 File: Images/propAccPlot-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/propAccPlot-eps-converted-to.pdf>
 Package pdftex.def Info: Images/propAccPlot-eps-converted-to.pdf  used on input line 360.
@@ -1066,12 +1070,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missProp-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missProp-eps-converted-to.pdf, id=103, 421.575pt x 316.18124pt>
+<Images/missProp-eps-converted-to.pdf, id=107, 421.575pt x 316.18124pt>
 File: Images/missProp-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missProp-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missProp-eps-converted-to.pdf  used on input line 361.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-<Images/augPropSim.JPG, id=104, 768.62157pt x 328.97906pt>
+<Images/augPropSim.JPG, id=108, 768.62157pt x 328.97906pt>
 File: Images/augPropSim.JPG Graphic file (type jpg)
 <use Images/augPropSim.JPG>
 Package pdftex.def Info: Images/augPropSim.JPG  used on input line 372.
@@ -1093,7 +1097,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/augPropAcc-eps-converted-to.pdf, id=105, 421.575pt x 316.18124pt>
+<Images/augPropAcc-eps-converted-to.pdf, id=109, 421.575pt x 316.18124pt>
 File: Images/augPropAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/augPropAcc-eps-converted-to.pdf>
 Package pdftex.def Info: Images/augPropAcc-eps-converted-to.pdf  used on input line 379.
@@ -1110,17 +1114,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropMiss-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/augPropMiss-eps-converted-to.pdf, id=106, 421.575pt x 316.18124pt>
+<Images/augPropMiss-eps-converted-to.pdf, id=110, 421.575pt x 316.18124pt>
 File: Images/augPropMiss-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/augPropMiss-eps-converted-to.pdf>
 Package pdftex.def Info: Images/augPropMiss-eps-converted-to.pdf  used on input line 380.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[25 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/homingSimulink.JPG> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/propAccPlot-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missProp-eps-converted-to.pdf>] [26 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropSim.JPG> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropAcc-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropMiss-eps-converted-to.pdf>]
+[26 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/homingSimulink.JPG> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/propAccPlot-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missProp-eps-converted-to.pdf>] [27 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropSim.JPG> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropAcc-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/augPropMiss-eps-converted-to.pdf>]
 Overfull \hbox (16.7836pt too wide) in paragraph at lines 467--468
  [][] 
  []
 
-<Images/simAdj.JPG, id=140, 444.15938pt x 336.50719pt>
+<Images/simAdj.JPG, id=143, 444.15938pt x 336.50719pt>
 File: Images/simAdj.JPG Graphic file (type jpg)
 <use Images/simAdj.JPG>
 Package pdftex.def Info: Images/simAdj.JPG  used on input line 475.
@@ -1137,7 +1141,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missAdjDet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missAdjDet-eps-converted-to.pdf, id=141, 421.575pt x 316.18124pt>
+<Images/missAdjDet-eps-converted-to.pdf, id=144, 421.575pt x 316.18124pt>
 File: Images/missAdjDet-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missAdjDet-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missAdjDet-eps-converted-to.pdf  used on input line 483.
@@ -1154,22 +1158,22 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missHead-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missHead-eps-converted-to.pdf, id=142, 421.575pt x 316.18124pt>
+<Images/missHead-eps-converted-to.pdf, id=145, 421.575pt x 316.18124pt>
 File: Images/missHead-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missHead-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missHead-eps-converted-to.pdf  used on input line 484.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[27] [28 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/simAdj.JPG>]
+[28] [29 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/simAdj.JPG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missAdjDet-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missHead-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
+ [30 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missAdjDet-eps-converted-to.pdf> <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/missHead-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-<Images/adjStohastic.JPG, id=176, 580.41844pt x 295.85532pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+<Images/adjStohastic.JPG, id=179, 580.41844pt x 295.85532pt>
 File: Images/adjStohastic.JPG Graphic file (type jpg)
 <use Images/adjStohastic.JPG>
 Package pdftex.def Info: Images/adjStohastic.JPG  used on input line 657.
@@ -1186,12 +1190,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/adjStohasticSim-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/adjStohasticSim-eps-converted-to.pdf, id=177, 421.575pt x 316.18124pt>
+<Images/adjStohasticSim-eps-converted-to.pdf, id=180, 421.575pt x 316.18124pt>
 File: Images/adjStohasticSim-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/adjStohasticSim-eps-converted-to.pdf>
 Package pdftex.def Info: Images/adjStohasticSim-eps-converted-to.pdf  used on input line 664.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[32 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/adjStohastic.JPG>]) [33 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/adjStohasticSim-eps-converted-to.pdf>] [34
+[33 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/adjStohastic.JPG>]) [34 <c:/Users/mirza/OneDrive/Radna površina/thesis/final/Images/adjStohasticSim-eps-converted-to.pdf>] [35
 
 ] ("c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.aux")
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1199,17 +1203,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28726 strings out of 481212
- 588030 string characters out of 2905973
+ 28730 strings out of 481212
+ 588195 string characters out of 2905973
  1243116 words of memory out of 3000000
- 43809 multiletter control sequences out of 15000+200000
+ 43810 multiletter control sequences out of 15000+200000
  571479 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,15n,75p,897b,1720s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmsc.enc}<C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/mirza/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.pdf" (34 pages, 652992 bytes).
+Output written on "c:/Users\mirza\OneDrive\Radna površina\thesis\final\main.pdf" (35 pages, 655357 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
+ 249 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
