@@ -65,7 +65,58 @@ Euloerovih uglova ograničava na sljedeći način:
 \end{align*}
 Ovo znači da u ovom slučaju postoji beskonačno mnogo načina da se ostvari željena transformacija.
 Ovaj problem se može riješiti uvođenjem jediničnog kvaterniona.
-
+Još jedan iznimno važan koordinatni sistem je \textit{koordinatni sistem brzine tijela(BKS)}. Ovaj Koordinatni
+sistem se koristi kad god relativno kretanje objekta u odnosu na okolinu ima za posljedicu pojavu 
+reaktivnih sila. Koordinatni sistem brzine je vezan za vektor brzinu objekta. Ishodište kooridnatnog sistema 
+sitema brzine tijela se podudara sa centrom mase tijela(centar mase se može mijenjati tokom leta zbog utroška goriva), dok 
+je $X$ osa kolinearna sa vektorom brzine objekta. Druge dvije ose se proizvoljno definišu u ravni 
+normalnoj na vektor brzine. Najčešće se uzima da $Z$ osa zadovoljava barem jedan od naredna dva uslova:
+\begin{itemize}
+    \item $Z$ leži u presjeku ravni normalne na vektor brzine i vertikalne ravni simetrije pokretnog objekta.
+    \item $Z$ leži u presjeku ravni normalne na vektor brzine i vertikalne ravni referentnog koordinatnog sistema.
+\end{itemize}
+Koordinatni sistem brzine je prikazan na slici \ref{fig:vks}.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale=0.5]{vks.PNG}
+    \caption{Ubacicu svoju sliku}
+    \label{fig:vks}
+\end{figure}
+Ugao između $X$ ose sitema tijela i $X$ ose sitema brzine je označen sa $\eta$ i ovim uglom se i definiše 
+koordinatni sistem brzine tijela. Ugao $\alpha$ je ugao ugao između $Z_b$ ose  sistema tijela i projekcije 
+vektora brzine na vertikalnu ravan sistema tijela. Ovaj ugao se napadni ugao o kojem će više riječi biti kasnije. 
+Ugao $\beta$ je ugao izmešu vektora brzine i vertikalne ravni sistema tijela. Ovaj ugao se zove ugao klizanja i o njemu će 
+više riječi biti kasnije. Transformacija sistema brzine u sistem tijela se postiže rotacijom 
+oko $Y$ ose sistema tijela za ugao $\alpha$ praćene rotacijom oko $Z$ ose dobijenog sistema za ugao $\beta$. 
+Odgovarajuća matrica transformacije je:
+\begin{equation}
+    T_{brzina}^{tijelo} = \begin{bmatrix}
+        \cos\alpha & 0 & -\sin\alpha \\
+        0& 1& 0\\
+        \sin\alpha & 0 & \cos\alpha
+    \end{bmatrix}
+    \begin{bmatrix}
+        \cos\beta & \sin\beta & 0\\
+        -\sin\beta & \cos\beta & 0\\
+        0 & 0& 1\\
+    \end{bmatrix}
+    \label{eq:VtoB}
+\end{equation}
+Veza između sistema Zemlje(inercijalnog sistema) i sistema brzine je data uglovima $\Theta$(ugla elevacije vektora brzine)
+i $\Psi$, ugla azimuta vektora brzine. Transformacija iz inercijalnog sistema u sistem brzine se dobija rotacijom 
+za $\Theta$ oko $X$ ose sistema brzine, zatim rotacijom oko $Z$ ose za $\Psi$. Odgovarajuća matrica transformacije je:
+\begin{equation}
+    T_{brzina}^{tijelo} = \begin{bmatrix}
+        \cos\Theta & 0 & -\sin\Theta \\
+        0& 1& 0\\
+        \sin\Theta & 0 & \cos\Theta
+    \end{bmatrix}
+    \begin{bmatrix}
+        \cos\Psi & \sin\Psi & 0\\
+        -\sin\Psi & \cos\Psi & 0\\
+        0 & 0& 1\\
+    \end{bmatrix}
+\end{equation}
 \section{Jednačine kretanja čvrstog tijela}
 Sada ćemo posmatrati tipični projektil i izvesti jednačine koje opisuju njegovo kretnaje.
 Pretpostaviti će se da čvrsto tijelo nema promjena u obliku pri kretanju. Translacija tijela 
@@ -322,11 +373,22 @@ Prethodnih 12 jednačina se može predstaviti u prostoru stanja ako se uzme veko
 \[\vec{X}=\left[ u \quad v\quad w\quad P\quad Q\quad R\quad \phi \quad \theta \quad
  \psi \quad x_z\quad y_z\quad z_z\quad \right]^T\] i vektor upralvjačkih 
 promjenljivih:
-\[\vec{u}=\left[\delta_v \quad \delta_P\quad \delta_e\quad \right]^T\] 
+\[\vec{u}=\left[\delta_v \quad \delta_P\quad \delta_e \right]^T\] 
 ,gdje je $\delta_v$ ugao otklona krmila visine, $\delta_P$, ugao otklona krmila 
- i $\delta_e$, ugao toklona elerona. Ovime se dobija nelinearna vekotrska jednačina:
+i $\delta_e$, ugao toklona elerona. Upravljačke varijable se na prvu ruku ne vide i predstalvjenim jednačinama, 
+ali ubrzo ćemo se uvjeriti da sile i momenti koji djeuluju na projektil zavise upravo od ovih upralvjačkih 
+varijabli.  
+Ovime se dobija nelinearna vekotrska jednačina:
 \begin{equation}
-    \vec{X}=f(\vec{X},\vec{u})
+    \dot{\vec{X}}=f(\vec{X},\vec{u},t)
 \end{equation}
+Prethodna jednačina je doista nelinearna najprije zbog prirode modela, postojanja trigonometrijskih funkcija i 
+zbog nelinearne zavisnosti sila i momenata od otklona upralvjačkih površina. Kako bi se izvršila sinteza 
+regulatora prethodna jednačina se najprije treba linearizirati za određeni režim leta. Već se nadzire 
+da se linearizacija može izvršiti nalaženjem prvih izvoda vekotrske funkcije $f(\vec{X},\vec{u},t)$ za određene uslove leta. 
+Dobijena matrica bi imala 144 elementa koji su u stvari prvi izvodi raznih parametara modela pa je evidentno 
+da treba poznavati zavisnosti parametra od vremena i međusobne zavisnosti varijabli stanja.  
+
+
 
 

@@ -1,0 +1,49 @@
+Potpun nelinearni dinamički model sastoji iz 12 diferencijalnih jednačina koje su predstavljene ranije. 
+Iznimno je teško dobiti analitičko rješenje ovih diferencijalnih jednačina pa se obično pribjegava numeričkoj
+simulaciji modela. Zadatak autopilota je da osigura brz prelaz stanja i stabilan odziv u okolini nominalne trajektorije. 
+Pokazaće se da se za nominalnu trajektoriju čitav model može raspregnuti što ima za posljedicu 
+potpuno razdvajanje modela na dva podsistema. Ova praksa je korištena kod starih letjelica zbog 
+uštede računarske moći, ali to danas više nije problem zbog razvoja digitalnih račuara, međutim rasprezanje 
+dinamičkog modela je i danas korisno u svrhu sinteze regulatora. Rasprezanje dinamičkog modela 
+uvodi netačnosti u model pošto je za rasprezanje potrebno zanemarivanje određenih veličina pa se 
+preporučuje ispitivanje regulatora na nelinearnom modelu. U nastavku su sumarno prikazane ranije izvedene 
+relacije koje opisuju model projektila krstaste konfiguracije pri čemu treba primjetiti da su ove jednačine 
+sada prikazane u koordinatnom sistemu brzine. Korišten je indeks $v$(velocity) da se označi vektor u sistemu brzine
+i indeks $b$(body) da se označi vekor u sistemu tijela. Da bi se transformisao vektor iz sistema tijela u sistem brzine 
+treba se koristiti inverz matrice transformacije date sa \ref{eq:VtoB}, koji iznosi:
+\begin{equation}
+    T_b^v = \begin{bmatrix}
+            \cos\beta & \sin\beta & 0\\
+            -\sin\beta & \cos\beta & 0\\
+            0 & 0& 1\\
+        \end{bmatrix}
+        \begin{bmatrix}
+            \cos\alpha & 0 & -\sin\alpha \\
+        0& 1& 0\\
+        \sin\alpha & 0 & \cos\alpha
+        \end{bmatrix}
+\end{equation}
+Nakon množenja matrica dobija se:
+\begin{equation}
+    T_b^v\begin{bmatrix}
+        \cos\alpha\cos\beta & \sin\beta & -\sin\alpha\cos\beta \\
+        -\cos\alpha\sin\beta & \cos\beta & \sin\alpha\sin\beta \\
+        \sin\alpha & 0 & \cos\alpha
+    \end{bmatrix}
+\end{equation}
+Sada se konačno mogu napisati svih 12 diferencijalnih jednačina modela u koordinatnom sistemu brzine.
+\begin{align}
+    &\frac{dV}{dt} = \frac{F_{xv}}{m}\\
+    &\frac{d\Psi}{dt} = \frac{F_{yv}}{mv\cos\Theta}\\
+    &\frac{d\Theta}{dt} = -\frac{F_{zv}}{mv}\\
+    &\frac{dP}{dt}=L/A\\
+    &\frac{dQ}{dt}=[M+(I_z-I_x)RP]/I_y\\
+    &\frac{dR}{dt}=[N+(I_x-I_y)PQ]/I_z\\
+    &\frac{d\psi}{dt}=(R\cos\phi+Q\sin\phi)/\cos\theta\\
+    &\frac{d\theta}{dt}=Q\cos\phi-R\sin\phi\\
+    &\frac{d\phi}{dt}=P+(R\cos\phi+Q\sin\phi)\tan\theta\\
+    &\frac{dx_z}{dt}=V\cos\Theta\cos\Psi\\
+    &\frac{dy_z}{dt}=V\cos\Theta\sin\Psi\\
+    &\frac{dz_z}{dt}=V\sin\Theta
+\end{align}
+
