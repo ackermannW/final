@@ -11,24 +11,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Sile koje djeluju na projektil}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Aerodinamičke sile}{13}%
+\contentsline {section}{\numberline {3.1}Gravitaciona sila}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Aerodinamički momenti}{15}%
+\contentsline {section}{\numberline {3.2}Pogonska sila}{13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Uvod u proporcionalnu navigaciju}{17}%
+\contentsline {section}{\numberline {3.3}Aerodinamičke sile}{14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Opis planarnog susreta}{17}%
+\contentsline {section}{\numberline {3.4}Aerodinamički momenti}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Izvođenje upravljačkog zakona}{18}%
+\contentsline {chapter}{\numberline {4}Uvod u proporcionalnu navigaciju}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Izmjenjena proporcionalna navigacija}{20}%
+\contentsline {section}{\numberline {4.1}Opis planarnog susreta}{18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Optimalnost zakona proporcionalne navigacije}{20}%
+\contentsline {section}{\numberline {4.2}Izvođenje upravljačkog zakona}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Linearizacija}{21}%
+\contentsline {section}{\numberline {4.3}Izmjenjena proporcionalna navigacija}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Petlja navođenja i zero effort miss}{23}%
+\contentsline {section}{\numberline {4.4}Optimalnost zakona proporcionalne navigacije}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Adjungovani sistem i petlja navođenja}{25}%
+\contentsline {section}{\numberline {4.5}Linearizacija}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}Adjungovani stohastički sistemi}{28}%
+\contentsline {section}{\numberline {4.6}Petlja navođenja i zero effort miss}{24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Adjungovani sistem i petlja navođenja}{26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.8}Adjungovani stohastički sistemi}{29}%

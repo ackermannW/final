@@ -1,7 +1,30 @@
-
+Ranije su izvedene jednačine(Eulerove) koje opisuju kretanje projektila. U ovim jednačinama se 
+pojavljuju sile i momenti koji djeluju na projektil, te je nephodno i njih odrediti kako bi 
+se postigao potpun dinamilki model projektila. Također, poznavanje prirode ovih sila je neophodno kako 
+bi se moglo upravljati projektilom jer se upravo kontrolom ovih sila postiže upravljanje projektila.
 Sile koje djeluju na projektil su u letu su aerodinamičke, pogonske sile i 
 gravitaciona sila. Ove sile se mogu razložiti po osama kooridnatnog sistema vezanog 
-za tijelo. 
+za tijelo i mogu se izraziti u inercijalnom kooridnatnom sistemu. 
+\section{Gravitaciona sila}
+Prije svega važno je istaći da se gravitaciona sila ne može koristiti za upralvjanje projektilom i 
+ona predstavlja ništa više od vanjske smetnje na sistem automatskog upralvjanja.
+Gravitaciona sila predstavlja vektor koji je usmjeren ka centru Zemlje i u inercijalnom kooridnatnom
+sistemu je dat sa:
+\begin{equation}
+    G_{Zemlja}=[0\;  0\;  mg]^T
+\end{equation}
+Da bi se dobila vrijednost gravitacione sile u neinercijalnom kooridnatnom sistemu, treba se koristiti matrica 
+transformacije:
+\begin{equation}
+    G_{tijelo} = C_e^bG_{Zemlja}
+\end{equation}
+Gravitaciona sila se u opštem slučaju mijenja u vremenu pošto se masa projektila mijenja usljed utroška goriva
+pri letu projektila. Varijacije u gravitacionom ubrzanju se zanemaruju pri promjeni geografske širine.  
+Promjena mase projektila je od krucijalne važnosti za balističke projektile kod kojih $90\%$ mase čini 
+\section{Pogonska sila}
+\begin{equation}
+    P_{tijelo}=[P\;  0\;  0]^T
+\end{equation}
 \section{Aerodinamičke sile}
 Aerodinamička sila je posljedica djelovanja pritiska okolnog fluida na tijelo u pokretu. 
 Aerodinamička sila se može razložiti na tri komponente koje su definisane u nastavku:

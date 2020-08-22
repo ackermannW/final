@@ -124,16 +124,6 @@ INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspac
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\draftwatermark\draftwatermark.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\draftwatermark\draftwatermark.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\everypage\everypage.sty
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\everypage\everypage.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
@@ -235,6 +225,12 @@ INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftex
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\logreq\logreq.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\logreq\logreq.sty
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\tex\latex\logreq\logreq.def
@@ -297,7 +293,6 @@ INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\preuzmi.png
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\preuzmi.png
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr17.tfm
 INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmcsc10.tfm
-INPUT C:\Users\mirza\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr17.tfm
 INPUT C:\Users\mirza\AppData\Local\MiKTeX\pdftex\config\pdftex.map
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\main.toc
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\main.toc
@@ -358,11 +353,6 @@ INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\wind.JPG
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\wind.JPG
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Chapters\chapter02.tex
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Chapters\chapter02.tex
-INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\PNfigure.JPG
-INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\PNfigure.JPG
-INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\PNfigure.JPG
-INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\PNfigure.JPG
-INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\PNfigure.JPG
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\homingSimulink.JPG
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\homingSimulink.JPG
 INPUT c:\Users\mirza\OneDrive\Radna površina\thesis\final\Images\homingSimulink.JPG

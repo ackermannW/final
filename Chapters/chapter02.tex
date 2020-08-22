@@ -1,7 +1,31 @@
 \section{Opis planarnog susreta}
 \begin{figure}[!ht]
     \centering
-    \includegraphics{PNfigure.JPG}
+    \begin{tikzpicture}
+        \draw [->](0,0)--(0,5.5) node[right]{$2$};
+        \draw [->](0,0)--(6,0) node[right]{$1$};
+        \node[] at (2,1) (m){Projektil};
+        \node[] at (5,4) (t){};
+        \node[right of = t, node distance =0.5cm] (){Meta};
+        \draw[->] (m.north) -- (t.south);
+        \node[]at(3,3)(vm){$v_m$};
+        \draw[->](m.north)--(vm);
+        \node[] at (1,2.3) (nl){$n_l$};
+        \draw[->] (m.north)--(nl);
+        \draw[dashed] (m.north) -- (5,1.35);
+        \node[anchor = west] at (2.5, 1.5) () {$\lambda$};
+        \draw[->] (3,1.3) arc (0:41:1);
+       \draw[->](3.2,1.3) arc (0:39:2);
+       \node[] at (2.8, 2.2) () {$\gamma$};
+       \draw[dashed] (t.south) -- (1,3.88);
+       \node[] at (3.5,4.5)(vt){$v_T$};
+       \draw[->] (t.south) -- (vt);
+       \node[] at (5.2, 4.7) (nt){$n_T$};
+       \draw[->](t.south) -- (nt);       
+       \draw[->] (4, 3.88) arc (180:158:1);
+       \node[] at (4.2,4) (){$\beta$};
+\end{tikzpicture}
+\caption{Prikaz planarnog susreta}
 \end{figure}
 \noindent Udaljenost između mete i projektila u svakom trenutku je data sa:
 \begin{equation}
@@ -250,7 +274,7 @@ Sada se može linearizirati i jednačina za udaljenost:
 gdje je $t_F$ ukupno vrijeme leta.\\
 Definišimo i veličinu \textit{time to go} $t_{go}$:
 \begin{equation}
-    t_{go}=t_F-t
+    t_{go}=t_f-t
 \end{equation}
 Linearizirani promašaj se definisše kao udaljenost mete i projektila na kraju leta, ili:
 \begin{equation}
@@ -310,10 +334,8 @@ prikazati blok dijagramom kao na slici \ref{fig:homing}.
         \draw[->](div)--(seeker);
         \draw[->](output)|-(law);
         \draw[->](law)--(dyn);
-        \draw [-] (seeker) -- node [name=y] {}(output);
-        
+        \draw [-] (seeker) -- node [name=y] {}(output);        
         \draw[->](dyn)-|node[pos=0.99] {$-$}(sum);
-        
         \end{tikzpicture}
     \caption{Petlja navođenja}
     \label{fig:homing}
