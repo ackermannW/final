@@ -76,6 +76,34 @@
       \field{year}{2004}
       \true{nocite}
     \endentry
+    \entry{graovac2005automatsko}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=99bd8a682d83f970c13848ed1a24df32}{%
+           family={Graovac},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Akademska misao}%
+      }
+      \strng{namehash}{99bd8a682d83f970c13848ed1a24df32}
+      \strng{fullhash}{99bd8a682d83f970c13848ed1a24df32}
+      \strng{bibnamehash}{99bd8a682d83f970c13848ed1a24df32}
+      \strng{authorbibnamehash}{99bd8a682d83f970c13848ed1a24df32}
+      \strng{authornamehash}{99bd8a682d83f970c13848ed1a24df32}
+      \strng{authorfullhash}{99bd8a682d83f970c13848ed1a24df32}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Automatsko vo{đ}enje objekata u prostoru}
+      \field{year}{2005}
+      \true{nocite}
+    \endentry
     \entry{yanushevsky2007modern}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=eb75f3b427ffe3539c3c595ce354cc95}{%

@@ -29,10 +29,10 @@ Da se definiše položaj letjelice u odnosu na koordinatni sistem koriste se Eul
 \end{figure}
 Ovo znači da se bilo koja rotacija, odnosno transformacija iz sistema tijela u sistem Zemlje može postići sa tri rotacije oko osi i to prva 
 rotacija za ugao $\phi$ oko longitudinalne, za ugao $\theta$ oko lateralne i za ugao 
-$\psi$ oko normalne ose. Transformacija $C_e^b$ koja ostvaruje transformaciju iz 
+$\psi$ oko normalne ose. Transformacija $T_b^e$ koja ostvaruje transformaciju iz 
 koordinatnog sistema vezanog za zemlju u koordinatni sistem vezan za tijelo je data sa:
 \begin{equation}    
-    C_e^b=\begin{bmatrix}
+    T_b^e=\begin{bmatrix}
         1&0&0\\
         0&\cos\phi & \sin\phi \\
         0 & -\sin\phi & \cos\phi \\
@@ -50,7 +50,7 @@ koordinatnog sistema vezanog za zemlju u koordinatni sistem vezan za tijelo je d
 \end{equation}
 ,odnosno:
 \begin{equation}
-    C_e^b=\begin{bmatrix}
+    T_b^e=\begin{bmatrix}
         cos\theta cos\psi && cos\theta sin\psi && -sin\theta\\
         sin\phi sin\theta cos\psi-cos\phi sin\psi && sin\phi sin\theta sin\psi +cos\phi cos\psi&& sin\phi cos\theta\\
         c\phi s\theta c\psi+sin\phi sin\psi && cos\phi sin\theta sin\psi -sin\phi cos\psi&& cos\phi cos\theta\\
@@ -90,7 +90,7 @@ više riječi biti kasnije. Transformacija sistema brzine u sistem tijela se pos
 oko $Y$ ose sistema tijela za ugao $\alpha$ praćene rotacijom oko $Z$ ose dobijenog sistema za ugao $\beta$. 
 Odgovarajuća matrica transformacije je:
 \begin{equation}
-    T_{brzina}^{tijelo} = \begin{bmatrix}
+    T_{tijelo}^{brzina} = \begin{bmatrix}
         \cos\alpha & 0 & -\sin\alpha \\
         0& 1& 0\\
         \sin\alpha & 0 & \cos\alpha
@@ -106,7 +106,7 @@ Veza između sistema Zemlje(inercijalnog sistema) i sistema brzine je data uglov
 i $\Psi$, ugla azimuta vektora brzine. Transformacija iz inercijalnog sistema u sistem brzine se dobija rotacijom 
 za $\Theta$ oko $X$ ose sistema brzine, zatim rotacijom oko $Z$ ose za $\Psi$. Odgovarajuća matrica transformacije je:
 \begin{equation}
-    T_{brzina}^{tijelo} = \begin{bmatrix}
+    T_{brzina}^{zemlja} = \begin{bmatrix}
         \cos\Theta & 0 & -\sin\Theta \\
         0& 1& 0\\
         \sin\Theta & 0 & \cos\Theta

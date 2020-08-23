@@ -31,7 +31,7 @@ Nakon množenja matrica dobija se:
         \sin\alpha & 0 & \cos\alpha
     \end{bmatrix}
 \end{equation}
-Sada se konačno mogu napisati svih 12 diferencijalnih jednačina modela u koordinatnom sistemu brzine.
+Sada se konačno može napisati svih 12 diferencijalnih jednačina modela u koordinatnom sistemu brzine.
 \begin{align}
     &\frac{dV}{dt} = \frac{F_{xv}}{m}\\
     &\frac{d\Psi}{dt} = \frac{F_{yv}}{mv\cos\Theta}\\
@@ -46,4 +46,54 @@ Sada se konačno mogu napisati svih 12 diferencijalnih jednačina modela u koord
     &\frac{dy_z}{dt}=V\cos\Theta\sin\Psi\\
     &\frac{dz_z}{dt}=V\sin\Theta
 \end{align}
-
+Ovaj nelinearni model ima tri ulaza(otkloni kontrolnih površina) i svaka od varijabli stana može izlaz pa se kod lineariziranog 
+modela može predstaviti 36 prenosnih funkcija, međutim zbog prirode posmatrane konfiguracije 
+neke od ovih prenosnih funkcija će identički biti jednake nuli. Jedan primjer ovakve prensone funkcije 
+jeste veza između otklona upravljačke površine za stabilizaciju ugla valjanja i brzine projektila. 
+\section{Rasprezanje dinamičkog modela}
+Sada će se u svrhu lakše analize i sinteze regulatora izvršiti rasprezanje dinamičkog modela. Ideja je 
+da se uvedu neke pretpostavke koje će omogućiti da se predstavljene jednačine razdvoje na grupe 
+nezavisnih jednačina.Treba da je ispunjeno:
+\begin{itemize}
+    \item Projektil se kreće u vertikalnoj ravni referentnog koordinatnog sistema.
+    \item Osa $x_z$ leži u ravni kretnja.
+\end{itemize}
+Prva pretpostavka iziskuje $\beta , \phi , P, R\approx 0$. Činjenica da je $P,R \approx 0$ znači da se tijelo rotira samo oko $Y_b$ ose
+,dalje, pretpostavka da je $\beta \approx 0$ znači da je usmjerenje letjelica isto kao i vektor brzine i konačno činjenica 
+da je $\phi \approx 0$ znači da nema valjanja.  
+Druga pretpostavka iziskuje $\Psi, \psi, y_z\approx 0$. Ovo znači da nema skretanja, da projektil može mjenjati samo visinu i udaljenost po $X_z$ osi.
+Dakle ove dvije pretpostavke ograničavaju kretanje letjelice na vertikalnu ravan sa dopuštenjem propinjanja i kretanjem naprijed. 
+Sada preostale jednačine koje su okarakterisane varijablama stanja:
+\[V,\Theta,\theta,\alpha,Q,x_z, z_z\]
+Definišu \textit{longitudinalno kretanje(kretanje u vertikalnoj ravni)}. Jednačine okarakterisan varijablama 
+koje su u ovom slučaju zanemarene definišu \textit{lateralno kreetanje(bočno)} koje se sastoji 
+od kretanja u horizntalnoj ravni, skretanja i valjanja ali bez propinjanja. Sada se ova dva podsistema mogu odvojeno posmatrati.
+Sada ostaje samo da se sile koje su objašnjenje u prethodnom poglavlju pretvorimo iz sistema tijela 
+i sistema Zemlje u sistem brzine i da ih se uvrsti u jednačine koje opisuju model u sistemu brzine. 
+Jednačine koje predstavljaju longitdunalno kretanje su:
+\begin{align}
+    &m\frac{dv}{dt}= P\cos\alpha - R_{otp} - G\sin\Theta\\
+    &mV\frac{d\Theta}{dt} = -Psin\alpha - R_{uzg} + G\cos\Theta\\
+    &I_x\frac{dQ}{dt} \approx M\\
+    &\frac{d\theta}{dt}=Q\\
+    &\frac{dx_z}{dt}=V\cos\Theta\\
+    &\frac{dz_z}{dt}=-V\sin\Theta
+\end{align}
+Također iz matrice transformacije $Tz^v$(treba invertovati $Tv^z$) se dobija za uvedene pretpostavke:
+\begin{equation}
+    \Theta = \theta - \alpha
+\end{equation}
+Sada se mogu napisati i jednačine za lateralno kretanje:
+\begin{align}
+    &mVcos\Theta \frac{d\Psi}{dt}=-P\cos\alpha \sin\beta \cos\phi - P\sin\alpha\sin\phi 
+    - R_{side}\cos\phi - R_{uzg}\sin\phi\\
+    &I_x\frac{dP}{dt}=L\\
+    &I_z\frac{dR}{dt}=N+(I_x-I_y)\\
+    &\frac{d\psi}{dt}=(R\cos\phi+q\sin\phi)/\cos\theta\\
+    &\frac{d\theta}{dt}=P+(R\cos\phi - q\sin\phi)/\tan\theta\\
+    &\frac{dy_z}{dt}=V\cos\Theta\sin\Psi
+\end{align}
+Pri čemu se iz $Tz^v$ pokazuje:
+\begin{equation}
+    \Psi \approx \psi-\beta
+\end{equation}
