@@ -21,30 +21,32 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Blok dijagram lineariziranog modela longitudinalnog kretanja\relax }}{26}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Prikaz planarnog susreta\relax }}{24}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Prikaz planarnog susreta\relax }}{27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Linearizacija jednačina proporcionalne navigacije\relax }}{29}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Linearizacija jednačina proporcionalne navigacije\relax }}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Petlja navođenja\relax }}{30}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Petlja navođenja\relax }}{33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Proporcionalana navigacija u Simulinku\relax }}{31}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Proporcionalana navigacija u Simulinku\relax }}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Ubrzanja projektila i promašaj za $N=4$ i $N=5$\relax }}{31}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Ubrzanja projektila i promašaj za $N=4$ i $N=5$\relax }}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Simulink model izmjenjene proporcionalne navigacije\relax }}{32}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Simulink model izmjenjene proporcionalne navigacije\relax }}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Ubrzanje projektila i promašaj vođen promjenjenom proporcionalnom naivgacijom, $N=3$\relax }}{32}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Ubrzanje projektila i promašaj vođen promjenjenom proporcionalnom naivgacijom, $N=3$\relax }}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Adjungovana petlja navođenja\relax }}{34}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Adjungovana petlja navođenja\relax }}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Simulink dijagram adjungovanog sistema\relax }}{34}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Simulink dijagram adjungovanog sistema\relax }}{37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Odzivi adjungovanog sistema\relax }}{35}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Odzivi adjungovanog sistema\relax }}{38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Adjungovani stohastički model\relax }}{38}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Adjungovani stohastički model\relax }}{41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Simulink model ajdungovanog stohastičkog sistema\relax }}{38}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Simulink model ajdungovanog stohastičkog sistema\relax }}{41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Očekivana vrijednost kvadrata promašaja\relax }}{39}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Očekivana vrijednost kvadrata promašaja\relax }}{42}%
