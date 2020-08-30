@@ -5,50 +5,64 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Koordinatni sistem vezan za tijelo\relax }}{6}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Koordinatni sistem vezan za tijelo\relax }}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Eulerovi uglovi\relax }}{6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Eulerovi uglovi\relax }}{7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Ubacicu svoju sliku\relax }}{7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ubacicu svoju sliku\relax }}{8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Predstava šest stepeni slobode\relax }}{9}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Ugaone veze\relax }}{17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Veza između sistema tijela i sistema vjetra\relax }}{18}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Predstava šest stepeni slobode\relax }}{10}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Blok dijagram lineariziranog modela longitudinalnog kretanja\relax }}{26}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ugaone veze\relax }}{18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Veza između sistema tijela i sistema vjetra\relax }}{19}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Prikaz planarnog susreta\relax }}{27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Linearizacija jednačina proporcionalne navigacije\relax }}{32}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Petlja navođenja\relax }}{33}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Proporcionalana navigacija u Simulinku\relax }}{34}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Ubrzanja projektila i promašaj za $N=4$ i $N=5$\relax }}{34}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Simulink model izmjenjene proporcionalne navigacije\relax }}{35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Ubrzanje projektila i promašaj vođen promjenjenom proporcionalnom naivgacijom, $N=3$\relax }}{35}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Adjungovana petlja navođenja\relax }}{37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Simulink dijagram adjungovanog sistema\relax }}{37}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Odzivi adjungovanog sistema\relax }}{38}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Adjungovani stohastički model\relax }}{41}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Simulink model ajdungovanog stohastičkog sistema\relax }}{41}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Očekivana vrijednost kvadrata promašaja\relax }}{42}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Blok dijagram lineariziranog modela longitudinalnog kretanja\relax }}{27}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Prikaz planarnog susreta\relax }}{28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Linearizacija jednačina proporcionalne navigacije\relax }}{33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Petlja navođenja\relax }}{34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Proporcionalana navigacija u Simulinku\relax }}{35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Ubrzanja projektila i promašaj za $N=4$ i $N=5$\relax }}{35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Simulink model izmjenjene proporcionalne navigacije\relax }}{36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Ubrzanje projektila i promašaj vođen promjenjenom proporcionalnom naivgacijom, $N=3$\relax }}{36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Adjungovana petlja navođenja\relax }}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Simulink dijagram adjungovanog sistema\relax }}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Odzivi adjungovanog sistema\relax }}{39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Adjungovani stohastički model\relax }}{42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Simulink model ajdungovanog stohastičkog sistema\relax }}{42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Očekivana vrijednost kvadrata promašaja\relax }}{43}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Oodziv ugla propinjanja u otvorenoj povratnoj sprezi\relax }}{45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Povratna sprega po uglu propinjanja\relax }}{45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Odziv ugla propinjanja sa zatvorenom povratnom spregom po uglu propinjanja\relax }}{46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Odziv ugla propinjanja sa integralnim kompenzatorom\relax }}{47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Povratna sprega po brzini i uglu propinjanja\relax }}{47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Simulink shema kaskadne regulacije ugla propinjanja\relax }}{48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Odzivi ugla propinjanja sa povratnom spregom po brzini i uglu propinjanja\relax }}{48}%

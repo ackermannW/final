@@ -1,52 +1,52 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {croatian}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}}{4}%
+\contentsline {chapter}{\numberline {1}}{5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Jednačine kretanja tijela}{5}%
+\contentsline {chapter}{\numberline {2}Jednačine kretanja tijela}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Koordinatni sistemi}{5}%
+\contentsline {section}{\numberline {2.1}Koordinatni sistemi}{6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Jednačine kretanja čvrstog tijela}{8}%
+\contentsline {section}{\numberline {2.2}Jednačine kretanja čvrstog tijela}{9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Sile koje djeluju na projektil}{15}%
+\contentsline {chapter}{\numberline {3}Sile koje djeluju na projektil}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Gravitaciona sila}{15}%
+\contentsline {section}{\numberline {3.1}Gravitaciona sila}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Pogonska sila}{15}%
+\contentsline {section}{\numberline {3.2}Pogonska sila}{16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Aerodinamičke sile}{16}%
+\contentsline {section}{\numberline {3.3}Aerodinamičke sile}{17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Aerodinamički momenti}{18}%
+\contentsline {section}{\numberline {3.4}Aerodinamički momenti}{19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Dinamički model}{20}%
+\contentsline {chapter}{\numberline {4}Dinamički model}{21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Rasprezanje dinamičkog modela}{21}%
+\contentsline {section}{\numberline {4.1}Rasprezanje dinamičkog modela}{22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Linearizacija u okolini nominalne trajektorije}{23}%
+\contentsline {section}{\numberline {4.2}Linearizacija u okolini nominalne trajektorije}{24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Uvod u proporcionalnu navigaciju}{27}%
+\contentsline {chapter}{\numberline {5}Uvod u proporcionalnu navigaciju}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Opis planarnog susreta}{27}%
+\contentsline {section}{\numberline {5.1}Opis planarnog susreta}{28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Izvođenje upravljačkog zakona}{28}%
+\contentsline {section}{\numberline {5.2}Izvođenje upravljačkog zakona}{29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Izmjenjena proporcionalna navigacija}{30}%
+\contentsline {section}{\numberline {5.3}Izmjenjena proporcionalna navigacija}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Optimalnost zakona proporcionalne navigacije}{30}%
+\contentsline {section}{\numberline {5.4}Optimalnost zakona proporcionalne navigacije}{31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Linearizacija}{31}%
+\contentsline {section}{\numberline {5.5}Linearizacija}{32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Petlja navođenja i zero effort miss}{33}%
+\contentsline {section}{\numberline {5.6}Petlja navođenja i zero effort miss}{34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Adjungovani sistem i petlja navođenja}{35}%
+\contentsline {section}{\numberline {5.7}Adjungovani sistem i petlja navođenja}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}Adjungovani stohastički sistemi}{38}%
+\contentsline {section}{\numberline {5.8}Adjungovani stohastički sistemi}{39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Sinteza autopilota}{43}%
+\contentsline {chapter}{\numberline {6}Sinteza autopilota}{44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Upravljanje i stabilizacija ugla propinjanja}{43}%
+\contentsline {section}{\numberline {6.1}Upravljanje i stabilizacija ugla propinjanja}{44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Upravljanje normalnim ubrzanjem}{43}%
+\contentsline {section}{\numberline {6.2}Upravljanje normalnim ubrzanjem}{48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Three loop autopilot}{43}%
+\contentsline {section}{\numberline {6.3}Three loop autopilot}{49}%
