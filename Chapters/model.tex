@@ -34,8 +34,8 @@ Nakon množenja matrica dobija se:
 Sada se konačno može napisati svih 12 diferencijalnih jednačina modela u koordinatnom sistemu brzine.
 \begin{align}
     &\frac{dV}{dt} = \frac{F_{xv}}{m}\\
-    &\frac{d\Psi}{dt} = \frac{F_{yv}}{mv\cos\Theta}\\
-    &\frac{d\Theta}{dt} = -\frac{F_{zv}}{mv}\\
+    &\frac{d\Psi}{dt} = \frac{F_{yv}}{mV\cos\Theta}\\
+    &\frac{d\Theta}{dt} = -\frac{F_{zv}}{mV}\\
     &\frac{dP}{dt}=L/I_x\\
     &\frac{dQ}{dt}=[M+(I_z-I_x)RP]/I_y\\
     &\frac{dR}{dt}=[N+(I_x-I_y)PQ]/I_z\\
@@ -72,7 +72,7 @@ Sada ostaje samo da se sile koje su objašnjenje u prethodnom poglavlju pretvori
 i sistema Zemlje u sistem brzine i da ih se uvrsti u jednačine koje opisuju model u sistemu brzine. 
 Jednačine koje predstavljaju longitdunalno kretanje su:
 \begin{align}
-    &m\frac{dv}{dt}= P\cos\alpha - R_{otp} - G\sin\Theta\\
+    &m\frac{dV}{dt}= P\cos\alpha - R_{otp} - G\sin\Theta\\
     &mV\frac{d\Theta}{dt} = -Psin\alpha - R_{uzg} + G\cos\Theta\\
     &I_x\frac{dQ}{dt} \approx M\\
     &\frac{d\theta}{dt}=Q\\
@@ -189,7 +189,7 @@ pa će prelazni proces biti dug možda čak i nestabilan. Sada, pod ovim pretpos
 \begin{align}
     &\frac{\Delta \theta(s)}{\Delta \delta_V(s)}=\frac{K(T_1s+1)}{s(T^2s^2+2\xi Ts+1)}\\
     &\frac{\Delta \Theta(s)}{\Delta \delta_V(s)}=\frac{K}{s(T^2s^2+2\xi Ts+1)}\\
-    &\frac{\Delta \Theta(s)}{\Delta \delta_V(s)}=\frac{KT_1}{T^2s^2+2\xi Ts+1}\\
+    &\frac{\Delta \alpha(s)}{\Delta \delta_V(s)}=\frac{KT_1}{T^2s^2+2\xi Ts+1}\\
     &\frac{\Delta n_z(s)}{\Delta \delta_V(s)}=\frac{V}{g}\frac{K}{T^2s^2+2\xi Ts+1}
 \end{align}
 ,gdje $n_z = \frac{V\dot{\Theta}}{g}$ predstavlja \textit{normalno preopterećenje}, tj. odnos ubrzanja koje je normalno na pravac brzine i gravitacione konstante. 
@@ -206,7 +206,7 @@ posebna pažnja posvetiti upravljanju normalnog ubrzanja. Prenosna funkcija koja
     \centering
     \begin{tikzpicture}[auto, node distance=2cm,>=latex']
         \node[input, name=input](input){};
-        \node[block, right of = input, node distance = 3cm] (g1){$\frac{K(T_1s+1)}{s(T^2s^2+2\xi Ts+1)}$};
+        \node[block, right of = input, node distance = 3cm] (g1){$\frac{KT_1}{T^2s^2+2\xi Ts+1}$};
         \node[block, right of = g1, node distance = 3cm] (g2) {$\frac{T_1s}{1+T_1s}$};
         \node[block, right of = g2] (g3){$\frac{1}{1+T_1s}$};
         \node[anchor = south] (alpha) at ($(g1)!0.6!(g2)$){$\alpha$};
@@ -224,3 +224,6 @@ posebna pažnja posvetiti upravljanju normalnog ubrzanja. Prenosna funkcija koja
 \caption{Blok dijagram lineariziranog modela longitudinalnog kretanja}
 \label{fig:diagLongi}
 \end{figure}
+Evidentno je da za dobijanje lineariziranog modela longitudnalnog kretanja uvedeno 
+puno pretpostavki i da će bilo kakvo odstupanje od ovih pretpostavki umanjiti vjerodostojnost modela, 
+ali se pokazuje da je ovaj linearizirani model dosta dobra aproksimacija pri nominalnim uslovima leta. 

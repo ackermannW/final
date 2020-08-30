@@ -42,3 +42,11 @@
 \contentsline {section}{\numberline {5.7}Adjungovani sistem i petlja navođenja}{35}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.8}Adjungovani stohastički sistemi}{38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Sinteza autopilota}{43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Upravljanje i stabilizacija ugla propinjanja}{43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Upravljanje normalnim ubrzanjem}{43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Three loop autopilot}{43}%

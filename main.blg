@@ -1,16 +1,16 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'main.blg'
-[88] biber-MSWIN64:322> INFO - === 
-[107] Biber.pm:415> INFO - Reading 'main.bcf'
-[219] Biber.pm:940> INFO - Using all citekeys in bib section 0
-[239] Biber.pm:4256> INFO - Processing section 0
-[240] Utils.pm:75> INFO - Globbing data source 'references.bib'
-[252] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
-[268] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
-[271] bibtex.pm:1653> INFO - LaTeX decoding ...
-[294] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
-[384] UCollate.pm:68> INFO - Overriding locale 'hr-HR' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[385] UCollate.pm:68> INFO - Overriding locale 'hr-HR' defaults 'variable = shifted' with 'variable = non-ignorable'
-[385] Biber.pm:4084> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'hr-HR'
-[394] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[397] bbl.pm:755> INFO - Output to main.bbl
+[1] Config.pm:307> INFO - Logfile is 'main.blg'
+[154] biber-MSWIN64:322> INFO - === 
+[191] Biber.pm:415> INFO - Reading 'main.bcf'
+[432] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[494] Biber.pm:4256> INFO - Processing section 0
+[495] Utils.pm:75> INFO - Globbing data source 'references.bib'
+[572] Utils.pm:91> INFO - Globbed data source 'references.bib' to references.bib
+[617] Biber.pm:4455> INFO - Looking for bibtex format file 'references.bib' for section 0
+[644] bibtex.pm:1653> INFO - LaTeX decoding ...
+[683] bibtex.pm:1471> INFO - Found BibTeX data source 'references.bib'
+[804] UCollate.pm:68> INFO - Overriding locale 'hr-HR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[804] UCollate.pm:68> INFO - Overriding locale 'hr-HR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[805] Biber.pm:4084> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'hr-HR'
+[818] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[823] bbl.pm:755> INFO - Output to main.bbl
