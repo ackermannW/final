@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  30 AUG 2020 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  30 AUG 2020 18:13
 entering extended mode
 **c:/Users/Mirza/Desktop/thesis/main.tex
 (c:/Users/Mirza/Desktop/thesis/main.tex
@@ -941,13 +941,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [2
 
-] (c:/Users\Mirza\Desktop\thesis\main.lof)
+] (c:/Users\Mirza\Desktop\thesis\main.lof [3
+
+]
+Overfull \hbox (25.97195pt too wide) in paragraph at lines 78--78
+ [][] []\OT1/lmr/m/n/12 Upravljanje nor-mal-nim ubr-za-njem sa ak-ce-le-ro-me-trom i br-zin-skim ziroskopom [][]  
+ []
+
+)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [3
-
-] [4]
+ [4]
 Poglavlje 1.
 (c:/Users\Mirza\Desktop\thesis\Chapters/introduction.tex) [5
 
@@ -1276,23 +1281,32 @@ pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/compareLead-
 File: Images/compareLead-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/compareLead-eps-converted-to.pdf>
 Package pdftex.def Info: Images/compareLead-eps-converted-to.pdf  used on input line 92.
-(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+<Images/leadInteSim.JPG, id=244, 666.23906pt x 231.11343pt>
+File: Images/leadInteSim.JPG Graphic file (type jpg)
+<use Images/leadInteSim.JPG>
+Package pdftex.def Info: Images/leadInteSim.JPG  used on input line 100.
+(pdftex.def)             Requested size: 333.11871pt x 115.55643pt.
+<Images/subKask.JPG, id=245, 639.89063pt x 155.83218pt>
+File: Images/subKask.JPG Graphic file (type jpg)
+<use Images/subKask.JPG>
+Package pdftex.def Info: Images/subKask.JPG  used on input line 101.
+(pdftex.def)             Requested size: 319.94452pt x 77.9159pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46 <c:/Users/Mirza/Desktop/thesis/Images/closedLoopPitch-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47 <c:/Users/Mirza/Desktop/thesis/Images/compareLead-eps-converted-to.pdf>]
-<Images/simKask.JPG, id=266, 666.99188pt x 226.59656pt>
+ [47 <c:/Users/Mirza/Desktop/thesis/Images/compareLead-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/leadInteSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/subKask.JPG>]
+<Images/simKask.JPG, id=268, 666.99188pt x 226.59656pt>
 File: Images/simKask.JPG Graphic file (type jpg)
 <use Images/simKask.JPG>
-Package pdftex.def Info: Images/simKask.JPG  used on input line 143.
+Package pdftex.def Info: Images/simKask.JPG  used on input line 152.
 (pdftex.def)             Requested size: 333.49512pt x 113.29799pt.
-<Images/subKask.JPG, id=267, 639.89063pt x 155.83218pt>
 File: Images/subKask.JPG Graphic file (type jpg)
 <use Images/subKask.JPG>
-Package pdftex.def Info: Images/subKask.JPG  used on input line 144.
+Package pdftex.def Info: Images/subKask.JPG  used on input line 153.
 (pdftex.def)             Requested size: 319.94452pt x 77.9159pt.
 Package epstopdf Info: Source file: <Images/poredjenjeBrzina.eps>
 (epstopdf)                    date: 2020-08-30 09:59:48
@@ -1301,15 +1315,15 @@ Package epstopdf Info: Source file: <Images/poredjenjeBrzina.eps>
 (epstopdf)                    date: 2020-08-30 10:01:26
 (epstopdf)                    size: 26655 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/poredjenjeBrzina-eps-converted-to.pdf Images/poredjenjeBrzina.eps>
-(epstopdf)             \includegraphics on input line 151.
+(epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/poredjenjeBrzina-eps-converted-to.pdf, id=268, 421.575pt x 316.18124pt>
+<Images/poredjenjeBrzina-eps-converted-to.pdf, id=269, 421.575pt x 316.18124pt>
 File: Images/poredjenjeBrzina-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/poredjenjeBrzina-eps-converted-to.pdf>
-Package pdftex.def Info: Images/poredjenjeBrzina-eps-converted-to.pdf  used on input line 151.
+Package pdftex.def Info: Images/poredjenjeBrzina-eps-converted-to.pdf  used on input line 160.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/poredjenjeOdziva.eps>
 (epstopdf)                    date: 2020-08-30 10:00:20
@@ -1318,17 +1332,76 @@ Package epstopdf Info: Source file: <Images/poredjenjeOdziva.eps>
 (epstopdf)                    date: 2020-08-30 10:01:27
 (epstopdf)                    size: 32609 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/poredjenjeOdziva-eps-converted-to.pdf Images/poredjenjeOdziva.eps>
-(epstopdf)             \includegraphics on input line 152.
+(epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/poredjenjeOdziva-eps-converted-to.pdf, id=269, 421.575pt x 316.18124pt>
+<Images/poredjenjeOdziva-eps-converted-to.pdf, id=270, 421.575pt x 316.18124pt>
 File: Images/poredjenjeOdziva-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/poredjenjeOdziva-eps-converted-to.pdf>
-Package pdftex.def Info: Images/poredjenjeOdziva-eps-converted-to.pdf  used on input line 152.
+Package pdftex.def Info: Images/poredjenjeOdziva-eps-converted-to.pdf  used on input line 161.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-) [48 <c:/Users/Mirza/Desktop/thesis/Images/simKask.JPG> <c:/Users/Mirza/Desktop/thesis/Images/subKask.JPG> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf>] [49] [50
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48 <c:/Users/Mirza/Desktop/thesis/Images/simKask.JPG> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Images/nZodziv.eps>
+(epstopdf)                    date: 2020-08-30 13:41:56
+(epstopdf)                    size: 38746 bytes
+(epstopdf)             Output file: <Images/nZodziv-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-08-30 13:42:03
+(epstopdf)                    size: 32324 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/nZodziv-eps-converted-to.pdf Images/nZodziv.eps>
+(epstopdf)             \includegraphics on input line 181.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/nZodziv-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/nZodziv-eps-converted-to.pdf, id=290, 421.575pt x 298.11375pt>
+File: Images/nZodziv-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/nZodziv-eps-converted-to.pdf>
+Package pdftex.def Info: Images/nZodziv-eps-converted-to.pdf  used on input line 181.
+(pdftex.def)             Requested size: 252.94695pt x 178.86963pt.
+Package epstopdf Info: Source file: <Images/akcClosed.eps>
+(epstopdf)                    date: 2020-08-30 16:04:02
+(epstopdf)                    size: 59365 bytes
+(epstopdf)             Output file: <Images/akcClosed-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-08-30 16:05:59
+(epstopdf)                    size: 19774 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/akcClosed-eps-converted-to.pdf Images/akcClosed.eps>
+(epstopdf)             \includegraphics on input line 224.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/akcClosed-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/akcClosed-eps-converted-to.pdf, id=291, 421.575pt x 316.18124pt>
+File: Images/akcClosed-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/akcClosed-eps-converted-to.pdf>
+Package pdftex.def Info: Images/akcClosed-eps-converted-to.pdf  used on input line 224.
+(pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
+[49 <c:/Users/Mirza/Desktop/thesis/Images/nZodziv-eps-converted-to.pdf>]
+Underfull \vbox (badness 1571) has occurred while \output is active []
+
+ [50 <c:/Users/Mirza/Desktop/thesis/Images/akcClosed-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Images/twoLoopsAcc.eps>
+(epstopdf)                    date: 2020-08-30 18:10:43
+(epstopdf)                    size: 53129 bytes
+(epstopdf)             Output file: <Images/twoLoopsAcc-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-08-30 18:12:45
+(epstopdf)                    size: 13239 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/twoLoopsAcc-eps-converted-to.pdf Images/twoLoopsAcc.eps>
+(epstopdf)             \includegraphics on input line 272.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/twoLoopsAcc-eps-converted-to.pdf, id=313, 421.575pt x 316.18124pt>
+File: Images/twoLoopsAcc-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/twoLoopsAcc-eps-converted-to.pdf>
+Package pdftex.def Info: Images/twoLoopsAcc-eps-converted-to.pdf  used on input line 272.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+) [51 <c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf>] [52
 
 ] (c:/Users\Mirza\Desktop\thesis\main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1336,17 +1409,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28865 strings out of 480797
- 585098 string characters out of 2905362
- 1241219 words of memory out of 3000000
- 44348 multiletter control sequences out of 15000+200000
+ 28911 strings out of 480797
+ 586184 string characters out of 2905362
+ 1242289 words of memory out of 3000000
+ 44390 multiletter control sequences out of 15000+200000
  568729 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,15n,75p,872b,1720s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,15n,75p,872b,1764s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmsc.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (50 pages, 933590 bytes).
+Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (52 pages, 1027869 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
+ 381 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

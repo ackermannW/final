@@ -89,9 +89,18 @@ polova. Povoljnim odabirom parametra $\alpha$ nula se može postaviti na proivol
 Odziv sistema sa integralnim kompenzatorom je prikazan na slici \ref{fig:komp}.
 \begin{figure}[!ht]
     \centering
-    \includegraphics{compareLead.eps}
+    \includegraphics[scale = 0.5]{compareLead.eps}
     \caption{Odziv ugla propinjanja sa integralnim kompenzatorom}
     \label{fig:komp}
+\end{figure}
+Simulink blok dijagram za simulaciju odziva sa integralnim kompenzatorom je prikazan na 
+slici \ref{fig:leadSim}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.5]{leadInteSim.JPG}
+    \includegraphics[scale= 0.5]{subKask.JPG}
+    \caption{Regulacija sa integralnim kompenzatorom}
+    \label{fig:leadSim}
 \end{figure}
 Dodatno, stabilnost odziva se može povećati uvođenjem dodatne povratne sprege po brzini 
 ugla propinjanja. Ako se uvede povratna samo po brzini, tada će se stabilizovati samo 
@@ -126,7 +135,7 @@ Vrijednost izvoda ugla propinjanja se dobija pomoću brzinkskog žiroskopa, a
 vrijednost ugla propinjanja se dobija pomoću slobodnog žiroskopa. Pojačanje povratne 
 grane iznosi:
 \begin{equation}
-    H(s)=K_GA+sK_{GB}
+    H(s)=K_{GA}+sK_{GB}
 \end{equation}
 ,a pojačanje direktne grane je:
 \begin{equation}
@@ -160,5 +169,108 @@ Stacionarna vrijednost na odskočnu pobudu iznosi $\frac{1}{K_{GA}}$
 Kako je razmatrano u prethodnom poglavlju, kod proporcionalne navigacije, se projektilu 
 zadaju normalna ubrzanja kako bi on pogodio metu pa je od posebnog interesa imati sitem 
 za regulaciju normalnog ubrzanja projektila. Jasno je da će to opet biti upravljanje u 
-zatvorenoj povratnoj sprezi. 
+zatvorenoj povratnoj sprezi. Normalno ubrzanje projektila pri longitudinalnom kretanju 
+je dato prenosnom funkcijom:
+\begin{equation}
+    \frac{n_L(s)}{\delta_V(s)}=\frac{KV}{T^2s^2+2\xi Ts+1}
+\end{equation}
+Stacionarna vrijednost iznosi $KV$. Odziv na odskočni otklon krmila visine je dat 
+na slici \ref{fig:nLodziv}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.6]{nZodziv.eps}
+    \caption{Odziv normalnog ubrzanja na odskočni otklon krmila visine}
+    \label{fig:nLodziv}
+\end{figure}
+Ako se uvede povratna sprega po normalnom ubrzanju pomoću akcelerometra kao na slici \ref{fig:akcLoop},
+tada je prenosna funkcija zatvorene petlje:
+\begin{equation}
+    \frac{n_L(s)}{u(s)} = \frac{KV}{T^2s^2+2\xi Ts + 1 +K_{akc}KV}
+\end{equation}
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+        \node[input, name=input](input){};
+       \node[sum, right of = input](sum){};
+       \node[block, right of = sum] (g1){$\frac{KT_1}{T^2s^2+2\xi Ts+1}$};
+       \node[block, right of = g1,node distance = 2.5cm] (g2){$\frac{V}{T1}$};
+       \node [output, right of = g2] (output) {};
+       \node[block, below of = g1] (gyro){$K_{akc}$};
+       \draw [->] (g2) -- node [name=y, anchor = south] {$n_L$}(output);
+       \draw[->] (y)|-(gyro);
+       \draw[->] (gyro) -|node[pos=0.99] {$-$}(sum);
+       \draw[->](g1) -- (g2);
+       \draw [draw,->] (input) -- node {$u$} node[pos=0.99] {$+$}(sum);
+       \node[anchor = south] (thetadot) at ($(g1)!0.6!(g2)$){$\alpha$};
+       \draw[->] (sum)--(g1);
+    \end{tikzpicture}
+    \caption{Blok dijagram sistem za upravljanje normalnim ubrzanjem}
+    \label{fig:akcLoop}
+\end{figure}
+Korištenjem teoreme o konačnoj vrijednosti dobija se da je stacionarna vrijednost 
+na odskočni pobudu sistema sa zatvroenom spregom sada $\frac{KV}{1+K_{akc}KV}$. 
+Za velike vrijednosti pojačanja poratne sprege ima se da je stacionarna vrijednost odziva 
+$1/K_{akc}$ pa na prvi pogled izgleda da se može postići proizvoljno pojačanje ali treba 
+uzeti u obzir da ubrzanje projektila može lahko doći u zasićenje i da isto tako 
+otklon krmila može dostići maksimalnu vrijednost. Sopstvena frekvencija sistema 
+sa zatvorenom spregom je sada povećana i iznosi $\frac{1+K_{akc}KV}{T^2}$ a novi 
+koeficijent prigušenja je smanjen i iznosi $\xi (1+K_{akc}KV)^{-1/2}$. Ovo nije dobra 
+osobina s obzirom da se od autopilota zahtjeva da poveća koeficijent prigušenja kako bi 
+se povećala stabilnost sistema. Generalno, performanse projektila su obično 
+manje od zahtjevanih pa je uvijek zadatak autopilota da ih poboljša. 
+Odziv normalnog ubrzanja sa zatvorenom spregom po ubrzanju je prikazan na slici \ref{fig:akcClosed}.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.6]{akcClosed.eps}
+    \caption{Odziv normalnog ubrzanja sa zatvorenom spregom po ubrzanju je prikazan}
+    \label{fig:akcClosed}
+\end{figure}
+Jasno se sa grafika vidi da su oscilacije povećane jer je samnjen koeficijent prigušenja. 
+Da bi se nadoknadio smanjeni koeficijent prigušenja, u svrhu njegova povećanja može se uvesti 
+nova povratna sprega po brzini promjene ugla propinjanja kao što je to prikazano na slici 
+\ref{fig:nz2loop}
+\begin{figure}[!ht]
+    \centering 
+    \begin{tikzpicture}[auto, node distance=2cm,>=latex',scale = 1.5]
+        \node[input, name=input](input){};
+       \node[sum, right of = input](sum){};
+       \node[block, right of = sum] (g1){$\frac{K(T_1s+1)}{T^2s^@+2\xi Ts+1}$};
+       \node[block, right of = g1,node distance = 3cm] (g2){$\frac{V}{T_1s+1}$};
+       \node[output, right of = g2,node distance = 3cm](out){};
+       \node[anchor = south] (thetadot) at ($(g1)!0.6!(g2)$){$\dot{\theta}$};
+       \node[block,below of = thetadot] (k){$K_{GB}$};
+       \node[sum, below of = k,node distance = 1.5cm](sum2){};
+       \node[block, right of = sum2](gy){$K_{akc}$};
+       \draw[->](g2)--node[name = y, anchor = south]{$n_L$}(out);
+       \draw[draw,->] (input) -- node[]{$u$}node[pos=0.99]{$+$}(sum);
+       \draw[->](sum)--(g1);
+       \draw[->](g1)--(g2);
+       \draw[->] (thetadot)--(k);
+       \draw[->](k)--node[pos=0.99,anchor = east]{$+$}(sum2);
+       \draw[->] (y) |- (gy);
+       \draw[->] (gy)--node[pos = 0.99]{$+$}(sum2);
+       \draw[->] (sum2) -|node[pos = 0.99]{$-$}(sum);
+\end{tikzpicture}
+    \caption{Upravljanje normalnim ubrzanjem sa akcelerometrom i brzinskim žiroskopom}
+    \label{fig:nz2loop}
+\end{figure}
+Sada je prenosna funkcija zatvorene petlje data sa:
+\begin{equation}
+    \frac{n_L(s)}{u(s)} = \frac{KV}{T^2s^2 + (2\xi T+KK_{GB}T_1)s + 1+KK_{GB}+KK_{akc}V}
+\end{equation}
+Sada je nova stacionaran vrijednost odziva:
+\begin{equation*}
+    n_{L_{stac}} = \frac{KV}{ 1+KK_{GB}+KK_{akc}V}
+\end{equation*}
+,a novi faktor prigušenja je dat sa:
+\begin{equation*}
+    \xi ' = 
+\end{equation*}
+Odziv je dat na slici \ref{fig:acc2loopsres}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics{twoLoopsAcc.eps}
+    \caption{Odziv sistema sa povratnom spregom po ubrzanju i brzini ugla propinjanja}
+    \label{fig:acc2loopsres}
+\end{figure}
 \section{Three loop autopilot}
