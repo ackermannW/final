@@ -261,16 +261,120 @@ Sada je prenosna funkcija zatvorene petlje data sa:
 Sada je nova stacionaran vrijednost odziva:
 \begin{equation*}
     n_{L_{stac}} = \frac{KV}{ 1+KK_{GB}+KK_{akc}V}
+    \label{eq:stac}
 \end{equation*}
 ,a novi faktor prigušenja je dat sa:
 \begin{equation*}
-    \xi ' = 
+    \xi ' = \frac{1}{2}\frac{2\xi T+KK_GT_1}{\sqrt{1+KK_G+KK_{akc}V}}
 \end{equation*}
-Odziv je dat na slici \ref{fig:acc2loopsres}
+I nova prirodna frekvencija je određena sa:
+\begin{equation*}
+    \omega _n' =\frac{\sqrt{1+KK_G+KK_{akc}V}}{T} 
+\end{equation*}
+Odziv za referentnu vrijednost $60 \frac{m}{s^2}$ je dat na slici \ref{fig:acc2loopsres}
 \begin{figure}[!ht]
     \centering
     \includegraphics{twoLoopsAcc.eps}
     \caption{Odziv sistema sa povratnom spregom po ubrzanju i brzini ugla propinjanja}
     \label{fig:acc2loopsres}
 \end{figure}
-\section{Three loop autopilot}
+Vidi se sa grafika na slici \ref{fig:acc2loopsres} da odziv ne prati referentnu vrijednost. 
+Naravno, iz jednačine \ref{eq:stac} se vidi da ako se uzme pojačanje akcelerometra $K_{akc} =1- \frac{1+KK_{GB}}{KV}$
+da će se eliminisati greška stacionarnog stanja, ali ovo je naivno rješenje pošto sada pojačanje 
+akcelerometra zavisi od parametara projektila koji se mjenjaju sa uslovima leta. Robusnije rješenje je 
+uvesti PI regulator u direktnu granu(sl. \ref{fig:pir}) kako bi se eliminisala greška stacionarnog stanja. 
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+        \node[input, name=input](input){};
+       \node[sum, right of = input](sum){};
+       \node[sum, right of = sum](sum2){};
+       \node[block, right of = sum2](pi){$K_i\frac{1+T_is}{s}$};
+       \node[block, right of = pi, node distance = 3cm] (g1){$\frac{K(T_1s+1)}{T^2s^2+2\xi Ts+1}$};
+       \node[block, right of = g1,node distance = 2.5cm] (g2){$\frac{V}{1+T_1s}$};
+       \node [output, right of = g2] (output) {};
+       \node[] (mid) at ($(pi)!0.45!(g1)$){};
+       \node[block, below of = mid,node distance = 1.5cm] (g){$K_{GB}$};
+       \node[block, below of = g,node distance = 1.5cm] (gyro){$K_{akc}$};
+       \draw [->] (g2) -- node [name=y, anchor = south] {$n_L$}(output);
+       \draw[->] (y)|-(gyro);
+       \draw[->] (gyro) -|node[pos=0.99] {$-$}(sum);
+       \draw[->](g1) -- (g2);
+       \draw [draw,->] (input) -- node {$u$} node[pos=0.99] {$+$}(sum);
+       \draw[->](sum)--node[pos = 0.99]{$+$}(sum2);
+       \node[anchor = south] (thetadot) at ($(g1)!0.6!(g2)$){$\dot{\theta}$};
+       \draw[->] (sum2)--(pi);
+       \draw[->](pi)--(g1);
+       \draw[->](thetadot)|-(g);
+       \draw[->](g)-|node[pos =0.99]{$-$}(sum2);
+\end{tikzpicture}
+\caption{PI regulacija normalnog ubrzanja}
+\label{fig:pir}
+\end{figure}
+Neka je PI regulator dat prenosnom funkcijom:
+\begin{equation}
+    G_{PI} = K_i\frac{1+T_is}{s}
+\end{equation}
+Ako se tačka u kojoj je $\dot{\theta}$ izmjesti nakon bloka $\frac{V}{1+T_1s}$ dobija ju se 
+dvije povratne petlje po istoj veličini pa se mogu pretvoriti u jednu povratnu petlju. Tada je 
+pojačanje povratne petlje dato sa:
+\begin{equation}
+    L(s) = K_{akc}+K_{GB}\frac{1+T_1s}{s}
+\end{equation}
+a pojačanje direktne grane je:
+\begin{equation}
+    P(s)=K_i\frac{1+T_is}{s}\frac{KV}{T^2s^2+2\xi Ts+1}
+\end{equation}
+Sada se nakon dosta algebre dolazi do ukupne prenosne funkcije:
+\begin{equation}
+    M(s)=\frac{K_iKV(1+T_is)}{T^2s^3+a_2s^2+a_1s + a_0}
+\end{equation}
+gdje je:
+\begin{align*}
+    & a_2 = 2\xi T+K_{GB}K_iKT_iT_1 \\
+    & a_1 = 1+K_iK_{akc}KVT_i+K_{GB}K_iK(T_i+T_1)\\
+    & a_0 = K_{akc}KVK_i+K_{GB}K_iK
+\end{align*}
+Sada je stacionarna vrijednost odziva na odskočnu pobudu:
+\begin{equation}
+    n_{L_{stac}} = \frac{K_iKV}{K_{akc}KVK_i+K_{GB}K_iK} = \frac{V}{K_{akc}V+K_{GB}}
+\end{equation}
+Sada, ako se zahtjeva da odziv nema greške stacionarnog stanja, treba odabrati:
+\begin{equation}
+    K_{akc} = 1-\frac{K_{GB}}{V}
+\end{equation}
+Ovo je dosta bolje rješenje, budući da ovdje treba poznavati samo brzinu projektila. Parametri 
+PI regulatora i pojačanje brzinskog žiroskopa se mogu odabrati da zadovolje neki kriterij. 
+Na grafiku \ref{fig:piAcc} je prikazan odziv i vidi se da nema greške stacionarnog stanja. 
+Uzeto je jedinično pojačanje brzinskog žiroskopa i prenosna funkcija PI regulatora $G_{PI}=5\frac{1+s}{s}$. 
+Ovo je naizgled izvrsno rješenje ali treba uvijek uzeti u obzir da normalno ubrzanje projektila 
+može doći u zasićenje i da prevelika ubrzanja mogu dovesti sistem u nestabilno stanje. Također 
+maksimalno normalno ubrzanje ograničeno je maksimalnim otklonom krmila visine pa treba koristiti 
+anti-windup schemu za upravljanje kako se ne bi akumulirala prevelika greška.  
+\begin{figure}[!ht]
+    \centering
+    \includegraphics{piAcc.eps}
+    \caption{Odziv normalnog ubrzanja sa PI regulatorom i povratnom spregom 
+    sa brzinskim žiroskopom i akcelerometrom}
+    \label{fig:piAcc}
+\end{figure}
+\section{Sinteza sistema za vođenje proporcionalnom navigacijom}
+Sada kada je poznata upravljačka struktura normalnog ubrzanja, može se u potpunosti dizajnirati 
+sistem navigacije projektila koristeći se ranije opisanom metodom proporcionalne navigacije. Ranije 
+su predstavljene simulacije vođenja proporcionalnom navigacijom, ali one nisu uključivale neizostavnu dinamiku projektila. 
+Da bi se odradila simulacija sa dinamikom projektila, upravljački sistem za normalno ubrzanje će se predstaviti 
+kao podsistem u simulinku i koristiti će se u ranije izložen Simulink dijagram za lineariziranu proporcionalnu navigaciju(\ref{fig:simProp}). 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.6]{simDyn.JPG}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics{missDyn.eps}
+\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics{accDyn.eps}
+\end{figure}
+

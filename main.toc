@@ -49,4 +49,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.2}Upravljanje normalnim ubrzanjem}{49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Three loop autopilot}{51}%
+\contentsline {section}{\numberline {6.3}Sinteza sistema za vođenje proporcionalnom navigacijom}{54}%

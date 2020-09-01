@@ -78,3 +78,7 @@
 \contentsline {figure}{\numberline {6.12}{\ignorespaces Upravljanje normalnim ubrzanjem sa akcelerometrom i brzinskim žiroskopom\relax }}{50}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6.13}{\ignorespaces Odziv sistema sa povratnom spregom po ubrzanju i brzini ugla propinjanja\relax }}{51}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.14}{\ignorespaces PI regulacija normalnog ubrzanja\relax }}{52}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Odziv normalnog ubrzanja sa PI regulatorom i povratnom spregom sa brzinskim žiroskopom i akcelerometrom\relax }}{53}%

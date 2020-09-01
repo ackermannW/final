@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  30 AUG 2020 18:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  31 AUG 2020 18:50
 entering extended mode
 **c:/Users/Mirza/Desktop/thesis/main.tex
 (c:/Users/Mirza/Desktop/thesis/main.tex
@@ -1391,7 +1391,7 @@ Package epstopdf Info: Source file: <Images/twoLoopsAcc.eps>
 (epstopdf)                    date: 2020-08-30 18:12:45
 (epstopdf)                    size: 13239 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/twoLoopsAcc-eps-converted-to.pdf Images/twoLoopsAcc.eps>
-(epstopdf)             \includegraphics on input line 272.
+(epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1399,9 +1399,70 @@ pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-
 <Images/twoLoopsAcc-eps-converted-to.pdf, id=313, 421.575pt x 316.18124pt>
 File: Images/twoLoopsAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/twoLoopsAcc-eps-converted-to.pdf>
-Package pdftex.def Info: Images/twoLoopsAcc-eps-converted-to.pdf  used on input line 272.
+Package pdftex.def Info: Images/twoLoopsAcc-eps-converted-to.pdf  used on input line 277.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-) [51 <c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf>] [52
+[51 <c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf>] [52]
+Package epstopdf Info: Source file: <Images/piAcc.eps>
+(epstopdf)                    date: 2020-08-31 18:13:28
+(epstopdf)                    size: 52856 bytes
+(epstopdf)             Output file: <Images/piAcc-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-08-31 18:18:03
+(epstopdf)                    size: 14451 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/piAcc-eps-converted-to.pdf Images/piAcc.eps>
+(epstopdf)             \includegraphics on input line 356.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/piAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/piAcc-eps-converted-to.pdf, id=328, 421.575pt x 316.18124pt>
+File: Images/piAcc-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/piAcc-eps-converted-to.pdf>
+Package pdftex.def Info: Images/piAcc-eps-converted-to.pdf  used on input line 356.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+<Images/simDyn.JPG, id=329, 612.03656pt x 317.68687pt>
+File: Images/simDyn.JPG Graphic file (type jpg)
+<use Images/simDyn.JPG>
+Package pdftex.def Info: Images/simDyn.JPG  used on input line 369.
+(pdftex.def)             Requested size: 367.22476pt x 190.61359pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53 <c:/Users/Mirza/Desktop/thesis/Images/piAcc-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Images/missDyn.eps>
+(epstopdf)                    date: 2020-08-31 18:47:00
+(epstopdf)                    size: 53129 bytes
+(epstopdf)             Output file: <Images/missDyn-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-08-31 18:47:24
+(epstopdf)                    size: 16089 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/missDyn-eps-converted-to.pdf Images/missDyn.eps>
+(epstopdf)             \includegraphics on input line 374.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missDyn-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/missDyn-eps-converted-to.pdf, id=341, 421.575pt x 316.18124pt>
+File: Images/missDyn-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/missDyn-eps-converted-to.pdf>
+Package pdftex.def Info: Images/missDyn-eps-converted-to.pdf  used on input line 374.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+Package epstopdf Info: Source file: <Images/accDyn.eps>
+(epstopdf)                    date: 2020-08-31 18:46:44
+(epstopdf)                    size: 84579 bytes
+(epstopdf)             Output file: <Images/accDyn-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-08-31 18:47:26
+(epstopdf)                    size: 23051 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/accDyn-eps-converted-to.pdf Images/accDyn.eps>
+(epstopdf)             \includegraphics on input line 378.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/accDyn-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/accDyn-eps-converted-to.pdf, id=342, 421.575pt x 316.18124pt>
+File: Images/accDyn-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/accDyn-eps-converted-to.pdf>
+Package pdftex.def Info: Images/accDyn-eps-converted-to.pdf  used on input line 378.
+(pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
+) [54 <c:/Users/Mirza/Desktop/thesis/Images/simDyn.JPG>] [55 <c:/Users/Mirza/Desktop/thesis/Images/missDyn-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/accDyn-eps-converted-to.pdf>] [56
 
 ] (c:/Users\Mirza\Desktop\thesis\main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1409,17 +1470,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28911 strings out of 480797
- 586184 string characters out of 2905362
- 1242289 words of memory out of 3000000
- 44390 multiletter control sequences out of 15000+200000
+ 28960 strings out of 480797
+ 587202 string characters out of 2905362
+ 1242324 words of memory out of 3000000
+ 44435 multiletter control sequences out of 15000+200000
  568729 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,15n,75p,872b,1764s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmsc.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (52 pages, 1027869 bytes).
+Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (56 pages, 1118378 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
+ 422 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
