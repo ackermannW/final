@@ -31,33 +31,38 @@ Ovo znači da se bilo koja rotacija, odnosno transformacija iz sistema tijela u 
 rotacija za ugao $\phi$ oko longitudinalne, za ugao $\theta$ oko lateralne i za ugao 
 $\psi$ oko normalne ose. Transformacija $T_b^e$ koja ostvaruje transformaciju iz 
 koordinatnog sistema vezanog za zemlju u koordinatni sistem vezan za tijelo je data sa:
-\begin{equation}    
-    T_b^e=\begin{bmatrix}
-        1&0&0\\
-        0&\cos\phi & \sin\phi \\
-        0 & -\sin\phi & \cos\phi \\
-    \end{bmatrix}    
-    \begin{bmatrix}
-        \cos\theta&-\sin\theta&\\
-        0&1 & 0 \\
-        \sin\theta & 0 & \cos\theta \\
-    \end{bmatrix}
-    \begin{bmatrix}
-        \cos\psi & \sin\psi & 0\\
-        -\sin\psi & \cos\psi &0\\
-        0&0&1\\
-    \end{bmatrix}
+\begin{equation}
+    T_{z \to b} = T_1(\phi)T_2(\theta)T_3(\psi)
 \end{equation}
+,gdje je:
+\begin{align}
+    T_1(\phi) =& \begin{bmatrix}
+        1 & 0 & 0\\
+        0 & \cos\phi & \sin\phi \\
+        0 & -\sin\phi & \cos\phi 
+    \end{bmatrix}\\
+     T_2(\theta)=& \begin{bmatrix}
+        \cos\theta & 0 & -\sin\theta \\
+         0 & 1 & 0\\
+         \sin\theta & 0 & \cos\theta
+    \end{bmatrix}\\
+    T_3(\psi) = &\begin{bmatrix}
+        \cos\psi & \sin\phi & 0\\
+        -\sin\phi & \cos\phi & 0\\
+        0 & 0 & 1
+    \end{bmatrix}
+\end{align}
 ,odnosno:
 \begin{equation}
-    T_b^e=\begin{bmatrix}
+    {\footnotesize
+    T_{z \to b}=\begin{bmatrix}
         cos\theta cos\psi && cos\theta sin\psi && -sin\theta\\
         sin\phi sin\theta cos\psi-cos\phi sin\psi && sin\phi sin\theta sin\psi +cos\phi cos\psi&& sin\phi cos\theta\\
         c\phi s\theta c\psi+sin\phi sin\psi && cos\phi sin\theta sin\psi -sin\phi cos\psi&& cos\phi cos\theta\\
-    \end{bmatrix}
+    \end{bmatrix}}
 \end{equation}
-Treba primjetiti da rezultantna matrica $C_e^b$ može imati singularitete, pa se domen
-Euloerovih uglova ograničava na sljedeći način:
+Treba primjetiti da rezultantna matrica $T_{z \to b}$ može imati singularitete, pa se domen
+Eulerovih uglova ograničava na sljedeći način:
 \begin{align*}
     -\pi \leq \phi <\pi \quad ili \quad 0\leq\phi<2\pi \\
     -\pi \leq \psi <\pi \qquad \qquad \qquad \qquad \\
@@ -90,7 +95,7 @@ više riječi biti kasnije. Transformacija sistema brzine u sistem tijela se pos
 oko $Y$ ose sistema tijela za ugao $\alpha$ praćene rotacijom oko $Z$ ose dobijenog sistema za ugao $\beta$. 
 Odgovarajuća matrica transformacije je:
 \begin{equation}
-    T_{tijelo}^{brzina} = \begin{bmatrix}
+    T_{v\to b} = \begin{bmatrix}
         \cos\alpha & 0 & -\sin\alpha \\
         0& 1& 0\\
         \sin\alpha & 0 & \cos\alpha
@@ -98,7 +103,15 @@ Odgovarajuća matrica transformacije je:
     \begin{bmatrix}
         \cos\beta & \sin\beta & 0\\
         -\sin\beta & \cos\beta & 0\\
-        0 & 0& 1\\
+        0 & 0& 1
+    \end{bmatrix}
+\end{equation}
+Nakon množenja matrica, dobija se:
+\begin{equation}
+    T_{v\to b} = \begin{bmatrix}
+        \cos\alpha\cos\beta & \cos\alpha\sin\beta & -\sin\alpha \\
+        -\sin\beta & \cos\beta & 0\\
+        \sin\alpha\cos\beta & 0 & \cos\alpha
     \end{bmatrix}
     \label{eq:VtoB}
 \end{equation}
@@ -106,7 +119,7 @@ Veza između sistema Zemlje(inercijalnog sistema) i sistema brzine je data uglov
 i $\Psi$, ugla azimuta vektora brzine. Transformacija iz inercijalnog sistema u sistem brzine se dobija rotacijom 
 za $\Theta$ oko $X$ ose sistema brzine, zatim rotacijom oko $Z$ ose za $\Psi$. Odgovarajuća matrica transformacije je:
 \begin{equation}
-    T_{brzina}^{zemlja} = \begin{bmatrix}
+    T_{z\to v} = \begin{bmatrix}
         \cos\Theta & 0 & -\sin\Theta \\
         0& 1& 0\\
         \sin\Theta & 0 & \cos\Theta
@@ -114,9 +127,33 @@ za $\Theta$ oko $X$ ose sistema brzine, zatim rotacijom oko $Z$ ose za $\Psi$. O
     \begin{bmatrix}
         \cos\Psi & \sin\Psi & 0\\
         -\sin\Psi & \cos\Psi & 0\\
-        0 & 0& 1\\
+        0 & 0& 1
+        \end{bmatrix}
+\end{equation}
+Nakon množenja matrica, dobija se:
+\begin{equation}
+    T_{z\to v} = \begin{bmatrix}
+        \cos\Theta\cos\Psi & \cos\Theta\sin\Psi & -\sin\Theta \\
+        -\sin\Psi & \cos\Psi & 0\\
+        \sin\Theta\cos\Psi & 0 & \cos\Theta
     \end{bmatrix}
 \end{equation}
+Sada su dobijene matrice koje opisuju transformacije iz sistema Zemlje u sistem tijela, 
+iz brzinskog sistema u sistem tijela i iz sistema Zemlje u brzinski koordinatni sistem. 
+Ako je potrebna obrnuta transformacija, može se iskoristiti osobina da elementarne matrice transformacije 
+imaju ortogonalne kolone, tj. njihov skalarni proizvod je nula. Odavde slijedi 
+da je transponovana matrica elementarne transformacije jednaka svom inverzu, odnosno $T_i(\epsilon)^T = T_i^{-1}(\epsilon)$.
+Uzmimo sada $T_{z \to b}$. Vrijedi:
+\begin{equation*}
+    T_{z \to b} = T_1(\phi)T_2(\theta)T_3(\psi)
+\end{equation*}
+pa je:
+\begin{align*}    
+    T_{z \to b}^T &= T_3^T(\psi)T_2^T(\theta)T_1^T(\phi)\\ & =  T_3^{-1}(\psi)T_2^{-1}(\theta)T_1^{-1}(\phi)\\
+    & = [T_1(\phi)T_2(\theta)T_3(\psi)]^{-1} = T_{z \to b}^{-1} = T_{b\to z}
+\end{align*}
+Ovo sada znači da se inverzna matrica transformacije može naći transponovanjem originalne matrice 
+transformacije. 
 \section{Jednačine kretanja čvrstog tijela}
 Sada ćemo posmatrati tipični projektil i izvesti jednačine koje opisuju njegovo kretnaje.
 Pretpostaviti će se da čvrsto tijelo nema promjena u obliku pri kretanju. Translacija tijela 
