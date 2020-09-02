@@ -207,7 +207,7 @@ posebna pažnja posvetiti upravljanju normalnog ubrzanja. Prenosna funkcija koja
     \begin{tikzpicture}[auto, node distance=2cm,>=latex']
         \node[input, name=input](input){};
         \node[block, right of = input, node distance = 3cm] (g1){$\frac{KT_1}{T^2s^2+2\xi Ts+1}$};
-        \node[block, right of = g1, node distance = 3cm] (g2) {$\frac{T_1s}{1+T_1s}$};
+        \node[block, right of = g1, node distance = 3cm] (g2) {$\frac{T_1s+1}{T_1s}$};
         \node[block, right of = g2] (g3){$\frac{1}{1+T_1s}$};
         \node[anchor = south] (alpha) at ($(g1)!0.6!(g2)$){$\alpha$};
         \node[anchor = south] (theta) at ($(g2)!0.5!(g3)$){$\theta$};

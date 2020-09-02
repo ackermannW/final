@@ -11,19 +11,59 @@ ona predstavlja ništa više od vanjske smetnje na sistem automatskog upralvjanj
 Gravitaciona sila predstavlja vektor koji je usmjeren ka centru Zemlje i u inercijalnom kooridnatnom
 sistemu je dat sa:
 \begin{equation}
-    G_{Zemlja}=[0\;  0\;  mg]^T
+    G_{z}=[0\;  0\;  mg]^T
 \end{equation}
-Da bi se dobila vrijednost gravitacione sile u neinercijalnom kooridnatnom sistemu, treba se koristiti matrica 
+Da bi se dobila vrijednost gravitacione sile u kooridnatnom sistemu tijela, treba se koristiti matrica 
 transformacije:
 \begin{equation}
-    G_{tijelo} = C_e^bG_{Zemlja}
+    G_{b} = T_{z\to b}G_{z}
+\end{equation}
+Korištenjem \ref{eq:ztob}, dobija se:
+\begin{equation}
+    G_b = mg\begin{bmatrix}
+        -\sin\theta \\
+        sin\phi\cos\theta \\
+        \cos\phi\sin\theta
+    \end{bmatrix}
+\end{equation}
+Na sličan način, korištenjem \ref{eq:ztov}.  se dobija i vektor gravitacione sile u brzinskom koordinatnom sistemu:
+\begin{equation}
+    G_v = T_{z\to v}\begin{bmatrix}
+        0 \\ 0 \\ mg\end{bmatrix} = mg\begin{bmatrix}
+            -\sin\Theta \\ 0 \\ \cos\Theta
+    \end{bmatrix}
 \end{equation}
 Gravitaciona sila se u opštem slučaju mijenja u vremenu pošto se masa projektila mijenja usljed utroška goriva
 pri letu projektila. Varijacije u gravitacionom ubrzanju se zanemaruju pri promjeni geografske širine.  
-Promjena mase projektila je od krucijalne važnosti za balističke projektile kod kojih $90\%$ mase čini 
+Promjena mase projektila je od krucijalne važnosti za balističke projektile kod kojih $90\%$ mase čini gorivo.
 \section{Pogonska sila}
+Pogonska sila je sila koju generiše mlazni motor projektila. Karakteristike motora zavise 
+od zahtjeva vođenja i od prirode mete. Motor se nalazi na stražnjem dijelu projektila i stvara reaktivnu 
+silu. Intenzitet ove sile varira u zavisnosti od tipa motora i zadatka projektila. Tipovi projektila mogu biti:
+\begin{itemize}
+    \item All-boost- ima za posljedicu veliko ubrzanje projektila i kratko vrijeme leta pošto se gorivo potroši u kratkom roku
+    \item All-sustain- ima za posljedicu stalnu brzinu projektila i dugo vrijeme leta
+    \item Boost-sustain- Ovaj tip motora kombinuje najbolje osobine prethodna dva tipa
+\end{itemize}
+Ovdje će se pretpostaviti da mlazni motor generiše silu konstantnog intenziteta. Za većinu 
+projektila smjer sile se ne mijenja i zbog građe projektila uvijek dujeluje u pozitivnom smjeru 
+$X_b$ ose pa je pogonska sila u koordinatnom sistemu tijela data sa:
 \begin{equation}
     P_{tijelo}=[P\;  0\;  0]^T
+\end{equation}
+Pogonska sila izražena u sistemu brzine je data sa:
+\begin{equation}
+    P_v = T_{b\to v}\begin{bmatrix}
+        P \\ 0 \\ 0
+    \end{bmatrix} = T_{v\to b}^T\begin{bmatrix}
+        P \\ 0 \\ 0
+    \end{bmatrix}
+\end{equation}
+Pa se dobija:
+\begin{equation}
+    P_v=P\begin{bmatrix}
+        \cos\alpha\cos\beta \\ \cos\alpha\sin\beta \\ -\sin\alpha
+    \end{bmatrix}
 \end{equation}
 \section{Aerodinamičke sile}
 Aerodinamička sila je posljedica djelovanja pritiska okolnog fluida na tijelo u pokretu. 
