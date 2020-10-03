@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  2 SEP 2020 01:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  3 OCT 2020 07:39
 entering extended mode
 **c:/Users/Mirza/Desktop/thesis/main.tex
 (c:/Users/Mirza/Desktop/thesis/main.tex
@@ -479,6 +479,40 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
+)) (c:/Users\Mirza\Desktop\thesis\mcode.sty
+-- Package: `mcode' 2.5 <2014/03/06> --
+Package: mcode 2014/03/06 2.5
+ - settings optimized for display (colour formating)
+ - line numbering enabled
+ - literate programming (character replacements) enabled
+ - automatic line breaking enabled (careful, buggy!)
+ - framed listings
+("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.sty"
+\lst@mode=\count300
+\lst@gtempboxa=\box70
+\lst@token=\toks45
+\lst@length=\count301
+\lst@currlwidth=\dimen263
+\lst@column=\count302
+\lst@pos=\count303
+\lst@lostspace=\dimen264
+\lst@width=\dimen265
+\lst@newlines=\count304
+\lst@lineno=\count305
+\lst@maxwidth=\dimen266
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count306
+\lst@skipnumbers=\count307
+\lst@framebox=\box71
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.cfg"
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+\lbreakdots=\box72
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 229.
+ (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex"
 File: tikzlibraryshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex"
@@ -501,31 +535,31 @@ File: pgflibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: tikzlibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex"
 File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodepartlowerbox=\box70
-\pgfnodeparttwobox=\box71
-\pgfnodepartthreebox=\box72
-\pgfnodepartfourbox=\box73
-\pgfnodeparttwentybox=\box74
-\pgfnodepartnineteenbox=\box75
-\pgfnodeparteighteenbox=\box76
-\pgfnodepartseventeenbox=\box77
-\pgfnodepartsixteenbox=\box78
-\pgfnodepartfifteenbox=\box79
-\pgfnodepartfourteenbox=\box80
-\pgfnodepartthirteenbox=\box81
-\pgfnodeparttwelvebox=\box82
-\pgfnodepartelevenbox=\box83
-\pgfnodeparttenbox=\box84
-\pgfnodepartninebox=\box85
-\pgfnodeparteightbox=\box86
-\pgfnodepartsevenbox=\box87
-\pgfnodepartsixbox=\box88
-\pgfnodepartfivebox=\box89
+\pgfnodepartlowerbox=\box73
+\pgfnodeparttwobox=\box74
+\pgfnodepartthreebox=\box75
+\pgfnodepartfourbox=\box76
+\pgfnodeparttwentybox=\box77
+\pgfnodepartnineteenbox=\box78
+\pgfnodeparteighteenbox=\box79
+\pgfnodepartseventeenbox=\box80
+\pgfnodepartsixteenbox=\box81
+\pgfnodepartfifteenbox=\box82
+\pgfnodepartfourteenbox=\box83
+\pgfnodepartthirteenbox=\box84
+\pgfnodeparttwelvebox=\box85
+\pgfnodepartelevenbox=\box86
+\pgfnodeparttenbox=\box87
+\pgfnodepartninebox=\box88
+\pgfnodeparteightbox=\box89
+\pgfnodepartsevenbox=\box90
+\pgfnodepartsixbox=\box91
+\pgfnodepartfivebox=\box92
 ))) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex"
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.code.tex"
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen263
+\arrowsize=\dimen267
 )) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex"
 File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex"
@@ -535,21 +569,22 @@ Package: caption 2020/05/30 v3.4k Customizing captions (AR)
  (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.sty
 Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen264
-\captionmargin@=\dimen265
-\captionwidth=\dimen266
-\caption@tempdima=\dimen267
-\caption@indent=\dimen268
-\caption@parindent=\dimen269
-\caption@hangindent=\dimen270
+\captionmargin=\dimen268
+\captionmargin@=\dimen269
+\captionwidth=\dimen270
+\caption@tempdima=\dimen271
+\caption@indent=\dimen272
+\caption@parindent=\dimen273
+\caption@hangindent=\dimen274
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count300
-\c@continuedfloat=\count301
+\c@caption@flags=\count308
+\c@continuedfloat=\count309
+Package caption Info: listings package is loaded.
 ) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count302
-\c@subtable=\count303
+\c@subfigure=\count310
+\c@subtable=\count311
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
  ("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
@@ -568,7 +603,7 @@ Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count304
+\lrq@indent=\count312
  (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
@@ -577,47 +612,47 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count305
-\c@listtotal=\count306
-\c@listcount=\count307
-\c@liststart=\count308
-\c@liststop=\count309
-\c@citecount=\count310
-\c@citetotal=\count311
-\c@multicitecount=\count312
-\c@multicitetotal=\count313
-\c@instcount=\count314
-\c@maxnames=\count315
-\c@minnames=\count316
-\c@maxitems=\count317
-\c@minitems=\count318
-\c@citecounter=\count319
-\c@maxcitecounter=\count320
-\c@savedcitecounter=\count321
-\c@uniquelist=\count322
-\c@uniquename=\count323
-\c@refsection=\count324
-\c@refsegment=\count325
-\c@maxextratitle=\count326
-\c@maxextratitleyear=\count327
-\c@maxextraname=\count328
-\c@maxextradate=\count329
-\c@maxextraalpha=\count330
-\c@abbrvpenalty=\count331
-\c@highnamepenalty=\count332
-\c@lownamepenalty=\count333
-\c@maxparens=\count334
-\c@parenlevel=\count335
-\blx@tempcnta=\count336
-\blx@tempcntb=\count337
-\blx@tempcntc=\count338
-\blx@maxsection=\count339
-\blx@maxsegment@0=\count340
-\blx@notetype=\count341
-\blx@parenlevel@text=\count342
-\blx@parenlevel@foot=\count343
-\blx@sectionciteorder@0=\count344
-\blx@entrysetcounter=\count345
+\c@tabx@nest=\count313
+\c@listtotal=\count314
+\c@listcount=\count315
+\c@liststart=\count316
+\c@liststop=\count317
+\c@citecount=\count318
+\c@citetotal=\count319
+\c@multicitecount=\count320
+\c@multicitetotal=\count321
+\c@instcount=\count322
+\c@maxnames=\count323
+\c@minnames=\count324
+\c@maxitems=\count325
+\c@minitems=\count326
+\c@citecounter=\count327
+\c@maxcitecounter=\count328
+\c@savedcitecounter=\count329
+\c@uniquelist=\count330
+\c@uniquename=\count331
+\c@refsection=\count332
+\c@refsegment=\count333
+\c@maxextratitle=\count334
+\c@maxextratitleyear=\count335
+\c@maxextraname=\count336
+\c@maxextradate=\count337
+\c@maxextraalpha=\count338
+\c@abbrvpenalty=\count339
+\c@highnamepenalty=\count340
+\c@lownamepenalty=\count341
+\c@maxparens=\count342
+\c@parenlevel=\count343
+\blx@tempcnta=\count344
+\blx@tempcntb=\count345
+\blx@tempcntc=\count346
+\blx@maxsection=\count347
+\blx@maxsegment@0=\count348
+\blx@notetype=\count349
+\blx@parenlevel@text=\count350
+\blx@parenlevel@foot=\count351
+\blx@sectionciteorder@0=\count352
+\blx@entrysetcounter=\count353
 \labelnumberwidth=\skip69
 \labelalphawidth=\skip70
 \biblabelsep=\skip71
@@ -629,9 +664,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read5
 \blx@bcfout=\write6
 \blx@langwohyphens=\language80
-\c@mincomprange=\count346
-\c@maxcomprange=\count347
-\c@mincompwidth=\count348
+\c@mincomprange=\count354
+\c@maxcomprange=\count355
+\c@mincompwidth=\count356
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def"
@@ -641,74 +676,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count349
-\c@savedafterword=\count350
-\c@annotator=\count351
-\c@savedannotator=\count352
-\c@author=\count353
-\c@savedauthor=\count354
-\c@bookauthor=\count355
-\c@savedbookauthor=\count356
-\c@commentator=\count357
-\c@savedcommentator=\count358
-\c@editor=\count359
-\c@savededitor=\count360
-\c@editora=\count361
-\c@savededitora=\count362
-\c@editorb=\count363
-\c@savededitorb=\count364
-\c@editorc=\count365
-\c@savededitorc=\count366
-\c@foreword=\count367
-\c@savedforeword=\count368
-\c@holder=\count369
-\c@savedholder=\count370
-\c@introduction=\count371
-\c@savedintroduction=\count372
-\c@namea=\count373
-\c@savednamea=\count374
-\c@nameb=\count375
-\c@savednameb=\count376
-\c@namec=\count377
-\c@savednamec=\count378
-\c@translator=\count379
-\c@savedtranslator=\count380
-\c@shortauthor=\count381
-\c@savedshortauthor=\count382
-\c@shorteditor=\count383
-\c@savedshorteditor=\count384
-\c@labelname=\count385
-\c@savedlabelname=\count386
-\c@institution=\count387
-\c@savedinstitution=\count388
-\c@lista=\count389
-\c@savedlista=\count390
-\c@listb=\count391
-\c@savedlistb=\count392
-\c@listc=\count393
-\c@savedlistc=\count394
-\c@listd=\count395
-\c@savedlistd=\count396
-\c@liste=\count397
-\c@savedliste=\count398
-\c@listf=\count399
-\c@savedlistf=\count400
-\c@location=\count401
-\c@savedlocation=\count402
-\c@organization=\count403
-\c@savedorganization=\count404
-\c@origlocation=\count405
-\c@savedoriglocation=\count406
-\c@origpublisher=\count407
-\c@savedorigpublisher=\count408
-\c@publisher=\count409
-\c@savedpublisher=\count410
-\c@language=\count411
-\c@savedlanguage=\count412
-\c@origlanguage=\count413
-\c@savedoriglanguage=\count414
-\c@pageref=\count415
-\c@savedpageref=\count416
+\c@afterword=\count357
+\c@savedafterword=\count358
+\c@annotator=\count359
+\c@savedannotator=\count360
+\c@author=\count361
+\c@savedauthor=\count362
+\c@bookauthor=\count363
+\c@savedbookauthor=\count364
+\c@commentator=\count365
+\c@savedcommentator=\count366
+\c@editor=\count367
+\c@savededitor=\count368
+\c@editora=\count369
+\c@savededitora=\count370
+\c@editorb=\count371
+\c@savededitorb=\count372
+\c@editorc=\count373
+\c@savededitorc=\count374
+\c@foreword=\count375
+\c@savedforeword=\count376
+\c@holder=\count377
+\c@savedholder=\count378
+\c@introduction=\count379
+\c@savedintroduction=\count380
+\c@namea=\count381
+\c@savednamea=\count382
+\c@nameb=\count383
+\c@savednameb=\count384
+\c@namec=\count385
+\c@savednamec=\count386
+\c@translator=\count387
+\c@savedtranslator=\count388
+\c@shortauthor=\count389
+\c@savedshortauthor=\count390
+\c@shorteditor=\count391
+\c@savedshorteditor=\count392
+\c@labelname=\count393
+\c@savedlabelname=\count394
+\c@institution=\count395
+\c@savedinstitution=\count396
+\c@lista=\count397
+\c@savedlista=\count398
+\c@listb=\count399
+\c@savedlistb=\count400
+\c@listc=\count401
+\c@savedlistc=\count402
+\c@listd=\count403
+\c@savedlistd=\count404
+\c@liste=\count405
+\c@savedliste=\count406
+\c@listf=\count407
+\c@savedlistf=\count408
+\c@location=\count409
+\c@savedlocation=\count410
+\c@organization=\count411
+\c@savedorganization=\count412
+\c@origlocation=\count413
+\c@savedoriglocation=\count414
+\c@origpublisher=\count415
+\c@savedorigpublisher=\count416
+\c@publisher=\count417
+\c@savedpublisher=\count418
+\c@language=\count419
+\c@savedlanguage=\count420
+\c@origlanguage=\count421
+\c@savedoriglanguage=\count422
+\c@pageref=\count423
+\c@savedpageref=\count424
 \shorthandwidth=\skip77
 \shortjournalwidth=\skip78
 \shortserieswidth=\skip79
@@ -732,19 +767,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count417
-\c@textcitetotal=\count418
-\c@textcitemaxnames=\count419
-\c@biburlbigbreakpenalty=\count420
-\c@biburlbreakpenalty=\count421
-\c@biburlnumpenalty=\count422
-\c@biburlucpenalty=\count423
-\c@biburllcpenalty=\count424
+\c@textcitecount=\count425
+\c@textcitetotal=\count426
+\c@textcitemaxnames=\count427
+\c@biburlbigbreakpenalty=\count428
+\c@biburlbreakpenalty=\count429
+\c@biburlnumpenalty=\count430
+\c@biburlucpenalty=\count431
+\c@biburllcpenalty=\count432
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count425
+\c@smartand=\count433
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -754,8 +789,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
 File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count426
-\c@bbx:relatedtotal=\count427
+\c@bbx:relatedcount=\count434
+\c@bbx:relatedtotal=\count435
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -777,38 +812,38 @@ File: biblatex.cfg
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box90
+\ttl@box=\box93
 \beforetitleunit=\skip91
 \aftertitleunit=\skip92
-\ttl@plus=\dimen271
-\ttl@minus=\dimen272
-\ttl@toksa=\toks45
-\titlewidth=\dimen273
-\titlewidthlast=\dimen274
-\titlewidthfirst=\dimen275
+\ttl@plus=\dimen275
+\ttl@minus=\dimen276
+\ttl@toksa=\toks46
+\titlewidth=\dimen277
+\titlewidthlast=\dimen278
+\titlewidthfirst=\dimen279
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/blindtext\blindtext.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count428
-\c@Blindtext=\count429
-\c@blind@countparstart=\count430
-\blind@countxx=\count431
-\blindtext@numBlindtext=\count432
-\blind@countyy=\count433
-\c@blindlist=\count434
-\c@blindlistlevel=\count435
-\c@blindlist@level=\count436
-\blind@listitem=\count437
-\c@blind@listcount=\count438
-\c@blind@levelcount=\count439
-\blind@mathformula=\count440
-\blind@Mathformula=\count441
-\c@blind@randomcount=\count442
-\c@blind@randommax=\count443
-\c@blind@pangramcount=\count444
-\c@blind@pangrammax=\count445
+\c@blindtext=\count436
+\c@Blindtext=\count437
+\c@blind@countparstart=\count438
+\blind@countxx=\count439
+\blindtext@numBlindtext=\count440
+\blind@countyy=\count441
+\c@blindlist=\count442
+\c@blindlistlevel=\count443
+\c@blindlist@level=\count444
+\blind@listitem=\count445
+\c@blind@listcount=\count446
+\c@blind@levelcount=\count447
+\blind@mathformula=\count448
+\blind@Mathformula=\count449
+\c@blind@randomcount=\count450
+\c@blind@randommax=\count451
+\c@blind@pangramcount=\count452
+\c@blind@pangrammax=\count453
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -816,41 +851,41 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'croatian'.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-06-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count446
-\l__pdf_internal_box=\box91
+\l__kernel_color_stack_int=\count454
+\l__pdf_internal_box=\box94
 ) (c:/Users\Mirza\Desktop\thesis\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 58.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count447
-\scratchdimen=\dimen276
-\scratchbox=\box92
-\nofMPsegments=\count448
-\nofMParguments=\count449
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count450
-\MPscratchDim=\dimen277
-\MPnumerator=\count451
-\makeMPintoPDFobject=\count452
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count455
+\scratchdimen=\dimen280
+\scratchbox=\box95
+\nofMPsegments=\count456
+\nofMParguments=\count457
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count458
+\MPscratchDim=\dimen281
+\MPnumerator=\count459
+\makeMPintoPDFobject=\count460
+\everyMPtoPDFconversion=\toks48
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -891,6 +926,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
+\c@lstlisting=\count461
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'croatian'...
@@ -906,8 +942,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (c:/Users\Mirza\Desktop\thesis\main.bbl)
-Package biblatex Info: Reference section=0 on input line 57.
-Package biblatex Info: Reference segment=0 on input line 57.
+Package biblatex Info: Reference section=0 on input line 58.
+Package biblatex Info: Reference segment=0 on input line 58.
  (c:/Users\Mirza\Desktop\thesis\title.tex
 <Images/preuzmi.png, id=4, 225.84375pt x 225.84375pt>
 File: Images/preuzmi.png Graphic file (type png)
@@ -944,7 +980,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] (c:/Users\Mirza\Desktop\thesis\main.lof [3
 
 ]
-Overfull \hbox (25.97195pt too wide) in paragraph at lines 78--78
+Overfull \hbox (25.97195pt too wide) in paragraph at lines 90--90
  [][] []\OT1/lmr/m/n/12 Upravljanje nor-mal-nim ubr-za-njem sa ak-ce-le-ro-me-trom i br-zin-skim ziroskopom [][]  
  []
 
@@ -1047,8 +1083,11 @@ Package pdftex.def Info: Images/angles.JPG  used on input line 120.
 <Images/wind.JPG, id=88, 603.75563pt x 261.97874pt>
 File: Images/wind.JPG Graphic file (type jpg)
 <use Images/wind.JPG>
-Package pdftex.def Info: Images/wind.JPG  used on input line 151.
+Package pdftex.def Info: Images/wind.JPG  used on input line 146.
 (pdftex.def)             Requested size: 301.87708pt x 130.98904pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [20 <c:/Users/Mirza/Desktop/thesis/Images/angles.JPG>] [21 <c:/Users/Mirza/Desktop/thesis/Images/wind.JPG>]) [22]
 Poglavlje 4.
 (c:/Users\Mirza\Desktop\thesis\Chapters/model.tex
@@ -1056,35 +1095,182 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23
 
-] [24]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25] [26]
+ [24] [25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]) [29]
-Poglavlje 5.
-(c:/Users\Mirza\Desktop\thesis\Chapters/chapter02.tex [30
-
-] [31]
+ [28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32]
+ [29] [30]
+<Images/model.JPG, id=125, 569.12625pt x 458.46281pt>
+File: Images/model.JPG Graphic file (type jpg)
+<use Images/model.JPG>
+Package pdftex.def Info: Images/model.JPG  used on input line 278.
+(pdftex.def)             Requested size: 398.38567pt x 320.92177pt.
+<Images/subModel.JPG, id=126, 586.44093pt x 493.845pt>
+File: Images/subModel.JPG Graphic file (type jpg)
+<use Images/subModel.JPG>
+Package pdftex.def Info: Images/subModel.JPG  used on input line 285.
+(pdftex.def)             Requested size: 410.50584pt x 345.68913pt.
+ [31 <c:/Users/Mirza/Desktop/thesis/Images/model.JPG>]
+Underfull \vbox (badness 3386) has occurred while \output is active []
+
+ [32 <c:/Users/Mirza/Desktop/thesis/Images/subModel.JPG>]
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 331.
+ (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+Package epstopdf Info: Source file: <Images/pitchVis.eps>
+(epstopdf)                    date: 2020-10-03 07:09:44
+(epstopdf)                    size: 44613 bytes
+(epstopdf)             Output file: <Images/pitchVis-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 07:10:31
+(epstopdf)                    size: 14501 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/pitchVis-eps-converted-to.pdf Images/pitchVis.eps>
+(epstopdf)             \includegraphics on input line 415.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/pitchVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/pitchVis-eps-converted-to.pdf, id=138, 421.575pt x 316.18124pt>
+File: Images/pitchVis-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/pitchVis-eps-converted-to.pdf>
+Package pdftex.def Info: Images/pitchVis-eps-converted-to.pdf  used on input line 415.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/AoAvis.eps>
+(epstopdf)                    date: 2020-10-03 07:10:18
+(epstopdf)                    size: 37530 bytes
+(epstopdf)             Output file: <Images/AoAvis-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 07:10:32
+(epstopdf)                    size: 13063 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/AoAvis-eps-converted-to.pdf Images/AoAvis.eps>
+(epstopdf)             \includegraphics on input line 416.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/AoAvis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/AoAvis-eps-converted-to.pdf, id=139, 421.575pt x 316.18124pt>
+File: Images/AoAvis-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/AoAvis-eps-converted-to.pdf>
+Package pdftex.def Info: Images/AoAvis-eps-converted-to.pdf  used on input line 416.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/VbodyVis.eps>
+(epstopdf)                    date: 2020-10-03 07:23:17
+(epstopdf)                    size: 42513 bytes
+(epstopdf)             Output file: <Images/VbodyVis-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 07:24:27
+(epstopdf)                    size: 14463 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/VbodyVis-eps-converted-to.pdf Images/VbodyVis.eps>
+(epstopdf)             \includegraphics on input line 433.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/VbodyVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/VbodyVis-eps-converted-to.pdf, id=140, 421.575pt x 316.18124pt>
+File: Images/VbodyVis-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/VbodyVis-eps-converted-to.pdf>
+Package pdftex.def Info: Images/VbodyVis-eps-converted-to.pdf  used on input line 433.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/VinVis.eps>
+(epstopdf)                    date: 2020-10-03 07:23:33
+(epstopdf)                    size: 45038 bytes
+(epstopdf)             Output file: <Images/VinVis-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 07:24:28
+(epstopdf)                    size: 15638 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/VinVis-eps-converted-to.pdf Images/VinVis.eps>
+(epstopdf)             \includegraphics on input line 434.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/VinVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/VinVis-eps-converted-to.pdf, id=141, 421.575pt x 316.18124pt>
+File: Images/VinVis-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/VinVis-eps-converted-to.pdf>
+Package pdftex.def Info: Images/VinVis-eps-converted-to.pdf  used on input line 434.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/putnja2Dvis.eps>
+(epstopdf)                    date: 2020-10-03 07:31:55
+(epstopdf)                    size: 24379 bytes
+(epstopdf)             Output file: <Images/putnja2Dvis-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 07:32:02
+(epstopdf)                    size: 9797 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/putnja2Dvis-eps-converted-to.pdf Images/putnja2Dvis.eps>
+(epstopdf)             \includegraphics on input line 446.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/putnja2Dvis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/putnja2Dvis-eps-converted-to.pdf, id=142, 421.575pt x 316.18124pt>
+File: Images/putnja2Dvis-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/putnja2Dvis-eps-converted-to.pdf>
+Package pdftex.def Info: Images/putnja2Dvis-eps-converted-to.pdf  used on input line 446.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/3dputanjaVis.eps>
+(epstopdf)                    date: 2020-10-03 07:32:17
+(epstopdf)                    size: 26104 bytes
+(epstopdf)             Output file: <Images/3dputanjaVis-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 07:32:57
+(epstopdf)                    size: 10254 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/3dputanjaVis-eps-converted-to.pdf Images/3dputanjaVis.eps>
+(epstopdf)             \includegraphics on input line 447.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/3dputanjaVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/3dputanjaVis-eps-converted-to.pdf, id=143, 421.575pt x 316.18124pt>
+File: Images/3dputanjaVis-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/3dputanjaVis-eps-converted-to.pdf>
+Package pdftex.def Info: Images/3dputanjaVis-eps-converted-to.pdf  used on input line 447.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/ubrVis.eps>
+(epstopdf)                    date: 2020-10-03 07:35:28
+(epstopdf)                    size: 34012 bytes
+(epstopdf)             Output file: <Images/ubrVis-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 07:36:54
+(epstopdf)                    size: 11784 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/ubrVis-eps-converted-to.pdf Images/ubrVis.eps>
+(epstopdf)             \includegraphics on input line 457.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/ubrVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/ubrVis-eps-converted-to.pdf, id=144, 421.575pt x 316.18124pt>
+File: Images/ubrVis-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/ubrVis-eps-converted-to.pdf>
+Package pdftex.def Info: Images/ubrVis-eps-converted-to.pdf  used on input line 457.
+(pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
+) [34 <c:/Users/Mirza/Desktop/thesis/Images/pitchVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/AoAvis-eps-converted-to.pdf>] [35 <c:/Users/Mirza/Desktop/thesis/Images/VbodyVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/VinVis-eps-converted-to.pdf>] [36 <c:/Users/Mirza/Desktop/thesis/Images/putnja2Dvis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/3dputanjaVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/ubrVis-eps-converted-to.pdf>]
+Poglavlje 5.
+(c:/Users\Mirza\Desktop\thesis\Chapters/chapter02.tex [37
+
+] [38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
 Overfull \hbox (3.31758pt too wide) in paragraph at lines 181--181
 |[]\OT1/lmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije| 
  []
 
-[33]
+[40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35] [36]
-<Images/homingSimulink.JPG, id=144, 650.43pt x 353.06906pt>
+ [42] [43]
+<Images/homingSimulink.JPG, id=233, 650.43pt x 353.06906pt>
 File: Images/homingSimulink.JPG Graphic file (type jpg)
 <use Images/homingSimulink.JPG>
 Package pdftex.def Info: Images/homingSimulink.JPG  used on input line 352.
@@ -1101,7 +1287,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/propAccPlot-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/propAccPlot-eps-converted-to.pdf, id=145, 421.575pt x 316.18124pt>
+<Images/propAccPlot-eps-converted-to.pdf, id=234, 421.575pt x 316.18124pt>
 File: Images/propAccPlot-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/propAccPlot-eps-converted-to.pdf>
 Package pdftex.def Info: Images/propAccPlot-eps-converted-to.pdf  used on input line 360.
@@ -1118,12 +1304,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missProp-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missProp-eps-converted-to.pdf, id=146, 421.575pt x 316.18124pt>
+<Images/missProp-eps-converted-to.pdf, id=235, 421.575pt x 316.18124pt>
 File: Images/missProp-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missProp-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missProp-eps-converted-to.pdf  used on input line 361.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-<Images/augPropSim.JPG, id=147, 768.62157pt x 328.97906pt>
+<Images/augPropSim.JPG, id=236, 768.62157pt x 328.97906pt>
 File: Images/augPropSim.JPG Graphic file (type jpg)
 <use Images/augPropSim.JPG>
 Package pdftex.def Info: Images/augPropSim.JPG  used on input line 372.
@@ -1145,7 +1331,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/augPropAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/augPropAcc-eps-converted-to.pdf, id=148, 421.575pt x 316.18124pt>
+<Images/augPropAcc-eps-converted-to.pdf, id=237, 421.575pt x 316.18124pt>
 File: Images/augPropAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/augPropAcc-eps-converted-to.pdf>
 Package pdftex.def Info: Images/augPropAcc-eps-converted-to.pdf  used on input line 379.
@@ -1162,17 +1348,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/augPropMiss-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/augPropMiss-eps-converted-to.pdf, id=149, 421.575pt x 316.18124pt>
+<Images/augPropMiss-eps-converted-to.pdf, id=238, 421.575pt x 316.18124pt>
 File: Images/augPropMiss-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/augPropMiss-eps-converted-to.pdf>
 Package pdftex.def Info: Images/augPropMiss-eps-converted-to.pdf  used on input line 380.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[37 <c:/Users/Mirza/Desktop/thesis/Images/homingSimulink.JPG> <c:/Users/Mirza/Desktop/thesis/Images/propAccPlot-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missProp-eps-converted-to.pdf>] [38 <c:/Users/Mirza/Desktop/thesis/Images/augPropSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/augPropAcc-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/augPropMiss-eps-converted-to.pdf>]
+[44 <c:/Users/Mirza/Desktop/thesis/Images/homingSimulink.JPG> <c:/Users/Mirza/Desktop/thesis/Images/propAccPlot-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missProp-eps-converted-to.pdf>] [45 <c:/Users/Mirza/Desktop/thesis/Images/augPropSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/augPropAcc-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/augPropMiss-eps-converted-to.pdf>]
 Overfull \hbox (16.7836pt too wide) in paragraph at lines 467--468
  [][] 
  []
 
-<Images/simAdj.JPG, id=183, 444.15938pt x 336.50719pt>
+<Images/simAdj.JPG, id=271, 444.15938pt x 336.50719pt>
 File: Images/simAdj.JPG Graphic file (type jpg)
 <use Images/simAdj.JPG>
 Package pdftex.def Info: Images/simAdj.JPG  used on input line 475.
@@ -1189,7 +1375,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missAdjDet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missAdjDet-eps-converted-to.pdf, id=184, 421.575pt x 316.18124pt>
+<Images/missAdjDet-eps-converted-to.pdf, id=272, 421.575pt x 316.18124pt>
 File: Images/missAdjDet-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missAdjDet-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missAdjDet-eps-converted-to.pdf  used on input line 483.
@@ -1206,22 +1392,22 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missHead-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missHead-eps-converted-to.pdf, id=185, 421.575pt x 316.18124pt>
+<Images/missHead-eps-converted-to.pdf, id=273, 421.575pt x 316.18124pt>
 File: Images/missHead-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missHead-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missHead-eps-converted-to.pdf  used on input line 484.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[39] [40 <c:/Users/Mirza/Desktop/thesis/Images/simAdj.JPG>]
+[46] [47 <c:/Users/Mirza/Desktop/thesis/Images/simAdj.JPG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41 <c:/Users/Mirza/Desktop/thesis/Images/missAdjDet-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missHead-eps-converted-to.pdf>]
+ [48 <c:/Users/Mirza/Desktop/thesis/Images/missAdjDet-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missHead-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
-<Images/adjStohastic.JPG, id=219, 580.41844pt x 295.85532pt>
+ [50]
+<Images/adjStohastic.JPG, id=307, 580.41844pt x 295.85532pt>
 File: Images/adjStohastic.JPG Graphic file (type jpg)
 <use Images/adjStohastic.JPG>
 Package pdftex.def Info: Images/adjStohastic.JPG  used on input line 657.
@@ -1238,12 +1424,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/adjStohasticSim-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/adjStohasticSim-eps-converted-to.pdf, id=220, 421.575pt x 316.18124pt>
+<Images/adjStohasticSim-eps-converted-to.pdf, id=308, 421.575pt x 316.18124pt>
 File: Images/adjStohasticSim-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/adjStohasticSim-eps-converted-to.pdf>
 Package pdftex.def Info: Images/adjStohasticSim-eps-converted-to.pdf  used on input line 664.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[44 <c:/Users/Mirza/Desktop/thesis/Images/adjStohastic.JPG>]) [45 <c:/Users/Mirza/Desktop/thesis/Images/adjStohasticSim-eps-converted-to.pdf>]
+[51 <c:/Users/Mirza/Desktop/thesis/Images/adjStohastic.JPG>]) [52 <c:/Users/Mirza/Desktop/thesis/Images/adjStohasticSim-eps-converted-to.pdf>]
 Poglavlje 6.
 (c:/Users\Mirza\Desktop\thesis\Chapters/autopilot.tex
 Package epstopdf Info: Source file: <Images/thetaOtvSprega.eps>
@@ -1258,12 +1444,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/thetaOtvSprega-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/thetaOtvSprega-eps-converted-to.pdf, id=235, 421.575pt x 316.18124pt>
+<Images/thetaOtvSprega-eps-converted-to.pdf, id=323, 421.575pt x 316.18124pt>
 File: Images/thetaOtvSprega-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/thetaOtvSprega-eps-converted-to.pdf>
 Package pdftex.def Info: Images/thetaOtvSprega-eps-converted-to.pdf  used on input line 35.
 (pdftex.def)             Requested size: 295.10048pt x 221.32535pt.
-[46
+[53
 
 ]
 Package epstopdf Info: Source file: <Images/closedLoopPitch.eps>
@@ -1278,12 +1464,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/closedLoopPitch-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/closedLoopPitch-eps-converted-to.pdf, id=239, 421.575pt x 316.18124pt>
+<Images/closedLoopPitch-eps-converted-to.pdf, id=327, 421.575pt x 316.18124pt>
 File: Images/closedLoopPitch-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/closedLoopPitch-eps-converted-to.pdf>
 Package pdftex.def Info: Images/closedLoopPitch-eps-converted-to.pdf  used on input line 74.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-[47 <c:/Users/Mirza/Desktop/thesis/Images/thetaOtvSprega-eps-converted-to.pdf>]
+[54 <c:/Users/Mirza/Desktop/thesis/Images/thetaOtvSprega-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/compareLead.eps>
 (epstopdf)                    date: 2020-08-30 08:18:55
 (epstopdf)                    size: 96029 bytes
@@ -1296,17 +1482,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/compareLead-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/compareLead-eps-converted-to.pdf, id=251, 421.575pt x 316.18124pt>
+<Images/compareLead-eps-converted-to.pdf, id=339, 421.575pt x 316.18124pt>
 File: Images/compareLead-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/compareLead-eps-converted-to.pdf>
 Package pdftex.def Info: Images/compareLead-eps-converted-to.pdf  used on input line 92.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-<Images/leadInteSim.JPG, id=252, 666.23906pt x 231.11343pt>
+<Images/leadInteSim.JPG, id=340, 666.23906pt x 231.11343pt>
 File: Images/leadInteSim.JPG Graphic file (type jpg)
 <use Images/leadInteSim.JPG>
 Package pdftex.def Info: Images/leadInteSim.JPG  used on input line 100.
 (pdftex.def)             Requested size: 333.11871pt x 115.55643pt.
-<Images/subKask.JPG, id=253, 639.89063pt x 155.83218pt>
+<Images/subKask.JPG, id=341, 639.89063pt x 155.83218pt>
 File: Images/subKask.JPG Graphic file (type jpg)
 <use Images/subKask.JPG>
 Package pdftex.def Info: Images/subKask.JPG  used on input line 101.
@@ -1314,11 +1500,11 @@ Package pdftex.def Info: Images/subKask.JPG  used on input line 101.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48 <c:/Users/Mirza/Desktop/thesis/Images/closedLoopPitch-eps-converted-to.pdf>]
+ [55 <c:/Users/Mirza/Desktop/thesis/Images/closedLoopPitch-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49 <c:/Users/Mirza/Desktop/thesis/Images/compareLead-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/leadInteSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/subKask.JPG>]
-<Images/simKask.JPG, id=277, 666.99188pt x 226.59656pt>
+ [56 <c:/Users/Mirza/Desktop/thesis/Images/compareLead-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/leadInteSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/subKask.JPG>]
+<Images/simKask.JPG, id=365, 666.99188pt x 226.59656pt>
 File: Images/simKask.JPG Graphic file (type jpg)
 <use Images/simKask.JPG>
 Package pdftex.def Info: Images/simKask.JPG  used on input line 152.
@@ -1339,7 +1525,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/poredjenjeBrzina-eps-converted-to.pdf, id=278, 421.575pt x 316.18124pt>
+<Images/poredjenjeBrzina-eps-converted-to.pdf, id=366, 421.575pt x 316.18124pt>
 File: Images/poredjenjeBrzina-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/poredjenjeBrzina-eps-converted-to.pdf>
 Package pdftex.def Info: Images/poredjenjeBrzina-eps-converted-to.pdf  used on input line 160.
@@ -1356,7 +1542,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/poredjenjeOdziva-eps-converted-to.pdf, id=279, 421.575pt x 316.18124pt>
+<Images/poredjenjeOdziva-eps-converted-to.pdf, id=367, 421.575pt x 316.18124pt>
 File: Images/poredjenjeOdziva-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/poredjenjeOdziva-eps-converted-to.pdf>
 Package pdftex.def Info: Images/poredjenjeOdziva-eps-converted-to.pdf  used on input line 161.
@@ -1364,7 +1550,7 @@ Package pdftex.def Info: Images/poredjenjeOdziva-eps-converted-to.pdf  used on i
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50 <c:/Users/Mirza/Desktop/thesis/Images/simKask.JPG> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf>]
+ [57 <c:/Users/Mirza/Desktop/thesis/Images/simKask.JPG> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/nZodziv.eps>
 (epstopdf)                    date: 2020-08-30 13:41:56
 (epstopdf)                    size: 38746 bytes
@@ -1377,7 +1563,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/nZodziv-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/nZodziv-eps-converted-to.pdf, id=299, 421.575pt x 298.11375pt>
+<Images/nZodziv-eps-converted-to.pdf, id=387, 421.575pt x 298.11375pt>
 File: Images/nZodziv-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/nZodziv-eps-converted-to.pdf>
 Package pdftex.def Info: Images/nZodziv-eps-converted-to.pdf  used on input line 181.
@@ -1394,15 +1580,15 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/akcClosed-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/akcClosed-eps-converted-to.pdf, id=300, 421.575pt x 316.18124pt>
+<Images/akcClosed-eps-converted-to.pdf, id=388, 421.575pt x 316.18124pt>
 File: Images/akcClosed-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/akcClosed-eps-converted-to.pdf>
 Package pdftex.def Info: Images/akcClosed-eps-converted-to.pdf  used on input line 224.
 (pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
-[51 <c:/Users/Mirza/Desktop/thesis/Images/nZodziv-eps-converted-to.pdf>]
+[58 <c:/Users/Mirza/Desktop/thesis/Images/nZodziv-eps-converted-to.pdf>]
 Underfull \vbox (badness 1571) has occurred while \output is active []
 
- [52 <c:/Users/Mirza/Desktop/thesis/Images/akcClosed-eps-converted-to.pdf>]
+ [59 <c:/Users/Mirza/Desktop/thesis/Images/akcClosed-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/twoLoopsAcc.eps>
 (epstopdf)                    date: 2020-08-30 18:10:43
 (epstopdf)                    size: 53129 bytes
@@ -1415,12 +1601,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/twoLoopsAcc-eps-converted-to.pdf, id=321, 421.575pt x 316.18124pt>
+<Images/twoLoopsAcc-eps-converted-to.pdf, id=409, 421.575pt x 316.18124pt>
 File: Images/twoLoopsAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/twoLoopsAcc-eps-converted-to.pdf>
 Package pdftex.def Info: Images/twoLoopsAcc-eps-converted-to.pdf  used on input line 277.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-[53 <c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf>] [54]
+[60 <c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf>] [61]
 Package epstopdf Info: Source file: <Images/piAcc.eps>
 (epstopdf)                    date: 2020-08-31 18:13:28
 (epstopdf)                    size: 52856 bytes
@@ -1433,12 +1619,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/piAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/piAcc-eps-converted-to.pdf, id=336, 421.575pt x 316.18124pt>
+<Images/piAcc-eps-converted-to.pdf, id=425, 421.575pt x 316.18124pt>
 File: Images/piAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/piAcc-eps-converted-to.pdf>
 Package pdftex.def Info: Images/piAcc-eps-converted-to.pdf  used on input line 356.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-<Images/simDyn.JPG, id=337, 612.03656pt x 317.68687pt>
+<Images/simDyn.JPG, id=426, 612.03656pt x 317.68687pt>
 File: Images/simDyn.JPG Graphic file (type jpg)
 <use Images/simDyn.JPG>
 Package pdftex.def Info: Images/simDyn.JPG  used on input line 369.
@@ -1446,7 +1632,7 @@ Package pdftex.def Info: Images/simDyn.JPG  used on input line 369.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <c:/Users/Mirza/Desktop/thesis/Images/piAcc-eps-converted-to.pdf>]
+ [62 <c:/Users/Mirza/Desktop/thesis/Images/piAcc-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/missDyn.eps>
 (epstopdf)                    date: 2020-08-31 18:47:00
 (epstopdf)                    size: 53129 bytes
@@ -1459,7 +1645,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missDyn-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missDyn-eps-converted-to.pdf, id=350, 421.575pt x 316.18124pt>
+<Images/missDyn-eps-converted-to.pdf, id=438, 421.575pt x 316.18124pt>
 File: Images/missDyn-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missDyn-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missDyn-eps-converted-to.pdf  used on input line 374.
@@ -1476,12 +1662,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/accDyn-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/accDyn-eps-converted-to.pdf, id=351, 421.575pt x 316.18124pt>
+<Images/accDyn-eps-converted-to.pdf, id=439, 421.575pt x 316.18124pt>
 File: Images/accDyn-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/accDyn-eps-converted-to.pdf>
 Package pdftex.def Info: Images/accDyn-eps-converted-to.pdf  used on input line 378.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-) [56 <c:/Users/Mirza/Desktop/thesis/Images/simDyn.JPG>] [57 <c:/Users/Mirza/Desktop/thesis/Images/missDyn-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/accDyn-eps-converted-to.pdf>] [58
+) [63 <c:/Users/Mirza/Desktop/thesis/Images/simDyn.JPG>] [64 <c:/Users/Mirza/Desktop/thesis/Images/missDyn-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/accDyn-eps-converted-to.pdf>] [65
 
 ] (c:/Users\Mirza\Desktop\thesis\main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1489,17 +1675,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28982 strings out of 480797
- 587437 string characters out of 2905362
- 1242351 words of memory out of 3000000
- 44449 multiletter control sequences out of 15000+200000
- 579515 words of font info for 53 fonts, out of 3000000 for 9000
+ 30872 strings out of 480797
+ 612933 string characters out of 2905362
+ 1314003 words of memory out of 3000000
+ 46306 multiletter control sequences out of 15000+200000
+ 580539 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,15n,75p,872b,1764s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmsc.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (58 pages, 1147159 bytes).
+ 59i,15n,75p,872b,1769s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmsc.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (65 pages, 1364132 bytes).
 PDF statistics:
- 436 PDF objects out of 1000 (max. 8388607)
+ 528 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 

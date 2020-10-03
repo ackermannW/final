@@ -50,6 +50,20 @@ Ovaj nelinearni model ima tri ulaza(otkloni kontrolnih površina) i svaka od var
 modela može predstaviti 36 prenosnih funkcija, međutim zbog prirode posmatrane konfiguracije 
 neke od ovih prenosnih funkcija će identički biti jednake nuli. Jedan primjer ovakve prensone funkcije 
 jeste veza između otklona upravljačke površine za stabilizaciju ugla valjanja i brzine projektila. 
+U prethodnom poglavlju su razvijeni izrazi za sile u koordinatnom sistemu tijela, pa su u nastavku navedene 
+jednačine koje opisuju model u koordinatnog sistemu tijela:
+\begin{align}
+    \label{eq:prva} \frac{du}{dt} &=Rv - Qw + (F_{ax} + F_{gx} + T)/m\\
+    \frac{dv}{dt} &=Pw - Ru + (F_{ay}+F_{gy})/m\\
+    \frac{dw}{dt} &=Qu - Pv +(F_{az}+F_{gz})/m\\
+    \frac{dP}{dt} &=L/I_x\\
+    \frac{dQ}{dt} &= PR\frac{I_z-Ix}{Iy} + M/I_y\\
+    \frac{dR}{dt} &= PQ\frac{I_x-IY}{Iy} + N/I_z\\
+    \frac{d\phi}{dt} &=P + Q\sin\phi\tan\theta + R\cos\phi\tan\theta\\
+    \frac{d\theta}{dt} &=Q\cos\theta - R\sin\phi\\
+    \label{eq:zadnja} \frac{d\psi}{dt}&=(R\cos\phi+Q\sin\phi)/\cos\theta
+\end{align}
+Ovakav prikaza dinamičkog modela je naročito koristan za simulaciju dinamike projektila. 
 \section{Rasprezanje dinamičkog modela}
 Sada će se u svrhu lakše analize i sinteze regulatora izvršiti rasprezanje dinamičkog modela. Ideja je 
 da se uvedu neke pretpostavke koje će omogućiti da se predstavljene jednačine razdvoje na grupe 
@@ -227,3 +241,223 @@ posebna pažnja posvetiti upravljanju normalnog ubrzanja. Prenosna funkcija koja
 Evidentno je da za dobijanje lineariziranog modela longitudnalnog kretanja uvedeno 
 puno pretpostavki i da će bilo kakvo odstupanje od ovih pretpostavki umanjiti vjerodostojnost modela, 
 ali se pokazuje da je ovaj linearizirani model dosta dobra aproksimacija pri nominalnim uslovima leta. 
+\section{Softverska implementacija modela}
+Od velike je koristi imati implementiran dinamički model kako bi se imao bolji 
+uvid u dinamiku projektila. Također neophodno je imati implementiran 
+nelinearni model za potrebe dizajna linearnih regulatora. Regulatori su linearni, ali 
+je potrebno imati i uvjerljiv nelinarni model kako bi se ispitale performanse regulatora.
+Dinamički model je implementiram koristeći Matlab i Simulink polazeći od jednostavne ideje,
+da se koristeći prethodno dobivene izraze, izračunaju izvodi varijabli stanja te da se one 
+nakon toga integrale čime se dobijaju stvarne vrijednosti varijabli stanja. Riješene su jednačine 
+od \ref{eq:prva} do \ref{eq:zadnja} uz izraze za ugao napada i ugao klizanja. 
+Prisjetimo se da vrijedi:
+\begin{align*}
+    \alpha &= \arctan(\frac{w}{v})\\
+    \beta &= \arctan(\frac{v}{u})
+\end{align*}
+Prema tome, vrijedi:
+\begin{align}
+    \dot{\alpha} &= \frac{u\dot{w} - w\dot{u}}{w^2+v^2}\\
+    \dot{\beta} &= \frac{u\dot{v} - v\dot{u}}{u^2+v^2}
+\end{align}
+Također je korištena činjenica da vrijedi:
+\begin{align}
+    \Theta &= \theta - \alpha\\
+     \Psi &= \psi - \beta
+\end{align}
+Iz čega se mogu dobiti vertikalno i horizontalno ubrzanje vezano za koordinatni sistem prema relacijama:
+\begin{align}
+    a_V &= v_m\dot{\Theta} + g\cos\Theta \\
+    a_H &= v_m\dot{\Psi}\cos\Theta 
+\end{align}
+Ova dva ubrzanje su normalna na vektor brzine projektila. \\
+U nastavku je prikazan simulink dijagram koji služi kao nelinarni model projektila sa 
+šest stepeni slobode. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale=0.7]{model.JPG}
+    \caption{Simulink model projektila}
+\end{figure}
+Na prethodnoj slici je predstavljen podsistem koji iza sebe krije pravu dinamiku projektila. 
+Na narednoj slici je prikazan ovaj podsistem. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale=0.7]{subModel.JPG}
+    \caption{Simulink model projektila}
+    \label{fig:subimg}
+\end{figure}
+Na slici \ref{fig:subimg} se vidi da je kod modela u obzir uzeto da se može postići samo 
+konačan otklon kontrolnih površina. Dalje, koristi se blok interpretirane Matlab funkcije 
+kako bi se riješile simultane diferencijalne jednačine modela, koje se prosljeđuju 
+u integrator sa određenim početnim uslovima. Također ova interpretirana funkcija računa 
+i normalno i vertikalno ubrzanje projektila, kao i ugao elevacije i azimuta vektora brzine. Dakle,
+ova interpretirana Matlab funkcija kao ulaze ima sve varijable stanja, napadni ugao $\alpha$ i ugao klizanja $\beta$, 
+ugao elevacije vektora brzine $\Theta$, ugao azimuta vektora brzine $\Psi$ i otklone 
+upravljačkih površina. U nastavku je prikazan Matlab kod interpretirane funckije koja 
+rješava jednačine dinamičkog modela. 
+\begin{lstlisting}
+    function out = modelSolver(X,alpha,beta,Psi, Theta, U)
+    
+    u = X(1);
+    v = X(2);
+    w = X(3);
+    p = X(4);
+    q = X(5);
+    r = X(6);
+    phi = X(7);
+    theta = X(8);
+    psi = X(9);
+    
+    xz = X(10);
+    yz = X(11);
+    zz = X(12);
+    
+    u1 = U(1);
+    u2 = U(2);
+    u3 = U(3);
+    
+    %------------CONSTANTS-------------------%
+    m = 52.5;
+    Ix = 0.16;
+    Iy = 14;
+    Iz = Iy;
+    g= 9.81;
+    l = 0.127;
+    rho = 1.225;
+    D = 127/1000;
+    S = 0.0127;
+    vm = sqrt(u^2+v^2+w^2);
+    
+    Q = (rho*(vm^2))/2;
+    %----------COEFFICIENTS--------------------%
+    
+    %lift
+    
+    Cx0 = 10;
+    Cna = 3.330;
+    
+    Fa = -rho*pi*D^2*vm^2*[Cx0+alpha^2 + beta^2;Cna*beta;Cna*alpha]/8;
+    
+    Fax = Fa(1);
+    Fay = Fa(2);
+    Faz = Fa(3);
+    %moments
+    
+    X = 0.55;
+    
+    Cma = -Cna*X/l;
+    CmdeltaV = 10;
+    
+    Cmq = -300;
+    Cm = Cma*alpha + CmdeltaV*u1 + Cmq*q/(2*vm);
+    
+    Mm = Cm*Q*S*l;
+    
+    Cnb = -Cma;
+    CndeltaP = -CmdeltaV;
+    Cnr = -300;
+    Cn = Cnb*beta + CndeltaP*u2 + Cnr*r/(2*vm);
+    Nm = Cn*Q*S*l;
+    
+    
+    CldeltaE = 1.4;
+    Clp = -9;
+    
+    Cl = CldeltaE*u3 + Clp*p/(2*vm);
+    Lm = Cl*Q*S*l;
+    
+    Tphi = [1 0 0;
+            0 cos(phi) sin(phi);
+            0 -sin(phi) cos(phi)];
+    Ttheta = [cos(theta) 0 -sin(theta);
+              0 1 0;
+              sin(theta) 0 cos(theta)];
+    Tpsi = [cos(psi) sin(psi) 0;
+            -sin(psi) cos(psi) 0;
+            0 0 1];
+    
+    Thrust = 12650;
+    udot = v*r - w*q + (Fax+Thrust)/m -g*sin(theta);
+    vdot = p*w - r*u + Fay/m + g*cos(theta)*sin(phi);
+    wdot = q*u - p*v + Faz/m + g*cos(theta)*cos(phi);
+    
+    pdot = Lm/Ix;%pdot
+    qdot = p*r*(Iz-Ix)/Iy +Mm/Iy;%qdot
+    rdot = p*q*(Ix-Iy)/Iz + Nm/Iz;%rdot
+    
+    phidot = p+q*sin(phi)*tan(theta)+r*cos(phi)*tan(theta);
+    thetadot = q*cos(phi) - r*sin(phi);
+    psidot = q*sin(phi)/cos(theta) + r*cos(phi)/cos(theta);
+    
+    xyzZemlja = Tpsi'*Ttheta'*Tphi'*[u;v;w];
+    
+    Xdot = [udot;vdot;wdot;pdot;qdot;rdot;phidot;thetadot;psidot;xyzZemlja];
+    
+    alphadot = (wdot*u - udot*w)/(w^2+u^2);
+    betadot = (vdot*u - v*udot)/(u^2+v^2);
+    
+    Thetadot = thetadot-alphadot;
+    Psidot = psidot - betadot;
+    
+    nV = vm*Thetadot + g*cos(Theta);
+    nH = vm*Psidot*cos(Theta);
+    
+    out = [Xdot; alphadot; betadot;Psidot;Thetadot;nV;nH];
+    end
+    \end{lstlisting}
+Model projektila je MIMO sistem sa tri ulazne varijable i puno više izlaze pa je u nastavku 
+predstavljeno nekoliko značajnih odziva na otklone kotnrolnih površina. U nastavku se razmatra 
+šta se dešava sa projektilom kada se pobudi sa jediničnim otklnom krmila visine. Treba uzeti u obzir 
+da je uzeto u modelu da se postiže zasićenje otklona svih površina pri otklonu od $25$ stepeni.
+Prvo pogledajmo šta se desi sa orijentacijom projektila za jedinični otklon krmila visine. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.5]{pitchVis.eps}
+    \includegraphics[scale = 0.5]{AoAvis.eps}
+    \caption{Orijentacija projektila i ugao napada i klizanja pri jediničnom otklonu krmila 
+    visine}
+\end{figure}
+Sada se vide očekivani rezultati. Kada se otkloni krmilo visine, projektil se usmjeri lagano prema gore. 
+Grafik na kojem je prikazan ugao propinjnanja je dat u radijanima, pa se prema skoro linearnom 
+odzivu može naslutiti da je putanja projektila kružne prirode. U ovu tvrdnju ćemo se uvjeriti poslije. Dalje,
+vidimo da je napadni ugao konstantan u toku cijele putanje, što znači da se projektil uvijek kreće u smjeru $z$ ose tijela.
+Ovo ne znači nužno da se projektil penje. Dalje, ugao klizanja je nula toko cijele putanje što 
+znači da projektil ne skreće sa putanje, tj. da je vrijednost pomjeraja po $y$ osi uvijek nula. To se također 
+vidi na graficima za ugao zakretanja. Treba primjetiti da je ugao valjanja također nula za jedinični otklon 
+krmila visine. Ovo su itekako važni zaključci, jer se primjećuje da otklon krmila visine uzrokuje 
+kretanje samo u vertikalnoj ravni pa se već naslućuje da postoji nezavisnost kretanja u vertikalnoj i horiznotalnoj 
+ravni. Poslije ćemo se uvjeriti da je ova osobina od krucijalne važnosti za dizajn autopilota za zadatak vođenja. 
+Sada pogledajmo, odzive brzina projektila koji su prikazani na slici \ref{fig:brzine}.
+\begin{figure}[!ht]
+    \centering 
+    \includegraphics[scale =.5]{VbodyVis.eps}
+    \includegraphics[scale =.5]{VinVis.eps}
+    \caption{Brzine projektila u sistemu tijea i inercijalnom sistemu}
+    \label{fig:brzine}
+\end{figure}
+Prvo što se primjeti jest da je brzina u $y$ smjerovima oba sistema uvijek nula. Dalje, posmatrajući 
+sistem tijela vidi se da brzine nakon nekog vremena dostignu maksimalnu brzinu. Glede,
+sistema tijela, brzina u $x$ smjeru je stalna kao posljedica čeone sile otpora vazduha. Posmatrajući
+inercijalni sistem, vidi se brzine u $x$ i $z$ smjeru imaju promejene koje sliče na kružno kretanje. Suma njihovih kvadrata 
+će dati približno neku konstantnu vrijednost, pa se zaključuje da se projektil za slulčaj otklona krmila visine, 
+doista kreće po kružnici. Uvjerimo se u tu tvrdnju skicirajući putnaju projektila. 
+\begin{figure}[!ht]
+    \centering 
+    \includegraphics[scale= 0.5]{putnja2Dvis.eps}
+    \includegraphics[scale= 0.5]{3dputanjaVis.eps}
+    \caption{Putanja projektila za jedinični otklon krmila visine}
+    \label{fig:2dpath}
+\end{figure}
+Sada se jasno vidi da projektil pravi kružnu putanju u prostoru. 
+Poslije će se vidjeti da su normalna ubrzanje važna za proces vođenja projektila, pa treba razmotriti 
+šta se dešava sa ubrzanjima kada se imaju otkloni kontrolnih površina. Na slici \ref{fig:ubrVis} su 
+prikzani vertikalno i horizontalno ubrzanje projektila.
+\begin{figure}[!ht]
+    \centering 
+    \includegraphics[scale= 0.8]{ubrVis.eps}
+    \caption{Vertikalno i normalno ubrzanje projektila za jedinični otklon krmila visine}
+    \label{fig:ubrVis}
+\end{figure}
+Sada se jasno vidi da se za jedinični otklon krmila visine postiže stalno vertikalno ubrzanje, što se slaže sa 
+činjenicom da projektil čini kružnu putanju u $xz$ ravnini. Nulto horizontalno ubrzanje 
+se slaže sa činjenicom da projektil ne čini pomjeraje u horiznotalnoj ravnini. 

@@ -179,6 +179,17 @@ INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.cfg
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.cfg
+INPUT c:\Users\Mirza\Desktop\thesis\mcode.sty
+INPUT c:\Users\Mirza\Desktop\thesis\mcode.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\ot1pcr.fd
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\ot1pcr.fd
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr7t.tfm
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.code.tex
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.code.tex
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
@@ -367,6 +378,93 @@ INPUT c:\Users\Mirza\Desktop\thesis\Images\wind.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\wind.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\model.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\model.tex
+INPUT c:\Users\Mirza\Desktop\thesis\Images\model.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\model.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\model.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\model.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\model.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\subModel.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\subModel.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\subModel.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\subModel.JPG
+INPUT c:\Users\Mirza\Desktop\thesis\Images\subModel.JPG
+INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\adobe\courier\pcrr7t.vf
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\ts1pcr.fd
+INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\ts1pcr.fd
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr8c.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr7t.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\adobe\courier\pcrr8c.vf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\AoAvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VbodyVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\VinVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\putnja2Dvis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\3dputanjaVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\ubrVis-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Chapters\chapter02.tex
 INPUT c:\Users\Mirza\Desktop\thesis\Images\homingSimulink.JPG
@@ -597,6 +695,7 @@ INPUT c:\Users\Mirza\Desktop\thesis\main.aux
 INPUT c:\Users\Mirza\Desktop\thesis\main.run.xml
 OUTPUT c:\Users\Mirza\Desktop\thesis\main.run.xml
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\base\8r.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\enc\dvips\lm\lm-mathex.enc
@@ -634,3 +733,5 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmsy6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmsy6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\urw\courier\ucrr8a.pfb
