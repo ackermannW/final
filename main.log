@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  3 OCT 2020 07:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.5)  3 OCT 2020 17:03
 entering extended mode
 **c:/Users/Mirza/Desktop/thesis/main.tex
 (c:/Users/Mirza/Desktop/thesis/main.tex
@@ -980,7 +980,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] (c:/Users\Mirza\Desktop\thesis\main.lof [3
 
 ]
-Overfull \hbox (25.97195pt too wide) in paragraph at lines 90--90
+Overfull \hbox (25.97195pt too wide) in paragraph at lines 100--100
  [][] []\OT1/lmr/m/n/12 Upravljanje nor-mal-nim ubr-za-njem sa ak-ce-le-ro-me-trom i br-zin-skim ziroskopom [][]  
  []
 
@@ -1098,40 +1098,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24] [25]
+ [24]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29] [30]
-<Images/model.JPG, id=125, 569.12625pt x 458.46281pt>
+ [25]
+<Images/model.JPG, id=110, 569.12625pt x 458.46281pt>
 File: Images/model.JPG Graphic file (type jpg)
 <use Images/model.JPG>
-Package pdftex.def Info: Images/model.JPG  used on input line 278.
+Package pdftex.def Info: Images/model.JPG  used on input line 101.
 (pdftex.def)             Requested size: 398.38567pt x 320.92177pt.
-<Images/subModel.JPG, id=126, 586.44093pt x 493.845pt>
+<Images/subModel.JPG, id=111, 586.44093pt x 493.845pt>
 File: Images/subModel.JPG Graphic file (type jpg)
 <use Images/subModel.JPG>
-Package pdftex.def Info: Images/subModel.JPG  used on input line 285.
+Package pdftex.def Info: Images/subModel.JPG  used on input line 108.
 (pdftex.def)             Requested size: 410.50584pt x 345.68913pt.
- [31 <c:/Users/Mirza/Desktop/thesis/Images/model.JPG>]
-Underfull \vbox (badness 3386) has occurred while \output is active []
-
- [32 <c:/Users/Mirza/Desktop/thesis/Images/subModel.JPG>]
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 331.
+ [26 <c:/Users/Mirza/Desktop/thesis/Images/model.JPG>] [27 <c:/Users/Mirza/Desktop/thesis/Images/subModel.JPG>]
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 154.
  (C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex/latex/psnfss\ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [28]
 Package epstopdf Info: Source file: <Images/pitchVis.eps>
 (epstopdf)                    date: 2020-10-03 07:09:44
 (epstopdf)                    size: 44613 bytes
@@ -1139,15 +1127,15 @@ Package epstopdf Info: Source file: <Images/pitchVis.eps>
 (epstopdf)                    date: 2020-10-03 07:10:31
 (epstopdf)                    size: 14501 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/pitchVis-eps-converted-to.pdf Images/pitchVis.eps>
-(epstopdf)             \includegraphics on input line 415.
+(epstopdf)             \includegraphics on input line 238.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/pitchVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/pitchVis-eps-converted-to.pdf, id=138, 421.575pt x 316.18124pt>
+<Images/pitchVis-eps-converted-to.pdf, id=122, 421.575pt x 316.18124pt>
 File: Images/pitchVis-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/pitchVis-eps-converted-to.pdf>
-Package pdftex.def Info: Images/pitchVis-eps-converted-to.pdf  used on input line 415.
+Package pdftex.def Info: Images/pitchVis-eps-converted-to.pdf  used on input line 238.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/AoAvis.eps>
 (epstopdf)                    date: 2020-10-03 07:10:18
@@ -1156,15 +1144,15 @@ Package epstopdf Info: Source file: <Images/AoAvis.eps>
 (epstopdf)                    date: 2020-10-03 07:10:32
 (epstopdf)                    size: 13063 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/AoAvis-eps-converted-to.pdf Images/AoAvis.eps>
-(epstopdf)             \includegraphics on input line 416.
+(epstopdf)             \includegraphics on input line 239.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/AoAvis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/AoAvis-eps-converted-to.pdf, id=139, 421.575pt x 316.18124pt>
+<Images/AoAvis-eps-converted-to.pdf, id=123, 421.575pt x 316.18124pt>
 File: Images/AoAvis-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/AoAvis-eps-converted-to.pdf>
-Package pdftex.def Info: Images/AoAvis-eps-converted-to.pdf  used on input line 416.
+Package pdftex.def Info: Images/AoAvis-eps-converted-to.pdf  used on input line 239.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/VbodyVis.eps>
 (epstopdf)                    date: 2020-10-03 07:23:17
@@ -1173,15 +1161,15 @@ Package epstopdf Info: Source file: <Images/VbodyVis.eps>
 (epstopdf)                    date: 2020-10-03 07:24:27
 (epstopdf)                    size: 14463 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/VbodyVis-eps-converted-to.pdf Images/VbodyVis.eps>
-(epstopdf)             \includegraphics on input line 433.
+(epstopdf)             \includegraphics on input line 256.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/VbodyVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/VbodyVis-eps-converted-to.pdf, id=140, 421.575pt x 316.18124pt>
+<Images/VbodyVis-eps-converted-to.pdf, id=124, 421.575pt x 316.18124pt>
 File: Images/VbodyVis-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/VbodyVis-eps-converted-to.pdf>
-Package pdftex.def Info: Images/VbodyVis-eps-converted-to.pdf  used on input line 433.
+Package pdftex.def Info: Images/VbodyVis-eps-converted-to.pdf  used on input line 256.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/VinVis.eps>
 (epstopdf)                    date: 2020-10-03 07:23:33
@@ -1190,15 +1178,15 @@ Package epstopdf Info: Source file: <Images/VinVis.eps>
 (epstopdf)                    date: 2020-10-03 07:24:28
 (epstopdf)                    size: 15638 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/VinVis-eps-converted-to.pdf Images/VinVis.eps>
-(epstopdf)             \includegraphics on input line 434.
+(epstopdf)             \includegraphics on input line 257.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/VinVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/VinVis-eps-converted-to.pdf, id=141, 421.575pt x 316.18124pt>
+<Images/VinVis-eps-converted-to.pdf, id=125, 421.575pt x 316.18124pt>
 File: Images/VinVis-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/VinVis-eps-converted-to.pdf>
-Package pdftex.def Info: Images/VinVis-eps-converted-to.pdf  used on input line 434.
+Package pdftex.def Info: Images/VinVis-eps-converted-to.pdf  used on input line 257.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/putnja2Dvis.eps>
 (epstopdf)                    date: 2020-10-03 07:31:55
@@ -1207,15 +1195,15 @@ Package epstopdf Info: Source file: <Images/putnja2Dvis.eps>
 (epstopdf)                    date: 2020-10-03 07:32:02
 (epstopdf)                    size: 9797 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/putnja2Dvis-eps-converted-to.pdf Images/putnja2Dvis.eps>
-(epstopdf)             \includegraphics on input line 446.
+(epstopdf)             \includegraphics on input line 270.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/putnja2Dvis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/putnja2Dvis-eps-converted-to.pdf, id=142, 421.575pt x 316.18124pt>
+<Images/putnja2Dvis-eps-converted-to.pdf, id=126, 421.575pt x 316.18124pt>
 File: Images/putnja2Dvis-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/putnja2Dvis-eps-converted-to.pdf>
-Package pdftex.def Info: Images/putnja2Dvis-eps-converted-to.pdf  used on input line 446.
+Package pdftex.def Info: Images/putnja2Dvis-eps-converted-to.pdf  used on input line 270.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/3dputanjaVis.eps>
 (epstopdf)                    date: 2020-10-03 07:32:17
@@ -1224,15 +1212,15 @@ Package epstopdf Info: Source file: <Images/3dputanjaVis.eps>
 (epstopdf)                    date: 2020-10-03 07:32:57
 (epstopdf)                    size: 10254 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/3dputanjaVis-eps-converted-to.pdf Images/3dputanjaVis.eps>
-(epstopdf)             \includegraphics on input line 447.
+(epstopdf)             \includegraphics on input line 271.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/3dputanjaVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/3dputanjaVis-eps-converted-to.pdf, id=143, 421.575pt x 316.18124pt>
+<Images/3dputanjaVis-eps-converted-to.pdf, id=127, 421.575pt x 316.18124pt>
 File: Images/3dputanjaVis-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/3dputanjaVis-eps-converted-to.pdf>
-Package pdftex.def Info: Images/3dputanjaVis-eps-converted-to.pdf  used on input line 447.
+Package pdftex.def Info: Images/3dputanjaVis-eps-converted-to.pdf  used on input line 271.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <Images/ubrVis.eps>
 (epstopdf)                    date: 2020-10-03 07:35:28
@@ -1241,36 +1229,192 @@ Package epstopdf Info: Source file: <Images/ubrVis.eps>
 (epstopdf)                    date: 2020-10-03 07:36:54
 (epstopdf)                    size: 11784 bytes
 (epstopdf)             Command: <epstopdf --outfile=Images/ubrVis-eps-converted-to.pdf Images/ubrVis.eps>
-(epstopdf)             \includegraphics on input line 457.
+(epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/ubrVis-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/ubrVis-eps-converted-to.pdf, id=144, 421.575pt x 316.18124pt>
+<Images/ubrVis-eps-converted-to.pdf, id=128, 421.575pt x 316.18124pt>
 File: Images/ubrVis-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/ubrVis-eps-converted-to.pdf>
-Package pdftex.def Info: Images/ubrVis-eps-converted-to.pdf  used on input line 457.
-(pdftex.def)             Requested size: 337.26045pt x 252.94533pt.
-) [34 <c:/Users/Mirza/Desktop/thesis/Images/pitchVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/AoAvis-eps-converted-to.pdf>] [35 <c:/Users/Mirza/Desktop/thesis/Images/VbodyVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/VinVis-eps-converted-to.pdf>] [36 <c:/Users/Mirza/Desktop/thesis/Images/putnja2Dvis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/3dputanjaVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/ubrVis-eps-converted-to.pdf>]
-Poglavlje 5.
-(c:/Users\Mirza\Desktop\thesis\Chapters/chapter02.tex [37
+Package pdftex.def Info: Images/ubrVis-eps-converted-to.pdf  used on input line 281.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/xyPrav.eps>
+(epstopdf)                    date: 2020-10-03 13:29:40
+(epstopdf)                    size: 41324 bytes
+(epstopdf)             Output file: <Images/xyPrav-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 13:30:43
+(epstopdf)                    size: 16426 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/xyPrav-eps-converted-to.pdf Images/xyPrav.eps>
+(epstopdf)             \includegraphics on input line 293.
+Package epstopdf Info: Output file is already uptodate.
 
-] [38]
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/xyPrav-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/xyPrav-eps-converted-to.pdf, id=129, 421.575pt x 316.18124pt>
+File: Images/xyPrav-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/xyPrav-eps-converted-to.pdf>
+Package pdftex.def Info: Images/xyPrav-eps-converted-to.pdf  used on input line 293.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/xzPrav.eps>
+(epstopdf)                    date: 2020-10-03 13:30:03
+(epstopdf)                    size: 42550 bytes
+(epstopdf)             Output file: <Images/xzPrav-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 13:30:45
+(epstopdf)                    size: 16378 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/xzPrav-eps-converted-to.pdf Images/xzPrav.eps>
+(epstopdf)             \includegraphics on input line 294.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/xzPrav-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/xzPrav-eps-converted-to.pdf, id=130, 421.575pt x 316.18124pt>
+File: Images/xzPrav-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/xzPrav-eps-converted-to.pdf>
+Package pdftex.def Info: Images/xzPrav-eps-converted-to.pdf  used on input line 294.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/3dprav.eps>
+(epstopdf)                    date: 2020-10-03 13:30:20
+(epstopdf)                    size: 177960 bytes
+(epstopdf)             Output file: <Images/3dprav-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 13:33:54
+(epstopdf)                    size: 22226 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/3dprav-eps-converted-to.pdf Images/3dprav.eps>
+(epstopdf)             \includegraphics on input line 295.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/3dprav-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/3dprav-eps-converted-to.pdf, id=131, 421.575pt x 316.18124pt>
+File: Images/3dprav-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/3dprav-eps-converted-to.pdf>
+Package pdftex.def Info: Images/3dprav-eps-converted-to.pdf  used on input line 295.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/eulerPravac.eps>
+(epstopdf)                    date: 2020-10-03 13:46:10
+(epstopdf)                    size: 91438 bytes
+(epstopdf)             Output file: <Images/eulerPravac-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 13:47:37
+(epstopdf)                    size: 36029 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/eulerPravac-eps-converted-to.pdf Images/eulerPravac.eps>
+(epstopdf)             \includegraphics on input line 310.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/eulerPravac-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/eulerPravac-eps-converted-to.pdf, id=132, 421.575pt x 316.18124pt>
+File: Images/eulerPravac-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/eulerPravac-eps-converted-to.pdf>
+Package pdftex.def Info: Images/eulerPravac-eps-converted-to.pdf  used on input line 310.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+Package epstopdf Info: Source file: <Images/AOApravac.eps>
+(epstopdf)                    date: 2020-10-03 13:48:11
+(epstopdf)                    size: 68929 bytes
+(epstopdf)             Output file: <Images/AOApravac-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 13:49:39
+(epstopdf)                    size: 24307 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/AOApravac-eps-converted-to.pdf Images/AOApravac.eps>
+(epstopdf)             \includegraphics on input line 311.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/AOApravac-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/AOApravac-eps-converted-to.pdf, id=133, 421.575pt x 316.18124pt>
+File: Images/AOApravac-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/AOApravac-eps-converted-to.pdf>
+Package pdftex.def Info: Images/AOApravac-eps-converted-to.pdf  used on input line 311.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \vbox (badness 4036) has occurred while \output is active []
+
+ [29] [30 <c:/Users/Mirza/Desktop/thesis/Images/pitchVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/AoAvis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/VbodyVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/VinVis-eps-converted-to.pdf>] [31 <c:/Users/Mirza/Desktop/thesis/Images/putnja2Dvis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/3dputanjaVis-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/ubrVis-eps-converted-to.pdf>] [32 <c:/Users/Mirza/Desktop/thesis/Images/xyPrav-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/xzPrav-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/3dprav-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/eulerPravac-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/AOApravac-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Images/3deelron.eps>
+(epstopdf)                    date: 2020-10-03 15:44:47
+(epstopdf)                    size: 90976 bytes
+(epstopdf)             Output file: <Images/3deelron-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 15:46:32
+(epstopdf)                    size: 13313 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/3deelron-eps-converted-to.pdf Images/3deelron.eps>
+(epstopdf)             \includegraphics on input line 330.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/3deelron-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/3deelron-eps-converted-to.pdf, id=243, 421.575pt x 316.18124pt>
+File: Images/3deelron-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/3deelron-eps-converted-to.pdf>
+Package pdftex.def Info: Images/3deelron-eps-converted-to.pdf  used on input line 330.
+(pdftex.def)             Requested size: 295.10048pt x 221.32535pt.
+Package epstopdf Info: Source file: <Images/horHitacUglovi.eps>
+(epstopdf)                    date: 2020-10-03 15:53:24
+(epstopdf)                    size: 72009 bytes
+(epstopdf)             Output file: <Images/horHitacUglovi-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 15:55:57
+(epstopdf)                    size: 24683 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/horHitacUglovi-eps-converted-to.pdf Images/horHitacUglovi.eps>
+(epstopdf)             \includegraphics on input line 339.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/horHitacUglovi-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/horHitacUglovi-eps-converted-to.pdf, id=244, 1204.5pt x 589.20125pt>
+File: Images/horHitacUglovi-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/horHitacUglovi-eps-converted-to.pdf>
+Package pdftex.def Info: Images/horHitacUglovi-eps-converted-to.pdf  used on input line 339.
+(pdftex.def)             Requested size: 481.79147pt x 235.67632pt.
+
+Overfull \hbox (55.00014pt too wide) in paragraph at lines 339--340
+ [][] 
+ []
+
+
+Overfull \hbox (6.01056pt too wide) in paragraph at lines 323--346
+[]\OT1/lmr/m/n/12 U nas-tavku se po-sma-tra pri-mjer ho-ri-zon-tal-nog hitca pocetnom br-zi-nom od $100\OML/lmm/m/it/12 m=s$
+ []
+
+Package epstopdf Info: Source file: <Images/eleronUbrzanja.eps>
+(epstopdf)                    date: 2020-10-03 16:54:00
+(epstopdf)                    size: 42494 bytes
+(epstopdf)             Output file: <Images/eleronUbrzanja-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-10-03 16:59:09
+(epstopdf)                    size: 17334 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/eleronUbrzanja-eps-converted-to.pdf Images/eleronUbrzanja.eps>
+(epstopdf)             \includegraphics on input line 360.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/eleronUbrzanja-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Images/eleronUbrzanja-eps-converted-to.pdf, id=245, 421.575pt x 316.18124pt>
+File: Images/eleronUbrzanja-eps-converted-to.pdf Graphic file (type pdf)
+<use Images/eleronUbrzanja-eps-converted-to.pdf>
+Package pdftex.def Info: Images/eleronUbrzanja-eps-converted-to.pdf  used on input line 360.
+(pdftex.def)             Requested size: 295.10048pt x 221.32535pt.
+[33 <c:/Users/Mirza/Desktop/thesis/Images/3deelron-eps-converted-to.pdf>] [34 <c:/Users/Mirza/Desktop/thesis/Images/horHitacUglovi-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/eleronUbrzanja-eps-converted-to.pdf>] [35] [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]) [39]
+Poglavlje 5.
+(c:/Users\Mirza\Desktop\thesis\Chapters/chapter02.tex [40
+
+] [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
 Overfull \hbox (3.31758pt too wide) in paragraph at lines 181--181
 |[]\OT1/lmr/bx/n/17.28 Optimalnost za-kona pro-por-ci-onalne na-vi-ga-cije| 
  []
 
-[40]
+[43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
+ [44]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42] [43]
-<Images/homingSimulink.JPG, id=233, 650.43pt x 353.06906pt>
+ [45] [46]
+<Images/homingSimulink.JPG, id=314, 650.43pt x 353.06906pt>
 File: Images/homingSimulink.JPG Graphic file (type jpg)
 <use Images/homingSimulink.JPG>
 Package pdftex.def Info: Images/homingSimulink.JPG  used on input line 352.
@@ -1287,7 +1431,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/propAccPlot-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/propAccPlot-eps-converted-to.pdf, id=234, 421.575pt x 316.18124pt>
+<Images/propAccPlot-eps-converted-to.pdf, id=315, 421.575pt x 316.18124pt>
 File: Images/propAccPlot-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/propAccPlot-eps-converted-to.pdf>
 Package pdftex.def Info: Images/propAccPlot-eps-converted-to.pdf  used on input line 360.
@@ -1304,12 +1448,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missProp-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missProp-eps-converted-to.pdf, id=235, 421.575pt x 316.18124pt>
+<Images/missProp-eps-converted-to.pdf, id=316, 421.575pt x 316.18124pt>
 File: Images/missProp-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missProp-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missProp-eps-converted-to.pdf  used on input line 361.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-<Images/augPropSim.JPG, id=236, 768.62157pt x 328.97906pt>
+<Images/augPropSim.JPG, id=317, 768.62157pt x 328.97906pt>
 File: Images/augPropSim.JPG Graphic file (type jpg)
 <use Images/augPropSim.JPG>
 Package pdftex.def Info: Images/augPropSim.JPG  used on input line 372.
@@ -1331,7 +1475,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/augPropAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/augPropAcc-eps-converted-to.pdf, id=237, 421.575pt x 316.18124pt>
+<Images/augPropAcc-eps-converted-to.pdf, id=318, 421.575pt x 316.18124pt>
 File: Images/augPropAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/augPropAcc-eps-converted-to.pdf>
 Package pdftex.def Info: Images/augPropAcc-eps-converted-to.pdf  used on input line 379.
@@ -1348,17 +1492,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/augPropMiss-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/augPropMiss-eps-converted-to.pdf, id=238, 421.575pt x 316.18124pt>
+<Images/augPropMiss-eps-converted-to.pdf, id=319, 421.575pt x 316.18124pt>
 File: Images/augPropMiss-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/augPropMiss-eps-converted-to.pdf>
 Package pdftex.def Info: Images/augPropMiss-eps-converted-to.pdf  used on input line 380.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[44 <c:/Users/Mirza/Desktop/thesis/Images/homingSimulink.JPG> <c:/Users/Mirza/Desktop/thesis/Images/propAccPlot-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missProp-eps-converted-to.pdf>] [45 <c:/Users/Mirza/Desktop/thesis/Images/augPropSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/augPropAcc-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/augPropMiss-eps-converted-to.pdf>]
+[47 <c:/Users/Mirza/Desktop/thesis/Images/homingSimulink.JPG> <c:/Users/Mirza/Desktop/thesis/Images/propAccPlot-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missProp-eps-converted-to.pdf>] [48 <c:/Users/Mirza/Desktop/thesis/Images/augPropSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/augPropAcc-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/augPropMiss-eps-converted-to.pdf>]
 Overfull \hbox (16.7836pt too wide) in paragraph at lines 467--468
  [][] 
  []
 
-<Images/simAdj.JPG, id=271, 444.15938pt x 336.50719pt>
+<Images/simAdj.JPG, id=352, 444.15938pt x 336.50719pt>
 File: Images/simAdj.JPG Graphic file (type jpg)
 <use Images/simAdj.JPG>
 Package pdftex.def Info: Images/simAdj.JPG  used on input line 475.
@@ -1375,7 +1519,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missAdjDet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missAdjDet-eps-converted-to.pdf, id=272, 421.575pt x 316.18124pt>
+<Images/missAdjDet-eps-converted-to.pdf, id=353, 421.575pt x 316.18124pt>
 File: Images/missAdjDet-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missAdjDet-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missAdjDet-eps-converted-to.pdf  used on input line 483.
@@ -1392,22 +1536,22 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missHead-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missHead-eps-converted-to.pdf, id=273, 421.575pt x 316.18124pt>
+<Images/missHead-eps-converted-to.pdf, id=354, 421.575pt x 316.18124pt>
 File: Images/missHead-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missHead-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missHead-eps-converted-to.pdf  used on input line 484.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[46] [47 <c:/Users/Mirza/Desktop/thesis/Images/simAdj.JPG>]
+[49] [50 <c:/Users/Mirza/Desktop/thesis/Images/simAdj.JPG>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48 <c:/Users/Mirza/Desktop/thesis/Images/missAdjDet-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missHead-eps-converted-to.pdf>]
+ [51 <c:/Users/Mirza/Desktop/thesis/Images/missAdjDet-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/missHead-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
+ [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
-<Images/adjStohastic.JPG, id=307, 580.41844pt x 295.85532pt>
+ [53]
+<Images/adjStohastic.JPG, id=388, 580.41844pt x 295.85532pt>
 File: Images/adjStohastic.JPG Graphic file (type jpg)
 <use Images/adjStohastic.JPG>
 Package pdftex.def Info: Images/adjStohastic.JPG  used on input line 657.
@@ -1424,12 +1568,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/adjStohasticSim-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/adjStohasticSim-eps-converted-to.pdf, id=308, 421.575pt x 316.18124pt>
+<Images/adjStohasticSim-eps-converted-to.pdf, id=389, 421.575pt x 316.18124pt>
 File: Images/adjStohasticSim-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/adjStohasticSim-eps-converted-to.pdf>
 Package pdftex.def Info: Images/adjStohasticSim-eps-converted-to.pdf  used on input line 664.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-[51 <c:/Users/Mirza/Desktop/thesis/Images/adjStohastic.JPG>]) [52 <c:/Users/Mirza/Desktop/thesis/Images/adjStohasticSim-eps-converted-to.pdf>]
+[54 <c:/Users/Mirza/Desktop/thesis/Images/adjStohastic.JPG>]) [55 <c:/Users/Mirza/Desktop/thesis/Images/adjStohasticSim-eps-converted-to.pdf>]
 Poglavlje 6.
 (c:/Users\Mirza\Desktop\thesis\Chapters/autopilot.tex
 Package epstopdf Info: Source file: <Images/thetaOtvSprega.eps>
@@ -1444,12 +1588,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/thetaOtvSprega-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/thetaOtvSprega-eps-converted-to.pdf, id=323, 421.575pt x 316.18124pt>
+<Images/thetaOtvSprega-eps-converted-to.pdf, id=405, 421.575pt x 316.18124pt>
 File: Images/thetaOtvSprega-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/thetaOtvSprega-eps-converted-to.pdf>
 Package pdftex.def Info: Images/thetaOtvSprega-eps-converted-to.pdf  used on input line 35.
 (pdftex.def)             Requested size: 295.10048pt x 221.32535pt.
-[53
+[56
 
 ]
 Package epstopdf Info: Source file: <Images/closedLoopPitch.eps>
@@ -1464,12 +1608,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/closedLoopPitch-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/closedLoopPitch-eps-converted-to.pdf, id=327, 421.575pt x 316.18124pt>
+<Images/closedLoopPitch-eps-converted-to.pdf, id=409, 421.575pt x 316.18124pt>
 File: Images/closedLoopPitch-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/closedLoopPitch-eps-converted-to.pdf>
 Package pdftex.def Info: Images/closedLoopPitch-eps-converted-to.pdf  used on input line 74.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-[54 <c:/Users/Mirza/Desktop/thesis/Images/thetaOtvSprega-eps-converted-to.pdf>]
+[57 <c:/Users/Mirza/Desktop/thesis/Images/thetaOtvSprega-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/compareLead.eps>
 (epstopdf)                    date: 2020-08-30 08:18:55
 (epstopdf)                    size: 96029 bytes
@@ -1482,17 +1626,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/compareLead-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/compareLead-eps-converted-to.pdf, id=339, 421.575pt x 316.18124pt>
+<Images/compareLead-eps-converted-to.pdf, id=421, 421.575pt x 316.18124pt>
 File: Images/compareLead-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/compareLead-eps-converted-to.pdf>
 Package pdftex.def Info: Images/compareLead-eps-converted-to.pdf  used on input line 92.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-<Images/leadInteSim.JPG, id=340, 666.23906pt x 231.11343pt>
+<Images/leadInteSim.JPG, id=422, 666.23906pt x 231.11343pt>
 File: Images/leadInteSim.JPG Graphic file (type jpg)
 <use Images/leadInteSim.JPG>
 Package pdftex.def Info: Images/leadInteSim.JPG  used on input line 100.
 (pdftex.def)             Requested size: 333.11871pt x 115.55643pt.
-<Images/subKask.JPG, id=341, 639.89063pt x 155.83218pt>
+<Images/subKask.JPG, id=423, 639.89063pt x 155.83218pt>
 File: Images/subKask.JPG Graphic file (type jpg)
 <use Images/subKask.JPG>
 Package pdftex.def Info: Images/subKask.JPG  used on input line 101.
@@ -1500,11 +1644,11 @@ Package pdftex.def Info: Images/subKask.JPG  used on input line 101.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <c:/Users/Mirza/Desktop/thesis/Images/closedLoopPitch-eps-converted-to.pdf>]
+ [58 <c:/Users/Mirza/Desktop/thesis/Images/closedLoopPitch-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56 <c:/Users/Mirza/Desktop/thesis/Images/compareLead-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/leadInteSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/subKask.JPG>]
-<Images/simKask.JPG, id=365, 666.99188pt x 226.59656pt>
+ [59 <c:/Users/Mirza/Desktop/thesis/Images/compareLead-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/leadInteSim.JPG> <c:/Users/Mirza/Desktop/thesis/Images/subKask.JPG>]
+<Images/simKask.JPG, id=446, 666.99188pt x 226.59656pt>
 File: Images/simKask.JPG Graphic file (type jpg)
 <use Images/simKask.JPG>
 Package pdftex.def Info: Images/simKask.JPG  used on input line 152.
@@ -1525,7 +1669,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/poredjenjeBrzina-eps-converted-to.pdf, id=366, 421.575pt x 316.18124pt>
+<Images/poredjenjeBrzina-eps-converted-to.pdf, id=447, 421.575pt x 316.18124pt>
 File: Images/poredjenjeBrzina-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/poredjenjeBrzina-eps-converted-to.pdf>
 Package pdftex.def Info: Images/poredjenjeBrzina-eps-converted-to.pdf  used on input line 160.
@@ -1542,7 +1686,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/poredjenjeOdziva-eps-converted-to.pdf, id=367, 421.575pt x 316.18124pt>
+<Images/poredjenjeOdziva-eps-converted-to.pdf, id=448, 421.575pt x 316.18124pt>
 File: Images/poredjenjeOdziva-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/poredjenjeOdziva-eps-converted-to.pdf>
 Package pdftex.def Info: Images/poredjenjeOdziva-eps-converted-to.pdf  used on input line 161.
@@ -1550,7 +1694,7 @@ Package pdftex.def Info: Images/poredjenjeOdziva-eps-converted-to.pdf  used on i
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57 <c:/Users/Mirza/Desktop/thesis/Images/simKask.JPG> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf>]
+ [60 <c:/Users/Mirza/Desktop/thesis/Images/simKask.JPG> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeBrzina-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/poredjenjeOdziva-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/nZodziv.eps>
 (epstopdf)                    date: 2020-08-30 13:41:56
 (epstopdf)                    size: 38746 bytes
@@ -1563,7 +1707,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/nZodziv-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/nZodziv-eps-converted-to.pdf, id=387, 421.575pt x 298.11375pt>
+<Images/nZodziv-eps-converted-to.pdf, id=468, 421.575pt x 298.11375pt>
 File: Images/nZodziv-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/nZodziv-eps-converted-to.pdf>
 Package pdftex.def Info: Images/nZodziv-eps-converted-to.pdf  used on input line 181.
@@ -1580,15 +1724,15 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/akcClosed-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/akcClosed-eps-converted-to.pdf, id=388, 421.575pt x 316.18124pt>
+<Images/akcClosed-eps-converted-to.pdf, id=469, 421.575pt x 316.18124pt>
 File: Images/akcClosed-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/akcClosed-eps-converted-to.pdf>
 Package pdftex.def Info: Images/akcClosed-eps-converted-to.pdf  used on input line 224.
 (pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
-[58 <c:/Users/Mirza/Desktop/thesis/Images/nZodziv-eps-converted-to.pdf>]
+[61 <c:/Users/Mirza/Desktop/thesis/Images/nZodziv-eps-converted-to.pdf>]
 Underfull \vbox (badness 1571) has occurred while \output is active []
 
- [59 <c:/Users/Mirza/Desktop/thesis/Images/akcClosed-eps-converted-to.pdf>]
+ [62 <c:/Users/Mirza/Desktop/thesis/Images/akcClosed-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/twoLoopsAcc.eps>
 (epstopdf)                    date: 2020-08-30 18:10:43
 (epstopdf)                    size: 53129 bytes
@@ -1601,12 +1745,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/twoLoopsAcc-eps-converted-to.pdf, id=409, 421.575pt x 316.18124pt>
+<Images/twoLoopsAcc-eps-converted-to.pdf, id=491, 421.575pt x 316.18124pt>
 File: Images/twoLoopsAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/twoLoopsAcc-eps-converted-to.pdf>
 Package pdftex.def Info: Images/twoLoopsAcc-eps-converted-to.pdf  used on input line 277.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-[60 <c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf>] [61]
+[63 <c:/Users/Mirza/Desktop/thesis/Images/twoLoopsAcc-eps-converted-to.pdf>] [64]
 Package epstopdf Info: Source file: <Images/piAcc.eps>
 (epstopdf)                    date: 2020-08-31 18:13:28
 (epstopdf)                    size: 52856 bytes
@@ -1619,12 +1763,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/piAcc-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/piAcc-eps-converted-to.pdf, id=425, 421.575pt x 316.18124pt>
+<Images/piAcc-eps-converted-to.pdf, id=506, 421.575pt x 316.18124pt>
 File: Images/piAcc-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/piAcc-eps-converted-to.pdf>
 Package pdftex.def Info: Images/piAcc-eps-converted-to.pdf  used on input line 356.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-<Images/simDyn.JPG, id=426, 612.03656pt x 317.68687pt>
+<Images/simDyn.JPG, id=507, 612.03656pt x 317.68687pt>
 File: Images/simDyn.JPG Graphic file (type jpg)
 <use Images/simDyn.JPG>
 Package pdftex.def Info: Images/simDyn.JPG  used on input line 369.
@@ -1632,7 +1776,7 @@ Package pdftex.def Info: Images/simDyn.JPG  used on input line 369.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62 <c:/Users/Mirza/Desktop/thesis/Images/piAcc-eps-converted-to.pdf>]
+ [65 <c:/Users/Mirza/Desktop/thesis/Images/piAcc-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Images/missDyn.eps>
 (epstopdf)                    date: 2020-08-31 18:47:00
 (epstopdf)                    size: 53129 bytes
@@ -1645,7 +1789,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/missDyn-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/missDyn-eps-converted-to.pdf, id=438, 421.575pt x 316.18124pt>
+<Images/missDyn-eps-converted-to.pdf, id=519, 421.575pt x 316.18124pt>
 File: Images/missDyn-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/missDyn-eps-converted-to.pdf>
 Package pdftex.def Info: Images/missDyn-eps-converted-to.pdf  used on input line 374.
@@ -1662,12 +1806,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file c:/Users/Mirza/Desktop/thesis/Images/accDyn-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Images/accDyn-eps-converted-to.pdf, id=439, 421.575pt x 316.18124pt>
+<Images/accDyn-eps-converted-to.pdf, id=520, 421.575pt x 316.18124pt>
 File: Images/accDyn-eps-converted-to.pdf Graphic file (type pdf)
 <use Images/accDyn-eps-converted-to.pdf>
 Package pdftex.def Info: Images/accDyn-eps-converted-to.pdf  used on input line 378.
 (pdftex.def)             Requested size: 421.57396pt x 316.18047pt.
-) [63 <c:/Users/Mirza/Desktop/thesis/Images/simDyn.JPG>] [64 <c:/Users/Mirza/Desktop/thesis/Images/missDyn-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/accDyn-eps-converted-to.pdf>] [65
+) [66 <c:/Users/Mirza/Desktop/thesis/Images/simDyn.JPG>] [67 <c:/Users/Mirza/Desktop/thesis/Images/missDyn-eps-converted-to.pdf> <c:/Users/Mirza/Desktop/thesis/Images/accDyn-eps-converted-to.pdf>] [68
 
 ] (c:/Users\Mirza\Desktop\thesis\main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1675,17 +1819,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30872 strings out of 480797
- 612933 string characters out of 2905362
- 1314003 words of memory out of 3000000
- 46306 multiletter control sequences out of 15000+200000
+ 30925 strings out of 480797
+ 614778 string characters out of 2905362
+ 1324062 words of memory out of 3000000
+ 46351 multiletter control sequences out of 15000+200000
  580539 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,15n,75p,872b,1769s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,15n,75p,872b,1765s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmsc.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (65 pages, 1364132 bytes).
+Output written on c:/Users\Mirza\Desktop\thesis\main.pdf (68 pages, 1527490 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
+ 610 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 223 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 263 words of extra memory for PDF output out of 10000 (max. 10000000)
 

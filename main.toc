@@ -21,34 +21,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Dinamički model}{23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Rasprezanje dinamičkog modela}{25}%
+\contentsline {section}{\numberline {4.1}Softverska implementacija modela}{25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Linearizacija u okolini nominalne trajektorije}{27}%
+\contentsline {section}{\numberline {4.2}Rasprezanje dinamičkog modela}{35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Softverska implementacija modela}{30}%
+\contentsline {section}{\numberline {4.3}Linearizacija u okolini nominalne trajektorije}{36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Uvod u proporcionalnu navigaciju}{37}%
+\contentsline {chapter}{\numberline {5}Uvod u proporcionalnu navigaciju}{40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Opis planarnog susreta}{37}%
+\contentsline {section}{\numberline {5.1}Opis planarnog susreta}{40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Izvođenje upravljačkog zakona}{38}%
+\contentsline {section}{\numberline {5.2}Izvođenje upravljačkog zakona}{41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Izmjenjena proporcionalna navigacija}{40}%
+\contentsline {section}{\numberline {5.3}Izmjenjena proporcionalna navigacija}{43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Optimalnost zakona proporcionalne navigacije}{40}%
+\contentsline {section}{\numberline {5.4}Optimalnost zakona proporcionalne navigacije}{43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Linearizacija}{41}%
+\contentsline {section}{\numberline {5.5}Linearizacija}{44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Petlja navođenja i zero effort miss}{43}%
+\contentsline {section}{\numberline {5.6}Petlja navođenja i zero effort miss}{46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Adjungovani sistem i petlja navođenja}{45}%
+\contentsline {section}{\numberline {5.7}Adjungovani sistem i petlja navođenja}{48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.8}Adjungovani stohastički sistemi}{48}%
+\contentsline {section}{\numberline {5.8}Adjungovani stohastički sistemi}{51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Sinteza autopilota}{53}%
+\contentsline {chapter}{\numberline {6}Sinteza autopilota}{56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Upravljanje i stabilizacija ugla propinjanja}{53}%
+\contentsline {section}{\numberline {6.1}Upravljanje i stabilizacija ugla propinjanja}{56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Upravljanje normalnim ubrzanjem}{58}%
+\contentsline {section}{\numberline {6.2}Upravljanje normalnim ubrzanjem}{61}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Sinteza sistema za vođenje proporcionalnom navigacijom}{63}%
+\contentsline {section}{\numberline {6.3}Sinteza sistema za vođenje proporcionalnom navigacijom}{66}%
