@@ -67,6 +67,12 @@ Pa je:
 \begin{equation}
     \dot{\lambda}=\frac{R_{TM1}v_{TM2}-R_{TM2}v_{TM1}}{r^2}
 \end{equation}
+Primjetimo da za planarni susret vrijedi:
+\begin{equation}
+    \dot{\lambda}=\frac{r\times (-v_c)}{r^2}
+\end{equation}
+Pošto $\dot{\lambda}$ predstavlja ugaonu brzinu ugla viziranja, često se koristi i oznaka 
+$\omega = \dot{\lambda}$.
 Ugao između vektora pozicije i vektora brzine je dat sa:
 \begin{equation}
     L=\arcsin{\frac{v_T\sin{(\beta+\lambda)}}{v_M}}
@@ -168,6 +174,17 @@ Za trodimenzionalni slučaj se bira kandidat funkcija:
 \begin{equation}
     u_s=Nv_{cl}\dot{\lambda}_s \quad ,N>2\ (s=1,2,3)
 \end{equation}
+Potrebno je naglasiti da se u slučaju susreta u prostoru, vektor $\dot{\lambda}_s$ može 
+izraziti preko vektorskog proizvoda:
+\begin{equation}
+    \omega = \dot{\lambda}=\frac{r\times (-v_{cl})}{r^2}
+    \label{eq:vec1}
+\end{equation}
+Pa se komandovana ubrzanja mogu dobiti prema izrazu:
+\begin{equation}
+    a_c = N\omega \times v_{cl}
+    \label{eq:vec2}
+\end{equation}
 \section{Izmjenjena proporcionalna navigacija}
 Za mete koje manevrišu i imaju neko normalno ubrzanje, za planarni sustre, izvod Lyapunove kandidat 
 funkcije je:
@@ -213,6 +230,41 @@ jer je, $r=v_{cl}\tau$, dobija se:
 \end{equation}
 Ovo znači da pod uvedenim pretpostavkama, proporcionalna navigacija minimizira kriterij performanse
 $J$ i izbor efektivnog navigacijskog odnosa $N=3$ garantuje da nulti promašaj. 
+U nastavku je prikazan simulink dijagram proporcionalne navigacije u prostoru sa metom koja ubrzava, što predstavlja 
+najopštiji slučaj vođenja. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.5]{3dProp.JPG}
+    \caption{Simulink dijagram proporcionalne navigacije za susret u prostoru}
+\end{figure}
+Ovdje se koriste interpretiranje Matlab funkcije kako bi se računali vektorski proizvodi iz jednačina
+\ref{eq:vec1} i \ref{eq:vec2} i koristi se stop blok kako bi se prekinula simulacija neposredno prije 
+sudara da se ne bi dobilo dojeljenje sa nulom, jer je tada udaljenost jednala nuli. 
+Putanja projektila i mete je prikazana na slici \ref{fig:3dPropPutanja}. Početna pozicija mete je 
+na udaljenosti od 4000 metara od projektila i na visini od 100 metara. Meta ubrzava stalnim ubrzanjima 
+u $y$ i $z$ pravcu što objašnjava nepravolinijsko kretanje mete. Ovdje se vidi svrha proporcionalne 
+navigacije(i svrha paralelne navigacije) da se ugaona brzina ugla viziranja drži na nuli, odnosno 
+da se svede na nulu. Čitalac može u svakom trenutku susreta da zamisli liniju viziranja i ona treba uvijek 
+da ima isti smjer. Ovo predstavlja osnovnu ideju paralelne navigacije, koja je ovdje implementirana proporcionalnom 
+navigacijom. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.35]{putanja3dProp.eps}
+    \caption{Putanja projektila i mete proporcionalnom navigacijom u prostoru}
+    \label{fig:3dPropPutanja}
+\end{figure}
+Na slici \ref{fig:3dUbrz} su prikazana ubrzanja koja se zahtjevaju od projektila za susret u prostoru. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.7]{3dUbrzanja.eps}
+    \caption{Ubrzanja koja se zahtjevaju od projektila za susret u prostoru}
+    \label{fig:3dUbrz}
+\end{figure}
+Vidi se da se zahtjeva korekcija položaja u po sve tri ose koordinatnog sistema. Važno je napomenuti da 
+su ova ubrzanja zadata u inercijalnom koordinatnom sistemu. Ako je projektil u stanju dostaviti ova ubrzanja, tada se garantuje susret sa metom inače će postojati promašaj. Sada je 
+očito da proporcionalna navigacija komanduje ubrzanaj koja garantuju susret sa metom, ali vođeni 
+projektil neće uvijek biti u stanju postići ova ubrzanja i to je uzrok promašaja. U praksi, projektili 
+često ne zadovoaljavaju zahtjevane performanse i upravo je zadatak autopilota da osigura zadovoljenje zadatih kriterija. 
 %-----------------------
 \section{Linearizacija}
 \begin{figure}[!ht]

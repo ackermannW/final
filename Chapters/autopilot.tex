@@ -6,6 +6,26 @@ Pošto tranzijentni odziv projektila varira sa promjenom uslova leta, tako i par
 autopilota treba da se mjenjaju sa uslovima leta pa prema tome dobro 
 dizajniran autopilot osigurava skoro linearan odziv. Najčešće se za projektovanje 
 autopilota koristi linerizirani model drugog reda koji je ranije izveden. 
+Kada se radi o proporcionalnoj navigaciji, generišu se tri komponente ubrzanja koje projektil mora 
+zadovoljiti kako bi osigurao susret sa metom. U nastavku su prikazani regulatori koji 
+treba da osiguraju da projektil postigne zadata ubrzanja. Važno je samo istaći 
+da su ubrzanja koja zadaje proporcionalna navigacija data u inercijalnom koordinatnom sistemu. Praksa 
+je da se kao kontrolisan veličine koriste ubrzanja koja su normalna na vektor brzine. Prema tome, 
+radi se o dvije komponente ubrzanja- \textit{horizontalno i vertikalno ubrzanje}. Vektor horizontalnog ubrzanje 
+leži u $xy$ ravni inercijalnog koordinatnog sistema, a vektor vertikalnog ubrzanja leži u $xz$ ravnini inercijalnog
+koordinatnog sistema. Kada projektil postigne zadata ubrzanja, on pravi kruže lukove u vertikalnoj i 
+horizontaloj ravnini. Kako bi se načinila razlika između horizontalne i vertikalne ravni, potrebno je 
+da se projektil ne valja oko svoje $x$ ose. Ovo ima još jedan pozitivan efekat jer se tada poništava 
+sprega između kanala visine i kanala pravca. Dakle, za vođenje proporcionalnom 
+navigacijom potrebna su tri regualtora:
+\begin{itemize}
+    \item Regulator vertikalnog ubrzanja(kanal visine)
+    \item Regulator horizontalnog ubrzanja(kanal pravca)
+    \item Regulator za stabiliaziciju valjanja(kanal valjanja)
+\end{itemize}
+Ova tri regulatora zajedno se zovu \textbf{autopilot}. 
+U nastavku je predstavljen regulator za stabiliaziciju ugla propinjanaja te tri regualatora potrebna 
+za realizaciju proporcionalne navigacije. 
 \section{Upravljanje i stabilizacija ugla propinjanja}
 Glavni zadatak autopilota ugla propinjanja je da stabilizuje projektil, tj. da 
 da pruži stabilizaciju propinjanja projektila oko longitudinalne ose. Ovo se postiže tako 
@@ -44,7 +64,7 @@ povratnom spregom po uglu propinjanja dat je na slici \ref{fig:slobGyro}.
      \begin{tikzpicture}[auto, node distance=2cm,>=latex']
        \node[input, name=input](input){};
        \node[sum, right of = input](sum){};
-       \node[block, right of = sum] (g1){$\frac{K(T_1s+1)}{T^2s^2+2\xi Ts+)}$};
+       \node[block, right of = sum] (g1){$\frac{K(T_1s+1)}{T^2s^2+2\xi Ts+1}$};
        \node[block, right of = g1,node distance = 2.5cm] (g2){$\frac{1}{s}$};
        \node [output, right of = g2] (output) {};
        \node[block, below of = g1] (gyro){$K_G$};
@@ -165,7 +185,7 @@ Stacionarna vrijednost na odskočnu pobudu iznosi $\frac{1}{K_{GA}}$
 %    \centering
 %    \includegraphics{poredjenjeOdziva.eps}
 %\end{figure}
-\section{Upravljanje normalnim ubrzanjem}
+\section{Upravljanje vetikalnim ubrzanjem}
 Kako je razmatrano u prethodnom poglavlju, kod proporcionalne navigacije, se projektilu 
 zadaju normalna ubrzanja kako bi on pogodio metu pa je od posebnog interesa imati sitem 
 za regulaciju normalnog ubrzanja projektila. Jasno je da će to opet biti upravljanje u 
@@ -357,7 +377,214 @@ anti-windup schemu za upravljanje kako se ne bi akumulirala prevelika greška.
     \caption{Odziv normalnog ubrzanja sa PI regulatorom i povratnom spregom 
     sa brzinskim žiroskopom i akcelerometrom}
     \label{fig:piAcc}
+Regulacija vertikalnog ubrzanja se može izvršiti i korištenjem feedforward pojačanja. U blok 
+dijagramu na slici \ref{fig:ffa}. Ovdje je pojačanje akceleromatra prebačeno nakon sumatora, 
+ispred sumatora na ulaz je prebačeno $1/K_{akc}$, pa ako se uzme pojačanje referentnog signala 
+od $K_{akc}$ dobije se dijagram na slici. Ovime se osigurava praćenje referentne vrijednosti. Kao i ranije 
+faktor prigušenja se podešava pojačanjem brzinkskog žiroskopa.  
 \end{figure}
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}[scale = 1,auto, node distance=2cm,>=latex']
+    \node[input, name = input](input){};
+    \node[sum,right of = input](sum1){};
+    \node[block,right of = sum1](pi){$K_{akc}K_i\frac{1+T_is}{s}$};
+    \node[sum,right of = pi,node distance = 2.5cm](sum2){};
+    \node[block,right of = sum2](model){Model};
+    \node[output,right of = model,yshift = 5](psi){};
+    \node[output,right of = model,yshift = -5](nh){};
+    \node[anchor = east,yshift = 5] at(model.east)(psi1){};
+    \node[anchor = east,yshift = -5] at(model.east)(nh1){};
+    \node[block,below of =model,xshift = 1](kg){$K_{GB}$};
+    \draw[->](input) --node{$a_{V_{ref}}$+}(sum1);
+    \draw[->](sum1)--(pi);
+    \draw[->](pi)-- node[pos = 0.99]{$+$}(sum2);
+    \draw[->](sum2)--(model);
+    \draw[->](psi1)-- node[name = psiout,anchor = south east]{$\dot{\theta}$}(psi);
+    \draw[->](nh1)-- node[name = nhout,anchor = south]{$a_{V}$}(nh);
+    \draw[->](psiout)|-(kg);
+    \draw[->](kg)-|node[pos = 0.99]{$-$}(sum2);
+    \draw[->](nhout) |- ++(0,-3) -| node[pos = 0.99]{$-$}(sum1);
+    \end{tikzpicture}
+    \caption{Regulator za upravljanje vertikalnim ubrzanjem}
+    \label{fig:ffa}
+    \end{figure}
+\section{Regulator za horizontalno ubrzanje}
+Kod projektila krstaste konfiguracije dinamika u kanalu pravca je ista kao i dinamika u kanalu visine. 
+Ovakav zaključak se može opravdati posmatrajući diferencijalne jednačine koje opisuju 
+rotaciju u kanalu visine(propinjanja) i kanalu pravca(zakretanja). 
+\begin{align*}
+    \frac{dQ}{dt} &= PR\frac{I_z-I_x}{I_y} + M/I_y\\
+    \frac{dR}{dt} &= PQ\frac{I_x-I_y}{I_y} + N/I_z
+\end{align*}
+Sjetimo se da su koeficjenti kod momenta zakretanja i momenta skretanja isti, ali različitog znaka i da vrijedi $I_z = I_y $. 
+To znači da će regulator horiznotalnog ubrzanja biti isti kao i regulator 
+vertikalnog ubrzanja uz jednu bitnu razliku. U poglavlju o modelu, pokazano je da je odziv ugla zakretanja 
+za pozitivan otklon krmila pravca negativan, za razliku odziva ugla propinjanja na pozitvan otklon krmila pravca koji je 
+pozitivan. Ovo znači da se za korektnu regulaciju horiznotalnog ubrzanja treba promjeniti znak 
+otklona krmila pravca. 
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}[scale = 0.15,auto, node distance=2cm,>=latex']
+    \node[input, name = input](input){};
+    \node[sum,right of = input](sum1){};
+    \node[block,right of = sum1](pi){$K_{akc}K_i\frac{1+T_is}{s}$};
+    \node[sum,right of = pi,node distance = 2.5cm](sum2){};
+    \node[block,right of = sum2](minus){$-1$};
+    \node[block,right of = minus](model){Model};
+    \node[output,right of = model,yshift = 5](psi){};
+    \node[output,right of = model,yshift = -5](nh){};
+    \node[anchor = east,yshift = 5] at(model.east)(psi1){};
+    \node[anchor = east,yshift = -5] at(model.east)(nh1){};
+    \node[block,below of =minus,xshift = 1](kg){$K_{GB}$};
+    \node[below of = pi,node distance = 4cm](mid){};
+    \draw[->] (input) --node{$a_{H_{ref}}$+}(sum1);
+    \draw[->](sum1)--(pi);
+    \draw[->](pi)-- node[pos = 0.99]{$+$}(sum2);
+    \draw[->](sum2) -- (minus);
+    \draw[->](minus)--(model);
+    \draw[->](psi1)-- node[name = psiout,anchor = south east]{$\dot{\psi}$}(psi);
+    \draw[->](nh1)-- node[name = nhout,anchor = south]{$a_{H}$}(nh);
+    \draw[->](psiout)|-(kg);
+    \draw[->](kg)-|node[pos = 0.99]{$-$}(sum2);
+    \draw[->](nhout) |- ++(0,-20) -| node[pos = 0.99]{$-$}(sum1);
+    \end{tikzpicture}
+    \caption{Regulator za upravljanje horizontalnim ubrzanjem}
+    \end{figure}
+\section{Stabilizacija ugla valjanja}
+Sada je trenutak da se spomenu dvije vrste letjelica. Neke letjelice koje imaju izražene 
+krilne površine(npr. komercijalni i borbeni avioni) vrše rotaciju oko longitudinalne ose kako 
+bi izvršile manevere u horizontalnoj ravnini. Letjelice koje operiraju na ovakav način se 
+generalno zovu "bank-to-turn" ili "valjati-za-skretanje". Ovo znači da ako letjelica 
+treba da promjeni ugao zakretanja mora izvršiti valjanje oko longitudnalne ose kako bi se 
+generisala sila uzgona koja bi za posljedicu imala kretanje u vertikalnoj ravni. Neki stariji 
+protiv-tenkovski projektili koji imaju samo jedan par kontrolnih povrpina koriste ovakvu konfiguraciju, ali 
+su oni danas zamjenjeni boljim projektilima. Kada se radi o projektilima koji imaju dva para kontrolnih površina 
+moguće je izazvati kretanje u vertikalnoj i horizontalnoj ravni bez potrebe za valjanjem. Sjetimo se da 
+pojava valjanja izaziva unakrsnu spregu kanala zakretanja i kanala visine pa je ovakav tip upravljanja projektila dosta 
+bolji ako projektil posjeduje dva para krila. Ovakva konfiguracija letjelica se zove "skid-to-turn" ili "klizati-za-skretanje". 
+Prema tome, kod projektila krstaste konfiguracije za realizaciju "skid-to-turn" manevara mora se stabilizirati kanal valjanja. 
+Za stabilizaciju i za upravljnje kanalom valjanja koristi se isti regulator, koji je sličan regulatorima za vertikalno i 
+horiznotalno ubrzanje. Struktura regulatora za stabilizaciju ugla valjanja je prikazana na slici \ref{fig:rollStab}.
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+        \node[input,name=input](input){};
+        \node[sum,right of = input](sum1){};
+        \node[block, right of = sum1,node distance = 2cm](pi1){$PI$};
+        \node[sum, right of = pi1,node distance = 2.5cm](sum2){};
+        \node[block, right of = sum2](pi2){$PI$};
+        \node[block, right of = pi2](model){Model};
+        \node[anchor = east,yshift = 10] at (model.east)(p){};
+        \node[output, right of=model, yshift = 10](pout){};
+        \node[] (priv) at ($(pi2)!0.5!(model)$){};
+        \node[block,below of = priv](kg){$K_{GB}$};
+        \node[anchor = east,yshift = -10] at (model.east)(phi){};
+        \node[output,right of = model, yshift=-10](phiout){};
+        \draw[->](phi)--node[name=phiout1, anchor = south west]{$\phi$}(phiout);
+        \draw[->](phiout1) |- ++(0,-3) -| node[pos=0.99]{$-$}(sum1);
+        \draw[->](kg) -| node[pos=0.99]{$-$}(sum2);
+        \draw[->](p)--node[name=pout1]{$P$}(pout);
+        \draw[->](pi2)--(model);
+        \draw[->](sum2)--(pi2);
+        \draw[->](pi1)--node[pos=0.99]{$+$}(sum2);
+        \draw[->](sum1)--(pi1);
+        \draw[->](input)--node[pos = 0.5]{$\phi = 0$+}(sum1);
+        \draw[->](pout1) |- (kg);
+        \end{tikzpicture}
+    \caption{Regulator za stabilizaciju ugla valjana}
+    \label{fig:rollStab}
+\end{figure}
+\section{Autopilot za skid-to-turn projektil}
+U nastavku je prikazan nelinarni model projektila krstate konfiguracije sa tri 
+prethodno predstavljena regulatora. Ovaj autopilot je samo jedan korak daleko od
+implemenatcije kompletnog sistema vođenja projektila kratkog dometa proporcionalnom
+navigacijom. Na slci \ref{fig:autopilot3}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.6]{autopilot.JPG}
+    \caption{Model sa autopilotom}
+    \label{fig:autopilot3}
+\end{figure}
+U ovom simulink dijagramu su prethodno predstavljeni regulatori za vertikalno i normalno ubrzanje i 
+regualtor za stabilizaciju ugla valjanja sublimirani u simulink podsisteme radi 
+urednosti dijagrama. Dvije interpretirane Matlab funkcije služe samo za izdvajanje ugaone brzine valjanja
+i ugla valjanja. U nastavku će se na nekoliko primjera ispitati performanse 
+autopilota. Prvo je prikazan odziv kada se zahtjeva konstantno vertikalno ubrzanje i nulto 
+horizontalno ubrzanje. Ovakav zahtjev je čest u praksi, jer predstavlja vođenje projektila 
+prema meti koja se nalazi upravo u ravni $xz$ projektila. Na slici \ref{fig:accautover} su prikazani 
+ubrzanja i orijentacija projektila kada se zahtjeva vertikalno ubrzanje od $20 m/s^2$ i horiznotalno ubrzanje od 
+$0m/s^2$.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.5]{accautopilotver.eps}
+    \includegraphics[scale = 0.5]{eulerAutoVer.eps}
+    \caption{Ubrzanja i orijentacija projektila sa autopilotom pri longitudinalnom kretanju}
+    \label{fig:accautover}
+\end{figure}
+Vidi se da projektil prati zadata ubrzanja i da je stabilisan kanal valjanja. Ugao propinjanja raste, 
+što govori o činjenici da se projektil kreće po dijelu kružnice pa ako bi se izvršila duža simulacija 
+uvidjelo bi se da projektil pravi petlje u $xz$ ravnini. Vidi se da je ukao zakretanja 
+uvijek nula, što govori da projektil ne čini pomjeraje u vertikalnoj ravnini. U ovom primjeru se 
+vidi da je autopilot zadovoljio zahtjevane performanse. Važno je istaći se kod upravljanja vertikalnim 
+ubrzanjme, kod ovog modela, javlja zasićenje za $25m/s^2$. Ovo je najveći problem 
+kod vođenja projektila jer upravo ovaj problem izaziva promašaj. 
+Pogledajmo sada odziv sistema kada se zahtjeva nulto vertikalno i horizontalno ubrzanje od $20m/s^2$. 
+Ubrzanja i orijentacija su prikazani na slici \ref{fig:horOdziv}.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.5]{accHor.eps}
+    \includegraphics[scale = 0.5]{eulerHor.eps}
+    \caption{Ubrzanja i orijentacija projektila sa autopilotom pri lateralnom kretanju}
+    \label{fig:horOdziv}
+\end{figure}
+Opet se vidi da autopilot zadovaljava zadate reference. Vidi se da je odziv horizontalnog 
+ubrzanja dosta brži od odziva vertikalnog ubrzanja. Ovo je posljedica nepostojanja 
+gravitacione sile u vertikalnoj ravni. Vidi se da je ugao valjanja stalno nula, i da zbog 
+kretanja u vertikalnoj ravni ugao zakretanja se mijenja. Ugao propinjanja opada što 
+znači da se projektil usmjerava ka zemlji. Ponovo, ovo je posljedica sile uzgona na 
+aerodinamički centar pritiska. Odavde slijedi da projektil propada, tj. da se kreće ka dole, ali da pravi 
+kružnu putanju u vertikalnoj ravnini. Ovo se vidi na slici \ref{fig:horxyz}.
+\begin{figure}[!ht]
+    \centering 
+    \includegraphics[scale=0.6]{xyzHor.eps}
+    \caption{Koordinate projektila u inercijalnom sistemu }
+    \label{fig:horxyz}
+\end{figure}
+Sjetimo se da je $z$ osa inercijalnog sistema usmjerena ka centru Zemlje, pa je sa slike očito da 
+je projektil u slobodnom padu u vertikalnoj ravnini. 
+Sada posmatrajmo kombinovano kretanje. Neka se zahtjeva i vertikalno i horizontalno 
+ubrzanje iznosa $20m/s^2$. Za očekivati je kombinaciju prethodna dva primjera. 
+Odzivi ubrzanja i orijatancija pri lateralnom i longitudinalnom kretanju su prikazani na slici \ref{fig:kombinovano}.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.5]{ubrKomb.eps}
+    \includegraphics[scale = 0.5]{eulerKomb.eps}
+    \caption{Ubrzanja i orijentacija pri lateralnom i longitudinalnom kretanju}
+    \label{fig:kombinovano}
+\end{figure}
+Ovdje se vidi da autopilot i u ovom slučaju zadovoljava zahtjevane performanse. Očekivano i 
+ugao poniranja i ugao zakretanja rastu jer se zahtjeva kretanje po dijelu kružnice u obje ravni. 
+Ponovo, ugao valjanja je nula tako da se može ostvariti Dekartovo upravljanje, ondnosno da 
+se ovakav projektil i u najgorem slučaju može voditi proporcionalnom navigacijom.
+Regulator za stabiliaziciju valjanja ima jednu zanimljivu osobinu. Iako on osigurava 
+da je ugao valjanja nula, on ne osigurava da je ugaona brzina valjanja nula. Drugim riječima, 
+projektil se rotira nekom malom ugaonom brzinom oko svoje $x$ ose, ali je njegova orijentacija u kanalu 
+valjanja i dalje nula u odnosu na inercijalni sistem. Ugaone brzine tijela projektila oko 
+svojih osa su prikazane na slici \ref{fig:angular}.
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.6]{angular.eps}
+    \caption{Ugaone brzine pri lateralnom i longitudinalnom kretanju}
+    \label{fig:angular}
+\end{figure}
+Ovdje se vidi da su ugaone brzine oko sve tri ose sistema tijela različite on nule. 
+Za ugaone brzine poniranja i zakretanja ovo je očekivano i neophodno, ali za ugaonu 
+brzinu valjanja ovo je iznenađujuće. Ovo slijedi iz činjenice da je promjena ugla valjanja data sa 
+$\dot{\phi} =P + Q\sin\phi\tan\theta + R\cos\phi\tan\theta$. Ovo znači da pri postojanju ugaonog kretanja u obje ravni
+, da se mora pojaviti i ugaona brzina u kanalu valjanja kako bi brzina promjene ugla valjanja bila nula. 
+Jasno je da će ova pojava izazvati spregu kanala visine i kanala pravca, ali to je neophodna 
+cijena za stabilizaciju ugla valjanja koji je osnovni preduslov za Dekartovo upravljanje. 
 \section{Sinteza sistema za vođenje proporcionalnom navigacijom}
 Sada kada je poznata upravljačka struktura normalnog ubrzanja, može se u potpunosti dizajnirati 
 sistem navigacije projektila koristeći se ranije opisanom metodom proporcionalne navigacije. Ranije 
