@@ -8,8 +8,8 @@ koristiti za sve veličine, međutim ako se tijelo rotira tada se naslućuju dva
     \item Koordinatni sistem vezan za zemlju
     \item Koordinatni sistem vezan za tijelo
 \end{itemize}
-Koordinatni sistem vezan za zemlju je inertcijalni iako se zemlje rotira u odnosu na geomtrijsku osu.
-Sastoji se od tri ordinate, jedna predstavlja poziciju po sjevernoj osi, jedna po lokaloj istočnoj osi 
+Koordinatni sistem vezan za zemlju je inercijalni iako se zemlje rotira u odnosu na geomtrijsku osu.
+Sastoji se od tri ordinate, jedna predstavlja poziciju po sjevernoj osi, jedna po lokalnoj istočnoj osi 
 i jedna predstavlja vertikalnu poziciju. Ose koordinatnog sistema vezanog za zemlju su 
 označene sa $X_e, Y_e, Z_e$. Drugim riječima, $X_e$ i $Y_e$ leže u ravni dok je $Z_e$ usmjeren ka centru Zemlje.\\
 Koordinatni sistem vezan za tijelo sastoji se iz tri ordinate sa ishodištem u centru gravitacije letjelice: $x$ osa koja je
@@ -32,7 +32,7 @@ rotacija za ugao $\phi$ oko longitudinalne, za ugao $\theta$ oko lateralne i za 
 $\psi$ oko normalne ose. Transformacija $T_b^e$ koja ostvaruje transformaciju iz 
 koordinatnog sistema vezanog za zemlju u koordinatni sistem vezan za tijelo je data sa:
 \begin{equation}
-    T_{z \to b} = T_1(\phi)T_2(\theta)T_3(\psi)
+    T_{b}^z = T_1(\phi)T_2(\theta)T_3(\psi)
 \end{equation}
 ,gdje je:
 \begin{align}
@@ -55,7 +55,7 @@ koordinatnog sistema vezanog za zemlju u koordinatni sistem vezan za tijelo je d
 ,odnosno:
 \begin{equation}
     {\footnotesize
-    T_{z \to b}=\begin{bmatrix}
+    T_{b}^z=\begin{bmatrix}
         cos\theta cos\psi && cos\theta sin\psi && -sin\theta\\
         sin\phi sin\theta cos\psi-cos\phi sin\psi && sin\phi sin\theta sin\psi +cos\phi cos\psi&& sin\phi cos\theta\\
         c\phi s\theta c\psi+sin\phi sin\psi && cos\phi sin\theta sin\psi -sin\phi cos\psi&& cos\phi cos\theta\\
@@ -73,7 +73,7 @@ Ovo znači da u ovom slučaju postoji beskonačno mnogo načina da se ostvari ž
 Ovaj problem se može riješiti uvođenjem jediničnog kvaterniona.
 Još jedan iznimno važan koordinatni sistem je \textit{koordinatni sistem brzine tijela(BKS)}. Ovaj Koordinatni
 sistem se koristi kad god relativno kretanje objekta u odnosu na okolinu ima za posljedicu pojavu 
-reaktivnih sila. Koordinatni sistem brzine je vezan za vektor brzinu objekta. Ishodište kooridnatnog sistema 
+reaktivnih sila. Koordinatni sistem brzine je vezan za vektor brzine objekta. Ishodište kooridnatnog sistema 
 sitema brzine tijela se podudara sa centrom mase tijela(centar mase se može mijenjati tokom leta zbog utroška goriva), dok 
 je $X$ osa kolinearna sa vektorom brzine objekta. Druge dvije ose se proizvoljno definišu u ravni 
 normalnoj na vektor brzine. Najčešće se uzima da $Z$ osa zadovoljava barem jedan od naredna dva uslova:
@@ -85,18 +85,18 @@ Koordinatni sistem brzine je prikazan na slici \ref{fig:vks}.
 \begin{figure}[!ht]
     \centering
     \includegraphics[scale=0.5]{vks.PNG}
-    \caption{Ubacicu svoju sliku}
+    \caption{Koordinatni sistem vezan za vektor brzine}
     \label{fig:vks}
 \end{figure}
-Ugao između $X$ ose sitema tijela i $X$ ose sitema brzine je označen sa $\eta$ i ovim uglom se i definiše 
+Ugao između $X$ ose sistema tijela i $X$ ose sitema brzine je označen sa $\eta$ i ovim uglom se i definiše 
 koordinatni sistem brzine tijela. Ugao $\alpha$ je ugao ugao između $Z_b$ ose  sistema tijela i projekcije 
-vektora brzine na vertikalnu ravan sistema tijela. Ovaj ugao se napadni ugao o kojem će više riječi biti kasnije. 
-Ugao $\beta$ je ugao izmešu vektora brzine i vertikalne ravni sistema tijela. Ovaj ugao se zove ugao klizanja i o njemu će 
+vektora brzine na vertikalnu ravan sistema tijela. Ovaj ugao se zove napadni ugao o kojem će više riječi biti kasnije. 
+Ugao $\beta$ je ugao između vektora brzine i vertikalne ravni sistema tijela. Ovaj ugao se zove ugao klizanja i o njemu će 
 više riječi biti kasnije. Transformacija sistema brzine u sistem tijela se postiže rotacijom 
 oko $Y$ ose sistema tijela za ugao $\alpha$ praćene rotacijom oko $Z$ ose dobijenog sistema za ugao $\beta$. 
 Odgovarajuća matrica transformacije je:
 \begin{equation}
-    T_{v\to b} = \begin{bmatrix}
+    T_{v}^b = \begin{bmatrix}
         \cos\alpha & 0 & -\sin\alpha \\
         0& 1& 0\\
         \sin\alpha & 0 & \cos\alpha
@@ -109,7 +109,7 @@ Odgovarajuća matrica transformacije je:
 \end{equation}
 Nakon množenja matrica, dobija se:
 \begin{equation}
-    T_{v\to b} = \begin{bmatrix}
+    T_{v}^z = \begin{bmatrix}
         \cos\alpha\cos\beta & \cos\alpha\sin\beta & -\sin\alpha \\
         -\sin\beta & \cos\beta & 0\\
         \sin\alpha\cos\beta & 0 & \cos\alpha
@@ -120,7 +120,7 @@ Veza između sistema Zemlje(inercijalnog sistema) i sistema brzine je data uglov
 i $\Psi$, ugla azimuta vektora brzine. Transformacija iz inercijalnog sistema u sistem brzine se dobija rotacijom 
 za $\Theta$ oko $X$ ose sistema brzine, zatim rotacijom oko $Z$ ose za $\Psi$. Odgovarajuća matrica transformacije je:
 \begin{equation}
-    T_{z\to v} = \begin{bmatrix}
+    T_{z}^v = \begin{bmatrix}
         \cos\Theta & 0 & -\sin\Theta \\
         0& 1& 0\\
         \sin\Theta & 0 & \cos\Theta
@@ -134,7 +134,7 @@ za $\Theta$ oko $X$ ose sistema brzine, zatim rotacijom oko $Z$ ose za $\Psi$. O
 \end{equation}
 Nakon množenja matrica, dobija se:
 \begin{equation}
-    T_{z\to v} = \begin{bmatrix}
+    T_{z}^v = \begin{bmatrix}
         \cos\Theta\cos\Psi & \cos\Theta\sin\Psi & -\sin\Theta \\
         -\sin\Psi & \cos\Psi & 0\\
         \sin\Theta\cos\Psi & 0 & \cos\Theta
@@ -145,14 +145,14 @@ iz brzinskog sistema u sistem tijela i iz sistema Zemlje u brzinski koordinatni 
 Ako je potrebna obrnuta transformacija, može se iskoristiti osobina da elementarne matrice transformacije 
 imaju ortogonalne kolone, tj. njihov skalarni proizvod je nula. Odavde slijedi 
 da je transponovana matrica elementarne transformacije jednaka svom inverzu, odnosno $T_i(\epsilon)^T = T_i^{-1}(\epsilon)$.
-Uzmimo sada $T_{z \to b}$. Vrijedi:
+Uzmimo sada $T_{z}^b$. Vrijedi:
 \begin{equation*}
-    T_{z \to b} = T_1(\phi)T_2(\theta)T_3(\psi)
+    T_{z}^b = T_1(\phi)T_2(\theta)T_3(\psi)
 \end{equation*}
 pa je:
 \begin{align*}    
-    T_{z \to b}^T &= T_3^T(\psi)T_2^T(\theta)T_1^T(\phi)\\ & =  T_3^{-1}(\psi)T_2^{-1}(\theta)T_1^{-1}(\phi)\\
-    & = [T_1(\phi)T_2(\theta)T_3(\psi)]^{-1} = T_{z \to b}^{-1} = T_{b\to z}
+    { T_{z}^b}^T &= T_3^T(\psi)T_2^T(\theta)T_1^T(\phi)\\ & =  T_3^{-1}(\psi)T_2^{-1}(\theta)T_1^{-1}(\phi)\\
+    & = [T_1(\phi)T_2(\theta)T_3(\psi)]^{-1} = {T_{z}^b}^{-1} = T_{b}^z
 \end{align*}
 Ovo sada znači da se inverzna matrica transformacije može naći transponovanjem originalne matrice 
 transformacije. 
@@ -163,7 +163,7 @@ podrazumijeva da svaka duž koja spaja bilo koje dvije tačke u tijelu bude para
 datoj originalnoj poziciji, prema tome čvrsto tijelo se može posmatrati kao čestica čija je 
 masa skoncentrisana u jednoj tački koja se zove \textit{centar mase}. Dalje se pretpostavlja 
 da se oblik tijela ne mjenja usljed djelovanja sila na tijelo. Ovom pretpostavkom se 
-dobija da međusobni utjecaj dijelića tijela eleiminisan pa se transalcija može potpuno opisati
+dobija da je međusobni utjecaj različitih dijelića tijela eleiminisan pa se transalcija može potpuno opisati
 translacijom centra mase i da se rotacija može potpuno opisati rotacijom oko centra mase. Dodatno 
 pretpostavlja se da se ravan simetrije poklapa sa ravninom $X_b - Z_b$ kao što je to prikazano na 
 slici \ref{fig:KBS}. Također pretpostavlja se da je masa tijela konstantna. Važno je 
@@ -180,7 +180,7 @@ na slici \ref{fig:dof}
 \end{figure}
 Kao što je ranije rečeno dinamički model projektila se dobija Newtonovim zakonom dinamike,
 koji kaže da je suma svih vanjskih sila jednaka brzini promjene impulsa tijela i da je 
-suma svih vanjskih momenata jednaka brzini promjene moomenta impulsa. Prema tome vrijede relacije:
+suma svih vanjskih momenata jednaka brzini promjene momenta impulsa. Prema tome vrijede relacije:
 \begin{equation}
     \sum F=\frac{d(mv_m)}{dt}|_{Zemlja}
     \label{eq:f}
@@ -190,7 +190,7 @@ suma svih vanjskih momenata jednaka brzini promjene moomenta impulsa. Prema tome
     \label{eq:m}
 \end{equation}
 gdje je $H$ ugaoni momentum a $\sum M$ je suma svih vanjskih momenata koji djeluju na tijelo. Naravno, prethodne 
-relacije predstavljaju promjene vektora u odnosu na inertcijalni prostor. Rezultantna vanjska sila koja 
+relacije predstavljaju promjene vektora u odnosu na inercijalni prostor. Rezultantna vanjska sila koja 
 djeluje na tijelo se može razložiti na sile koje djeluju po osama koordinatnog sistema 
 vezanog za tijelo projektila, pa se može napisati:
 \begin{equation}
@@ -209,7 +209,7 @@ Analogno, dobija se da vrijedi:
 \end{equation}
 Gdje su $L,M$ i $N$ moment valjanja, moment propinjanja i moment zakretanja respektivno i 
 $H_x, H_y$ i $H_z$ su komponente momenta impulsa duž osa tijela. 
-Sada želimo proširiti jednačine \ref{eq:31} i \ref{eq:32} kako bi smo dobili 
+Sada želimo proširiti jednačine \ref{eq:31} i \ref{eq:32} kako bismo dobili 
 jednačine kretanja za svaki stepen slobode. U svrhu toga koristi se formula za 
 brzinu promjenu brzine projektila u inercijalnom sistemu, tj. u koordinatnom sistemu 
 vezanom za zemlju i ona je data relacijom:
@@ -221,7 +221,7 @@ Prema tome vrijedi da je ukupna vanjska sila koja djeluje na tijelo data sa:
     F=m\left(\frac{dv_m}{dt}\right)_{tijelo}+m(\omega \times v_m)
     \label{eq:force}
 \end{equation}
-gdje je vektorrski proizvod linearne brzine i ugaone brzine dat sa:
+gdje je vektorski proizvod linearne brzine i ugaone brzine dat sa:
 \begin{equation}
     \omega \times v_m=\begin{vmatrix}
         i&j&k\\
@@ -307,7 +307,7 @@ Sada se vektor momenta impulsa može zapisati preko svojih komponenti:
 \begin{equation}
     H_z=RI_z-PI_{xz}
 \end{equation}
-Sada su potrebni izvodi momenta impulsa kako bi smo dobili izraz za rezultantni moment.
+Sada su potrebni izvodi momenta impulsa kako bismo dobili izraz za rezultantni moment.
 Pošto je izvod vektora u inercijalnom prostoru jednak zbiru izvoda pojedinačnih komponenti vektora. Prema tome 
 vrijedi:
 \begin{equation}
@@ -336,7 +336,7 @@ izraza za izvod momenta impulsa dobija se:
 \end{equation}
 Prethodne tri jednačine zajedno sa jednačinama \ref{eq:r1},\ref{eq:r2} i \ref{eq:r3} predstavljaju
 jednačine projektila sa šest stepeni slobode. Ove jednačine su simultane linearne jednačine 
-kretanja sa šest promjenjivih $u,v,w,P,Q$ i $R$ koje potpuno opsiuju kretanje 
+kretanja sa šest promjenjivih $u,v,w,P,Q$ i $R$ koje potpuno opisuju kretanje 
 čvrstog tijela. Rješenja ovih jednačina se mogu dobiti numeričkim metodama na digitalnom 
 računaru. Analitička rješenja dovoljne tačnosti se mogu dobiti linearizacijom. $I_x,I_y$ i $I_{xz}$ su konstantne 
 i za projektile sa krstastom konfiguracijom vrijedi $I_y=I_z$ i $I_{xz}$. Prema tome, vrijedi:
@@ -364,7 +364,7 @@ Transformacijom prethodnih jednačina dobija se:
 \end{equation}
 Sada je još potrebno odrediti ugaone brzine u zavisnosti od Eulerovih uglova. Izvođenje ovih jednačina zahtjeva 
 pronalaženje izvoda matrice transformacije, što je poprilično zahtjevno, pa će ovdje biit samo navedene 
-diferencijalne jednačine koje daju brzinu prmjene Eulerovih uglova:
+diferencijalne jednačine koje daju brzinu promjene Eulerovih uglova:
 \begin{equation}
     \frac{d\psi}{dt}=(Q\sin\phi +R\cos\phi)/\cos\theta
     \label{eq:w1}
@@ -395,7 +395,7 @@ Sada je jasno da se integracijom jednačina \ref{eq:q1},\ref{eq:q2} i \ref{eq:q3
 ugaone brzine u sistemu tijela, a integracijom jednačina \ref{eq:w1},\ref{eq:w2} i \ref{eq:w3}  se dobija 
 orijentacija u odnosu na zemlju. Da bi se dobila pozicija tijela u odnosu na sistem Zemlje
 treba riješiti matričnu jednačinu \ref{eq:q}. Da bi se ona mogla numerički riješiti treba 
-naći izraze za izvode brzinu u sistemu tijela. Oni se mogu dobiti iz jednačina 
+naći izraze za izvode brzina u sistemu tijela. Oni se mogu dobiti iz jednačina 
 \ref{eq:r1}, \ref{eq:r2} i \ref{eq:r3}. Nakon transformacije ovih jednačina ima se:
 \begin{equation}
     \frac{du}{dt}=vR-wQ+F_x/m
@@ -408,24 +408,24 @@ naći izraze za izvode brzinu u sistemu tijela. Oni se mogu dobiti iz jednačina
 \end{equation}
 Sada se nakon rješavanja prethodne tri jendačine mogu dobiti vrijednosti brzina u sistemu tijela 
 te nakon toga može se riješiti jednačina \ref{eq:q} i tako dobiti poziciju u odnosu na sistem Zemlje.
-Prethodnih 12 jednačina se može predstaviti u prostoru stanja ako se uzme vekor varijabli stanja:
+Prethodnih 12 jednačina se može predstaviti u prostoru stanja ako se uzme vektor varijabli stanja:
 \[\vec{X}=\left[ u \quad v\quad w\quad P\quad Q\quad R\quad \phi \quad \theta \quad
- \psi \quad x_z\quad y_z\quad z_z\quad \right]^T\] i vektor upralvjačkih 
+ \psi \quad x_z\quad y_z\quad z_z\quad \right]^T\] i vektor upravljačkih 
 promjenljivih:
 \[\vec{u}=\left[\delta_v \quad \delta_P\quad \delta_e \right]^T\] 
 ,gdje je $\delta_v$ ugao otklona krmila visine, $\delta_P$, ugao otklona krmila 
-i $\delta_e$, ugao toklona elerona. Upravljačke varijable se na prvu ruku ne vide i predstalvjenim jednačinama, 
-ali ubrzo ćemo se uvjeriti da sile i momenti koji djeuluju na projektil zavise upravo od ovih upralvjačkih 
+i $\delta_e$, ugao otklona elerona. Upravljačke varijable se na prvu ruku ne vide u predstavljenim jednačinama, 
+ali ubrzo ćemo se uvjeriti da sile i momenti koji djeluju na projektil zavise upravo od ovih upravljačkih 
 varijabli.  
-Ovime se dobija nelinearna vekotrska jednačina:
+Ovime se dobija nelinearna vektorska jednačina:
 \begin{equation}
     \dot{\vec{X}}=f(\vec{X},\vec{u},t)
 \end{equation}
 Prethodna jednačina je doista nelinearna najprije zbog prirode modela, postojanja trigonometrijskih funkcija i 
-zbog nelinearne zavisnosti sila i momenata od otklona upralvjačkih površina. Kako bi se izvršila sinteza 
+zbog nelinearne zavisnosti sila i momenata od otklona upravljačkih površina. Kako bi se izvršila sinteza 
 regulatora prethodna jednačina se najprije treba linearizirati za određeni režim leta. Već se nadzire 
 da se linearizacija može izvršiti nalaženjem prvih izvoda vekotrske funkcije $f(\vec{X},\vec{u},t)$ za određene uslove leta. 
-Dobijena matrica bi imala 144 elementa koji su u stvari prvi izvodi raznih parametara modela pa je evidentno 
+Dobijena matrica bi imala 144 elementa koji su ustvari prvi izvodi raznih parametara modela pa je evidentno 
 da treba poznavati zavisnosti parametra od vremena i međusobne zavisnosti varijabli stanja.  
 
 

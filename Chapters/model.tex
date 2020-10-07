@@ -25,7 +25,7 @@ treba se koristiti inverz matrice transformacije date sa \ref{eq:VtoB}, koji izn
 \end{equation}
 Nakon množenja matrica dobija se:
 \begin{equation}
-    T_b^v\begin{bmatrix}
+    T_b^v=\begin{bmatrix}
         \cos\alpha\cos\beta & \sin\beta & -\sin\alpha\cos\beta \\
         -\cos\alpha\sin\beta & \cos\beta & \sin\alpha\sin\beta \\
         \sin\alpha & 0 & \cos\alpha
@@ -44,11 +44,11 @@ Sada se konačno može napisati svih 12 diferencijalnih jednačina modela u koor
     &\frac{d\phi}{dt}=P+(R\cos\phi+Q\sin\phi)\tan\theta\\
     &\frac{dx_z}{dt}=V\cos\Theta\cos\Psi\\
     &\frac{dy_z}{dt}=V\cos\Theta\sin\Psi\\
-    &\frac{dz_z}{dt}=V\sin\Theta
+    &\frac{dz_z}{dt}=-V\sin\Theta
 \end{align}
-Ovaj nelinearni model ima tri ulaza(otkloni kontrolnih površina) i svaka od varijabli stana može izlaz pa se kod lineariziranog 
+Ovaj nelinearni model ima tri ulaza(otkloni kontrolnih površina) i svaka od varijabli stana može se definisati kao izlaz pa se kod lineariziranog 
 modela može predstaviti 36 prenosnih funkcija, međutim zbog prirode posmatrane konfiguracije 
-neke od ovih prenosnih funkcija će identički biti jednake nuli. Jedan primjer ovakve prensone funkcije 
+neke od ovih prenosnih funkcija će identički biti jednake nuli. Jedan primjer ovakve prenosne funkcije 
 jeste veza između otklona upravljačke površine za stabilizaciju ugla valjanja i brzine projektila. 
 U prethodnom poglavlju su razvijeni izrazi za sile u koordinatnom sistemu tijela, pa su u nastavku navedene 
 jednačine koje opisuju model u koordinatnog sistemu tijela:
@@ -63,7 +63,8 @@ jednačine koje opisuju model u koordinatnog sistemu tijela:
     \frac{d\theta}{dt} &=Q\cos\theta - R\sin\phi\\
     \label{eq:zadnja} \frac{d\psi}{dt}&=(R\cos\phi+Q\sin\phi)/\cos\theta
 \end{align}
-Ovakav prikaza dinamičkog modela je naročito koristan za simulaciju dinamike projektila. 
+Ovakav prikaza dinamičkog modela je naročito koristan za simulaciju dinamike projektila, ali 
+zahtjeva više računarskog napora u odnosu na simulaciju dinamike u sistemu brzine. 
 \section{Softverska implementacija modela}
 Od velike je koristi imati implementiran dinamički model kako bi se imao bolji 
 uvid u dinamiku projektila. Također neophodno je imati implementiran 
@@ -228,7 +229,7 @@ rješava jednačine dinamičkog modela.
     out = [Xdot; alphadot; betadot;Psidot;Thetadot;nV;nH];
     end
     \end{lstlisting}
-Model projektila je MIMO sistem sa tri ulazne varijable i puno više izlaze pa je u nastavku 
+Model projektila je MIMO sistem sa tri ulazne varijable i puno više izlaza pa je u nastavku 
 predstavljeno nekoliko značajnih odziva na otklone kotnrolnih površina. U nastavku se razmatra 
 šta se dešava sa projektilom kada se pobudi sa jediničnim otklnom krmila visine. Treba uzeti u obzir 
 da je uzeto u modelu da se postiže zasićenje otklona svih površina pri otklonu od $25$ stepeni.
@@ -259,10 +260,10 @@ Sada pogledajmo, odzive brzina projektila koji su prikazani na slici \ref{fig:br
     \label{fig:brzine}
 \end{figure}
 Prvo što se primjeti jest da je brzina u $y$ smjerovima oba sistema uvijek nula. Dalje, posmatrajući 
-sistem tijela vidi se da brzine nakon nekog vremena dostignu maksimalnu brzinu. Glede,
+sistem tijela vidi se da brzine nakon nekog vremena dostignu maksimalnu brzinu. Posmatrajući
 sistema tijela, brzina u $x$ smjeru je stalna kao posljedica čeone sile otpora vazduha. Posmatrajući
-inercijalni sistem, vidi se brzine u $x$ i $z$ smjeru imaju promejene koje sliče na kružno kretanje. Suma njihovih kvadrata 
-će dati približno neku konstantnu vrijednost, pa se zaključuje da se projektil za slulčaj otklona krmila visine, 
+inercijalni sistem, vidi se brzine u $x$ i $z$ smjeru imaju promjene koje sliče na kružno kretanje. Suma njihovih kvadrata 
+će dati približno neku konstantnu vrijednost, pa se zaključuje da se projektil za slučaj otklona krmila visine, 
 doista kreće po kružnici. Uvjerimo se u tu tvrdnju skicirajući putnaju projektila. Čitalac treba 
 da primjeti da je na ovoj slici izvršena promjena znaka visine projektila. 
 \begin{figure}[!ht]
@@ -299,11 +300,11 @@ putanje u $xz$ i $xy$ ravninama kada se ima jedinični otklon krmila pravca proj
 Sada se vidi da kada se zakrene krmilo visine, da projektil čini kružnu putanju u $xy$ ravni, što je bilo 
 i očekivano. Naravno pomjeraj po $x$ osi mora da postoji zbog stalne sile potiska. Vidi se da u 
 $xz$ ravnini, projektil pada na zemlju ali i treba primjetiti da se projektil u nekim 
-trenutcima počinje dizati po $z$ osi. Ovo je posljedica postojanja pogonske sile i statičke stabilnosti projektila. 
+trenucima počinje dizati po $z$ osi. Ovo je posljedica postojanja pogonske sile i statičke stabilnosti projektila. 
 Pošto je centar gravitacije projektila ispred centra pritiska, projektil se počne rotirati tako da mu nos 
 pokazuje ka zemlji, međutim zbog otklona krmila visine on počne rotirati u oko svoje $z$ ose pa u jednom trenutku 
-njegov nos bude okrenut suprotno od zemlje te zobg pogonske sile kratko započne kretanje ka gore sve dok se 
-zobg otklona krmila pravca ne nastavi rotirati i posljedično nastavi smanjivati visinu. 
+njegov nos bude okrenut suprotno od zemlje te zbog pogonske sile kratko započne kretanje ka gore sve dok se 
+zbog otklona krmila pravca ne nastavi rotirati i posljedično nastavi smanjivati visinu. 
 Promjene orijentacije projektila se vide na slici \ref{fig:eulerPravac}
 \begin{figure}[!ht]
     \centering
@@ -315,16 +316,16 @@ Promjene orijentacije projektila se vide na slici \ref{fig:eulerPravac}
 Vidi se na prethodnoj slici da ugao valjanja i ugao poniranja variraju, što objašnjava 
 varijacije visine projektila i vidi se ugao zakretanja opada što objašnjava kružno kretanje 
 u $xy$ ravnini. Posljedica toga je i konstantan ugao klizanja. Važno je istaći da je kanal pravca 
-sistem neminimalne faze jer se za pozitav otklon krmila pravca, dobija negativan odziv ugla zakretanja. 
+sistem neminimalne faze jer se za pozitivan otklon krmila pravca, dobija negativan odziv ugla zakretanja. 
 U nastavku se posmatra primjer horizontalnog hitca početnom brzinom od $100m/s$ u $x$ smjeru
 sa visine $500m$. Kada ne bi bilo otpora vazduha i pogonske sile za očekivati je da će projektiil pasti na zemlju 
 za $10.09$ sekundi. Naravno, zbog postojanja pogonske sile projektil će za nešto kraće vrijeme 
-dotaknuti tlo. Pri ovoj simulaciji pretpostavljen je jedinični otklon elerona, pa će se pojaviti i valjanje. 
+dotaknuti tlo. Pri ovoj simulaciji pretpostavljen je jedinični otkolon elerona, pa će se pojaviti i valjanje. 
 Na slici \ref{fig:eleronPutanja} su prikazane putanje kod ovog primjera. 
 \begin{figure}[!ht]
     \centering
     \includegraphics[scale = 0.7]{3deelron.eps}
-    \caption{Trajekroija horizontalnog hitc sa jediničnim otklnom elerona}
+    \caption{Trajektoija horizontalnog hitca sa jediničnim otklonom elerona}
     \label{fig:eleronPutanja}
 \end{figure}
 Vidi se da u ovom primjeru projektil, kao što je i očekivano, približno prati parabolu. 
@@ -333,7 +334,7 @@ su prikazani Eulerovi uglovi.
 \begin{figure}[!ht]
     \centering
     \includegraphics[scale = 0.4]{horHitacUglovi.eps}
-    \caption{Orijentacija projektila pri horizontalnom hitcu sa jediničnim otklnom elerona}
+    \caption{Orijentacija projektila pri horizontalnom hitcu sa jediničnim otklonom elerona}
     \label{fig:orijentacijaEleron}
 \end{figure}
 Zbog otklona elerona dolazi do porasta ugaone brzine valjanja što ima za posljedicu 
@@ -348,7 +349,7 @@ iza centra gravitacije, javlja se moment koji zakreće projektil nadole. Kada bi
 ugao propinjanja bi dosegao vrijednost skoro -90 stepeni. Posmatrajući treći grafik na kojem 
 je prikazan ugao zakretanja vide se male promjene ugla zakretanaja(reda $10^{-4}$). U ovom primjeru,
 bočno kretanje je zanemarljivo, ali ako postoje komponente brzine u sva tri smjera sistema tijela tada 
-promjena brzine valjnanja može imati ozbiljne posljedice na stabilnost projektila i čak dovodi u pitnaje proces vođenja.
+promjena brzine valjanja može imati ozbiljne posljedice na stabilnost projektila i čak dovodi u pitnaje proces vođenja.
 Za bolji uvid, na slici \ref{fig:eleronUbrzanja} su prikazani vertikalno i horizontalno ubrzanje projektila(poslije će se pokazati 
 da su vertikalno i horizontalno ubrzanje presudni za proces vođenja).  
 \begin{figure}[!ht]
@@ -383,7 +384,7 @@ koje su u ovom slučaju zanemarene definišu \textit{lateralno kreetanje(bočno)
 od kretanja u horizntalnoj ravni, skretanja i valjanja ali bez propinjanja. Sada se ova dva podsistema mogu odvojeno posmatrati.
 Sada ostaje samo da se sile koje su objašnjenje u prethodnom poglavlju pretvorimo iz sistema tijela 
 i sistema Zemlje u sistem brzine i da ih se uvrsti u jednačine koje opisuju model u sistemu brzine. 
-Jednačine koje predstavljaju longitdunalno kretanje su:
+Jednačine koje predstavljaju longitudinalno kretanje su:
 \begin{align}
     &m\frac{dV}{dt}= P\cos\alpha - R_{otp} - G\sin\Theta\\
     &mV\frac{d\Theta}{dt} = -Psin\alpha - R_{uzg} + G\cos\Theta\\
@@ -411,10 +412,10 @@ Pri čemu se iz $Tz^v$ pokazuje:
     \Psi \approx \psi-\beta
 \end{equation}
 Još uvijek se nisu u diferencijalne jednačine uvele linearizirane vrijednosti za aerodinamičke 
-sile i momente pa se u jednačinama ne pojavljuju upralvjačke varijable, zbog toga će se u nastavku uraditi
-poptuna linearizacija dinamičkog modela. Tada će se dobiti zavisnost varjiabli stanja od ulaza, pa 
+sile i momente pa se u jednačinama ne pojavljuju upravljačke varijable, zbog toga će se u nastavku uraditi
+poptuna linearizacija dinamičkog modela. Tada će se dobiti zavisnost varijabli stanja od ulaza, pa 
 je na osnovu toga moguće riješiti ove jednačine da bi se odredile varijable stanja. Iz ovoga slijedi i obrat 
-tj. da se mogu odrediti otkloni upralvjačkih površina da bi se postigle željene vrijednosti varijabli stanja 
+tj. da se mogu odrediti otkloni upravljačkih površina da bi se postigle željene vrijednosti varijabli stanja 
 koje zahtjeva zakon voođenja. Naravno ovakav postupak je u otvorenoj petlji pa se zbog netačnosti modela 
 preporučuje upravljanje u zatvorenoj povratnoj sprezi. 
 \section{Linearizacija u okolini nominalne trajektorije}
@@ -424,7 +425,7 @@ nakon toga ona ima linearnu zavisnot od ulaznih parametara. Kod kretanja projekt
 radne tačke se uvodi pojam \textit{nominalne trajektorije}. To je trajektorija po kojoj projektil 
 leti kada su sve varijable stanja upravo onakve kako se od njih očekuje da budu i kada nema vanjskih poremećaja 
 na projektil osim aerodinamičkog otpora i gravitacije. Sada se kao suprotnost nominalnoj trajektoriji 
-uvodi pojam \textit{pormećajnog kretanja} koje se odlikuje odstupanjem varijabli stanja od nominalnih vrijednosti. 
+uvodi pojam \textit{poremećajnog kretanja} koje se odlikuje odstupanjem varijabli stanja od nominalnih vrijednosti. 
 Pri ovome se pretpostavlja da su odstupanja varijabli stanja pri poremećajnom kretanju relativno mala u odnosu na 
 njihove nominalne vrijednosti. Svaka nominalna trajektorija određena je nekom vrijednošću vektora stanja $X_{nom}$.
 Do ostalih vrijednosti može se doći rješavanjem jednačine:
@@ -436,7 +437,7 @@ vrijednosti varijabli stanja imaju oblik:
 \begin{equation}
     x=x_0+\Delta x 
 \end{equation}
-Prisjetimo se samo da u okolini nominalne trajektorije upravlja;ki signal može definisati kao:
+Prisjetimo se samo da u okolini nominalne trajektorije upravljački signal može definisati kao:
 \begin{equation}
     u(t) = u_0(t)+\Delta u(t)
 \end{equation}
@@ -455,8 +456,8 @@ Sada se može napisati:
 \end{equation}
 Parcijalni izvodi se uzimaju tako da vrijedi $x=x_0$ i $u=u_0$.\\
 Kod modela longitudinalnog kretanja će se izvršiti isti postupak s tim da će se linearizirati svaka 
-jednačina posebno. Sada za model longitduinalnog kretanja, ako se pretpostavi da se 
-projektil kreće po nominalnoj trajektiri, vrijede jednačine:
+jednačina posebno. Sada za model longitudinalnog kretanja, ako se pretpostavi da se 
+projektil kreće po nominalnoj trajektoriji, vrijede jednačine:
 \begin{align}
     &V=V_0+\Delta V \\
     & \alpha = \alpha _0+\Delta \alpha\\
@@ -477,7 +478,7 @@ linearizacije može se dobiti:
     &\frac{d\Delta z_z}{dt}=\sin\Theta_0\Delta V+V\cos\Theta_0\Delta\Theta \\
     &\Delta\alpha=\Delta\theta - \Delta\Theta
 \end{align}
-U koeficijentima dobijenih diferencijalnih jednačina su exponentima označeni izvodi te veličine. Konkretno, 
+U koeficijentima dobijenih diferencijalnih jednačina su eksponentima označeni izvodi te veličine. Konkretno, 
 $P^V=\frac{\partial P}{\partial V}$, $F_o^\alpha = \frac{\partial F_o}{\partial \alpha} = QSC_o^\alpha$ etc. 
 Svi ovi parcijalni izvodi su objašnjeni kada se govorilo o prirodi aerodinamičkih sila i momenata i oni se često 
 za projektil daju tabelarno. Članovi $X_P$, $Z_P$ i $M_P$ predstavljaju poremećaje u vidu sila i momenata i oni ovdje 
@@ -489,7 +490,7 @@ Radi se o polinomu četvrtog reda kod kojeg je jedan par polova po modulu dosta 
 Sada je jasno da se kretanje letjelice može razdovjiti na \textit{brzo prigušeno} kretanje koje može biti oscilatorno 
 ili aperiodičko i na \textit{fugoidno(sporo prigušeno)}. Dinamiku modela longitudinalnog kretanja određuje 
 dominantni par polova koji je manji po modulu pa je kretanje letjelice određeno fugoidnim kretanje. Sada je jasno da se 
-polovi koji opsiuju brzoprigušeno kretanje mogu odbaciti pa će karakterisični polinom imati samo dva pola. 
+polovi koji opsiuju brzoprigušeno kretanje mogu odbaciti pa će karakteristčni polinom imati samo dva pola. 
 Dakle, sada se posmatraju samo jednačine koje opisuju kratkoperiodično kretanje. Brzoperiodično kretanje je 
 određeno jednačinom promjene brzine(prva diferencijalna jednačina) pa se nakon uvođenja ove pretpostavke odbacuje ova 
 jednačina  i u ostalim se anulira $\Delta V$. Sada teba primjetiti da se u lineariziranim jednačinama pojavljuje koeficijent 
@@ -497,7 +498,7 @@ $-\frac{g}{V}\sin\Theta_0$. Ovaj koeficijent predstavlja uticaj gravitacije na l
 uglove, ovaj koeficijent je jako blizak nuli. Čak i kada trajektorija puno odstupa od horizontalne, brzina projektila 
 je najmanje 20 puta veća od gravitacionog ubrzanja pa se uticaj gravitacije na longitudinalno kretanje može zanemariti. 
 Ova pretpostavka u prenosnim funkcijama uvodi pol u nuli, tj. pod ovom pretpostavkom sistem će se ponašati kao integrator i 
-sam će osiguratio nultu grešku stacionarnog stanja. Međutim ako ova pretpostavka nije ispunjenja tada će se pojaviti pol blizak nuli, 
+sam će osigurati nultu grešku stacionarnog stanja. Međutim ako ova pretpostavka nije ispunjenja tada će se pojaviti pol blizak nuli, 
 pa će prelazni proces biti dug možda čak i nestabilan. Sada, pod ovim pretpostavkama dobijaju sljedeće prenosne funkcije:
 \begin{align}
     &\frac{\Delta \theta(s)}{\Delta \delta_V(s)}=\frac{K(T_1s+1)}{s(T^2s^2+2\xi Ts+1)}\\
@@ -506,11 +507,11 @@ pa će prelazni proces biti dug možda čak i nestabilan. Sada, pod ovim pretpos
     &\frac{\Delta n_z(s)}{\Delta \delta_V(s)}=\frac{V}{g}\frac{K}{T^2s^2+2\xi Ts+1}
 \end{align}
 ,gdje $n_z = \frac{V\dot{\Theta}}{g}$ predstavlja \textit{normalno preopterećenje}, tj. odnos ubrzanja koje je normalno na pravac brzine i gravitacione konstante. 
-Evidentno je da je normalno ubrzanje definisano izrazom:
+Normalno ubrzanje je definisano izrazom:
 \begin{equation}
-    a_z = V\dot{\Theta}
+    a_z = V\dot{\Theta} + g\cos\Theta
 \end{equation}
-I predstavlja jako bitnu veličinu jer mnogi zakoni vođenja generišu komandne signale u vidu normalnog ubrzanja projektil, pa će se i 
+I predstavlja jako bitnu veličinu jer mnogi zakoni vođenja generišu komandne signale u vidu normalnog ubrzanja projektila, pa će se i 
 posebna pažnja posvetiti upravljanju normalnog ubrzanja. Prenosna funkcija koja određuje normalno ubrzanje je:
 \begin{equation}
     \frac{\Delta a_z(s)}{\Delta \delta_V(s)} =\frac{KV}{T^2s^2+2\xi Ts+1}
@@ -537,6 +538,6 @@ posebna pažnja posvetiti upravljanju normalnog ubrzanja. Prenosna funkcija koja
 \caption{Blok dijagram lineariziranog modela longitudinalnog kretanja}
 \label{fig:diagLongi}
 \end{figure}
-Evidentno je da za dobijanje lineariziranog modela longitudnalnog kretanja uvedeno 
+Evidentno je da za dobijanje lineariziranog modela longitudinalnog kretanja uvedeno 
 puno pretpostavki i da će bilo kakvo odstupanje od ovih pretpostavki umanjiti vjerodostojnost modela, 
 ali se pokazuje da je ovaj linearizirani model dosta dobra aproksimacija pri nominalnim uslovima leta. 

@@ -1,13 +1,13 @@
 Ranije su izvedene jednačine(Eulerove) koje opisuju kretanje projektila. U ovim jednačinama se 
-pojavljuju sile i momenti koji djeluju na projektil, te je nephodno i njih odrediti kako bi 
-se postigao potpun dinamilki model projektila. Također, poznavanje prirode ovih sila je neophodno kako 
+pojavljuju sile i momenti koji djeluju na projektil, te je neophodno i njih odrediti kako bi 
+se postigao potpun dinamički model projektila. Također, poznavanje prirode ovih sila je neophodno kako 
 bi se moglo upravljati projektilom jer se upravo kontrolom ovih sila postiže upravljanje projektila.
-Sile koje djeluju na projektil su u letu su aerodinamičke, pogonske sile i 
+Sile koje djeluju na projektil u letu su aerodinamičke, pogonske sile i 
 gravitaciona sila. Ove sile se mogu razložiti po osama kooridnatnog sistema vezanog 
 za tijelo i mogu se izraziti u inercijalnom kooridnatnom sistemu. 
 \section{Gravitaciona sila}
-Prije svega važno je istaći da se gravitaciona sila ne može koristiti za upralvjanje projektilom i 
-ona predstavlja ništa više od vanjske smetnje na sistem automatskog upralvjanja.
+Prije svega važno je istaći da se gravitaciona sila ne može koristiti za upravljanje projektilom i 
+ona predstavlja ništa više od vanjske smetnje na sistem automatskog upravljanja.
 Gravitaciona sila predstavlja vektor koji je usmjeren ka centru Zemlje i u inercijalnom kooridnatnom
 sistemu je dat sa:
 \begin{equation}
@@ -16,7 +16,7 @@ sistemu je dat sa:
 Da bi se dobila vrijednost gravitacione sile u kooridnatnom sistemu tijela, treba se koristiti matrica 
 transformacije:
 \begin{equation}
-    G_{b} = T_{z\to b}G_{z}
+    G_{b} = T_{z}^bG_{z}
 \end{equation}
 Korištenjem \ref{eq:ztob}, dobija se:
 \begin{equation}
@@ -28,7 +28,7 @@ Korištenjem \ref{eq:ztob}, dobija se:
 \end{equation}
 Na sličan način, korištenjem \ref{eq:ztov}.  se dobija i vektor gravitacione sile u brzinskom koordinatnom sistemu:
 \begin{equation}
-    G_v = T_{z\to v}\begin{bmatrix}
+    G_v = T_{z}^v\begin{bmatrix}
         0 \\ 0 \\ mg\end{bmatrix} = mg\begin{bmatrix}
             -\sin\Theta \\ 0 \\ \cos\Theta
     \end{bmatrix}
@@ -55,7 +55,7 @@ Pogonska sila izražena u sistemu brzine je data sa:
 \begin{equation}
     P_v = T_{b\to v}\begin{bmatrix}
         P \\ 0 \\ 0
-    \end{bmatrix} = T_{v\to b}^T\begin{bmatrix}
+    \end{bmatrix} = {T_{v}^b}^T\begin{bmatrix}
         P \\ 0 \\ 0
     \end{bmatrix}
 \end{equation}
@@ -74,7 +74,7 @@ Aerodinamička sila se može razložiti na tri komponente koje su definisane u n
     \item \textbf{Otpor}- Otpor je komponenta rezultantne aerodinamičke sile 
     koja je paralelna relativnom kretanju vjetra.
     \item \textbf{Bočna sila}- Bočna sila je komponenta rezultantne aerodinamičke sile 
-    koja je normalna na uzogn i otpor. 
+    koja je normalna na uzgon i otpor. 
 \end{itemize}
 Ovdje se posmatraju projektili koji se zakreću da bi skrenuli(skid to turn) i 
 kod takvih projektila aerodinamičke sile su date sa:
@@ -121,10 +121,10 @@ Uglovi $\alpha, \beta$ i $\gamma$ su prikazani na slici \ref{fig:angles} i defin
     \caption{Ugaone veze}
     \label{fig:angles}
 \end{figure}
-Dodatno, napadni ugao $\alpha$ definiše rotaciju sistema tijela oko $Y_b$ ose, a ugao klizaanja 
+Dodatno, napadni ugao $\alpha$ definiše rotaciju sistema tijela oko $Y_b$ ose, a ugao klizanja 
 $\beta$ definiše rotaciju sistema tijela oko $Z_b$ ose. 
 Sada je potrebno poznavati analitičke oblike aerodinamičkih koeficijenata u zavisnosti 
-od odgovarajućih varijabli staanja. Linearizacijom aerodinamičkih koeficijanata u okolini trenutnih vrijednosti 
+od odgovarajućih varijabli stanja. Linearizacijom aerodinamičkih koeficijanata u okolini trenutnih vrijednosti 
 varijabli stanja dobijaju se linearne relacije za aerodinamičke koeficijente koje su 
 izražene u obliku sume \textit{aerodinamičkih izvoda} i varijabli stanja.
 Razvojem u Taylorov red i odbacivanjem viših članova dobija se aproksimacija 
@@ -137,16 +137,9 @@ aerodinamičkih koeficijenata:
 ,gdje je $C_{x_0}=\frac{\partial c_x}{\partial \alpha}|_{\alpha=0}$, $C_{x_1}=\frac{\partial c_x}{\partial \alpha}$ 
 i slično tako za ostale izvode.\\
 Također je važno istaći da su ovi koeficijenti(tj. sile) izražene u \textit{kooridnatnom sistemu vjetra} 
-relativnom toku vazduha. Koordinatni sistem vazduha je prikazan na slici \ref{fig:wind}. Čest se u literaturi 
-ovi koeficijenti definišu u \textit{kooridnatnom sistemu brzine tijela}, kod kojeg se $X$ osa podudara sa 
+relativnom toku vazduha. Često se u literaturi ovi koeficijenti definišu u \textit{kooridnatnom sistemu brzine tijela}, kod kojeg se $X$ osa podudara sa 
 brzinom letjelice, ali zbog pretpostavke da je brzina vjetra zanemariva u inercijalnom kooridnatnom sistemu razlika 
 u ovim koordinatnim sistemima ne igra ulogu. 
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[scale=0.5]{wind.JPG}
-    \caption{Veza između sistema tijela i sistema vjetra}
-    \label{fig:wind}
-\end{figure}
 Izuzetno je korisno imati i vrijednosti aerodinamičkih sila u koordinatnom sistemu 
 tijela. One su date sa:
 \begin{align}
@@ -166,7 +159,7 @@ rezultantne sile koja ne djeluje na centar kooridnatnog sistema tijela se može
 podjeliti na tri komponente, i to:
 \begin{itemize}
     \item \textbf{Moment valjanja} je moment oko lateralne ose($Y_b$) projektila i generisan 
-    je od uzgonom i otporom koje djeluju na tijelo. Pozitivan moment je u smjero gore 
+    je od uzgonom i otporom koje djeluju na tijelo. Pozitivan moment je u smjeru gore 
     od nosa letjelice 
     
     \item \textbf{Moment propinjanja} je moment oko longitudinalne ose($X_b$) projektila.
