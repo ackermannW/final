@@ -385,8 +385,8 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\ts1pcr.fd
 INPUT C:\Users\Mirza\AppData\Roaming\MiKTeX\2.9\tex\latex\psnfss\ts1pcr.fd
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr8c.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr7t.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\vf\adobe\courier\pcrr8c.vf
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\adobe\courier\pcrr7t.tfm
 INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis.eps
 INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis.eps
 INPUT c:\Users\Mirza\Desktop\thesis\Images\pitchVis.eps
@@ -507,6 +507,16 @@ INPUT c:\Users\Mirza\Desktop\thesis\Images\AOApravac-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Images\AOApravac-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Images\AOApravac-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Images\AOApravac-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\horUbr-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Images\3deelron.eps
 INPUT c:\Users\Mirza\Desktop\thesis\Images\3deelron.eps
 INPUT c:\Users\Mirza\Desktop\thesis\Images\3deelron.eps
@@ -838,16 +848,16 @@ INPUT c:\Users\Mirza\Desktop\thesis\Images\eulerKomb-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Images\eulerKomb-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Images\eulerKomb-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Images\eulerKomb-eps-converted-to.pdf
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular.eps
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular.eps
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular.eps
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular-eps-converted-to.pdf
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular-eps-converted-to.pdf
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular.eps
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular-eps-converted-to.pdf
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular-eps-converted-to.pdf
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular-eps-converted-to.pdf
-INPUT c:\Users\Mirza\Desktop\thesis\Images\angular-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath.eps
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath-eps-converted-to.pdf
+INPUT c:\Users\Mirza\Desktop\thesis\Images\kompath-eps-converted-to.pdf
 INPUT c:\Users\Mirza\Desktop\thesis\Images\fullPN.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\fullPN.JPG
 INPUT c:\Users\Mirza\Desktop\thesis\Images\fullPN.JPG
@@ -951,8 +961,6 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr12.pfb
-INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr17.pfb
-INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr17.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\lm\lmr8.pfb

@@ -163,6 +163,34 @@
       \field{year}{2007}
       \true{nocite}
     \endentry
+    \entry{prljaca}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=327674e7a9ca98d3c4a1cd17f5554813}{%
+           family={N.\bibnamedelimi Prljača},
+           familyi={N\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Z.\bibnamedelimi Šehič},
+           giveni={Z\bibinitperiod\bibinitdelim Š\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Tuzla}%
+      }
+      \strng{namehash}{327674e7a9ca98d3c4a1cd17f5554813}
+      \strng{fullhash}{327674e7a9ca98d3c4a1cd17f5554813}
+      \strng{bibnamehash}{327674e7a9ca98d3c4a1cd17f5554813}
+      \strng{authorbibnamehash}{327674e7a9ca98d3c4a1cd17f5554813}
+      \strng{authornamehash}{327674e7a9ca98d3c4a1cd17f5554813}
+      \strng{authorfullhash}{327674e7a9ca98d3c4a1cd17f5554813}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Automatsko Upravljanje}
+      \field{year}{2008}
+      \true{nocite}
+    \endentry
     \entry{drela2014flight}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=40950303395aa667be92987698c68b9a}{%

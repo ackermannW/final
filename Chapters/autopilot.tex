@@ -474,7 +474,7 @@ horiznotalno ubrzanje. Struktura regulatora za stabilizaciju ugla valjanja je pr
         \node[sum,right of = input](sum1){};
         \node[block, right of = sum1,node distance = 2cm](pi1){$PI$};
         \node[sum, right of = pi1,node distance = 2.5cm](sum2){};
-        \node[block, right of = sum2](pi2){$PI$};
+        \node[block, right of = sum2](pi2){$P$};
         \node[block, right of = pi2](model){Model};
         \node[anchor = east,yshift = 10] at (model.east)(p){};
         \node[output, right of=model, yshift = 10](pout){};
@@ -514,7 +514,7 @@ i ugla valjanja. U nastavku će se na nekoliko primjera ispitati performanse
 autopilota. Prvo je prikazan odziv kada se zahtjeva konstantno vertikalno ubrzanje i nulto 
 horizontalno ubrzanje. Ovakav zahtjev je čest u praksi, jer predstavlja vođenje projektila 
 prema meti koja se nalazi upravo u ravni $xz$ projektila. Na slici \ref{fig:accautover} su prikazani 
-ubrzanja i orijentacija projektila kada se zahtjeva vertikalno ubrzanje od $20 m/s^2$ i horiznotalno ubrzanje od 
+ubrzanja i orijentacija projektila kada se zahtjeva vertikalno ubrzanje od $-20 m/s^2$ i horiznotalno ubrzanje od 
 $0m/s^2$.
 \begin{figure}[!ht]
     \centering
@@ -542,10 +542,9 @@ Ubrzanja i orijentacija su prikazani na slici \ref{fig:horOdziv}.
 Opet se vidi da autopilot zadovaljava zadate reference. Vidi se da je odziv horizontalnog 
 ubrzanja dosta brži od odziva vertikalnog ubrzanja. Ovo je posljedica nepostojanja 
 gravitacione sile u vertikalnoj ravni. Vidi se da je ugao valjanja stalno nula, i da zbog 
-kretanja u vertikalnoj ravni ugao zakretanja se mijenja. Ugao propinjanja opada što 
-znači da se projektil usmjerava ka zemlji. Ponovo, ovo je posljedica sile uzgona na 
-aerodinamički centar pritiska. Odavde slijedi da projektil propada, tj. da se kreće ka dole, ali da pravi 
-kružnu putanju u vertikalnoj ravnini. Ovo se vidi na slici \ref{fig:horxyz}.
+kretanja u vertikalnoj ravni ugao zakretanja se mijenja. Ugao propinjanja je konstantne vrijednosti što 
+znači da se projektil lagano usmjerava ka gore. Ovo znači da projektil leti ravno, jer je potreban 
+određeni ugao propinjanja za generisanje sile uzgona. Ovo se vidi na slici \ref{fig:horxyz}.
 \begin{figure}[!ht]
     \centering 
     \includegraphics[scale=0.6]{xyzHor.eps}
@@ -568,25 +567,15 @@ Ovdje se vidi da autopilot i u ovom slučaju zadovoljava zahtjevane performanse.
 ugao poniranja i ugao zakretanja rastu jer se zahtjeva kretanje po dijelu kružnice u obje ravni. 
 Ponovo, ugao valjanja je nula tako da se može ostvariti Dekartovo upravljanje, odnosno da 
 se ovakav projektil i u najgorem slučaju može voditi proporcionalnom navigacijom.
-Regulator za stabiliaziciju valjanja ima jednu zanimljivu osobinu. Iako on osigurava 
-da je ugao valjanja nula, on ne osigurava da je ugaona brzina valjanja nula. Drugim riječima, 
-projektil se rotira nekom malom ugaonom brzinom oko svoje $x$ ose, ali je njegova orijentacija u kanalu 
-valjanja i dalje nula u odnosu na inercijalni sistem. Ugaone brzine tijela projektila oko 
-svojih osa su prikazane na slici \ref{fig:angular}.
+Putanja projektila je prikazana na slici \ref{fig:kompath}.
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale = 0.6]{angular.eps}
-    \caption{Ugaone brzine pri lateralnom i longitudinalnom kretanju}
-    \label{fig:angular}
+    \includegraphics[scale = 0.6]{kompath.eps}
+    \caption{Putanja projektila pri Dekartovom upravljanju}
+    \label{fig:kompath}
 \end{figure}
-Ovdje se vidi da su ugaone brzine oko sve tri ose sistema tijela različite on nule. 
-Za ugaone brzine poniranja i zakretanja ovo je očekivano i neophodno, ali za ugaonu 
-brzinu valjanja ovo je iznenađujuće. Ovo slijedi iz činjenice da je promjena ugla valjanja data sa 
-$\dot{\phi} =P + Q\sin\phi\tan\theta + R\cos\phi\tan\theta$. Ovo znači da pri postojanju ugaonog kretanja u obje ravni
-, da se mora pojaviti i ugaona brzina u kanalu valjanja kako bi brzina promjene ugla valjanja bila nula. 
-Jasno je da će ova pojava izazvati spregu kanala visine i kanala pravca, ali to je neophodna 
-cijena za stabilizaciju ugla valjanja koji je osnovni preduslov za Dekartovo upravljanje. 
-
+Ovdje se vidi da projektil pri svojoj putanji čini dva luka istovremeno i to je 
+upravo onakvo ponašanje kakvo od projektila zaht proporcionalna navigacija. 
 \section{Integracija sistema za vođenje i autopilota}
 Sada je predstavljeno sve što je potrebno za vođenje projektila u prostoru.
 Ostaje jedino da se izvrši integracija sistema za vođenja i modela sa autopilotom. 
@@ -596,7 +585,7 @@ da autopilot upravlja ubrzanjima u koordinatnom sistemu vezanom za vektor brzine
 je izvršiti transformaciju iz sistema vezanog za zemlju u sistem vezan za vektor brzine. 
 Transformacija se vrši na sljedeći način:
 \begin{align}
- \label{eq:wind1} a_{V} &= a_z\cos\Theta + g\cos\Theta\\ 
+ \label{eq:wind1} a_{V} &= a_z\cos\Theta\\ 
  \label{eq:wind2} a_{H} &= a_y\cos\Psi - a_x\sin\Psi
 \end{align}
 ,gdje su $a_x,a_y,a_z$ ubrzanja koja generiše proporcionalna navigacija. 
@@ -606,7 +595,7 @@ U nastavku je na slici \ref{fig:fullPN} prikazan simulink dijagram vođenja proj
 početna pozicija može mijenjati. 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[scale = 0.55]{fullPN.JPG}
+    \includegraphics[scale = 0.5]{fullPN.JPG}
     \caption{Simulator za navođenje projektila ka pokretnoj meti}
     \label{fig:fullPN}
 \end{figure}
@@ -629,32 +618,29 @@ Podsistem za autopilot je dat na slici \ref{fig:autopilotFull}.
     \caption{Autopilot}
     \label{fig:autopilotFull}
 \end{figure}
+Ostali podsistemi su već ranije prikazani regulatori za vertikalno i horizontalno ubrzanje 
+i regulator ugla valjanja. 
 Ovdje je korištena interpretirana Matlab funkcija koja poziva 
 funkciju transform koja je data u nastavku. Ova funkcija transformiše 
 ubrzanja data u inercionom sistemu u ubrzanja data u koordinatnom sistemu brzine 
 prema relacijama \ref{eq:wind1} i \ref{eq:wind2}.
 \begin{lstlisting}
-    function out = transform(n,u)
+function out2 = transform(n,u)
     Psi = u(1);
     Theta = u(2);
-    
     nx = n(1);
     ny = n(2);
     nz = n(3);
-    
-    apitch = nz*cos(Theta) + 9.81*cos(Theta);
+    apitch = nz*cos(Theta);
     ayaw = ny*cos(Psi) - nx*sin(Psi);
-    
-    out = [apitch;ayaw];
-    end
+    out2 = [apitch;ayaw];
+end
 \end{lstlisting}
-Ostali podsistemi su već ranije prikazani regulatori za vertikalno i horizontalno ubrzanje 
-i regulator ugla valjanja. 
 U svrhu animacije, kreiran je blok za animaciju. Struktura podsistema za animaciju je data na 
 slici \ref{fig:animacija}.
 \begin{figure}
     \centering
-    \includegraphics[scale=0.7]{animacija.JPG}
+    \includegraphics[scale=0.5]{animacija.JPG}
     \caption{Podsistem za animaciju}
     \label{fig:animacija}
 \end{figure}
@@ -666,7 +652,7 @@ iz Eulerovih uglova u kvaretnione.VR sink nam pruža uvid u orijentaciju i
 putanju projektila. Primjer animacije je dat na slici \ref{fig:prAnimacija}.
 \begin{figure}
     \centering
-    \includegraphics[scale =0.7]{animacijaPr.JPG}
+    \includegraphics[scale =0.5]{animacijaPr.JPG}
     \caption{Virtual reality modeling}
     \label{fig:prAnimacija}
 \end{figure}
@@ -679,9 +665,9 @@ od $4000$ metara i na visini od $100$ metara.
     \caption{Putanja i ubrzanja projektila pri navođenju}
     \label{fig:ub1}
 \end{figure}
-Na slici \ref{fig:ub1} su prikazani putanja i ubrzanja projektila za ovaj primjer. Vidi se 
+Na slici \ref{fig:ub1} su prikazane koordinate i ubrzanja projektila za ovaj primjer. Vidi se 
 da se projektil popeo na visinu od 100 metara i da je presao put od 4000 metara, odnosno da je 
-dostigao metu. Gledajući ubrzanja, zahtjeva se da je vertikalno ubrzanje $10m/s^2$, što je 
+dostigao metu. Gledajući ubrzanja, zahtjeva se da je negativno vertikalno ubrzanje, što je 
 očekivano jer projektil treba da se penje. Dalje, na slici \ref{fig:or1} se vidi da 
 je orijentacije pozitivna čime se postiže sila uzgona koja diže projektil ka meti. 
 \begin{figure}[!ht]
@@ -700,18 +686,14 @@ vidi da je projektil orijentisan ka gore.
     \caption{Projektil neposredno prije susreta}
     \label{fig:side1}
 \end{figure}
-Sada posmatramo primjer navođenja projektila gdje se meta kreće brzinom $[-10\quad 10\quad 10\quad]^T m/s$.
+Sada posmatramo primjer navođenja projektila gdje se meta kreće brzinom $[-10\quad 10\quad -10]^T m/s$.
 Na slici \ref{fig:ganja2} je prikazana putanja mete i projektila za ovaj slučaj. 
-\begin{figure}[!ht]
+\begin{figure}[!t]
     \centering
-    \includegraphics[scale = 0.4]{ganja2.eps}
+    \includegraphics[scale = 0.3]{ganja2.eps}
     \caption{Putanja projektila i pokretne mete}
     \label{fig:ganja2}
 \end{figure}
-Vidi se da postoji neki promašaj po $y$ osi. Ovaj promašaj je usljed toga što se pri 
-kraju putanje projektila javlja potreba za velikim horizontalnim ubrzanjem(priroda proporcionalne navigacije), 
-a pošto je horizntalno ubrzanje neminimalne faze, ne uspijeva se pri kraju potpuno tačno orijentisati. Unatoč tome 
-promašaj je jako mali i može se reći da autopilot zajedno sa sistemom vođenja uspijeva 
+Vidi se, čak i ako se meta kreće u prostoru, da se postiže pogodak pa može se reći da autopilot zajedno sa sistemom vođenja uspijeva 
 postići pogodak. 
-
 

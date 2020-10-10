@@ -89,12 +89,22 @@ Također je korištena činjenica da vrijedi:
     \Theta &= \theta - \alpha\\
      \Psi &= \psi - \beta
 \end{align}
-Iz čega se mogu dobiti vertikalno i horizontalno ubrzanje vezano za koordinatni sistem prema relacijama:
-\begin{align}
-    a_V &= v_m\dot{\Theta} + g\cos\Theta \\
-    a_H &= v_m\dot{\Psi}\cos\Theta 
-\end{align}
-Ova dva ubrzanje su normalna na vektor brzine projektila. \\
+Dodatno, potrebno je imati i intenzitete ubrzanja koja su normalna na vektor brzine. 
+Oni se dobijaju transformacijom vektora ubrzanja iz sistema tijela u sistem vjetra(brzine). 
+To se ostvaruje relacijom:
+\begin{equation}
+    a_v = T_3^T(\beta)T_2^T(\alpha)\left( \begin{bmatrix}
+        \dot{u} \\ \dot{v} \\ \dot{w}
+    \end{bmatrix} + \begin{bmatrix}
+        P \\ Q \\ R
+    \end{bmatrix}\times \begin{bmatrix}
+        u\\v\\w
+    \end{bmatrix}\right)
+\end{equation}
+$a_v$ je vektor sa tri komponente kod kojeg je jedna usmjerena duž vektora brzine i govori 
+o brzini promjene modula brzine, koja je kod slučaja voođenih projektila uvijek nula. Druge dvije komponente 
+su normalne na vektor brzine i jedna se zove horizontalno ubrzanje, a druga vertikalno ubrzanje 
+i od krucijalnog su značaja za upravljanje vođenih projektila. 
 U nastavku je prikazan simulink dijagram koji služi kao nelinarni model projektila sa 
 šest stepeni slobode. 
 \begin{figure}[!ht]
@@ -121,113 +131,136 @@ upravljačkih površina. U nastavku je prikazan Matlab kod interpretirane funcki
 rješava jednačine dinamičkog modela. 
 \begin{lstlisting}
     function out = modelSolver(X,alpha,beta,Psi, Theta, U)
-    
-    u = X(1);
-    v = X(2);
-    w = X(3);
-    p = X(4);
-    q = X(5);
-    r = X(6);
-    phi = X(7);
-    theta = X(8);
-    psi = X(9);
-    
-    xz = X(10);
-    yz = X(11);
-    zz = X(12);
-    
-    u1 = U(1);
-    u2 = U(2);
-    u3 = U(3);
-    
-    %------------CONSTANTS-------------------%
-    m = 52.5;
-    Ix = 0.16;
-    Iy = 14;
-    Iz = Iy;
-    g= 9.81;
-    l = 0.127;
-    rho = 1.225;
-    D = 127/1000;
-    S = 0.0127;
-    vm = sqrt(u^2+v^2+w^2);
-    
-    Q = (rho*(vm^2))/2;
-    %----------COEFFICIENTS--------------------%
-    
-    %lift
-    
-    Cx0 = 10;
-    Cna = 3.330;
-    
-    Fa = -rho*pi*D^2*vm^2*[Cx0+alpha^2 + beta^2;Cna*beta;Cna*alpha]/8;
-    
-    Fax = Fa(1);
-    Fay = Fa(2);
-    Faz = Fa(3);
-    %moments
-    
-    X = 0.55;
-    
-    Cma = -Cna*X/l;
-    CmdeltaV = 10;
-    
-    Cmq = -300;
-    Cm = Cma*alpha + CmdeltaV*u1 + Cmq*q/(2*vm);
-    
-    Mm = Cm*Q*S*l;
-    
-    Cnb = -Cma;
-    CndeltaP = -CmdeltaV;
-    Cnr = -300;
-    Cn = Cnb*beta + CndeltaP*u2 + Cnr*r/(2*vm);
-    Nm = Cn*Q*S*l;
-    
-    
-    CldeltaE = 1.4;
-    Clp = -9;
-    
-    Cl = CldeltaE*u3 + Clp*p/(2*vm);
-    Lm = Cl*Q*S*l;
-    
-    Tphi = [1 0 0;
-            0 cos(phi) sin(phi);
-            0 -sin(phi) cos(phi)];
-    Ttheta = [cos(theta) 0 -sin(theta);
-              0 1 0;
-              sin(theta) 0 cos(theta)];
-    Tpsi = [cos(psi) sin(psi) 0;
-            -sin(psi) cos(psi) 0;
-            0 0 1];
-    
-    Thrust = 12650;
-    udot = v*r - w*q + (Fax+Thrust)/m -g*sin(theta);
-    vdot = p*w - r*u + Fay/m + g*cos(theta)*sin(phi);
-    wdot = q*u - p*v + Faz/m + g*cos(theta)*cos(phi);
-    
-    pdot = Lm/Ix;%pdot
-    qdot = p*r*(Iz-Ix)/Iy +Mm/Iy;%qdot
-    rdot = p*q*(Ix-Iy)/Iz + Nm/Iz;%rdot
-    
-    phidot = p+q*sin(phi)*tan(theta)+r*cos(phi)*tan(theta);
-    thetadot = q*cos(phi) - r*sin(phi);
-    psidot = q*sin(phi)/cos(theta) + r*cos(phi)/cos(theta);
-    
-    xyzZemlja = Tpsi'*Ttheta'*Tphi'*[u;v;w];
-    
-    Xdot = [udot;vdot;wdot;pdot;qdot;rdot;phidot;thetadot;psidot;xyzZemlja];
-    
-    alphadot = (wdot*u - udot*w)/(w^2+u^2);
-    betadot = (vdot*u - v*udot)/(u^2+v^2);
-    
-    Thetadot = thetadot-alphadot;
-    Psidot = psidot - betadot;
-    
-    nV = vm*Thetadot + g*cos(Theta);
-    nH = vm*Psidot*cos(Theta);
-    
-    out = [Xdot; alphadot; betadot;Psidot;Thetadot;nV;nH];
-    end
+
+u = X(1);
+v = X(2);
+w = X(3);
+p = X(4);
+q = X(5);
+r = X(6);
+phi = X(7);
+theta = X(8);
+psi = X(9);
+
+xz = X(10);
+yz = X(11);
+zz = X(12);
+
+u1 = U(1);
+u2 = U(2);
+u3 = U(3);
+
+%------------CONSTANTS-------------------%
+m = 52.5;
+Ix = 0.16;
+Iy = 14;
+Iz = Iy;
+g= 9.81;
+l = 0.127;
+rho = 1.225;
+D = 127/1000;
+L = 0.00127;
+S = 0.0127;
+vm = sqrt(u^2+v^2+w^2);
+
+Q = (rho*(vm^2))/2;
+%----------COEFFICIENTS--------------------%
+
+%lift
+
+Cx0 = 10;
+Cna = 3.330;
+
+Fa = -rho*pi*D^2*vm^2*[Cx0+alpha^2 + beta^2;Cna*beta;Cna*alpha]/8;
+
+Fax = Fa(1);
+Fay = Fa(2);
+Faz = Fa(3);
+%moments
+
+X = 0.55;
+
+Cma = -Cna*X/l;
+CmdeltaV = 10;
+
+Cmq = -300;
+Cm = Cma*alpha + CmdeltaV*u1 + Cmq*q/(2*vm);
+
+Mm = Cm*Q*S*l;
+
+Cnb = -Cma;
+CndeltaP = -CmdeltaV;
+Cnr = -300;
+Cn = Cnb*beta + CndeltaP*u2 + Cnr*r/(2*vm);
+Nm = Cn*Q*S*l;
+
+
+CldeltaE = 1.4;
+Clp = -9;
+
+Cl = CldeltaE*u3 + Clp*p/(2*vm);
+Lm = Cl*Q*S*l;
+
+Tphi = [1 0 0;
+        0 cos(phi) sin(phi);
+        0 -sin(phi) cos(phi)];
+Ttheta = [cos(theta) 0 -sin(theta);
+          0 1 0;
+          sin(theta) 0 cos(theta)];
+Tpsi = [cos(psi) sin(psi) 0;
+        -sin(psi) cos(psi) 0;
+        0 0 1];
+
+Thrust = 12650;
+udot = v*r - w*q + (Fax+Thrust)/m -g*sin(theta);
+vdot = p*w - r*u + Fay/m + g*cos(theta)*sin(phi);
+wdot = q*u - p*v + Faz/m + g*cos(theta)*cos(phi);
+
+pdot = Lm/Ix;%pdot
+qdot = p*r*(Iz-Ix)/Iy +Mm/Iy;%qdot
+rdot = p*q*(Ix-Iy)/Iz + Nm/Iz;%rdot
+
+phidot = p+q*sin(phi)*tan(theta)+r*cos(phi)*tan(theta);
+thetadot = q*cos(phi) - r*sin(phi);
+psidot = q*sin(phi)/cos(theta) + r*cos(phi)/cos(theta);
+
+xyzZemlja = Tpsi'*Ttheta'*Tphi'*[u;v;w];
+
+Xdot = [udot;vdot;wdot;pdot;qdot;rdot;phidot;thetadot;psidot;xyzZemlja];
+
+alphadot = (wdot*u - udot*w)/(w^2+u^2);
+betadot = (vdot*u - v*udot)/(u^2+v^2);
+
+Thetadot = thetadot-alphadot;
+Psidot = psidot - betadot;
+
+TTheta = [cos(Theta) 0 -sin(Theta);
+          0 1 0;
+          sin(Theta) 0 cos(Theta)];
+TPsi = [cos(Psi) sin(Psi) 0;
+        -sin(Psi) cos(Psi) 0;
+        0 0 1];
+Talpha = [cos(alpha) 0 -sin(alpha);
+          0 1 0;
+          sin(alpha) 0 cos(alpha)];
+Tbeta = [cos(beta) sin(beta) 0;
+        -sin(beta) cos(beta) 0;
+        0 0 1];
+
+Talpha = [cos(alpha) 0 -sin(alpha);
+          0 1 0;
+          sin(alpha) 0 cos(alpha)];
+Tbeta = [cos(beta) sin(beta) 0;
+        -sin(beta) cos(beta) 0;
+        0 0 1];
+accBody = [udot;vdot;wdot] + cross([p;q;r],[u;v;w]);
+
+accVec = Tbeta'*Talpha'*accBody;
+
+nH = accVec(2);
+nV = accVec(3);
+out = [Xdot; alphadot; betadot;Psidot;Thetadot;nV;nH];
+end
     \end{lstlisting}
 Model projektila je MIMO sistem sa tri ulazne varijable i puno više izlaza pa je u nastavku 
 predstavljeno nekoliko značajnih odziva na otklone kotnrolnih površina. U nastavku se razmatra 
@@ -280,11 +313,12 @@ prikzani vertikalno i horizontalno ubrzanje projektila.
 \begin{figure}[!ht]
     \centering 
     \includegraphics[scale= 0.5]{ubrVis.eps}
-    \caption{Vertikalno i normalno ubrzanje projektila za jedinični otklon krmila visine}
+    \caption{Vertikalno i horizontalno ubrzanje projektila za jedinični otklon krmila visine}
     \label{fig:ubrVis}
 \end{figure}
-Sada se jasno vidi da se za jedinični otklon krmila visine postiže stalno vertikalno ubrzanje, što se slaže sa 
-činjenicom da projektil čini kružnu putanju u $xz$ ravnini. Nulto horizontalno ubrzanje 
+Sada se jasno vidi da normalna ubrzanja zavise od putanje projektila koja zavisi 
+od orijentacije što je posljedica otklona kontrolnih površina. Najmanje
+vertikalno ubrzanje je u tački kada se projektil nalazi na vrhu petlje koju čini. Nulto horizontalno ubrzanje 
 se slaže sa činjenicom da projektil ne čini pomjeraje u horiznotalnoj ravnini. 
 Sada posmatrajmo odziv projektila za jedinični otklon krmila pravca. Ovdje će se izvršiti 
 duža simulacija kako bi se dobila bolja analiza. Na slici \ref{fig:putanjePrav} su prikazane 
@@ -317,6 +351,14 @@ Vidi se na prethodnoj slici da ugao valjanja i ugao poniranja variraju, što obj
 varijacije visine projektila i vidi se ugao zakretanja opada što objašnjava kružno kretanje 
 u $xy$ ravnini. Posljedica toga je i konstantan ugao klizanja. Važno je istaći da je kanal pravca 
 sistem neminimalne faze jer se za pozitivan otklon krmila pravca, dobija negativan odziv ugla zakretanja. 
+Na slici \ref{fig:horaccprav} su prikazana ubrzanja normlana na vektor brzine 
+za jedinični otklon krmila pravca. 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[scale = 0.6]{horUbr.eps}
+    \caption{Ubrzanja normlana na vektor brzine za jedinični otklon krmila pravca}
+    \label{fig:horaccprav}
+\end{figure}
 U nastavku se posmatra primjer horizontalnog hitca početnom brzinom od $100m/s$ u $x$ smjeru
 sa visine $500m$. Kada ne bi bilo otpora vazduha i pogonske sile za očekivati je da će projektiil pasti na zemlju 
 za $10.09$ sekundi. Naravno, zbog postojanja pogonske sile projektil će za nešto kraće vrijeme 
@@ -409,7 +451,7 @@ Sada se mogu napisati i jednačine za lateralno kretanje:
 \end{align}
 Pri čemu se iz $Tz^v$ pokazuje:
 \begin{equation}
-    \Psi \approx \psi-\beta
+    \Psi = \psi-\beta
 \end{equation}
 Još uvijek se nisu u diferencijalne jednačine uvele linearizirane vrijednosti za aerodinamičke 
 sile i momente pa se u jednačinama ne pojavljuju upravljačke varijable, zbog toga će se u nastavku uraditi

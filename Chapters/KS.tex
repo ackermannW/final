@@ -298,27 +298,19 @@ Tada se dobija:
     H=(PI_x-RI_{xz})i+QI_yj+(RI_z-PI_{xz})k
 \end{equation}
 Sada se vektor momenta impulsa može zapisati preko svojih komponenti:
-\begin{equation}
-    H_x=PI_x-RI_{xz}
-\end{equation}
-\begin{equation}
-    H_y=QI_y
-\end{equation}
-\begin{equation}
-    H_z=RI_z-PI_{xz}
-\end{equation}
+\begin{align}
+    H_x&=PI_x-RI_{xz}\\
+    H_y&=QI_y\\
+    H_z&=RI_z-PI_{xz}
+\end{align}
 Sada su potrebni izvodi momenta impulsa kako bismo dobili izraz za rezultantni moment.
 Pošto je izvod vektora u inercijalnom prostoru jednak zbiru izvoda pojedinačnih komponenti vektora. Prema tome 
 vrijedi:
-\begin{equation}
-    \frac{dH_x}{dt}=I_x\frac{dP}{dt}-I{xz}\frac{dR}{dt}
-\end{equation}
-\begin{equation}
-    \frac{dH_y}{dt}=I_y\frac{dQ}{dt}
-\end{equation}
-\begin{equation}
-    \frac{dH_z}{dt}=I_z\frac{dR}{dt}-I_{xz}\frac{dP}{dt}
-\end{equation}
+\begin{align}
+    \frac{dH_x}{dt}&=I_x\frac{dP}{dt}-I{xz}\frac{dR}{dt}\\
+    \frac{dH_y}{dt}&=I_y\frac{dQ}{dt}\\
+    \frac{dH_z}{dt}&=I_z\frac{dR}{dt}-I_{xz}\frac{dP}{dt}
+\end{align}
 Relacija \ref{eq:m} se može napisati kao:
 \begin{equation}
     \sum \Delta M=\frac{dH}{dt}+\omega \times H
@@ -377,14 +369,14 @@ diferencijalne jednačine koje daju brzinu promjene Eulerovih uglova:
     \frac{d\phi}{dt}=P+\left( \frac{d\psi}{dt} \right)\sin\theta
     \label{eq:w3}
 \end{equation}
-Sada koristeći matricu transformacije $C_e^b$ se mogu dobiti komponente
+Sada koristeći matricu transformacije $T_b^z$ se mogu dobiti komponente
 brzine u koordinatnom sistemu Zemlje:
 \begin{equation}
     \begin{bmatrix}
         \dot{X_z}\\
         \dot{Y_z}\\   
         \dot{Z_z}\\
-    \end{bmatrix}=C_e^b\begin{bmatrix}
+    \end{bmatrix}=T_b^z\begin{bmatrix}
         u\\
         v\\   
         w\\
