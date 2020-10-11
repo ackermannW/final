@@ -29,10 +29,10 @@ Da se definiše položaj letjelice u odnosu na koordinatni sistem koriste se Eul
 \end{figure}
 Ovo znači da se bilo koja rotacija, odnosno transformacija iz sistema tijela u sistem Zemlje može postići sa tri rotacije oko osi i to prva 
 rotacija za ugao $\phi$ oko longitudinalne, za ugao $\theta$ oko lateralne i za ugao 
-$\psi$ oko normalne ose. Transformacija $T_b^e$ koja ostvaruje transformaciju iz 
+$\psi$ oko normalne ose. Transformacija $T_z^b$ koja ostvaruje transformaciju iz 
 koordinatnog sistema vezanog za zemlju u koordinatni sistem vezan za tijelo je data sa:
 \begin{equation}
-    T_{b}^z = T_1(\phi)T_2(\theta)T_3(\psi)
+    T_{z}^b = T_1(\phi)T_2(\theta)T_3(\psi)
 \end{equation}
 ,gdje je:
 \begin{align}
@@ -307,7 +307,7 @@ Sada su potrebni izvodi momenta impulsa kako bismo dobili izraz za rezultantni m
 Pošto je izvod vektora u inercijalnom prostoru jednak zbiru izvoda pojedinačnih komponenti vektora. Prema tome 
 vrijedi:
 \begin{align}
-    \frac{dH_x}{dt}&=I_x\frac{dP}{dt}-I{xz}\frac{dR}{dt}\\
+    \frac{dH_x}{dt}&=I_x\frac{dP}{dt}-I_{xz}\frac{dR}{dt}\\
     \frac{dH_y}{dt}&=I_y\frac{dQ}{dt}\\
     \frac{dH_z}{dt}&=I_z\frac{dR}{dt}-I_{xz}\frac{dP}{dt}
 \end{align}
